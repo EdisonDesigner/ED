@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{199e228c-be32-49b7-8ef0-6f882ec817a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Properties">
+      <UniqueIdentifier>{e296c4c0-277e-4691-b805-2359592aacd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{5b29a0d0-c671-4bf5-a2b6-b13c7d262207}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomFeature.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureChamfer.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureCompound.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtrusion.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureFace.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureFillet.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureGeometrySet.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMirroring.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartBoolean.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartBox.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartCircle.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartCommon.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartCurveNet.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartCut.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartFuse.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartImportBrep.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartImportIges.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartImportStep.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartPolygon.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartSection.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePartSpline.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureRevolution.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Part2DObject.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFeature.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFeatureReference.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFeatures.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveFeature.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyGeometryList.cpp">
+      <Filter>Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyTopoShape.cpp">
+      <Filter>Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="ToroidPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeWirePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeVertexPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeSolidPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeShellPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeFacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeEdgePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeCompSolidPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShapeCompoundPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceOfRevolutionPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceOfExtrusionPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="SpherePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangularTrimmedSurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="PointPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="PlateSurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFeaturePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ParabolaPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetSurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetCurvePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="LinePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperbolaPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometrySurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryCurvePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipsePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ConePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="CirclePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="BSplineSurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="BSplineCurvePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="BRepOffsetAPI_MakePipeShellPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierSurfacePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierCurvePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcOfParabolaPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcOfHyperbolaPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcOfEllipsePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcOfCirclePyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="Part2DObjectPyImp.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="AppPart.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AppPartPy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BSplineCurveBiArcs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CrossSection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="edgecluster.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportStep.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="modelRefine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressIndicator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoShape.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FT2FC.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportIges.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomFeature.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureChamfer.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureCompound.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtrusion.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureFace.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureFillet.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureGeometrySet.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMirroring.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartBoolean.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartBox.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartCircle.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartCommon.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartCurveNet.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartCut.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartFuse.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartImportBrep.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartImportIges.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartImportStep.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartPolygon.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartSection.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePartSpline.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureRevolution.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Part2DObject.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PartFeature.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PartFeatureReference.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PartFeatures.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveFeature.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyGeometryList.h">
+      <Filter>Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyTopoShape.h">
+      <Filter>Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="FT2FC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportIges.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CrossSection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="edgecluster.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="encodeFilename.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportStep.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="modelRefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OCCError.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressIndicator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TopoShape.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="ArcOfCirclePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ArcOfEllipsePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ArcOfHyperbolaPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ArcOfParabolaPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ArcPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="BezierCurvePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="BezierSurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="BRepOffsetAPI_MakePipeShellPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="BSplineCurvePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="BSplineSurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="CirclePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ConePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="CylinderPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="EllipsePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="GeometryCurvePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="GeometryPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="GeometrySurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="HyperbolaPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="LinePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="OffsetCurvePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="OffsetSurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ParabolaPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="Part2DObjectPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="PartFeaturePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="PlanePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="PlateSurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="PointPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="RectangularTrimmedSurfacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="SpherePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="SurfaceOfExtrusionPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="SurfaceOfRevolutionPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeCompoundPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeCompSolidPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeEdgePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeFacePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeShellPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeSolidPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeVertexPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="TopoShapeWirePy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+    <Xml Include="ToroidPy.xml">
+      <Filter>Python</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

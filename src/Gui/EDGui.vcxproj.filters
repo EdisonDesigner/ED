@@ -1,0 +1,1881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="3D connexion SDK">
+      <UniqueIdentifier>{d09c59bd-7728-4a97-a9af-b9a6c2286ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{1bab2711-3c95-4ef0-ac29-cb3c13b66714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{6bf218ec-6b35-409b-9bcc-b3ead75265c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Customize">
+      <UniqueIdentifier>{6f31fc35-4e9b-4661-a3cc-82c557be30c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Settings">
+      <UniqueIdentifier>{ccb49705-03c3-4af6-9346-a5e8386a5213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dock Windows">
+      <UniqueIdentifier>{354b3656-f82a-4a08-9148-d8fb6416c1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{8ddff2a0-e4cb-4a92-9ff3-33c875a75123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Help">
+      <UniqueIdentifier>{f7b1ce0b-1d5c-4e0a-9c02-5e7ebefc390c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Language">
+      <UniqueIdentifier>{95caf7ac-7de2-49a0-b852-0510a318c33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Propertyeditor">
+      <UniqueIdentifier>{6c7eb63a-1fc0-42c1-8b30-7df1fbcf091c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quarter">
+      <UniqueIdentifier>{17b79771-9919-4943-acc2-f0bf04120bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Selection">
+      <UniqueIdentifier>{e751aee8-8a39-488b-937b-01376f034536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task View">
+      <UniqueIdentifier>{fb33b36c-be9b-4e48-bbad-2ec045bcedea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Uic">
+      <UniqueIdentifier>{5bdbf2ba-98c9-4b3c-b01c-b48b46f45fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{7bf2a7a5-bbb1-480c-95e4-81cbf841c2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View3D">
+      <UniqueIdentifier>{8526bb62-0c68-4e4b-8f17-1383439bd625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View3D\Inventor">
+      <UniqueIdentifier>{23742a73-d379-43f8-901a-9e44fed720b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View3D\Viewprovider">
+      <UniqueIdentifier>{c1519066-5c74-4178-aab3-ee518e16aa1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{90949cb6-1a57-4e94-897e-b71b52210a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\iisTaskPanel">
+      <UniqueIdentifier>{a2d8f0ea-53a7-465e-9af2-49891e3817cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\QSintActionPanel">
+      <UniqueIdentifier>{5243de4c-5a22-44bb-bdd9-1fc1c1737319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\iisTaskPanel\Mocs">
+      <UniqueIdentifier>{2fe993c5-0942-4092-90f2-575c60c6f22c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\QSintActionPanel\Mocs">
+      <UniqueIdentifier>{8909f99b-8543-46f5-b8b0-1471f5db9b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workbench">
+      <UniqueIdentifier>{42a784e6-08a6-481d-b0f5-be463ef9da2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3Dconnexion\GuiApplicationNativeEventAwareWin32.cpp">
+      <Filter>3D connexion SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="3Dconnexion\MouseParameters.cpp">
+      <Filter>3D connexion SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionFunction.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandDoc.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandFeat.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandMacro.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandStd.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandTest.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandView.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWindow.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgActionsImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCommandsImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCustomizeImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCustomizeSpaceball.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCustomizeSpNavSettings.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgKeyboardImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgToolbarsImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWorkbenchesImp.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="QListWidgetCustom.cpp">
+      <Filter>Dialog\Customize</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEditorImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgGeneralImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOnlineHelpImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPreferencesImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgReportViewImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettings3DViewImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsColorGradientImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsDocumentImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsImageImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsMacroImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsUnitsImp.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsViewColor.cpp">
+      <Filter>Dialog\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipping.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoMode.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgActivateWindowImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDisplayPropertiesImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEditFileIncludeProptertyExternal.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExpressionInput.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInputDialogImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMacroExecuteImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMacroRecordImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMaterialPropertiesImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParameterImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProjectInformationImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProjectUtility.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPropertyLink.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRunExternal.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTipOfTheDayImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUndoRedo.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUnitsCalculatorImp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DocumentRecovery.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadItem.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadManager.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="InputVector.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Placement.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyPage.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneInspector.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDlgRelocation.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMapping.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CombiView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="DockWindow.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBox.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeView.cpp">
+      <Filter>Dock Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="CallTips.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorView.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonConsole.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonConsolePy.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonDebugger.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="SyntaxHighlighter.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEdit.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Assistant.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkRetriever.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineDocumentation.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="WhatsThis.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="Language\Translator.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyeditor\PropertyEditor.cpp">
+      <Filter>Propertyeditor</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyeditor\PropertyItem.cpp">
+      <Filter>Propertyeditor</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyeditor\PropertyItemDelegate.cpp">
+      <Filter>Propertyeditor</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyeditor\PropertyModel.cpp">
+      <Filter>Propertyeditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\ContextMenu.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\DragDropHandler.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\EventFilter.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\FocusHandler.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\ImageReader.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\InputDevice.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\InteractionMode.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\Keyboard.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\KeyboardP.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\eventhandlers\moc_DragDropHandler.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\eventhandlers\moc_EventFilter.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\eventhandlers\moc_FocusHandler.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\moc_ContextMenu.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\moc_InteractionMode.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\moc_QuarterWidget.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\moc_SensorManager.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\moc_SignalThread.cxx">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\Mouse.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\NativeEvent.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\QtCoinCompatibility.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\Quarter.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\QuarterP.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\QuarterWidget.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\QuarterWidgetP.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\SensorManager.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\SignalThread.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\SoQTQuarterAdaptor.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter\SpaceNavigatorDevice.cpp">
+      <Filter>Quarter</Filter>
+    </ClCompile>
+    <ClCompile Include="Selection.cpp">
+      <Filter>Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionFilter.cpp">
+      <Filter>Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionObject.cpp">
+      <Filter>Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionObjectPyImp.cpp">
+      <Filter>Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskAppearance.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskDialog.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskDialogPython.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskEditControl.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskSelectLinkProperty.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskView.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView\TaskWatcher.cpp">
+      <Filter>Task View</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphvizView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="MDIView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="BlenderNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CADNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CoinRiftWidget.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Flag.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GestureNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPainter.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="InventorNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MayaGestureNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseSelection.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="NavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCascadeNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitView3DInventor.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchpadNavigationStyle.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DInventor.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DInventorExamples.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DInventorRiftViewer.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DInventorViewer.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DPy.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="View3DViewerPy.cpp">
+      <Filter>View3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\MarkerBitmaps.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoAutoZoomTranslation.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoAxisCrossKit.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoDrawingGrid.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCBackgroundGradient.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCBoundingBox.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCColorBar.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCColorGradient.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCColorLegend.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCDB.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCInteractiveElement.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCOffscreenRenderer.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCSelection.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCSelectionAction.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCUnifiedSelection.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCVectorizeSVGAction.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoFCVectorizeU3DAction.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoNavigationDragger.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoTextLabel.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventor\SoTouchEvents.cpp">
+      <Filter>View3D\Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProvider.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderAnnotation.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderBuilder.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderDocumentObject.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderDocumentObjectGroup.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderDocumentObjectPyImp.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderExtern.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderFeature.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderGeometryObject.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderInventorObject.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderMaterialObject.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderMeasureDistance.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPlacement.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPlane.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPyImp.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPythonFeature.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPythonFeaturePyImp.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderVRMLObject.cpp">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDialog.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="InputField.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefWidgets.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantitySpinBox.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinBox.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Splashscreen.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetFactory.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\moc_iisiconlabel.cxx">
+      <Filter>Widget\iisTaskPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskbox.cxx">
+      <Filter>Widget\iisTaskPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskgroup.cxx">
+      <Filter>Widget\iisTaskPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskheader.cxx">
+      <Filter>Widget\iisTaskPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iisiconlabel.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iistaskbox.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iistaskgroup.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iistaskheader.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iistaskpanel.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iistaskpanelscheme.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iiswinxptaskpanelscheme.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\moc_actionbox.cxx">
+      <Filter>Widget\QSintActionPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\moc_actiongroup.cxx">
+      <Filter>Widget\QSintActionPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\moc_actionlabel.cxx">
+      <Filter>Widget\QSintActionPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\moc_actionpanel.cxx">
+      <Filter>Widget\QSintActionPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\moc_taskheader_p.cxx">
+      <Filter>Widget\QSintActionPanel\Mocs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\actionbox.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\actiongroup.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\actionlabel.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\actionpanel.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\actionpanelscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\androidpanelscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\freecadscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\macpanelscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\taskgroup_p.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\taskheader_p.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\winvistapanelscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="QSint\actionpanel\winxppanelscheme.cpp">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="DockWindowManager.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManager.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonWorkbenchPyImp.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBarManager.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBoxManager.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="Workbench.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkbenchFactory.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkbenchManager.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkbenchPyImp.cpp">
+      <Filter>Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSaver.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapFactory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Document.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DocumentModel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DocumentPyImp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionBinding.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionCompleter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsViewZoom.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiApplication.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiApplicationNativeEventAware.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiConsole.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Macro.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualAlignment.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeDocuments.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_iisTaskPanel.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_resource.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_schemes.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_translation.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="resource.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceballEvent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Thumbnail.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitCursor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WinNativeGestureRecognizers.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="iisTaskPanel\src\iisEDscheme.cpp">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationPy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3Dconnexion\I3dMouseParams.h">
+      <Filter>3D connexion SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="3Dconnexion\MouseParameters.h">
+      <Filter>3D connexion SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionFunction.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgActionsImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCommandsImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCustomizeImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCustomizeSpaceball.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCustomizeSpNavSettings.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgKeyboardImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgToolbarsImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWorkbenchesImp.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="QListWidgetCustom.h">
+      <Filter>Dialog\Customize</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEditorImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgGeneralImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOnlineHelpImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPreferencesImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgReportViewImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettings3DViewImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsColorGradientImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsDocumentImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsImageImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsMacroImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsUnitsImp.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsViewColor.h">
+      <Filter>Dialog\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipping.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoMode.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgActivateWindowImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDisplayPropertiesImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEditFileIncludeProptertyExternal.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExpressionInput.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInputDialogImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMacroExecuteImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMacroRecordImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMaterialPropertiesImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParameterImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProjectInformationImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProjectUtility.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPropertyLink.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRunExternal.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTipOfTheDayImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUndoRedo.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUnitsCalculatorImp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DocumentRecovery.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadItem.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadManager.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="InputVector.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Placement.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyPage.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneInspector.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskDlgRelocation.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMapping.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CombiView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="DockWindow.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBox.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeView.h">
+      <Filter>Dock Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="CallTips.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorView.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonConsole.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonConsolePy.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonDebugger.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="SyntaxHighlighter.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEdit.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Assistant.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkRetriever.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineDocumentation.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="WhatsThis.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Translator.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyeditor\PropertyEditor.h">
+      <Filter>Propertyeditor</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyeditor\PropertyItem.h">
+      <Filter>Propertyeditor</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyeditor\PropertyItemDelegate.h">
+      <Filter>Propertyeditor</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyeditor\PropertyModel.h">
+      <Filter>Propertyeditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\devices\InputDevice.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\devices\Keyboard.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\devices\Mouse.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\devices\SpaceNavigatorDevice.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\eventhandlers\DragDropHandler.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\eventhandlers\EventFilter.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\eventhandlers\FocusHandler.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\Basic.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\ContextMenu.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\ImageReader.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\InteractionMode.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\KeyboardP.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\NativeEvent.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\QtCoinCompatibility.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\Quarter.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\QuarterP.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\QuarterWidget.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\QuarterWidgetP.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\SensorManager.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\SignalThread.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter\SoQTQuarterAdaptor.h">
+      <Filter>Quarter</Filter>
+    </ClInclude>
+    <ClInclude Include="Selection.h">
+      <Filter>Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionFilter.h">
+      <Filter>Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionObject.h">
+      <Filter>Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskAppearance.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskDialog.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskDialogPython.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskEditControl.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskSelectLinkProperty.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskView.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView\TaskWatcher.h">
+      <Filter>Task View</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_AboutApplication.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_Clipping.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DemoMode.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgActions.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgActivateWindow.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgAuthorization.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgChooseIcon.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgCommands.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgCustomizeSpNavSettings.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgDisplayProperties.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgEditor.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgExpressionInput.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgGeneral.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgInputDialog.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgKeyboard.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgLocationAngle.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgLocationPos.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgMacroExecute.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgMacroRecord.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgMaterialProperties.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgOnlineHelp.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgParameter.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgPreferences.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgProjectInformation.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgProjectUtility.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgPropertyLink.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgReportView.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgRunExternal.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettings3DView.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsColorGradient.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsDocument.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsImage.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsMacro.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsUnits.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsViewColor.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgTipOfTheDay.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgToolbars.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgTreeWidget.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgUnitsCalculator.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgWorkbenches.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DocumentRecovery.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DownloadItem.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DownloadManager.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_InputVector.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_MouseButtons.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_Placement.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_SceneInspector.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskAppearance.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSelectLinkProperty.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TextureMapping.h">
+      <Filter>Uic</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphvizView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="MDIView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinRiftWidget.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPainter.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseSelection.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="NavigationStyle.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitView3DInventor.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DInventor.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DInventorExamples.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DInventorRiftViewer.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DInventorViewer.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DPy.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="View3DViewerPy.h">
+      <Filter>View3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\MarkerBitmaps.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoAutoZoomTranslation.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoAxisCrossKit.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoDrawingGrid.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCBackgroundGradient.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCBoundingBox.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCColorBar.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCColorGradient.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCColorLegend.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCDB.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCInteractiveElement.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCOffscreenRenderer.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCSelection.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCSelectionAction.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCUnifiedSelection.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCVectorizeSVGAction.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoFCVectorizeU3DAction.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoNavigationDragger.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoTextLabel.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventor\SoTouchEvents.h">
+      <Filter>View3D\Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProvider.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderAnnotation.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderBuilder.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderDocumentObject.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderDocumentObjectGroup.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderExtern.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderFeature.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderGeometryObject.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderInventorObject.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderMaterialObject.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderMeasureDistance.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPlacement.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPlane.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPythonFeature.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderVRMLObject.h">
+      <Filter>View3D\Viewprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDialog.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="InputField.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="PrefWidgets.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantitySpinBox.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantitySpinBox_p.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinBox.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Splashscreen.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetFactory.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iisiconlabel.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskbox.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskgroup.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskheader.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskpanel.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskpanel_global.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iistaskpanelscheme.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iiswinxptaskpanelscheme.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\actionbox.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\actiongroup.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\actionlabel.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\actionpanel.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\actionpanelscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\androidpanelscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\macpanelscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\taskgroup_p.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\taskheader_p.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\winvistapanelscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\winxppanelscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="DockWindowManager.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuManager.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBarManager.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBoxManager.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="Workbench.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkbenchFactory.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkbenchManager.h">
+      <Filter>Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSaver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapFactory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Document.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionBinding.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionCompleter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsViewZoom.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiApplication.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiApplicationNativeEventAware.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiConsole.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualAlignment.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeDocuments.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Qt4All.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceballEvent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Thumbnail.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitCursor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WinNativeGestureRecognizers.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="iisTaskPanel\src\iisEDscheme.h">
+      <Filter>Widget\iisTaskPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="QSint\actionpanel\EDscheme.h">
+      <Filter>Widget\QSintActionPanel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DlgActions.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgChooseIcon.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgCommands.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgCustomizeSpNavSettings.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgKeyboard.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgToolbars.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgWorkbenches.ui">
+      <Filter>Dialog\Customize</Filter>
+    </None>
+    <None Include="DlgEditor.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgGeneral.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgOnlineHelp.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgPreferences.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgReportView.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettings3DView.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsColorGradient.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsDocument.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsImage.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsMacro.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsUnits.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="DlgSettingsViewColor.ui">
+      <Filter>Dialog\Settings</Filter>
+    </None>
+    <None Include="AboutApplication.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="Clipping.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DemoMode.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgActivateWindow.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgAuthorization.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgDisplayProperties.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgExpressionInput.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgInputDialog.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgLocationAngle.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgLocationPos.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgMacroExecute.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgMacroRecord.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgMaterialProperties.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgParameter.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgProjectInformation.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgProjectUtility.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgPropertyLink.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgRunExternal.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgTipOfTheDay.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgTreeWidget.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DlgUnitsCalculator.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DocumentRecovery.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DownloadItem.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="DownloadManager.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="InputVector.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="MouseButtons.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="Placement.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="SceneInspector.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="TextureMapping.ui">
+      <Filter>Dialog</Filter>
+    </None>
+    <None Include="SelectionFilter.l">
+      <Filter>Selection</Filter>
+    </None>
+    <None Include="SelectionFilter.y">
+      <Filter>Selection</Filter>
+    </None>
+    <None Include="TaskView\TaskAppearance.ui">
+      <Filter>Task View</Filter>
+    </None>
+    <None Include="TaskView\TaskEditControl.ui">
+      <Filter>Task View</Filter>
+    </None>
+    <None Include="TaskView\TaskSelectLinkProperty.ui">
+      <Filter>Task View</Filter>
+    </None>
+    <None Include="Icons\resource.qrc" />
+    <None Include="Language\translation.qrc" />
+    <None Include="iisTaskPanel\src\iisTaskPanel.qrc" />
+    <None Include="QSint\actionpanel\schemes.qrc" />
+    <None Include="EDGuiInit.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="DocumentPy.xml" />
+    <Xml Include="PythonWorkbenchPy.xml" />
+    <Xml Include="SelectionObjectPy.xml" />
+    <Xml Include="ViewProviderDocumentObjectPy.xml" />
+    <Xml Include="ViewProviderPy.xml" />
+    <Xml Include="ViewProviderPythonFeaturePy.xml" />
+    <Xml Include="WorkbenchPy.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A47D1AA-4918-40BE-9270-A4961F4D3E36}</ProjectGuid>
+    <RootNamespace>PartDesign</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Mod\PartDesign\</OutDir>
+    <IntDir>$(SolutionDir)IntmDir\Mod\PartDesign\Debug</IntDir>
+    <TargetName>PartDesign_d</TargetName>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Mod\PartDesign</OutDir>
+    <IntDir>$(SolutionDir)IntmDir\Mod\PartDesign\Release</IntDir>
+    <TargetName>PartDesign</TargetName>
+    <TargetExt>.pyd</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)ExtLibs\include;$(SolutionDir)ExtLibs\include\QtOpenGL;$(SolutionDir)ExtLibs\include\QtSvg;$(SolutionDir)ExtLibs\include\QtUiTools;$(SolutionDir)ExtLibs\include\QtWebKit;$(SolutionDir)ExtLibs\include\QtGui;$(SolutionDir)ExtLibs\include\QtXml;$(SolutionDir)ExtLibs\include\QtNetwork;$(SolutionDir)ExtLibs\include\QtCore;$(SolutionDir)ExtLibs\include\oce;$(SolutionDir)ExtLibs\include\python2.7;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;HAVE_ACOSH;HAVE_ASINH;HAVE_ATANH;PartDesign_EXPORTS;ED_DEBUG;EDAppPartDesign;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)Lib\Debug\EDBase_d.lib;$(SolutionDir)Lib\Debug\EDApp_d.lib;$(SolutionDir)Lib\Debug\Part_d.lib;boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;python27_d.lib;xerces-c_3D.lib;QtCored4.lib;QtXmld4.lib;zlibd.lib;TKIGESd.lib;TKSTLd.lib;TKBind.lib;TKCAFd.lib;TKV3dd.lib;TKMeshd.lib;TKServiced.lib;TKBinLd.lib;TKLCAFd.lib;TKCDFd.lib;TKOffsetd.lib;TKFilletd.lib;TKSTEPd.lib;TKSTEP209d.lib;TKSTEPAttrd.lib;TKSTEPBased.lib;TKXSBased.lib;TKHLRd.lib;TKFeatd.lib;TKBoold.lib;TKShHealingd.lib;TKBOd.lib;TKPrimd.lib;TKTopAlgod.lib;TKGeomAlgod.lib;TKBRepd.lib;TKGeomBased.lib;TKG3dd.lib;TKG2dd.lib;TKMathd.lib;TKerneld.lib;freetyped.lib;MSVCRTD.lib;MSVCPRTD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;FreeImaged.lib;glu32.lib;opengl32.lib;ws2_32.lib;psapi.lib;Rpcrt4.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(SolutionDir)Lib\Debug\PartDesign_d.lib</ImportLibrary>
+      <OutputFile>$(OutDir)PartDesign_d.pyd</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)ExtLibs\include;$(SolutionDir)ExtLibs\include\QtOpenGL;$(SolutionDir)ExtLibs\include\QtSvg;$(SolutionDir)ExtLibs\include\QtUiTools;$(SolutionDir)ExtLibs\include\QtWebKit;$(SolutionDir)ExtLibs\include\QtGui;$(SolutionDir)ExtLibs\include\QtXml;$(SolutionDir)ExtLibs\include\QtNetwork;$(SolutionDir)ExtLibs\include\QtCore;$(SolutionDir)ExtLibs\include\oce;$(SolutionDir)ExtLibs\include\python2.7;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;HAVE_ACOSH;HAVE_ASINH;HAVE_ATANH;PartDesign_EXPORTS;EDAppPartDesign;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)Lib\Debug\EDBase.lib;$(SolutionDir)Lib\Debug\EDApp.lib;$(SolutionDir)Lib\Debug\Part.lib;boost_filesystem-vc120-mt-1_55.lib;boost_program_options-vc120-mt-1_55.lib;boost_regex-vc120-mt-1_55.lib;boost_signals-vc120-mt-1_55.lib;boost_system-vc120-mt-1_55.lib;boost_thread-vc120-mt-1_55.lib;boost_chrono-vc120-mt-1_55.lib;boost_date_time-vc120-mt-1_55.lib;python27.lib;xerces-c_3.lib;QtCore4.lib;QtXml4.lib;zlib.lib;TKIGES.lib;TKSTL.lib;TKBin.lib;TKCAF.lib;TKV3d.lib;TKMesh.lib;TKService.lib;TKBinL.lib;TKLCAF.lib;TKCDF.lib;TKOffset.lib;TKFillet.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKHLR.lib;TKFeat.lib;TKBool.lib;TKShHealing.lib;TKBO.lib;TKPrim.lib;TKTopAlgo.lib;TKGeomAlgo.lib;TKBRep.lib;TKGeomBase.lib;TKG3d.lib;TKG2d.lib;TKMath.lib;TKernel.lib;freetype.lib;MSVCRT.lib;MSVCPRT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;FreeImaged.lib;glu32.lib;opengl32.lib;ws2_32.lib;psapi.lib;Rpcrt4.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(SolutionDir)Lib\Release\PartDesign.lib</ImportLibrary>
+      <OutputFile>$(OutDir)PartDesign.pyd</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppPartDesign.cpp" />
+    <ClCompile Include="AppPartDesignPy.cpp" />
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeatureAdditive.cpp" />
+    <ClCompile Include="FeatureChamfer.cpp" />
+    <ClCompile Include="FeatureDraft.cpp" />
+    <ClCompile Include="FeatureDressUp.cpp" />
+    <ClCompile Include="FeatureFillet.cpp" />
+    <ClCompile Include="FeatureGroove.cpp" />
+    <ClCompile Include="FeatureHole.cpp" />
+    <ClCompile Include="FeatureLinearPattern.cpp" />
+    <ClCompile Include="FeatureMirrored.cpp" />
+    <ClCompile Include="FeatureMultiTransform.cpp" />
+    <ClCompile Include="FeaturePad.cpp" />
+    <ClCompile Include="FeaturePocket.cpp" />
+    <ClCompile Include="FeaturePolarPattern.cpp" />
+    <ClCompile Include="FeatureRevolution.cpp" />
+    <ClCompile Include="FeatureScaled.cpp" />
+    <ClCompile Include="FeatureSketchBased.cpp" />
+    <ClCompile Include="FeatureSubtractive.cpp" />
+    <ClCompile Include="FeatureTransformed.cpp" />
+    <ClCompile Include="PreCompiled.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="FeatureAdditive.h" />
+    <ClInclude Include="FeatureChamfer.h" />
+    <ClInclude Include="FeatureDraft.h" />
+    <ClInclude Include="FeatureDressUp.h" />
+    <ClInclude Include="FeatureFillet.h" />
+    <ClInclude Include="FeatureGroove.h" />
+    <ClInclude Include="FeatureHole.h" />
+    <ClInclude Include="FeatureLinearPattern.h" />
+    <ClInclude Include="FeatureMirrored.h" />
+    <ClInclude Include="FeatureMultiTransform.h" />
+    <ClInclude Include="FeaturePad.h" />
+    <ClInclude Include="FeaturePocket.h" />
+    <ClInclude Include="FeaturePolarPattern.h" />
+    <ClInclude Include="FeatureRevolution.h" />
+    <ClInclude Include="FeatureScaled.h" />
+    <ClInclude Include="FeatureSketchBased.h" />
+    <ClInclude Include="FeatureSubtractive.h" />
+    <ClInclude Include="FeatureTransformed.h" />
+    <ClInclude Include="PreCompiled.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

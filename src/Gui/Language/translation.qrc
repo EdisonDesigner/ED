@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/translations"> 
+        <file>qt_de.qm</file>
+        <file>qt_es-ES.qm</file>
+        <file>qt_fr.qm</file>
+        <file>qt_it.qm</file>
+        <file>qt_jp.qm</file>
+        <file>qt_pl.qm</file>
+        <file>qt_pt-BR.qm</file>
+        <file>qt_ru.qm</file>
+        <file>qt_sv-SE.qm</file>
+        <file>qt_uk.qm</file>
+        <file>qt_zh-CN.qm</file>
+        <file>ED_af.qm</file>
+        <file>ED_de.qm</file>
+        <file>ED_fi.qm</file>
+        <file>ED_fr.qm</file>
+        <file>ED_hr.qm</file>
+        <file>ED_it.qm</file>
+        <file>ED_nl.qm</file>
+        <file>ED_no.qm</file>
+        <file>ED_pl.qm</file>
+        <file>ED_ru.qm</file>
+        <file>ED_uk.qm</file>
+        <file>ED_tr.qm</file>
+        <file>ED_sv-SE.qm</file>
+        <file>ED_zh-TW.qm</file>
+        <file>ED_pt-BR.qm</file>
+        <file>ED_cs.qm</file>
+        <file>ED_sk.qm</file>
+        <file>ED_es-ES.qm</file>
+        <file>ED_zh-CN.qm</file>
+        <file>ED_ja.qm</file>
+        <file>ED_ro.qm</file>
+        <file>ED_hu.qm</file>
+        <file>ED_pt-PT.qm</file>
+        <file>ED_sr.qm</file>
+        <file>ED_el.qm</file>
+        <file>ED_sl.qm</file>
+    </qresource>
+</RCC> 

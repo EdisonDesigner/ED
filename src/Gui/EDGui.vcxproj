@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5026A8CB-3392-4F44-91AC-E3F1DA29184F}</ProjectGuid>
+    <RootNamespace>EDGui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)IntmDir\Gui\Debug\</IntDir>
+    <TargetName>EDGui_d</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin</OutDir>
+    <IntDir>$(SolutionDir)IntmDir\Gui\Release\</IntDir>
+    <TargetName>EDGui</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)src\Gui;$(SolutionDir)ExtLibs\include;$(SolutionDir)ExtLibs\include\QtOpenGL;$(SolutionDir)ExtLibs\include\QtSvg;$(SolutionDir)ExtLibs\include\QtUiTools;$(SolutionDir)ExtLibs\include\QtWebKit;$(SolutionDir)ExtLibs\include\QtGui;$(SolutionDir)ExtLibs\include\QtXml;$(SolutionDir)ExtLibs\include\QtNetwork;$(SolutionDir)ExtLibs\include\QtCore;$(SolutionDir)ExtLibs\include\python2.7;$(SolutionDir)ExtLibs\include\PySide;$(SolutionDir)ExtLibs\include\PySide\QtCore;$(SolutionDir)ExtLibs\include\PySide\QtGui;$(SolutionDir)ExtLibs\include\shiboken;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QIIS_MAKEDLL;QSINT_MAKEDLL;OVR_OS_WIN32;QUARTER_INTERNAL;QUARTER_MAKE_DLL;COIN_DLL;_USE_3DCONNEXION_SDK;HAVE_SHIBOKEN;HAVE_PYSIDE;_PreComp_;EDGui_EXPORTS;EDGui;ED_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)EDGui_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)Lib\Debug\EDBase_d.lib;$(SolutionDir)Lib\Debug\EDApp_d.lib;boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;QtOpenGLd4.lib;QtSvgd4.lib;QtUiToolsd.lib;QtWebKitd4.lib;QtXmlPatternsd4.lib;QtGuid4.lib;QtXmld4.lib;QtNetworkd4.lib;QtCored4.lib;coin4d.lib;python27_d.lib;xerces-c_3D.lib;zlibd.lib;pyside-python2.7_d.lib;shiboken-python2.7_d.lib;SHFolder.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;glu32.lib;opengl32.lib		;imm32.lib		;ws2_32.lib	;MSVCRTD.lib;MSVCPRTD.lib;Rpcrt4.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(SolutionDir)Lib\Debug\EDGui_d.lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)ExtLibs\include;$(SolutionDir)ExtLibs\include\QtOpenGL;$(SolutionDir)ExtLibs\include\QtSvg;$(SolutionDir)ExtLibs\include\QtUiTools;$(SolutionDir)ExtLibs\include\QtWebKit;$(SolutionDir)ExtLibs\include\QtGui;$(SolutionDir)ExtLibs\include\QtXml;$(SolutionDir)ExtLibs\include\QtNetwork;$(SolutionDir)ExtLibs\include\QtCore;$(SolutionDir)ExtLibs\include\python2.7;$(SolutionDir)ExtLibs\include\PySide;$(SolutionDir)ExtLibs\include\PySide\QtCore;$(SolutionDir)ExtLibs\include\PySide\QtGui;$(SolutionDir)ExtLibs\include\shiboken;$(SolutionDir)src;$(SolutionDir)src\Gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QIIS_MAKEDLL;QSINT_MAKEDLL;OVR_OS_WIN32;QUARTER_INTERNAL;QUARTER_MAKE_DLL;COIN_DLL;_USE_3DCONNEXION_SDK;HAVE_SHIBOKEN;HAVE_PYSIDE;_PreComp_;EDGui_EXPORTS;EDGui;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)EDGui.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)Lib\Release\EDBase.lib;$(SolutionDir)Lib\Release\EDApp.lib;boost_filesystem-vc120-mt-1_55.lib;boost_program_options-vc120-mt-1_55.lib;boost_regex-vc120-mt-1_55.lib;boost_signals-vc120-mt-1_55.lib;boost_system-vc120-mt-1_55.lib;boost_thread-vc120-mt-1_55.lib;boost_chrono-vc120-mt-1_55.lib;boost_date_time-vc120-mt-1_55.lib;QtOpenGL4.lib;QtSvg4.lib;QtUiTools.lib;QtWebKit4.lib;QtXmlPatterns4.lib;QtGui4.lib;QtXml4.lib;QtNetwork4.lib;QtCore4.lib;coin4.lib;python27.lib;xerces-c_3.lib;zlib.lib;pyside-python2.7.lib;shiboken-python2.7.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;glu32.lib;opengl32.lib;SHFolder.lib;imm32.lib;ws2_32.lib;MSVCRT.lib;MSVCPRT.lib;Rpcrt4.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)Lib\Release\EDGui.lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3Dconnexion\GuiApplicationNativeEventAwareWin32.cpp" />
+    <ClCompile Include="3Dconnexion\MouseParameters.cpp" />
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionFunction.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="ApplicationPy.cpp" />
+    <ClCompile Include="Assistant.cpp" />
+    <ClCompile Include="AutoSaver.cpp" />
+    <ClCompile Include="BitmapFactory.cpp" />
+    <ClCompile Include="BlenderNavigationStyle.cpp" />
+    <ClCompile Include="CADNavigationStyle.cpp" />
+    <ClCompile Include="CallTips.cpp" />
+    <ClCompile Include="Clipping.cpp" />
+    <ClCompile Include="CoinRiftWidget.cpp" />
+    <ClCompile Include="CombiView.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandDoc.cpp" />
+    <ClCompile Include="CommandFeat.cpp" />
+    <ClCompile Include="CommandMacro.cpp" />
+    <ClCompile Include="CommandStd.cpp" />
+    <ClCompile Include="CommandTest.cpp" />
+    <ClCompile Include="CommandView.cpp" />
+    <ClCompile Include="CommandWindow.cpp" />
+    <ClCompile Include="Control.cpp" />
+    <ClCompile Include="DemoMode.cpp" />
+    <ClCompile Include="DlgActionsImp.cpp" />
+    <ClCompile Include="DlgActivateWindowImp.cpp" />
+    <ClCompile Include="DlgCommandsImp.cpp" />
+    <ClCompile Include="DlgCustomizeImp.cpp" />
+    <ClCompile Include="DlgCustomizeSpaceball.cpp" />
+    <ClCompile Include="DlgCustomizeSpNavSettings.cpp" />
+    <ClCompile Include="DlgDisplayPropertiesImp.cpp" />
+    <ClCompile Include="DlgEditFileIncludeProptertyExternal.cpp" />
+    <ClCompile Include="DlgEditorImp.cpp" />
+    <ClCompile Include="DlgExpressionInput.cpp" />
+    <ClCompile Include="DlgGeneralImp.cpp" />
+    <ClCompile Include="DlgInputDialogImp.cpp" />
+    <ClCompile Include="DlgKeyboardImp.cpp" />
+    <ClCompile Include="DlgMacroExecuteImp.cpp" />
+    <ClCompile Include="DlgMacroRecordImp.cpp" />
+    <ClCompile Include="DlgMaterialPropertiesImp.cpp" />
+    <ClCompile Include="DlgOnlineHelpImp.cpp" />
+    <ClCompile Include="DlgParameterImp.cpp" />
+    <ClCompile Include="DlgPreferencesImp.cpp" />
+    <ClCompile Include="DlgProjectInformationImp.cpp" />
+    <ClCompile Include="DlgProjectUtility.cpp" />
+    <ClCompile Include="DlgPropertyLink.cpp" />
+    <ClCompile Include="DlgReportViewImp.cpp" />
+    <ClCompile Include="DlgRunExternal.cpp" />
+    <ClCompile Include="DlgSettings3DViewImp.cpp" />
+    <ClCompile Include="DlgSettingsColorGradientImp.cpp" />
+    <ClCompile Include="DlgSettingsDocumentImp.cpp" />
+    <ClCompile Include="DlgSettingsImageImp.cpp" />
+    <ClCompile Include="DlgSettingsMacroImp.cpp" />
+    <ClCompile Include="DlgSettingsUnitsImp.cpp" />
+    <ClCompile Include="DlgSettingsViewColor.cpp" />
+    <ClCompile Include="DlgTipOfTheDayImp.cpp" />
+    <ClCompile Include="DlgToolbarsImp.cpp" />
+    <ClCompile Include="DlgUndoRedo.cpp" />
+    <ClCompile Include="DlgUnitsCalculatorImp.cpp" />
+    <ClCompile Include="DlgWorkbenchesImp.cpp" />
+    <ClCompile Include="DockWindow.cpp" />
+    <ClCompile Include="DockWindowManager.cpp" />
+    <ClCompile Include="Document.cpp" />
+    <ClCompile Include="DocumentModel.cpp" />
+    <ClCompile Include="DocumentPyImp.cpp" />
+    <ClCompile Include="DocumentRecovery.cpp" />
+    <ClCompile Include="DownloadDialog.cpp" />
+    <ClCompile Include="DownloadItem.cpp" />
+    <ClCompile Include="DownloadManager.cpp" />
+    <ClCompile Include="EditorView.cpp" />
+    <ClCompile Include="ExpressionBinding.cpp" />
+    <ClCompile Include="ExpressionCompleter.cpp" />
+    <ClCompile Include="FileDialog.cpp" />
+    <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="GestureNavigationStyle.cpp" />
+    <ClCompile Include="GLPainter.cpp" />
+    <ClCompile Include="GraphicsViewZoom.cpp" />
+    <ClCompile Include="GraphvizView.cpp" />
+    <ClCompile Include="GuiApplication.cpp" />
+    <ClCompile Include="GuiApplicationNativeEventAware.cpp" />
+    <ClCompile Include="GuiConsole.cpp" />
+    <ClCompile Include="HelpView.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iisEDscheme.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iisiconlabel.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iistaskbox.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iistaskgroup.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iistaskheader.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iistaskpanel.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iistaskpanelscheme.cpp" />
+    <ClCompile Include="iisTaskPanel\src\iiswinxptaskpanelscheme.cpp" />
+    <ClCompile Include="iisTaskPanel\src\moc_iisiconlabel.cxx" />
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskbox.cxx" />
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskgroup.cxx" />
+    <ClCompile Include="iisTaskPanel\src\moc_iistaskheader.cxx" />
+    <ClCompile Include="InputField.cpp" />
+    <ClCompile Include="InputVector.cpp" />
+    <ClCompile Include="InventorNavigationStyle.cpp" />
+    <ClCompile Include="Inventor\MarkerBitmaps.cpp" />
+    <ClCompile Include="Inventor\SoAutoZoomTranslation.cpp" />
+    <ClCompile Include="Inventor\SoAxisCrossKit.cpp" />
+    <ClCompile Include="Inventor\SoDrawingGrid.cpp" />
+    <ClCompile Include="Inventor\SoFCBackgroundGradient.cpp" />
+    <ClCompile Include="Inventor\SoFCBoundingBox.cpp" />
+    <ClCompile Include="Inventor\SoFCColorBar.cpp" />
+    <ClCompile Include="Inventor\SoFCColorGradient.cpp" />
+    <ClCompile Include="Inventor\SoFCColorLegend.cpp" />
+    <ClCompile Include="Inventor\SoFCDB.cpp" />
+    <ClCompile Include="Inventor\SoFCInteractiveElement.cpp" />
+    <ClCompile Include="Inventor\SoFCOffscreenRenderer.cpp" />
+    <ClCompile Include="Inventor\SoFCSelection.cpp" />
+    <ClCompile Include="Inventor\SoFCSelectionAction.cpp" />
+    <ClCompile Include="Inventor\SoFCUnifiedSelection.cpp" />
+    <ClCompile Include="Inventor\SoFCVectorizeSVGAction.cpp" />
+    <ClCompile Include="Inventor\SoFCVectorizeU3DAction.cpp" />
+    <ClCompile Include="Inventor\SoNavigationDragger.cpp" />
+    <ClCompile Include="Inventor\SoTextLabel.cpp" />
+    <ClCompile Include="Inventor\SoTouchEvents.cpp" />
+    <ClCompile Include="Language\Translator.cpp" />
+    <ClCompile Include="Macro.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="ManualAlignment.cpp" />
+    <ClCompile Include="MayaGestureNavigationStyle.cpp" />
+    <ClCompile Include="MDIView.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="MergeDocuments.cpp" />
+    <ClCompile Include="MouseSelection.cpp" />
+    <ClCompile Include="NavigationStyle.cpp" />
+    <ClCompile Include="NetworkRetriever.cpp" />
+    <ClCompile Include="OnlineDocumentation.cpp" />
+    <ClCompile Include="OpenCascadeNavigationStyle.cpp" />
+    <ClCompile Include="Placement.cpp" />
+    <ClCompile Include="PreCompiled.cpp" />
+    <ClCompile Include="PrefWidgets.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ProjectView.cpp" />
+    <ClCompile Include="propertyeditor\PropertyEditor.cpp" />
+    <ClCompile Include="propertyeditor\PropertyItem.cpp" />
+    <ClCompile Include="propertyeditor\PropertyItemDelegate.cpp" />
+    <ClCompile Include="propertyeditor\PropertyModel.cpp" />
+    <ClCompile Include="PropertyPage.cpp" />
+    <ClCompile Include="PropertyView.cpp" />
+    <ClCompile Include="PythonConsole.cpp" />
+    <ClCompile Include="PythonConsolePy.cpp" />
+    <ClCompile Include="PythonDebugger.cpp" />
+    <ClCompile Include="PythonEditor.cpp" />
+    <ClCompile Include="PythonWorkbenchPyImp.cpp" />
+    <ClCompile Include="QListWidgetCustom.cpp" />
+    <ClCompile Include="qrc_iisTaskPanel.cxx" />
+    <ClCompile Include="qrc_resource.cxx" />
+    <ClCompile Include="qrc_schemes.cxx" />
+    <ClCompile Include="qrc_translation.cxx" />
+    <ClCompile Include="QSint\actionpanel\actionbox.cpp" />
+    <ClCompile Include="QSint\actionpanel\actiongroup.cpp" />
+    <ClCompile Include="QSint\actionpanel\actionlabel.cpp" />
+    <ClCompile Include="QSint\actionpanel\actionpanel.cpp" />
+    <ClCompile Include="QSint\actionpanel\actionpanelscheme.cpp" />
+    <ClCompile Include="QSint\actionpanel\androidpanelscheme.cpp" />
+    <ClCompile Include="QSint\actionpanel\freecadscheme.cpp" />
+    <ClCompile Include="QSint\actionpanel\macpanelscheme.cpp" />
+    <ClCompile Include="QSint\actionpanel\moc_actionbox.cxx" />
+    <ClCompile Include="QSint\actionpanel\moc_actiongroup.cxx" />
+    <ClCompile Include="QSint\actionpanel\moc_actionlabel.cxx" />
+    <ClCompile Include="QSint\actionpanel\moc_actionpanel.cxx" />
+    <ClCompile Include="QSint\actionpanel\moc_taskheader_p.cxx" />
+    <ClCompile Include="QSint\actionpanel\taskgroup_p.cpp" />
+    <ClCompile Include="QSint\actionpanel\taskheader_p.cpp" />
+    <ClCompile Include="QSint\actionpanel\winvistapanelscheme.cpp" />
+    <ClCompile Include="QSint\actionpanel\winxppanelscheme.cpp" />
+    <ClCompile Include="QuantitySpinBox.cpp" />
+    <ClCompile Include="Quarter\ContextMenu.cpp" />
+    <ClCompile Include="Quarter\DragDropHandler.cpp" />
+    <ClCompile Include="Quarter\EventFilter.cpp" />
+    <ClCompile Include="Quarter\eventhandlers\moc_DragDropHandler.cxx" />
+    <ClCompile Include="Quarter\eventhandlers\moc_EventFilter.cxx" />
+    <ClCompile Include="Quarter\eventhandlers\moc_FocusHandler.cxx" />
+    <ClCompile Include="Quarter\FocusHandler.cpp" />
+    <ClCompile Include="Quarter\ImageReader.cpp" />
+    <ClCompile Include="Quarter\InputDevice.cpp" />
+    <ClCompile Include="Quarter\InteractionMode.cpp" />
+    <ClCompile Include="Quarter\Keyboard.cpp" />
+    <ClCompile Include="Quarter\KeyboardP.cpp" />
+    <ClCompile Include="Quarter\moc_ContextMenu.cxx" />
+    <ClCompile Include="Quarter\moc_InteractionMode.cxx" />
+    <ClCompile Include="Quarter\moc_QuarterWidget.cxx" />
+    <ClCompile Include="Quarter\moc_SensorManager.cxx" />
+    <ClCompile Include="Quarter\moc_SignalThread.cxx" />
+    <ClCompile Include="Quarter\Mouse.cpp" />
+    <ClCompile Include="Quarter\NativeEvent.cpp" />
+    <ClCompile Include="Quarter\QtCoinCompatibility.cpp" />
+    <ClCompile Include="Quarter\Quarter.cpp" />
+    <ClCompile Include="Quarter\QuarterP.cpp" />
+    <ClCompile Include="Quarter\QuarterWidget.cpp" />
+    <ClCompile Include="Quarter\QuarterWidgetP.cpp" />
+    <ClCompile Include="Quarter\SensorManager.cpp" />
+    <ClCompile Include="Quarter\SignalThread.cpp" />
+    <ClCompile Include="Quarter\SoQTQuarterAdaptor.cpp" />
+    <ClCompile Include="Quarter\SpaceNavigatorDevice.cpp" />
+    <ClCompile Include="ReportView.cpp" />
+    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="SceneInspector.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="SelectionFilter.cpp" />
+    <ClCompile Include="SelectionObject.cpp" />
+    <ClCompile Include="SelectionObjectPyImp.cpp" />
+    <ClCompile Include="SelectionView.cpp" />
+    <ClCompile Include="SpaceballEvent.cpp" />
+    <ClCompile Include="SpinBox.cpp" />
+    <ClCompile Include="Splashscreen.cpp" />
+    <ClCompile Include="SplitView3DInventor.cpp" />
+    <ClCompile Include="SyntaxHighlighter.cpp" />
+    <ClCompile Include="TaskDlgRelocation.cpp" />
+    <ClCompile Include="TaskView\TaskAppearance.cpp" />
+    <ClCompile Include="TaskView\TaskDialog.cpp" />
+    <ClCompile Include="TaskView\TaskDialogPython.cpp" />
+    <ClCompile Include="TaskView\TaskEditControl.cpp" />
+    <ClCompile Include="TaskView\TaskSelectLinkProperty.cpp" />
+    <ClCompile Include="TaskView\TaskView.cpp" />
+    <ClCompile Include="TaskView\TaskWatcher.cpp" />
+    <ClCompile Include="TextEdit.cpp" />
+    <ClCompile Include="TextureMapping.cpp" />
+    <ClCompile Include="Thumbnail.cpp" />
+    <ClCompile Include="ToolBarManager.cpp" />
+    <ClCompile Include="ToolBox.cpp" />
+    <ClCompile Include="ToolBoxManager.cpp" />
+    <ClCompile Include="TouchpadNavigationStyle.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="TreeView.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="View.cpp" />
+    <ClCompile Include="View3DInventor.cpp" />
+    <ClCompile Include="View3DInventorExamples.cpp" />
+    <ClCompile Include="View3DInventorRiftViewer.cpp" />
+    <ClCompile Include="View3DInventorViewer.cpp" />
+    <ClCompile Include="View3DPy.cpp" />
+    <ClCompile Include="View3DViewerPy.cpp" />
+    <ClCompile Include="ViewProvider.cpp" />
+    <ClCompile Include="ViewProviderAnnotation.cpp" />
+    <ClCompile Include="ViewProviderBuilder.cpp" />
+    <ClCompile Include="ViewProviderDocumentObject.cpp" />
+    <ClCompile Include="ViewProviderDocumentObjectGroup.cpp" />
+    <ClCompile Include="ViewProviderDocumentObjectPyImp.cpp" />
+    <ClCompile Include="ViewProviderExtern.cpp" />
+    <ClCompile Include="ViewProviderFeature.cpp" />
+    <ClCompile Include="ViewProviderGeometryObject.cpp" />
+    <ClCompile Include="ViewProviderInventorObject.cpp" />
+    <ClCompile Include="ViewProviderMaterialObject.cpp" />
+    <ClCompile Include="ViewProviderMeasureDistance.cpp" />
+    <ClCompile Include="ViewProviderPlacement.cpp" />
+    <ClCompile Include="ViewProviderPlane.cpp" />
+    <ClCompile Include="ViewProviderPyImp.cpp" />
+    <ClCompile Include="ViewProviderPythonFeature.cpp" />
+    <ClCompile Include="ViewProviderPythonFeaturePyImp.cpp" />
+    <ClCompile Include="ViewProviderVRMLObject.cpp" />
+    <ClCompile Include="WaitCursor.cpp" />
+    <ClCompile Include="WhatsThis.cpp" />
+    <ClCompile Include="WidgetFactory.cpp" />
+    <ClCompile Include="Widgets.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WinNativeGestureRecognizers.cpp" />
+    <ClCompile Include="Workbench.cpp" />
+    <ClCompile Include="WorkbenchFactory.cpp" />
+    <ClCompile Include="WorkbenchManager.cpp" />
+    <ClCompile Include="WorkbenchPyImp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3Dconnexion\I3dMouseParams.h" />
+    <ClInclude Include="3Dconnexion\MouseParameters.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionFunction.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Assistant.h" />
+    <ClInclude Include="AutoSaver.h" />
+    <ClInclude Include="BitmapFactory.h" />
+    <ClInclude Include="CallTips.h" />
+    <ClInclude Include="Clipping.h" />
+    <ClInclude Include="CoinRiftWidget.h" />
+    <ClInclude Include="CombiView.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Control.h" />
+    <ClInclude Include="DemoMode.h" />
+    <ClInclude Include="DlgActionsImp.h" />
+    <ClInclude Include="DlgActivateWindowImp.h" />
+    <ClInclude Include="DlgCommandsImp.h" />
+    <ClInclude Include="DlgCustomizeImp.h" />
+    <ClInclude Include="DlgCustomizeSpaceball.h" />
+    <ClInclude Include="DlgCustomizeSpNavSettings.h" />
+    <ClInclude Include="DlgDisplayPropertiesImp.h" />
+    <ClInclude Include="DlgEditFileIncludeProptertyExternal.h" />
+    <ClInclude Include="DlgEditorImp.h" />
+    <ClInclude Include="DlgExpressionInput.h" />
+    <ClInclude Include="DlgGeneralImp.h" />
+    <ClInclude Include="DlgInputDialogImp.h" />
+    <ClInclude Include="DlgKeyboardImp.h" />
+    <ClInclude Include="DlgMacroExecuteImp.h" />
+    <ClInclude Include="DlgMacroRecordImp.h" />
+    <ClInclude Include="DlgMaterialPropertiesImp.h" />
+    <ClInclude Include="DlgOnlineHelpImp.h" />
+    <ClInclude Include="DlgParameterImp.h" />
+    <ClInclude Include="DlgPreferencesImp.h" />
+    <ClInclude Include="DlgProjectInformationImp.h" />
+    <ClInclude Include="DlgProjectUtility.h" />
+    <ClInclude Include="DlgPropertyLink.h" />
+    <ClInclude Include="DlgReportViewImp.h" />
+    <ClInclude Include="DlgRunExternal.h" />
+    <ClInclude Include="DlgSettings3DViewImp.h" />
+    <ClInclude Include="DlgSettingsColorGradientImp.h" />
+    <ClInclude Include="DlgSettingsDocumentImp.h" />
+    <ClInclude Include="DlgSettingsImageImp.h" />
+    <ClInclude Include="DlgSettingsMacroImp.h" />
+    <ClInclude Include="DlgSettingsUnitsImp.h" />
+    <ClInclude Include="DlgSettingsViewColor.h" />
+    <ClInclude Include="DlgTipOfTheDayImp.h" />
+    <ClInclude Include="DlgToolbarsImp.h" />
+    <ClInclude Include="DlgUndoRedo.h" />
+    <ClInclude Include="DlgUnitsCalculatorImp.h" />
+    <ClInclude Include="DlgWorkbenchesImp.h" />
+    <ClInclude Include="DockWindow.h" />
+    <ClInclude Include="DockWindowManager.h" />
+    <ClInclude Include="Document.h" />
+    <ClInclude Include="DocumentRecovery.h" />
+    <ClInclude Include="DownloadDialog.h" />
+    <ClInclude Include="DownloadItem.h" />
+    <ClInclude Include="DownloadManager.h" />
+    <ClInclude Include="EditorView.h" />
+    <ClInclude Include="ExpressionBinding.h" />
+    <ClInclude Include="ExpressionCompleter.h" />
+    <ClInclude Include="FileDialog.h" />
+    <ClInclude Include="Flag.h" />
+    <ClInclude Include="GLPainter.h" />
+    <ClInclude Include="GraphicsViewZoom.h" />
+    <ClInclude Include="GraphvizView.h" />
+    <ClInclude Include="GuiApplication.h" />
+    <ClInclude Include="GuiApplicationNativeEventAware.h" />
+    <ClInclude Include="GuiConsole.h" />
+    <ClInclude Include="HelpView.h" />
+    <ClInclude Include="iisTaskPanel\src\iisEDscheme.h" />
+    <ClInclude Include="iisTaskPanel\src\iisiconlabel.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskbox.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskgroup.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskheader.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskpanel.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskpanelscheme.h" />
+    <ClInclude Include="iisTaskPanel\src\iistaskpanel_global.h" />
+    <ClInclude Include="iisTaskPanel\src\iiswinxptaskpanelscheme.h" />
+    <ClInclude Include="InputField.h" />
+    <ClInclude Include="InputVector.h" />
+    <ClInclude Include="Inventor\MarkerBitmaps.h" />
+    <ClInclude Include="Inventor\SoAutoZoomTranslation.h" />
+    <ClInclude Include="Inventor\SoAxisCrossKit.h" />
+    <ClInclude Include="Inventor\SoDrawingGrid.h" />
+    <ClInclude Include="Inventor\SoFCBackgroundGradient.h" />
+    <ClInclude Include="Inventor\SoFCBoundingBox.h" />
+    <ClInclude Include="Inventor\SoFCColorBar.h" />
+    <ClInclude Include="Inventor\SoFCColorGradient.h" />
+    <ClInclude Include="Inventor\SoFCColorLegend.h" />
+    <ClInclude Include="Inventor\SoFCDB.h" />
+    <ClInclude Include="Inventor\SoFCInteractiveElement.h" />
+    <ClInclude Include="Inventor\SoFCOffscreenRenderer.h" />
+    <ClInclude Include="Inventor\SoFCSelection.h" />
+    <ClInclude Include="Inventor\SoFCSelectionAction.h" />
+    <ClInclude Include="Inventor\SoFCUnifiedSelection.h" />
+    <ClInclude Include="Inventor\SoFCVectorizeSVGAction.h" />
+    <ClInclude Include="Inventor\SoFCVectorizeU3DAction.h" />
+    <ClInclude Include="Inventor\SoNavigationDragger.h" />
+    <ClInclude Include="Inventor\SoTextLabel.h" />
+    <ClInclude Include="Inventor\SoTouchEvents.h" />
+    <ClInclude Include="Language\Translator.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="ManualAlignment.h" />
+    <ClInclude Include="MDIView.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="MergeDocuments.h" />
+    <ClInclude Include="MouseSelection.h" />
+    <ClInclude Include="NavigationStyle.h" />
+    <ClInclude Include="NetworkRetriever.h" />
+    <ClInclude Include="OnlineDocumentation.h" />
+    <ClInclude Include="Placement.h" />
+    <ClInclude Include="PreCompiled.h" />
+    <ClInclude Include="PrefWidgets.h" />
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="ProjectView.h" />
+    <ClInclude Include="propertyeditor\PropertyEditor.h" />
+    <ClInclude Include="propertyeditor\PropertyItem.h" />
+    <ClInclude Include="propertyeditor\PropertyItemDelegate.h" />
+    <ClInclude Include="propertyeditor\PropertyModel.h" />
+    <ClInclude Include="PropertyPage.h" />
+    <ClInclude Include="PropertyView.h" />
+    <ClInclude Include="PythonConsole.h" />
+    <ClInclude Include="PythonConsolePy.h" />
+    <ClInclude Include="PythonDebugger.h" />
+    <ClInclude Include="PythonEditor.h" />
+    <ClInclude Include="QListWidgetCustom.h" />
+    <ClInclude Include="QSint\actionpanel\actionbox.h" />
+    <ClInclude Include="QSint\actionpanel\actiongroup.h" />
+    <ClInclude Include="QSint\actionpanel\actionlabel.h" />
+    <ClInclude Include="QSint\actionpanel\actionpanel.h" />
+    <ClInclude Include="QSint\actionpanel\actionpanelscheme.h" />
+    <ClInclude Include="QSint\actionpanel\androidpanelscheme.h" />
+    <ClInclude Include="QSint\actionpanel\EDscheme.h" />
+    <ClInclude Include="QSint\actionpanel\macpanelscheme.h" />
+    <ClInclude Include="QSint\actionpanel\taskgroup_p.h" />
+    <ClInclude Include="QSint\actionpanel\taskheader_p.h" />
+    <ClInclude Include="QSint\actionpanel\winvistapanelscheme.h" />
+    <ClInclude Include="QSint\actionpanel\winxppanelscheme.h" />
+    <ClInclude Include="Qt4All.h" />
+    <ClInclude Include="QuantitySpinBox.h" />
+    <ClInclude Include="QuantitySpinBox_p.h" />
+    <ClInclude Include="Quarter\Basic.h" />
+    <ClInclude Include="Quarter\ContextMenu.h" />
+    <ClInclude Include="Quarter\devices\InputDevice.h" />
+    <ClInclude Include="Quarter\devices\Keyboard.h" />
+    <ClInclude Include="Quarter\devices\Mouse.h" />
+    <ClInclude Include="Quarter\devices\SpaceNavigatorDevice.h" />
+    <ClInclude Include="Quarter\eventhandlers\DragDropHandler.h" />
+    <ClInclude Include="Quarter\eventhandlers\EventFilter.h" />
+    <ClInclude Include="Quarter\eventhandlers\FocusHandler.h" />
+    <ClInclude Include="Quarter\ImageReader.h" />
+    <ClInclude Include="Quarter\InteractionMode.h" />
+    <ClInclude Include="Quarter\KeyboardP.h" />
+    <ClInclude Include="Quarter\NativeEvent.h" />
+    <ClInclude Include="Quarter\QtCoinCompatibility.h" />
+    <ClInclude Include="Quarter\Quarter.h" />
+    <ClInclude Include="Quarter\QuarterP.h" />
+    <ClInclude Include="Quarter\QuarterWidget.h" />
+    <ClInclude Include="Quarter\QuarterWidgetP.h" />
+    <ClInclude Include="Quarter\SensorManager.h" />
+    <ClInclude Include="Quarter\SignalThread.h" />
+    <ClInclude Include="Quarter\SoQTQuarterAdaptor.h" />
+    <ClInclude Include="ReportView.h" />
+    <ClInclude Include="SceneInspector.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="SelectionFilter.h" />
+    <ClInclude Include="SelectionObject.h" />
+    <ClInclude Include="SelectionView.h" />
+    <ClInclude Include="SpaceballEvent.h" />
+    <ClInclude Include="SpinBox.h" />
+    <ClInclude Include="Splashscreen.h" />
+    <ClInclude Include="SplitView3DInventor.h" />
+    <ClInclude Include="SyntaxHighlighter.h" />
+    <ClInclude Include="TaskDlgRelocation.h" />
+    <ClInclude Include="TaskView\TaskAppearance.h" />
+    <ClInclude Include="TaskView\TaskDialog.h" />
+    <ClInclude Include="TaskView\TaskDialogPython.h" />
+    <ClInclude Include="TaskView\TaskEditControl.h" />
+    <ClInclude Include="TaskView\TaskSelectLinkProperty.h" />
+    <ClInclude Include="TaskView\TaskView.h" />
+    <ClInclude Include="TaskView\TaskWatcher.h" />
+    <ClInclude Include="TextEdit.h" />
+    <ClInclude Include="TextureMapping.h" />
+    <ClInclude Include="Thumbnail.h" />
+    <ClInclude Include="ToolBarManager.h" />
+    <ClInclude Include="ToolBox.h" />
+    <ClInclude Include="ToolBoxManager.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="TreeView.h" />
+    <ClInclude Include="ui_AboutApplication.h" />
+    <ClInclude Include="ui_Clipping.h" />
+    <ClInclude Include="ui_DemoMode.h" />
+    <ClInclude Include="ui_DlgActions.h" />
+    <ClInclude Include="ui_DlgActivateWindow.h" />
+    <ClInclude Include="ui_DlgAuthorization.h" />
+    <ClInclude Include="ui_DlgChooseIcon.h" />
+    <ClInclude Include="ui_DlgCommands.h" />
+    <ClInclude Include="ui_DlgCustomizeSpNavSettings.h" />
+    <ClInclude Include="ui_DlgDisplayProperties.h" />
+    <ClInclude Include="ui_DlgEditor.h" />
+    <ClInclude Include="ui_DlgExpressionInput.h" />
+    <ClInclude Include="ui_DlgGeneral.h" />
+    <ClInclude Include="ui_DlgInputDialog.h" />
+    <ClInclude Include="ui_DlgKeyboard.h" />
+    <ClInclude Include="ui_DlgLocationAngle.h" />
+    <ClInclude Include="ui_DlgLocationPos.h" />
+    <ClInclude Include="ui_DlgMacroExecute.h" />
+    <ClInclude Include="ui_DlgMacroRecord.h" />
+    <ClInclude Include="ui_DlgMaterialProperties.h" />
+    <ClInclude Include="ui_DlgOnlineHelp.h" />
+    <ClInclude Include="ui_DlgParameter.h" />
+    <ClInclude Include="ui_DlgPreferences.h" />
+    <ClInclude Include="ui_DlgProjectInformation.h" />
+    <ClInclude Include="ui_DlgProjectUtility.h" />
+    <ClInclude Include="ui_DlgPropertyLink.h" />
+    <ClInclude Include="ui_DlgReportView.h" />
+    <ClInclude Include="ui_DlgRunExternal.h" />
+    <ClInclude Include="ui_DlgSettings3DView.h" />
+    <ClInclude Include="ui_DlgSettingsColorGradient.h" />
+    <ClInclude Include="ui_DlgSettingsDocument.h" />
+    <ClInclude Include="ui_DlgSettingsImage.h" />
+    <ClInclude Include="ui_DlgSettingsMacro.h" />
+    <ClInclude Include="ui_DlgSettingsUnits.h" />
+    <ClInclude Include="ui_DlgSettingsViewColor.h" />
+    <ClInclude Include="ui_DlgTipOfTheDay.h" />
+    <ClInclude Include="ui_DlgToolbars.h" />
+    <ClInclude Include="ui_DlgTreeWidget.h" />
+    <ClInclude Include="ui_DlgUnitsCalculator.h" />
+    <ClInclude Include="ui_DlgWorkbenches.h" />
+    <ClInclude Include="ui_DocumentRecovery.h" />
+    <ClInclude Include="ui_DownloadItem.h" />
+    <ClInclude Include="ui_DownloadManager.h" />
+    <ClInclude Include="ui_InputVector.h" />
+    <ClInclude Include="ui_MouseButtons.h" />
+    <ClInclude Include="ui_Placement.h" />
+    <ClInclude Include="ui_SceneInspector.h" />
+    <ClInclude Include="ui_TaskAppearance.h" />
+    <ClInclude Include="ui_TaskSelectLinkProperty.h" />
+    <ClInclude Include="ui_TextureMapping.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="View.h" />
+    <ClInclude Include="View3DInventor.h" />
+    <ClInclude Include="View3DInventorExamples.h" />
+    <ClInclude Include="View3DInventorRiftViewer.h" />
+    <ClInclude Include="View3DInventorViewer.h" />
+    <ClInclude Include="View3DPy.h" />
+    <ClInclude Include="View3DViewerPy.h" />
+    <ClInclude Include="ViewProvider.h" />
+    <ClInclude Include="ViewProviderAnnotation.h" />
+    <ClInclude Include="ViewProviderBuilder.h" />
+    <ClInclude Include="ViewProviderDocumentObject.h" />
+    <ClInclude Include="ViewProviderDocumentObjectGroup.h" />
+    <ClInclude Include="ViewProviderExtern.h" />
+    <ClInclude Include="ViewProviderFeature.h" />
+    <ClInclude Include="ViewProviderGeometryObject.h" />
+    <ClInclude Include="ViewProviderInventorObject.h" />
+    <ClInclude Include="ViewProviderMaterialObject.h" />
+    <ClInclude Include="ViewProviderMeasureDistance.h" />
+    <ClInclude Include="ViewProviderPlacement.h" />
+    <ClInclude Include="ViewProviderPlane.h" />
+    <ClInclude Include="ViewProviderPythonFeature.h" />
+    <ClInclude Include="ViewProviderVRMLObject.h" />
+    <ClInclude Include="WaitCursor.h" />
+    <ClInclude Include="WhatsThis.h" />
+    <ClInclude Include="WidgetFactory.h" />
+    <ClInclude Include="Widgets.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WinNativeGestureRecognizers.h" />
+    <ClInclude Include="Workbench.h" />
+    <ClInclude Include="WorkbenchFactory.h" />
+    <ClInclude Include="WorkbenchManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AboutApplication.ui" />
+    <None Include="Clipping.ui" />
+    <None Include="DemoMode.ui" />
+    <None Include="DlgActions.ui" />
+    <None Include="DlgActivateWindow.ui" />
+    <None Include="DlgAuthorization.ui" />
+    <None Include="DlgChooseIcon.ui" />
+    <None Include="DlgCommands.ui" />
+    <None Include="DlgCustomizeSpNavSettings.ui" />
+    <None Include="DlgDisplayProperties.ui" />
+    <None Include="DlgEditor.ui" />
+    <None Include="DlgExpressionInput.ui" />
+    <None Include="DlgGeneral.ui" />
+    <None Include="DlgInputDialog.ui" />
+    <None Include="DlgKeyboard.ui" />
+    <None Include="DlgLocationAngle.ui" />
+    <None Include="DlgLocationPos.ui" />
+    <None Include="DlgMacroExecute.ui" />
+    <None Include="DlgMacroRecord.ui" />
+    <None Include="DlgMaterialProperties.ui" />
+    <None Include="DlgOnlineHelp.ui" />
+    <None Include="DlgParameter.ui" />
+    <None Include="DlgPreferences.ui" />
+    <None Include="DlgProjectInformation.ui" />
+    <None Include="DlgProjectUtility.ui" />
+    <None Include="DlgPropertyLink.ui" />
+    <None Include="DlgReportView.ui" />
+    <None Include="DlgRunExternal.ui" />
+    <None Include="DlgSettings3DView.ui" />
+    <None Include="DlgSettingsColorGradient.ui" />
+    <None Include="DlgSettingsDocument.ui" />
+    <None Include="DlgSettingsImage.ui" />
+    <None Include="DlgSettingsMacro.ui" />
+    <None Include="DlgSettingsUnits.ui" />
+    <None Include="DlgSettingsViewColor.ui" />
+    <None Include="DlgTipOfTheDay.ui" />
+    <None Include="DlgToolbars.ui" />
+    <None Include="DlgTreeWidget.ui" />
+    <None Include="DlgUnitsCalculator.ui" />
+    <None Include="DlgWorkbenches.ui" />
+    <None Include="DocumentRecovery.ui" />
+    <None Include="DownloadItem.ui" />
+    <None Include="DownloadManager.ui" />
+    <None Include="EDGuiInit.py" />
+    <None Include="Icons\resource.qrc" />
+    <None Include="iisTaskPanel\src\iisTaskPanel.qrc" />
+    <None Include="InputVector.ui" />
+    <None Include="Language\translation.qrc" />
+    <None Include="MouseButtons.ui" />
+    <None Include="Placement.ui" />
+    <None Include="QSint\actionpanel\schemes.qrc" />
+    <None Include="SceneInspector.ui" />
+    <None Include="SelectionFilter.l" />
+    <None Include="SelectionFilter.y" />
+    <None Include="TaskView\TaskAppearance.ui" />
+    <None Include="TaskView\TaskEditControl.ui" />
+    <None Include="TaskView\TaskSelectLinkProperty.ui" />
+    <None Include="TextureMapping.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="DocumentPy.xml" />
+    <Xml Include="PythonWorkbenchPy.xml" />
+    <Xml Include="SelectionObjectPy.xml" />
+    <Xml Include="ViewProviderDocumentObjectPy.xml" />
+    <Xml Include="ViewProviderPy.xml" />
+    <Xml Include="ViewProviderPythonFeaturePy.xml" />
+    <Xml Include="WorkbenchPy.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

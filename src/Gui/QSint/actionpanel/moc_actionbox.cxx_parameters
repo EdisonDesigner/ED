@@ -1,0 +1,54 @@
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtOpenGL
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtSvg
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtUiTools
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtWebKit
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtGui
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtXml
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtNetwork
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/QtCore
+-ID:/EDISON/ED_v2.2_debug/src
+-ID:/EDISON/# Source/FreeCAD-releases-FreeCAD-0-16/src
+-ID:/EDISON/ED_v2.2_debug
+-ID:/EDISON/# Source/FreeCAD-releases-FreeCAD-0-16/src/Gui
+-ID:/EDISON/# Source/FreeCAD-releases-FreeCAD-0-16/src/Gui/Quarter
+-ID:/EDISON/ED_v2.2_debug/src/Gui
+-ID:/EDISON/# Source/FreeCAD-releases-FreeCAD-0-16/src/Gui/..
+-ID:/EDISON/ED_v2.2_debug/src/Gui/..
+-ID:/EDISON/ED_v2.2_debug/src/Gui/Language
+-ID:/EDISON/ED_v2.2_debug/src/Gui/propertyeditor
+-ID:/EDISON/ED_v2.2_debug/src/Gui/TaskView
+-ID:/EDISON/ED_v2.2_debug/src/Gui/Quarter
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include/python2.7
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/include
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/lib/cmake/Shiboken-1.2.2/../../../include/shiboken
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/lib/cmake/PySide-1.2.2/../../../include/PySide
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/lib/cmake/PySide-1.2.2/../../../include/PySide/QtCore
+-ID:/EDISON/# Source/FreeCADLibs_11.1_x86_VC12/lib/cmake/PySide-1.2.2/../../../include/PySide/QtGui
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_OPENGL_LIB
+-DQT_SVG_LIB
+-DQT_UITOOLS_LIB
+-DQT_WEBKIT_LIB
+-DQT_GUI_LIB
+-DQT_XML_LIB
+-DQT_NETWORK_LIB
+-DQT_CORE_LIB
+-DFCGui
+-DQIIS_MAKEDLL
+-DQSINT_MAKEDLL
+-DOVR_OS_WIN32
+-DQUARTER_INTERNAL
+-DQUARTER_MAKE_DLL
+-DCOIN_DLL
+-D_USE_3DCONNEXION_SDK
+-DHAVE_SHIBOKEN
+-DHAVE_PYSIDE
+-DWIN32
+-o
+D:/EDISON/ED_v2.2_debug/src/Gui/QSint/actionpanel/moc_actionbox.cxx
+D:/EDISON/# Source/FreeCAD-releases-FreeCAD-0-16/src/Gui/QSint/actionpanel/actionbox.h

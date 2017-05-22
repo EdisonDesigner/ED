@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{531F7FB1-71E9-456A-BCA1-8D37A109F807}</ProjectGuid>
+    <RootNamespace>EDBase</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dll</TargetExt>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)IntmDir\Base\Debug\</IntDir>
+    <TargetName>EDBase_d</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\Bin</OutDir>
+    <IntDir>$(ProjectDir)..\..\IntmDir\Base\Release\</IntDir>
+    <TargetName>EDBase</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)ExtLibs\include;$(SolutionDir)ExtLibs\include\QtOpenGL;$(SolutionDir)ExtLibs\include\QtSvg;$(SolutionDir)ExtLibs\include\QtUiTools;$(SolutionDir)ExtLibs\include\QtWebKit;$(SolutionDir)ExtLibs\include\QtGui;$(SolutionDir)ExtLibs\include\QtXml;$(SolutionDir)ExtLibs\include\QtNetwork;$(SolutionDir)ExtLibs\include\QtCore;$(SolutionDir)ExtLibs\include\python2.7;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;PYCXX_DLL;BOOST_DYN_LINK;HAVE_SWIG=1;_PreComp_;EDBase_EXPORTS;EDBase;ED_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)EDBase_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;python27_d.lib;xerces-c_3D.lib;QtCored4.lib;zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;MSVCRTD.lib;MSVCPRTD.lib;Rpcrt4.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(SolutionDir)Lib\Debug\EDBase_d.lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\ExtLibs\include;$(ProjectDir)..\..\ExtLibs\include\QtOpenGL;$(ProjectDir)..\..\ExtLibs\include\QtSvg;$(ProjectDir)..\..\ExtLibs\include\QtUiTools;$(ProjectDir)..\..\ExtLibs\include\QtWebKit;$(ProjectDir)..\..\ExtLibs\include\QtGui;$(ProjectDir)..\..\ExtLibs\include\QtXml;$(ProjectDir)..\..\ExtLibs\include\QtNetwork;$(ProjectDir)..\..\ExtLibs\include\QtCore;$(ProjectDir)..\..\ExtLibs\include\python2.7;$(ProjectDir)..\..\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;PYCXX_DLL;BOOST_DYN_LINK;HAVE_SWIG=1;_PreComp_;EDBase_EXPORTS;EDBase;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)EDBase.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExtLibs\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_filesystem-vc120-mt-1_55.lib;boost_program_options-vc120-mt-1_55.lib;boost_regex-vc120-mt-1_55.lib;boost_signals-vc120-mt-1_55.lib;boost_system-vc120-mt-1_55.lib;boost_thread-vc120-mt-1_55.lib;boost_chrono-vc120-mt-1_55.lib;boost_date_time-vc120-mt-1_55.lib;xerces-c_3.lib;QtCore4.lib;zlib.lib;python27.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;MSVCRT.lib;MSVCPRT.lib;Rpcrt4.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)..\..\Lib\Release\EDBase.lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CXX\cxxextensions.c" />
+    <ClCompile Include="..\CXX\cxxsupport.cxx" />
+    <ClCompile Include="..\CXX\cxx_extensions.cxx" />
+    <ClCompile Include="..\CXX\IndirectPythonInterface.cxx" />
+    <ClCompile Include="..\zipios++\basicentry.cpp" />
+    <ClCompile Include="..\zipios++\collcoll.cpp" />
+    <ClCompile Include="..\zipios++\deflateoutputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\dircoll.cpp" />
+    <ClCompile Include="..\zipios++\directory.cpp" />
+    <ClCompile Include="..\zipios++\fcoll.cpp" />
+    <ClCompile Include="..\zipios++\fcollexceptions.cpp" />
+    <ClCompile Include="..\zipios++\fileentry.cpp" />
+    <ClCompile Include="..\zipios++\filepath.cpp" />
+    <ClCompile Include="..\zipios++\filterinputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\filteroutputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\gzipoutputstream.cpp" />
+    <ClCompile Include="..\zipios++\gzipoutputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\inflateinputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\zipfile.cpp" />
+    <ClCompile Include="..\zipios++\ziphead.cpp" />
+    <ClCompile Include="..\zipios++\zipheadio.cpp" />
+    <ClCompile Include="..\zipios++\zipinputstream.cpp" />
+    <ClCompile Include="..\zipios++\zipinputstreambuf.cpp" />
+    <ClCompile Include="..\zipios++\zipoutputstream.cpp" />
+    <ClCompile Include="..\zipios++\zipoutputstreambuf.cpp" />
+    <ClCompile Include="Axis.cpp" />
+    <ClCompile Include="AxisPyImp.cpp" />
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="BaseClass.cpp" />
+    <ClCompile Include="BaseClassPyImp.cpp" />
+    <ClCompile Include="BoundBoxPyImp.cpp" />
+    <ClCompile Include="Builder3D.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="CoordinateSystem.cpp" />
+    <ClCompile Include="Debugger.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="FileInfo.cpp" />
+    <ClCompile Include="FileTemplate.cpp" />
+    <ClCompile Include="FutureWatcherProgress.cpp" />
+    <ClCompile Include="GeometryPyCXX.cpp" />
+    <ClCompile Include="gzstream.cpp" />
+    <ClCompile Include="Handle.cpp" />
+    <ClCompile Include="InputSource.cpp" />
+    <ClCompile Include="Interpreter.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MatrixPyImp.cpp" />
+    <ClCompile Include="MemDebug.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="ParameterPy.cpp" />
+    <ClCompile Include="Persistence.cpp" />
+    <ClCompile Include="PersistencePyImp.cpp" />
+    <ClCompile Include="Placement.cpp" />
+    <ClCompile Include="PlacementPyImp.cpp" />
+    <ClCompile Include="PreCompiled.cpp" />
+    <ClCompile Include="PyObjectBase.cpp" />
+    <ClCompile Include="PyTools.c" />
+    <ClCompile Include="Quantity.cpp" />
+    <ClCompile Include="QuantityPyImp.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Rotation.cpp" />
+    <ClCompile Include="RotationPyImp.cpp" />
+    <ClCompile Include="Sequencer.cpp" />
+    <ClCompile Include="StackWalker.cpp" />
+    <ClCompile Include="Stream.cpp" />
+    <ClCompile Include="Swap.cpp" />
+    <ClCompile Include="swigpyrun.cpp" />
+    <ClCompile Include="swigpyrun_1.3.25.cpp" />
+    <ClCompile Include="swigpyrun_1.3.33.cpp" />
+    <ClCompile Include="swigpyrun_1.3.36.cpp" />
+    <ClCompile Include="swigpyrun_1.3.38.cpp" />
+    <ClCompile Include="swigpyrun_1.3.40.cpp" />
+    <ClCompile Include="TimeInfo.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="Tools2D.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitPyImp.cpp" />
+    <ClCompile Include="UnitsApi.cpp" />
+    <ClCompile Include="UnitsApiPy.cpp" />
+    <ClCompile Include="UnitsSchema.cpp" />
+    <ClCompile Include="UnitsSchemaImperial1.cpp" />
+    <ClCompile Include="UnitsSchemaInternal.cpp" />
+    <ClCompile Include="UnitsSchemaMKS.cpp" />
+    <ClCompile Include="Uuid.cpp" />
+    <ClCompile Include="Vector3D.cpp" />
+    <ClCompile Include="VectorPyImp.cpp" />
+    <ClCompile Include="Writer.cpp" />
+    <ClCompile Include="XMLTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\zipios++\backbuffer.h" />
+    <ClInclude Include="..\zipios++\basicentry.h" />
+    <ClInclude Include="..\zipios++\collcoll.h" />
+    <ClInclude Include="..\zipios++\deflateoutputstreambuf.h" />
+    <ClInclude Include="..\zipios++\dircoll.h" />
+    <ClInclude Include="..\zipios++\directory.h" />
+    <ClInclude Include="..\zipios++\fcoll.h" />
+    <ClInclude Include="..\zipios++\fcollexceptions.h" />
+    <ClInclude Include="..\zipios++\fileentry.h" />
+    <ClInclude Include="..\zipios++\filepath.h" />
+    <ClInclude Include="..\zipios++\filterinputstreambuf.h" />
+    <ClInclude Include="..\zipios++\filteroutputstreambuf.h" />
+    <ClInclude Include="..\zipios++\gzipoutputstream.h" />
+    <ClInclude Include="..\zipios++\gzipoutputstreambuf.h" />
+    <ClInclude Include="..\zipios++\inflateinputstreambuf.h" />
+    <ClInclude Include="..\zipios++\meta-iostreams.h" />
+    <ClInclude Include="..\zipios++\outputstringstream.h" />
+    <ClInclude Include="..\zipios++\simplesmartptr.h" />
+    <ClInclude Include="..\zipios++\virtualseeker.h" />
+    <ClInclude Include="..\zipios++\zipfile.h" />
+    <ClInclude Include="..\zipios++\ziphead.h" />
+    <ClInclude Include="..\zipios++\zipheadio.h" />
+    <ClInclude Include="..\zipios++\zipinputstream.h" />
+    <ClInclude Include="..\zipios++\zipinputstreambuf.h" />
+    <ClInclude Include="..\zipios++\zipios-config.h" />
+    <ClInclude Include="..\zipios++\zipios_common.h" />
+    <ClInclude Include="..\zipios++\zipios_defs.h" />
+    <ClInclude Include="..\zipios++\zipoutputstream.h" />
+    <ClInclude Include="..\zipios++\zipoutputstreambuf.h" />
+    <ClInclude Include="Axis.h" />
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="BaseClass.h" />
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="Builder3D.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="CoordinateSystem.h" />
+    <ClInclude Include="Debugger.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="fdstream.hpp" />
+    <ClInclude Include="FileInfo.h" />
+    <ClInclude Include="FileTemplate.h" />
+    <ClInclude Include="FutureWatcherProgress.h" />
+    <ClInclude Include="GeometryPyCXX.h" />
+    <ClInclude Include="gzstream.h" />
+    <ClInclude Include="Handle.h" />
+    <ClInclude Include="InputSource.h" />
+    <ClInclude Include="Interpreter.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MemDebug.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="Persistence.h" />
+    <ClInclude Include="Placement.h" />
+    <ClInclude Include="PreCompiled.h" />
+    <ClInclude Include="PyExport.h" />
+    <ClInclude Include="PyObjectBase.h" />
+    <ClInclude Include="PyTools.h" />
+    <ClInclude Include="Quantity.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="Rotation.h" />
+    <ClInclude Include="Sequencer.h" />
+    <ClInclude Include="StackWalker.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="Swap.h" />
+    <ClInclude Include="swigpyrun_1.3.25.h" />
+    <ClInclude Include="swigpyrun_1.3.33.h" />
+    <ClInclude Include="swigpyrun_1.3.36.h" />
+    <ClInclude Include="swigpyrun_1.3.38.h" />
+    <ClInclude Include="swigpyrun_1.3.40.h" />
+    <ClInclude Include="TimeInfo.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Tools2D.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitsApi.h" />
+    <ClInclude Include="UnitsSchema.h" />
+    <ClInclude Include="UnitsSchemaImperial1.h" />
+    <ClInclude Include="UnitsSchemaInternal.h" />
+    <ClInclude Include="UnitsSchemaMKS.h" />
+    <ClInclude Include="Uuid.h" />
+    <ClInclude Include="Vector3D.h" />
+    <ClInclude Include="ViewProj.h" />
+    <ClInclude Include="Writer.h" />
+    <ClInclude Include="XMLTools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuantityParser.l" />
+    <None Include="QuantityParser.y" />
+    <None Include="swigpyrun.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="AxisPy.xml" />
+    <Xml Include="BaseClassPy.xml" />
+    <Xml Include="BoundBoxPy.xml" />
+    <Xml Include="MatrixPy.xml" />
+    <Xml Include="PersistencePy.xml" />
+    <Xml Include="PlacementPy.xml" />
+    <Xml Include="QuantityPy.xml" />
+    <Xml Include="RotationPy.xml" />
+    <Xml Include="UnitPy.xml" />
+    <Xml Include="VectorPy.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
