@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <TargetName>EDBase_d</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <_PropertySheetDisplayName>Base_debug</_PropertySheetDisplayName>
+    <IntDir>$(ProjectDir)\Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\LibPacks\include;$(SolutionDir)\LibPacks\include\QtOpenGL;$(SolutionDir)\LibPacks\include\QtSvg;$(SolutionDir)\LibPacks\include\QtUiTools;$(SolutionDir)\LibPacks\include\QtWebKit;$(SolutionDir)\LibPacks\include\QtGui;$(SolutionDir)\LibPacks\include\QtXml;$(SolutionDir)\LibPacks\include\QtNetwork;$(SolutionDir)\LibPacks\include\QtCore;$(SolutionDir)\LibPacks\include\python2.7;$(SolutionDir)\src;$(SolutionDir)\src\Base</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>EDBase;ED_DEBUG;EDBase_EXPORTS;_PreComp_;WIN32;_WINDOWS;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;PYCXX_DLL;BOOST_DYN_LINK;HAVE_SWIG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <SDLCheck>
+      </SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\LibPacks\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;python27_d.lib;xerces-c_3D.lib;QtCored4.lib;zlibd.lib;MSVCRTD.lib;MSVCPRTD.lib;Rpcrt4.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(ProjectDir)\Debug\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
