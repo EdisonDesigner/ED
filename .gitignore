@@ -1,0 +1,81 @@
+# ####### Root folder ########
+# Visual Studio solution files
+*.sdf
+*.suo
+*.opensdf
+
+# bin and 3rd party library
+bin/
+LibPacks/
+
+# Build files
+Data/
+Mod/
+
+##############################
+
+# Src folder #
+# App
+src/App/Debug/
+src/App/Release/
+
+# Base
+src/Base/Debug/
+src/Base/Release/
+
+# Gui
+src/Gui/Debug/
+src/Gui/Release/
+
+# Main
+src/Main/GuiPy/Debug/
+src/Main/GuiPy/Release/
+src/Main/Main/Debug/
+src/Main/Main/Release/
+src/Main/MainCmd/Debug/
+src/Main/MainCmd/Release/
+src/Main/MainPy/Debug/
+src/Main/MainPy/Release/
+
+# Workbenches ignore files
+# Assembly
+src/Mod/Assembly/App/Debug/
+src/Mod/Assembly/App/Release/
+src/Mod/Assembly/Gui/Debug/
+src/Mod/Assembly/Gui/Release/
+
+# Mesh
+src/Mod/Mesh/App/Debug/
+src/Mod/Mesh/App/Release/
+src/Mod/Mesh/Gui/Debug/
+src/Mod/Mesh/Gui/Release/
+
+# Part
+src/Mod/Part/App/Debug/
+src/Mod/Part/App/Release/
+src/Mod/Part/Gui/Debug/
+src/Mod/Part/Gui/Release/
+
+# PartDesign
+src/Mod/PartDesign/App/Debug/
+src/Mod/PartDesign/App/Release/
+src/Mod/PartDesign/Gui/Debug/
+src/Mod/PartDesign/Gui/Release/
+
+# Sketcher
+src/Mod/Sketcher/App/Debug/
+src/Mod/Sketcher/App/Release/
+src/Mod/Sketcher/Gui/Debug/
+src/Mod/Sketcher/Gui/Release/
+
+# Start
+src/Mod/Start/App/Debug/
+src/Mod/Start/App/Release/
+src/Mod/Start/Gui/Debug/
+src/Mod/Start/Gui/Release/
+
+# Web
+src/Mod/Web/App/Debug/
+src/Mod/Web/App/Release/
+src/Mod/Web/Gui/Debug/
+src/Mod/Web/Gui/Release/
