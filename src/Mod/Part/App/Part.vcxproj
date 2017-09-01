@@ -1,0 +1,1527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6F8DEE5-6C7D-4EFD-BF30-74AEE16FDE12}</ProjectGuid>
+    <RootNamespace>Part</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Mod\Part\</OutDir>
+    <IntDir>$(ProjectDir)\Debug\</IntDir>
+    <TargetName>Part_d</TargetName>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Mod\Part\</OutDir>
+    <IntDir>$(ProjectDir)Release\</IntDir>
+    <TargetName>Part</TargetName>
+    <TargetExt>.pyd</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir);$(SolutionDir)\src;$(SolutionDir)LibPacks\include;$(SolutionDir)LibPacks\include\QtOpenGL;$(SolutionDir)LibPacks\include\QtSvg;$(SolutionDir)LibPacks\include\QtUiTools;$(SolutionDir)LibPacks\include\QtWebKit;$(SolutionDir)LibPacks\include\QtGui;$(SolutionDir)LibPacks\include\QtXml;$(SolutionDir)LibPacks\include\QtNetwork;$(SolutionDir)LibPacks\include\QtCore;$(SolutionDir)LibPacks\include\oce;$(SolutionDir)LibPacks\include\python2.7;$(SolutionDir)LibPacks\include\freetype2;</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>ED_DEBUG;EDAppPart;EDUseFreeType;Part_EXPORTS;WIN32;_WINDOWS;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;HAVE_ACOSH;HAVE_ASINH;HAVE_ATANH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)LibPacks\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\..\Base\Debug\EDBase_d.lib;..\..\..\App\Debug\EDApp_d.lib;TKIGESd.lib;TKSTLd.lib;TKBind.lib;TKOffsetd.lib;TKSTEPd.lib;TKSTEPAttrd.lib;TKFeatd.lib;freetyped.lib;TKFilletd.lib;TKCAFd.lib;TKV3dd.lib;TKMeshd.lib;TKHLRd.lib;TKServiced.lib;FreeImaged.lib;glu32.lib;opengl32.lib;TKBinLd.lib;TKLCAFd.lib;TKCDFd.lib;TKSTEP209d.lib;TKSTEPBased.lib;TKXSBased.lib;TKBoold.lib;TKShHealingd.lib;TKBOd.lib;TKPrimd.lib;TKTopAlgod.lib;TKGeomAlgod.lib;TKBRepd.lib;TKGeomBased.lib;TKG3dd.lib;TKG2dd.lib;TKMathd.lib;TKerneld.lib;ws2_32.lib;advapi32.lib;gdi32.lib;user32.lib;kernel32.lib;psapi.lib;python27_d.lib;xerces-c_3D.lib;zlibd.lib;MSVCRTD.lib;MSVCPRTD.lib;Rpcrt4.lib;version.lib;boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;QtCored4.lib;QtXmld4.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(ProjectDir)Debug\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir);$(SolutionDir)\src;$(SolutionDir)LibPacks\include;$(SolutionDir)LibPacks\include\QtOpenGL;$(SolutionDir)LibPacks\include\QtSvg;$(SolutionDir)LibPacks\include\QtUiTools;$(SolutionDir)LibPacks\include\QtWebKit;$(SolutionDir)LibPacks\include\QtGui;$(SolutionDir)LibPacks\include\QtXml;$(SolutionDir)LibPacks\include\QtNetwork;$(SolutionDir)LibPacks\include\QtCore;$(SolutionDir)LibPacks\include\oce;$(SolutionDir)LibPacks\include\python2.7;$(SolutionDir)LibPacks\include\freetype2;</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>EDAppPart;EDUseFreeType;Part_EXPORTS;WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;HAVE_ACOSH;HAVE_ASINH;HAVE_ATANH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)LibPacks\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\..\Base\Release\EDBase.lib;..\..\..\App\Release\EDApp.lib;TKIGES.lib;TKSTL.lib;TKBin.lib;TKOffset.lib;TKSTEP.lib;TKSTEPAttr.lib;TKFeat.lib;freetype.lib;TKFillet.lib;TKCAF.lib;TKV3d.lib;TKMesh.lib;TKHLR.lib;TKService.lib;FreeImage.lib;glu32.lib;opengl32.lib;TKBinL.lib;TKLCAF.lib;TKCDF.lib;TKSTEP209.lib;TKSTEPBase.lib;TKXSBase.lib;TKBool.lib;TKShHealing.lib;TKBO.lib;TKPrim.lib;TKTopAlgo.lib;TKGeomAlgo.lib;TKBRep.lib;TKGeomBase.lib;TKG3d.lib;TKG2d.lib;TKMath.lib;TKernel.lib;ws2_32.lib;advapi32.lib;gdi32.lib;user32.lib;kernel32.lib;psapi.lib;python27.lib;xerces-c_3.lib;zlib.lib;MSVCRT.lib;MSVCPRT.lib;Rpcrt4.lib;version.lib;boost_filesystem-vc120-mt-1_55.lib;boost_program_options-vc120-mt-1_55.lib;boost_regex-vc120-mt-1_55.lib;boost_signals-vc120-mt-1_55.lib;boost_system-vc120-mt-1_55.lib;boost_thread-vc120-mt-1_55.lib;boost_chrono-vc120-mt-1_55.lib;boost_date_time-vc120-mt-1_55.lib;QtCore4.lib;QtXml4.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(ProjectDir)\Release\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Init.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+copy $(ProjectDir)..\Init.py $(SolutionDir)\Mod\Part\Init.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Part\Init.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\Init.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+copy $(ProjectDir)..\Init.py $(SolutionDir)\Mod\Part\Init.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Part\Init.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Mod\Part\Init.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="JointFeatures.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+copy $(ProjectDir)..\JoinFeatures.py $(SolutionDir)\Mod\Part\JoinFeatures.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod/Part/JoinFeatures.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\JoinFeatures.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\JoinFeatures.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+copy $(ProjectDir)..\JoinFeatures.py $(SolutionDir)\Mod\Part\JoinFeatures.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod/Part/JoinFeatures.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Mod\Part\JoinFeatures.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\JoinFeatures.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="MakeBottle.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+copy $(ProjectDir)..\MakeBottle.py $(SolutionDir)\Mod\Part\MakeBottle.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Part\MakeBottle.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\MakeBottle.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\MakeBottle.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+copy $(ProjectDir)..\MakeBottle.py $(SolutionDir)\Mod\Part\MakeBottle.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Part\MakeBottle.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Mod\Part\MakeBottle.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\MakeBottle.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TestPartApp.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+copy $(ProjectDir)..\TestPartApp.py $(SolutionDir)\Mod\Part\TestPartApp.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Part\TestPartApp.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\TestPartApp.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\TestPartApp.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+copy $(ProjectDir)..\TestPartApp.py $(SolutionDir)\Mod\Part\TestPartApp.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Part\TestPartApp.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Mod\Part\TestPartApp.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\TestPartApp.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ArcOfCirclePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfCirclePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ArcOfCirclePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfCirclePy.h;$(ProjectDir)ArcOfCirclePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfCirclePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfCirclePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ArcOfCirclePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfCirclePy.h;$(ProjectDir)ArcOfCirclePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfCirclePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+    <CustomBuild Include="ArcOfEllipsePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfEllipsePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ArcOfEllipsePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfEllipsePy.h;$(ProjectDir)ArcOfEllipsePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfEllipsePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfEllipsePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ArcOfEllipsePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfEllipsePy.h;$(ProjectDir)ArcOfEllipsePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfEllipsePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ArcOfHyperbolaPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfHyperbolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ArcOfHyperbolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfHyperbolaPy.h;$(ProjectDir)ArcOfHyperbolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfHyperbolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfHyperbolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ArcOfHyperbolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfHyperbolaPy.h;$(ProjectDir)ArcOfHyperbolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfHyperbolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ArcOfParabolaPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfParabolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ArcOfParabolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfParabolaPy.h;$(ProjectDir)ArcOfParabolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcOfParabolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcOfParabolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ArcOfParabolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfParabolaPy.h;$(ProjectDir)ArcOfParabolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcOfParabolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ArcPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ArcPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcPy.h;$(ProjectDir)ArcPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ArcPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ArcPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ArcPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcPy.h;$(ProjectDir)ArcPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ArcPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="BezierCurvePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BezierCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating BezierCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BezierCurvePy.h;$(ProjectDir)BezierCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BezierCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BezierCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating BezierCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BezierCurvePy.h;$(ProjectDir)BezierCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BezierCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="BezierSurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BezierSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating BezierSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BezierSurfacePy.h;$(ProjectDir)BezierSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BezierSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BezierSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating BezierSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BezierSurfacePy.h;$(ProjectDir)BezierSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BezierSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="BRepOffsetAPI_MakePipeShellPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BRepOffsetAPI_MakePipeShellPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating BRepOffsetAPI_MakePipeShellPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.h;$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BRepOffsetAPI_MakePipeShellPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating BRepOffsetAPI_MakePipeShellPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.h;$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BRepOffsetAPI_MakePipeShellPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="BSplineCurvePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BSplineCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating BSplineCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BSplineCurvePy.h;$(ProjectDir)BSplineCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BSplineCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BSplineCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating BSplineCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BSplineCurvePy.h;$(ProjectDir)BSplineCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BSplineCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="BSplineSurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BSplineSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating BSplineSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BSplineSurfacePy.h;$(ProjectDir)BSplineSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BSplineSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) BSplineSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating BSplineSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BSplineSurfacePy.h;$(ProjectDir)BSplineSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)BSplineSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="CirclePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) CirclePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating CirclePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CirclePy.h;$(ProjectDir)CirclePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CirclePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) CirclePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating CirclePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)CirclePy.h;$(ProjectDir)CirclePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)CirclePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ConePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ConePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ConePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ConePy.h;$(ProjectDir)ConePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ConePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ConePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ConePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ConePy.h;$(ProjectDir)ConePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ConePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="CylinderPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) CylinderPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating CylinderPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CylinderPy.h;$(ProjectDir)CylinderPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CylinderPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) CylinderPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating CylinderPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)CylinderPy.h;$(ProjectDir)CylinderPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)CylinderPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="EllipsePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) EllipsePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating EllipsePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)EllipsePy.h;$(ProjectDir)EllipsePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)EllipsePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) EllipsePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating EllipsePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)EllipsePy.h;$(ProjectDir)EllipsePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)EllipsePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="GeometryCurvePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometryCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GeometryCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometryCurvePy.h;$(ProjectDir)GeometryCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometryCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometryCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating GeometryCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometryCurvePy.h;$(ProjectDir)GeometryCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometryCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="GeometryPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometryPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GeometryPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometryPy.h;$(ProjectDir)GeometryPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometryPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometryPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating GeometryPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometryPy.h;$(ProjectDir)GeometryPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometryPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="GeometrySurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometrySurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GeometrySurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometrySurfacePy.h;$(ProjectDir)GeometrySurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeometrySurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) GeometrySurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating GeometrySurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometrySurfacePy.h;$(ProjectDir)GeometrySurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeometrySurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="HyperbolaPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) HyperbolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating HyperbolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)HyperbolaPy.h;$(ProjectDir)HyperbolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)HyperbolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) HyperbolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating HyperbolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)HyperbolaPy.h;$(ProjectDir)HyperbolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)HyperbolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="LinePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) LinePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating LinePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)LinePy.h;$(ProjectDir)LinePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)LinePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) LinePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating LinePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)LinePy.h;$(ProjectDir)LinePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)LinePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="OffsetCurvePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) OffsetCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating OffsetCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)OffsetCurvePy.h;$(ProjectDir)OffsetCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)OffsetCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) OffsetCurvePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating OffsetCurvePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)OffsetCurvePy.h;$(ProjectDir)OffsetCurvePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)OffsetCurvePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="OffsetSurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) OffsetSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating OffsetSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)OffsetSurfacePy.h;$(ProjectDir)OffsetSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)OffsetSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) OffsetSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating OffsetSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)OffsetSurfacePy.h;$(ProjectDir)OffsetSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)OffsetSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ParabolaPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ParabolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ParabolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ParabolaPy.h;$(ProjectDir)ParabolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ParabolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ParabolaPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ParabolaPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ParabolaPy.h;$(ProjectDir)ParabolaPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ParabolaPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="Part2DObjectPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) Part2DObjectPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Part2DObjectPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Part2DObjectPy.h;$(ProjectDir)Part2DObjectPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Part2DObjectPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) Part2DObjectPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Part2DObjectPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Part2DObjectPy.h;$(ProjectDir)Part2DObjectPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Part2DObjectPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="PartFeaturePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PartFeaturePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating PartFeaturePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PartFeaturePy.h;$(ProjectDir)PartFeaturePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PartFeaturePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PartFeaturePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating PartFeaturePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PartFeaturePy.h;$(ProjectDir)PartFeaturePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PartFeaturePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="PlanePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PlanePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating PlanePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PlanePy.h;$(ProjectDir)PlanePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PlanePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PlanePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating PlanePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PlanePy.h;$(ProjectDir)PlanePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PlanePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="PlateSurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PlateSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating PlateSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PlateSurfacePy.h;$(ProjectDir)PlateSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PlateSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PlateSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating PlateSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PlateSurfacePy.h;$(ProjectDir)PlateSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PlateSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="PointPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PointPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating PointPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PointPy.h;$(ProjectDir)PointPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)PointPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) PointPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating PointPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PointPy.h;$(ProjectDir)PointPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)PointPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="RectangularTrimmedSurfacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) RectangularTrimmedSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating RectangularTrimmedSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)RectangularTrimmedSurfacePy.h;$(ProjectDir)RectangularTrimmedSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)RectangularTrimmedSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) RectangularTrimmedSurfacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating RectangularTrimmedSurfacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)RectangularTrimmedSurfacePy.h;$(ProjectDir)RectangularTrimmedSurfacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)RectangularTrimmedSurfacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="SpherePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SpherePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating SpherePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SpherePy.h;$(ProjectDir)SpherePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SpherePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SpherePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating SpherePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SpherePy.h;$(ProjectDir)SpherePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SpherePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="SurfaceOfExtrusionPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SurfaceOfExtrusionPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating SurfaceOfExtrusionPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SurfaceOfExtrusionPy.h;$(ProjectDir)SurfaceOfExtrusionPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SurfaceOfExtrusionPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SurfaceOfExtrusionPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating SurfaceOfExtrusionPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SurfaceOfExtrusionPy.h;$(ProjectDir)SurfaceOfExtrusionPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SurfaceOfExtrusionPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="SurfaceOfRevolutionPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SurfaceOfRevolutionPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating SurfaceOfRevolutionPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SurfaceOfRevolutionPy.h;$(ProjectDir)SurfaceOfRevolutionPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)SurfaceOfRevolutionPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) SurfaceOfRevolutionPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating SurfaceOfRevolutionPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SurfaceOfRevolutionPy.h;$(ProjectDir)SurfaceOfRevolutionPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)SurfaceOfRevolutionPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeCompoundPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeCompoundPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeCompoundPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeCompoundPy.h;$(ProjectDir)TopoShapeCompoundPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeCompoundPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeCompoundPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeCompoundPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeCompoundPy.h;$(ProjectDir)TopoShapeCompoundPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeCompoundPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeCompSolidPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeCompSolidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeCompSolidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeCompSolidPy.h;$(ProjectDir)TopoShapeCompSolidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeCompSolidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeCompSolidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeCompSolidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeCompSolidPy.h;$(ProjectDir)TopoShapeCompSolidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeCompSolidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeEdgePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeEdgePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeEdgePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeEdgePy.h;$(ProjectDir)TopoShapeEdgePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeEdgePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeEdgePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeEdgePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeEdgePy.h;$(ProjectDir)TopoShapeEdgePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeEdgePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeFacePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeFacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeFacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeFacePy.h;$(ProjectDir)TopoShapeFacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeFacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeFacePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeFacePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeFacePy.h;$(ProjectDir)TopoShapeFacePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeFacePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapePy.h;$(ProjectDir)TopoShapePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapePy.h;$(ProjectDir)TopoShapePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeShellPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeShellPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeShellPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeShellPy.h;$(ProjectDir)TopoShapeShellPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeShellPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeShellPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeShellPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeShellPy.h;$(ProjectDir)TopoShapeShellPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeShellPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeSolidPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeSolidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeSolidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeSolidPy.h;$(ProjectDir)TopoShapeSolidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeSolidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeSolidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeSolidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeSolidPy.h;$(ProjectDir)TopoShapeSolidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeSolidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeVertexPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeVertexPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeVertexPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeVertexPy.h;$(ProjectDir)TopoShapeVertexPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeVertexPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeVertexPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeVertexPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeVertexPy.h;$(ProjectDir)TopoShapeVertexPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeVertexPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="TopoShapeWirePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeWirePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating TopoShapeWirePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeWirePy.h;$(ProjectDir)TopoShapeWirePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)TopoShapeWirePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) TopoShapeWirePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating TopoShapeWirePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeWirePy.h;$(ProjectDir)TopoShapeWirePy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)TopoShapeWirePy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="ToroidPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ToroidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ToroidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ToroidPy.h;$(ProjectDir)ToroidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)ToroidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) ToroidPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ToroidPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ToroidPy.h;$(ProjectDir)ToroidPy.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)ToroidPy.xml;$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppPart.cpp" />
+    <ClCompile Include="AppPartPy.cpp" />
+    <ClCompile Include="ArcOfCirclePyImp.cpp" />
+    <ClCompile Include="ArcOfEllipsePyImp.cpp" />
+    <ClCompile Include="ArcOfHyperbolaPyImp.cpp" />
+    <ClCompile Include="ArcOfParabolaPyImp.cpp" />
+    <ClCompile Include="ArcPyImp.cpp" />
+    <ClCompile Include="BezierCurvePyImp.cpp" />
+    <ClCompile Include="BezierSurfacePyImp.cpp" />
+    <ClCompile Include="BRepOffsetAPI_MakePipeShellPyImp.cpp" />
+    <ClCompile Include="BSplineCurveBiArcs.cpp" />
+    <ClCompile Include="BSplineCurvePyImp.cpp" />
+    <ClCompile Include="BSplineSurfacePyImp.cpp" />
+    <ClCompile Include="CirclePyImp.cpp" />
+    <ClCompile Include="ConePyImp.cpp" />
+    <ClCompile Include="CrossSection.cpp" />
+    <ClCompile Include="CustomFeature.cpp" />
+    <ClCompile Include="CylinderPyImp.cpp" />
+    <ClCompile Include="edgecluster.cpp" />
+    <ClCompile Include="EllipsePyImp.cpp" />
+    <ClCompile Include="FeatureChamfer.cpp" />
+    <ClCompile Include="FeatureCompound.cpp" />
+    <ClCompile Include="FeatureExtrusion.cpp" />
+    <ClCompile Include="FeatureFace.cpp" />
+    <ClCompile Include="FeatureFillet.cpp" />
+    <ClCompile Include="FeatureGeometrySet.cpp" />
+    <ClCompile Include="FeatureMirroring.cpp" />
+    <ClCompile Include="FeaturePartBoolean.cpp" />
+    <ClCompile Include="FeaturePartBox.cpp" />
+    <ClCompile Include="FeaturePartCircle.cpp" />
+    <ClCompile Include="FeaturePartCommon.cpp" />
+    <ClCompile Include="FeaturePartCurveNet.cpp" />
+    <ClCompile Include="FeaturePartCut.cpp" />
+    <ClCompile Include="FeaturePartFuse.cpp" />
+    <ClCompile Include="FeaturePartImportBrep.cpp" />
+    <ClCompile Include="FeaturePartImportIges.cpp" />
+    <ClCompile Include="FeaturePartImportStep.cpp" />
+    <ClCompile Include="FeaturePartPolygon.cpp" />
+    <ClCompile Include="FeaturePartSection.cpp" />
+    <ClCompile Include="FeaturePartSpline.cpp" />
+    <ClCompile Include="FeatureRevolution.cpp" />
+    <ClCompile Include="FT2FC.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GeometryCurvePyImp.cpp" />
+    <ClCompile Include="GeometryPyImp.cpp" />
+    <ClCompile Include="GeometrySurfacePyImp.cpp" />
+    <ClCompile Include="HyperbolaPyImp.cpp" />
+    <ClCompile Include="ImportIges.cpp" />
+    <ClCompile Include="ImportStep.cpp" />
+    <ClCompile Include="LinePyImp.cpp" />
+    <ClCompile Include="modelRefine.cpp" />
+    <ClCompile Include="OffsetCurvePyImp.cpp" />
+    <ClCompile Include="OffsetSurfacePyImp.cpp" />
+    <ClCompile Include="ParabolaPyImp.cpp" />
+    <ClCompile Include="Part2DObject.cpp" />
+    <ClCompile Include="Part2DObjectPyImp.cpp" />
+    <ClCompile Include="PartFeature.cpp" />
+    <ClCompile Include="PartFeaturePyImp.cpp" />
+    <ClCompile Include="PartFeatureReference.cpp" />
+    <ClCompile Include="PartFeatures.cpp" />
+    <ClCompile Include="PlanePyImp.cpp" />
+    <ClCompile Include="PlateSurfacePyImp.cpp" />
+    <ClCompile Include="PointPyImp.cpp" />
+    <ClCompile Include="PreCompiled.cpp" />
+    <ClCompile Include="PrimitiveFeature.cpp" />
+    <ClCompile Include="ProgressIndicator.cpp" />
+    <ClCompile Include="PropertyGeometryList.cpp" />
+    <ClCompile Include="PropertyTopoShape.cpp" />
+    <ClCompile Include="RectangularTrimmedSurfacePyImp.cpp" />
+    <ClCompile Include="SpherePyImp.cpp" />
+    <ClCompile Include="SurfaceOfExtrusionPyImp.cpp" />
+    <ClCompile Include="SurfaceOfRevolutionPyImp.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="TopoShape.cpp" />
+    <ClCompile Include="TopoShapeCompoundPyImp.cpp" />
+    <ClCompile Include="TopoShapeCompSolidPyImp.cpp" />
+    <ClCompile Include="TopoShapeEdgePyImp.cpp" />
+    <ClCompile Include="TopoShapeFacePyImp.cpp" />
+    <ClCompile Include="TopoShapePyImp.cpp" />
+    <ClCompile Include="TopoShapeShellPyImp.cpp" />
+    <ClCompile Include="TopoShapeSolidPyImp.cpp" />
+    <ClCompile Include="TopoShapeVertexPyImp.cpp" />
+    <ClCompile Include="TopoShapeWirePyImp.cpp" />
+    <ClCompile Include="ToroidPyImp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CrossSection.h" />
+    <ClInclude Include="CustomFeature.h" />
+    <ClInclude Include="edgecluster.h" />
+    <ClInclude Include="encodeFilename.h" />
+    <ClInclude Include="FeatureChamfer.h" />
+    <ClInclude Include="FeatureCompound.h" />
+    <ClInclude Include="FeatureExtrusion.h" />
+    <ClInclude Include="FeatureFace.h" />
+    <ClInclude Include="FeatureFillet.h" />
+    <ClInclude Include="FeatureGeometrySet.h" />
+    <ClInclude Include="FeatureMirroring.h" />
+    <ClInclude Include="FeaturePartBoolean.h" />
+    <ClInclude Include="FeaturePartBox.h" />
+    <ClInclude Include="FeaturePartCircle.h" />
+    <ClInclude Include="FeaturePartCommon.h" />
+    <ClInclude Include="FeaturePartCurveNet.h" />
+    <ClInclude Include="FeaturePartCut.h" />
+    <ClInclude Include="FeaturePartFuse.h" />
+    <ClInclude Include="FeaturePartImportBrep.h" />
+    <ClInclude Include="FeaturePartImportIges.h" />
+    <ClInclude Include="FeaturePartImportStep.h" />
+    <ClInclude Include="FeaturePartPolygon.h" />
+    <ClInclude Include="FeaturePartSection.h" />
+    <ClInclude Include="FeaturePartSpline.h" />
+    <ClInclude Include="FeatureRevolution.h" />
+    <ClInclude Include="FT2FC.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="ImportIges.h" />
+    <ClInclude Include="ImportStep.h" />
+    <ClInclude Include="modelRefine.h" />
+    <ClInclude Include="OCCError.h" />
+    <ClInclude Include="Part2DObject.h" />
+    <ClInclude Include="PartFeature.h" />
+    <ClInclude Include="PartFeatureReference.h" />
+    <ClInclude Include="PartFeatures.h" />
+    <ClInclude Include="PreCompiled.h" />
+    <ClInclude Include="PrimitiveFeature.h" />
+    <ClInclude Include="ProgressIndicator.h" />
+    <ClInclude Include="PropertyGeometryList.h" />
+    <ClInclude Include="PropertyTopoShape.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="TopoShape.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\App\App.vcxproj">
+      <Project>{ae70344c-4bc3-4b36-b6e4-e12e3a91e912}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Base\Base.vcxproj">
+      <Project>{8a529153-c4ee-45e2-bf97-38496cd445a4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

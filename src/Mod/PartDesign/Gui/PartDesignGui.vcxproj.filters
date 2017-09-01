@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CustomBuild">
+      <UniqueIdentifier>{e4faffbe-a5dc-47d2-be70-516c8ade7ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{417e1bf6-47fa-4eda-83ed-7da8d6251b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TaskDialogs">
+      <UniqueIdentifier>{2ac2971f-d7ab-4bef-962d-300b4f5e5fbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{f08afe73-d9fa-4ba0-8e1a-4dffacd0b51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewProvider">
+      <UniqueIdentifier>{08170320-4e5c-481b-b22c-82606954cf6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="InitGui.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PartDesignWorkbench.svg.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestPartDesignGui.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FeaturePickDialog.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskChamferParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskDraftParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskFilletParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskGrooveParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskHoleParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskLinearPatternParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskMirroredParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskMultiTransformParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPadParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPocketParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPolarPatternParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskRevolutionParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskScaledParameters.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskTransformedMessages.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FeaturePickDialog.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskChamferParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskDraftParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskFilletParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskGrooveParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskHoleParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskLinearPatternParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskMirroredParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskMultiTransformParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPadParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPocketParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskPolarPatternParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskRevolutionParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskScaledParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskTransformedMessages.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskTransformedParameters.h">
+      <Filter>TaskDialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\PartDesign.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FeaturePickDialog.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceSelection.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskChamferParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDraftParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskFilletParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskGrooveParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskHoleParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskLinearPatternParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskMirroredParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskMultiTransformParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPadParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPocketParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPolarPatternParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskRevolutionParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskScaledParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskTransformedMessages.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskTransformedParameters.cpp">
+      <Filter>TaskDialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="AppPartDesignGui.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Workbench.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_PartDesign.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProvider.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderChamfer.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderDraft.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderFillet.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderGroove.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderHole.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderLinearPattern.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderMirrored.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderMultiTransform.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPad.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPocket.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPolarPattern.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderRevolution.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderScaled.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderTransformed.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Workbench.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProvider.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderChamfer.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderDraft.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderFillet.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderGroove.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderHole.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderLinearPattern.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderMirrored.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderMultiTransform.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPad.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPocket.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPolarPattern.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderRevolution.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderScaled.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderTransformed.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceSelection.h">
+      <Filter>TaskDialogs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

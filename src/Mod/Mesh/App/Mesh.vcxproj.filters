@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CustomBuild">
+      <UniqueIdentifier>{0f91e283-c42c-48c5-82b0-e571c370799e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{30f3a961-9c42-484f-a190-306376ffddb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e5921a99-2dba-48a5-8427-cbdb05aa7657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WildMagic4">
+      <UniqueIdentifier>{d1b70da6-509c-466d-bb85-22f10bc578fd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BuildRegularGeoms.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Init.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshTestsApp.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FacetPy.xml">
+      <Filter>XML</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshFeaturePy.xml">
+      <Filter>XML</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshPointPy.xml">
+      <Filter>XML</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshPy.xml">
+      <Filter>XML</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Algorithm.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Approximation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Builder.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Curvature.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Definitions.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Degeneration.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Elements.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Evaluation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Grid.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Info.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MeshIO.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MeshKernel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Projection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Segmentation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SetOperations.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Smoothing.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Tools.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TopoAlgorithm.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Triangulation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Trim.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Visitor.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprCylinderFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprLineFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprPlaneFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprPolyFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprQuadraticFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ApprSphereFit3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Delaunay.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Delaunay1.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Delaunay2.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Delaunay3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DelPolygonEdge.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DelPolyhedronFace.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DelTetrahedron.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DelTriangle.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Distance.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistLine3Segment3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistLine3Triangle3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistSegment3Segment3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistSegment3Triangle3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistVector3Plane3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistVector3Segment3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4DistVector3Triangle3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Eigen.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ETManifoldMesh.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4FoundationPCH.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ImplicitSurface.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Intersector.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Intersector1.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrLine3Box3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrLine3Plane3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrSegment3Box3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrSegment3Plane3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrTriangle2Triangle2.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4IntrTriangle3Triangle3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4LinearSystem.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Math.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Matrix2.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Matrix3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Matrix4.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Memory.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4MeshCurvature.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4MeshSmoother.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4ParametricSurface.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4PolynomialRoots.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4QuadricSurface.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Surface.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4System.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4TriangulateEC.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Vector2.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Vector3.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4Vector4.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="WildMagic4\Wm4VEManifoldMesh.cpp">
+      <Filter>WildMagic4</Filter>
+    </ClCompile>
+    <ClCompile Include="AppMesh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AppMeshPy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Facet.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FacetPyImp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshCurvature.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshDefects.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshExport.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshImport.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshSegmentByMesh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshSetOperations.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshSolid.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshTransform.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureMeshTransformDemolding.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshFeature.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshFeaturePyImp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshPointPyImp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshProperties.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshPyImp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Segment.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Algorithm.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Approximation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Builder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Curvature.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Definitions.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Degeneration.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Elements.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Evaluation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Grid.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Helpers.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Info.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Iterator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MeshIO.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MeshKernel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Projection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Segmentation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SetOperations.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Smoothing.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Tools.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TopoAlgorithm.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Triangulation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Trim.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\tritritest.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Visitor.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprCylinderFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprLineFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprPlaneFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprPolyFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprQuadraticFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ApprSphereFit3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4BandedMatrix.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Box3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Delaunay.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Delaunay1.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Delaunay2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Delaunay3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DelPolygonEdge.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DelPolyhedronFace.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DelTetrahedron.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DelTriangle.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Distance.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistLine3Segment3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistLine3Triangle3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistSegment3Segment3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistSegment3Triangle3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistVector3Plane3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistVector3Segment3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4DistVector3Triangle3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4EdgeKey.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Eigen.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ETManifoldMesh.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Foundation.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4FoundationLIB.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4FoundationPCH.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4GMatrix.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4GVector.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ImplicitSurface.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Intersector.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Intersector1.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrLine3Box3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrLine3Plane3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrSegment3Box3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrSegment3Plane3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrTriangle2Triangle2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4IntrTriangle3Triangle3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4LinComp.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Line3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4LinearSystem.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Mapper2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Mapper3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Math.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4MathMCR.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Matrix2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Matrix3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Matrix4.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Memory.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4MeshCurvature.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4MeshSmoother.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4ParametricSurface.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Plane3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Platforms.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Polynomial1.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4PolynomialRoots.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4QuadricSurface.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query2Filtered.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query2Int64.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query2TInteger.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query2TRational.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query3Filtered.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query3Int64.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query3TInteger.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Query3TRational.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4RVector2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4RVector3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Segment3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Sphere3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Surface.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4System.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4THashSet.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4THashTable.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TInteger.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TMinHeap.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TRational.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Triangle2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Triangle3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TriangleKey.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TriangulateEC.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TRVector.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TSmallUnorderedSet.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TStringHashTable.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4TTuple.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4UniqueVerticesTriangles.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Vector2.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Vector3.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4Vector4.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="WildMagic4\Wm4VEManifoldMesh.h">
+      <Filter>WildMagic4</Filter>
+    </ClInclude>
+    <ClInclude Include="Facet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshCurvature.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshDefects.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshExport.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshImport.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshSegmentByMesh.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshSetOperations.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshSolid.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshTransform.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureMeshTransformDemolding.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshFeature.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshPoint.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshProperties.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WildMagic4\Wm4BandedMatrix.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Box3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4EdgeKey.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4ETManifoldMesh.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4GMatrix.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4GVector.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4LinComp.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Line3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Mapper2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Mapper3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Math.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Matrix2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Matrix3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Matrix4.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Memory.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Plane3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Polynomial1.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query2Filtered.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query2Int64.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query2TInteger.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query2TRational.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query3Filtered.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query3Int64.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query3TInteger.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Query3TRational.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4RVector2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4RVector3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Segment3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Sphere3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4System.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4THashSet.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4THashTable.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TInteger.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TMinHeap.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TRational.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Triangle2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Triangle3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TriangleKey.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TRVector.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TSmallUnorderedSet.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TStringHashTable.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4TTuple.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4UniqueVerticesTriangles.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Vector2.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Vector3.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4Vector4.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+    <None Include="WildMagic4\Wm4VEManifoldMesh.inl">
+      <Filter>WildMagic4</Filter>
+    </None>
+  </ItemGroup>
+</Project>

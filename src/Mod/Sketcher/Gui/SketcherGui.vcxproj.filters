@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CustomBuild">
+      <UniqueIdentifier>{37a3ecf4-2dab-4ced-921f-134a76dd1f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{942297a6-6fc0-40c4-9cb2-4c5480199e2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="InitGui.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketcherWorkbench.svg.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestSketcherGui.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InsertDatum.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketcherSettings.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchMirrorDialog.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchOrientationDialog.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchRectangularArrayDialog.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherConstrains.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherElements.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherGeneral.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherMessages.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherSolverAdvanced.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherValidation.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PropertyConstraintListItem.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskDlgEditSketch.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherConstrains.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherCreateCommands.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherElements.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherGeneral.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherMessages.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherSolverAdvanced.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TaskSketcherValidation.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketcherSettings.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchMirrorDialog.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchOrientationDialog.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SketchRectangularArrayDialog.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Sketcher.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_InsertDatum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_SketcherSettings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_SketchMirrorDialog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_SketchOrientationDialog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_SketchRectangularArrayDialog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherConstrains.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherElements.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherGeneral.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherMessages.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherSolverAdvanced.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_TaskSketcherValidation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandConstraints.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawSketchHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EditDatumDialog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryCreationMode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SoDatumLabel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SoZoomTranslation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPython.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderSketch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Workbench.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppSketcherGui.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandAlterGeometry.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandConstraints.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandCreateGeo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandSketcherTools.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawSketchHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EditDatumDialog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyConstraintListItem.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_Sketcher.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SketcherSettings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SketchMirrorDialog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SketchOrientationDialog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SketchRectangularArrayDialog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SoDatumLabel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SoZoomTranslation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDlgEditSketch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherConstrains.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherCreateCommands.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherElements.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherGeneral.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherMessages.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherSolverAdvanced.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSketcherValidation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPython.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderSketch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Workbench.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

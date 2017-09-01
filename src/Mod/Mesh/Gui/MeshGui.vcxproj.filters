@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CustomBuild">
+      <UniqueIdentifier>{b1efbc53-b3cc-45ef-aac2-647d67aaccc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{e6f2cfe1-6894-4010-aae9-62a6dfbb843e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inventor">
+      <UniqueIdentifier>{81438ec5-0d00-46d9-aa46-7f82a49beea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewProvider">
+      <UniqueIdentifier>{9c87996b-f5fc-4e40-b3bb-eecf2b796521}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="InitGui.py.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshWorkbench.svg.rule">
+      <Filter>CustomBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgEvaluateMesh.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgRegularSolid.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSettingsImportExport.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSmoothing.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSettingsMeshView.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RemoveComponents.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Segmentation.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Selection.ui">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgEvaluateMeshImp.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgRegularSolidImp.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSettingsImportExportImp.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSettingsMeshView.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DlgSmoothing.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RemoveComponents.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Selection.h">
+      <Filter>Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeshEditor.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PropertyEditorMesh.h">
+      <Filter>헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Mesh.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Segmentation.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgEvaluateMesh.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgRegularSolid.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsImportExport.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSettingsMeshView.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_DlgSmoothing.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_RemoveComponents.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_Segmentation.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_Selection.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshSelection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Workbench.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SoFCIndexedFaceSet.h">
+      <Filter>Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="SoFCMeshObject.h">
+      <Filter>Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="SoPolygon.h">
+      <Filter>Inventor</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProvider.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderCurvature.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderDefects.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderMeshFaceSet.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderPython.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderTransform.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProviderTransformDemolding.h">
+      <Filter>ViewProvider</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgEvaluateMeshImp.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRegularSolidImp.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsImportExportImp.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsMeshView.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSmoothing.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveComponents.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Segmentation.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Selection.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="SoFCIndexedFaceSet.cpp">
+      <Filter>Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="SoFCMeshObject.cpp">
+      <Filter>Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="SoPolygon.cpp">
+      <Filter>Inventor</Filter>
+    </ClCompile>
+    <ClCompile Include="AppMeshGui.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Doxygen.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshEditor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshSelection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditorMesh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Workbench.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProvider.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderCurvature.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderDefects.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderMeshFaceSet.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderPython.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderTransform.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewProviderTransformDemolding.cpp">
+      <Filter>ViewProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_Mesh.cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

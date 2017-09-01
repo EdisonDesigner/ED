@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8E6683D-40B8-4BC9-B3EF-50524FBFE242}</ProjectGuid>
+    <RootNamespace>Mesh</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="DebugProps.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ReleaseProps.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Mod\Mesh\</OutDir>
+    <IntDir>$(ProjectDir)\Debug\</IntDir>
+    <TargetName>Mesh_d</TargetName>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Mod\Mesh\</OutDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
+    <TargetName>Mesh</TargetName>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)src;$(SolutionDir)src\3rdParty;$(SolutionDir)LibPacks\include;$(SolutionDir)LibPacks\include\QtOpenGL;$(SolutionDir)LibPacks\include\QtSvg;$(SolutionDir)LibPacks\include\QtUiTools;$(SolutionDir)LibPacks\include\QtWebKit;$(SolutionDir)LibPacks\include\QtGui;$(SolutionDir)LibPacks\include\QtXml;$(SolutionDir)LibPacks\include\QtNetwork;$(SolutionDir)LibPacks\include\QtCore;$(SolutionDir)LibPacks\include\python2.7;$(SolutionDir)LibPacks\include\eigen3;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDAppMesh;ED_DEBUG;Mesh_EXPORTS;WIN32;_WINDOWS;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;WM4_FOUNDATION_DLL_EXPORT;_PreComp_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\..\App\Debug\EDApp_d.lib;..\..\..\Base\Debug\EDBase_d.lib;boost_filesystem-vc120-mt-gd-1_55.lib;boost_program_options-vc120-mt-gd-1_55.lib;boost_regex-vc120-mt-gd-1_55.lib;boost_signals-vc120-mt-gd-1_55.lib;boost_system-vc120-mt-gd-1_55.lib;boost_thread-vc120-mt-gd-1_55.lib;boost_chrono-vc120-mt-gd-1_55.lib;boost_date_time-vc120-mt-gd-1_55.lib;QtCored4.lib;python27_d.lib;xerces-c_3D.lib;zlibd.lib;MSVCRTD.lib;MSVCPRTD.lib;Rpcrt4.lib;version.lib;QtXmld4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)src;$(SolutionDir)src\3rdParty;$(SolutionDir)LibPacks\include;$(SolutionDir)LibPacks\include\QtOpenGL;$(SolutionDir)LibPacks\include\QtSvg;$(SolutionDir)LibPacks\include\QtUiTools;$(SolutionDir)LibPacks\include\QtWebKit;$(SolutionDir)LibPacks\include\QtGui;$(SolutionDir)LibPacks\include\QtXml;$(SolutionDir)LibPacks\include\QtNetwork;$(SolutionDir)LibPacks\include\QtCore;$(SolutionDir)LibPacks\include\python2.7;$(SolutionDir)LibPacks\include\eigen3;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDAppMesh;Mesh_EXPORTS;WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_UITOOLS_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;WM4_FOUNDATION_DLL_EXPORT;_PreComp_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalDependencies>..\..\..\App\Release\EDApp.lib;..\..\..\Base\Release\EDBase.lib;boost_filesystem-vc120-mt-1_55.lib;boost_program_options-vc120-mt-1_55.lib;boost_regex-vc120-mt-1_55.lib;boost_signals-vc120-mt-1_55.lib;boost_system-vc120-mt-1_55.lib;boost_thread-vc120-mt-1_55.lib;boost_chrono-vc120-mt-1_55.lib;boost_date_time-vc120-mt-1_55.lib;QtCore4.lib;python27.lib;xerces-c_3.lib;zlib.lib;MSVCRT.lib;MSVCPRT.lib;Rpcrt4.lib;version.lib;QtXml4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;SHFolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;comsupp.lib;Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="BuildRegularGeoms.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd $(ProjectDir)..\
+copy BuildRegularGeoms.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Mesh\BuildRegularGeoms.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Mod\Mesh\BuildRegularGeoms.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\BuildRegularGeoms.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd $(ProjectDir)..\
+copy BuildRegularGeoms.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Mesh\BuildRegularGeoms.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Mod\Mesh\BuildRegularGeoms.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\BuildRegularGeoms.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="Init.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd $(ProjectDir)..\
+copy Init.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Mesh\Init.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Mod\Mesh\Init.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd $(ProjectDir)..\
+copy Init.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Mesh\Init.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Mod\Mesh\Init.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="MeshTestsApp.py.rule">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd $(ProjectDir)..\
+copy MeshTestsApp.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Mod\Mesh\MeshTestsApp.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Mod\Mesh\MeshTestsApp.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\MeshTestsApp.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd $(ProjectDir)..\
+copy MeshTestsApp.py $(SolutionDir)Mod\Mesh
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Mod\Mesh\MeshTestsApp.py</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Mod\Mesh\MeshTestsApp.py</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\MeshTestsApp.py</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="FacetPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) FacetPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating FacetPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)FacetPy.h;$(ProjectDir)FacetPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)FacetPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) FacetPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating FacetPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)FacetPy.h;$(ProjectDir)FacetPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)FacetPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="MeshFeaturePy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshFeaturePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MeshFeaturePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)MeshFeaturePy.h;$(ProjectDir)MeshFeaturePy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshFeaturePy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshFeaturePy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MeshFeaturePy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)MeshFeaturePy.h;$(ProjectDir)MeshFeaturePy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshFeaturePy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="MeshPointPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshPointPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MeshPointPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)MeshPointPy.h;$(ProjectDir)MeshPointPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshPointPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshPointPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MeshPointPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)MeshPointPy.h;$(ProjectDir)MeshPointPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshPointPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+    <CustomBuild Include="MeshPy.xml">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MeshPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)MeshPy.h;$(ProjectDir)MeshPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(SolutionDir)bin\python.exe $(SolutionDir)src\Tools\generate.py --outputPath $(ProjectDir) MeshPy.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MeshPy.xml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)MeshPy.h;$(ProjectDir)MeshPy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)src\Tools\generateTemplates\templateClassPyExport.py;$(ProjectDir)MeshPy.xml;%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppMesh.cpp" />
+    <ClCompile Include="AppMeshPy.cpp" />
+    <ClCompile Include="Core\Algorithm.cpp" />
+    <ClCompile Include="Core\Approximation.cpp" />
+    <ClCompile Include="Core\Builder.cpp" />
+    <ClCompile Include="Core\Curvature.cpp" />
+    <ClCompile Include="Core\Definitions.cpp" />
+    <ClCompile Include="Core\Degeneration.cpp" />
+    <ClCompile Include="Core\Elements.cpp" />
+    <ClCompile Include="Core\Evaluation.cpp" />
+    <ClCompile Include="Core\Grid.cpp" />
+    <ClCompile Include="Core\Info.cpp" />
+    <ClCompile Include="Core\MeshIO.cpp" />
+    <ClCompile Include="Core\MeshKernel.cpp" />
+    <ClCompile Include="Core\Projection.cpp" />
+    <ClCompile Include="Core\Segmentation.cpp" />
+    <ClCompile Include="Core\SetOperations.cpp" />
+    <ClCompile Include="Core\Smoothing.cpp" />
+    <ClCompile Include="Core\Tools.cpp" />
+    <ClCompile Include="Core\TopoAlgorithm.cpp" />
+    <ClCompile Include="Core\Triangulation.cpp" />
+    <ClCompile Include="Core\Trim.cpp" />
+    <ClCompile Include="Core\Visitor.cpp" />
+    <ClCompile Include="Facet.cpp" />
+    <ClCompile Include="FacetPyImp.cpp" />
+    <ClCompile Include="FeatureMeshCurvature.cpp" />
+    <ClCompile Include="FeatureMeshDefects.cpp" />
+    <ClCompile Include="FeatureMeshExport.cpp" />
+    <ClCompile Include="FeatureMeshImport.cpp" />
+    <ClCompile Include="FeatureMeshSegmentByMesh.cpp" />
+    <ClCompile Include="FeatureMeshSetOperations.cpp" />
+    <ClCompile Include="FeatureMeshSolid.cpp" />
+    <ClCompile Include="FeatureMeshTransform.cpp" />
+    <ClCompile Include="FeatureMeshTransformDemolding.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshFeature.cpp" />
+    <ClCompile Include="MeshFeaturePyImp.cpp" />
+    <ClCompile Include="MeshPointPyImp.cpp" />
+    <ClCompile Include="MeshProperties.cpp" />
+    <ClCompile Include="MeshPyImp.cpp" />
+    <ClCompile Include="PreCompiled.cpp" />
+    <ClCompile Include="Segment.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprCylinderFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprLineFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprPlaneFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprPolyFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprQuadraticFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ApprSphereFit3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Delaunay.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Delaunay1.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Delaunay2.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Delaunay3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DelPolygonEdge.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DelPolyhedronFace.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DelTetrahedron.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DelTriangle.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Distance.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistLine3Segment3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistLine3Triangle3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistSegment3Segment3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistSegment3Triangle3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistVector3Plane3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistVector3Segment3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4DistVector3Triangle3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Eigen.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ETManifoldMesh.cpp" />
+    <ClCompile Include="WildMagic4\Wm4FoundationPCH.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ImplicitSurface.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Intersector.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Intersector1.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrLine3Box3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrLine3Plane3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrSegment3Box3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrSegment3Plane3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrTriangle2Triangle2.cpp" />
+    <ClCompile Include="WildMagic4\Wm4IntrTriangle3Triangle3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4LinearSystem.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Math.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Matrix2.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Matrix3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Matrix4.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Memory.cpp" />
+    <ClCompile Include="WildMagic4\Wm4MeshCurvature.cpp" />
+    <ClCompile Include="WildMagic4\Wm4MeshSmoother.cpp" />
+    <ClCompile Include="WildMagic4\Wm4ParametricSurface.cpp" />
+    <ClCompile Include="WildMagic4\Wm4PolynomialRoots.cpp" />
+    <ClCompile Include="WildMagic4\Wm4QuadricSurface.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Surface.cpp" />
+    <ClCompile Include="WildMagic4\Wm4System.cpp" />
+    <ClCompile Include="WildMagic4\Wm4TriangulateEC.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Vector2.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Vector3.cpp" />
+    <ClCompile Include="WildMagic4\Wm4Vector4.cpp" />
+    <ClCompile Include="WildMagic4\Wm4VEManifoldMesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Algorithm.h" />
+    <ClInclude Include="Core\Approximation.h" />
+    <ClInclude Include="Core\Builder.h" />
+    <ClInclude Include="Core\Curvature.h" />
+    <ClInclude Include="Core\Definitions.h" />
+    <ClInclude Include="Core\Degeneration.h" />
+    <ClInclude Include="Core\Elements.h" />
+    <ClInclude Include="Core\Evaluation.h" />
+    <ClInclude Include="Core\Grid.h" />
+    <ClInclude Include="Core\Helpers.h" />
+    <ClInclude Include="Core\Info.h" />
+    <ClInclude Include="Core\Iterator.h" />
+    <ClInclude Include="Core\MeshIO.h" />
+    <ClInclude Include="Core\MeshKernel.h" />
+    <ClInclude Include="Core\Projection.h" />
+    <ClInclude Include="Core\Segmentation.h" />
+    <ClInclude Include="Core\SetOperations.h" />
+    <ClInclude Include="Core\Smoothing.h" />
+    <ClInclude Include="Core\Tools.h" />
+    <ClInclude Include="Core\TopoAlgorithm.h" />
+    <ClInclude Include="Core\Triangulation.h" />
+    <ClInclude Include="Core\Trim.h" />
+    <ClInclude Include="Core\tritritest.h" />
+    <ClInclude Include="Core\Visitor.h" />
+    <ClInclude Include="Facet.h" />
+    <ClInclude Include="FeatureMeshCurvature.h" />
+    <ClInclude Include="FeatureMeshDefects.h" />
+    <ClInclude Include="FeatureMeshExport.h" />
+    <ClInclude Include="FeatureMeshImport.h" />
+    <ClInclude Include="FeatureMeshSegmentByMesh.h" />
+    <ClInclude Include="FeatureMeshSetOperations.h" />
+    <ClInclude Include="FeatureMeshSolid.h" />
+    <ClInclude Include="FeatureMeshTransform.h" />
+    <ClInclude Include="FeatureMeshTransformDemolding.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshFeature.h" />
+    <ClInclude Include="MeshPoint.h" />
+    <ClInclude Include="MeshProperties.h" />
+    <ClInclude Include="PreCompiled.h" />
+    <ClInclude Include="Segment.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprCylinderFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprLineFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprPlaneFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprPolyFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprQuadraticFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4ApprSphereFit3.h" />
+    <ClInclude Include="WildMagic4\Wm4BandedMatrix.h" />
+    <ClInclude Include="WildMagic4\Wm4Box3.h" />
+    <ClInclude Include="WildMagic4\Wm4Delaunay.h" />
+    <ClInclude Include="WildMagic4\Wm4Delaunay1.h" />
+    <ClInclude Include="WildMagic4\Wm4Delaunay2.h" />
+    <ClInclude Include="WildMagic4\Wm4Delaunay3.h" />
+    <ClInclude Include="WildMagic4\Wm4DelPolygonEdge.h" />
+    <ClInclude Include="WildMagic4\Wm4DelPolyhedronFace.h" />
+    <ClInclude Include="WildMagic4\Wm4DelTetrahedron.h" />
+    <ClInclude Include="WildMagic4\Wm4DelTriangle.h" />
+    <ClInclude Include="WildMagic4\Wm4Distance.h" />
+    <ClInclude Include="WildMagic4\Wm4DistLine3Segment3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistLine3Triangle3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistSegment3Segment3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistSegment3Triangle3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistVector3Plane3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistVector3Segment3.h" />
+    <ClInclude Include="WildMagic4\Wm4DistVector3Triangle3.h" />
+    <ClInclude Include="WildMagic4\Wm4EdgeKey.h" />
+    <ClInclude Include="WildMagic4\Wm4Eigen.h" />
+    <ClInclude Include="WildMagic4\Wm4ETManifoldMesh.h" />
+    <ClInclude Include="WildMagic4\Wm4Foundation.h" />
+    <ClInclude Include="WildMagic4\Wm4FoundationLIB.h" />
+    <ClInclude Include="WildMagic4\Wm4FoundationPCH.h" />
+    <ClInclude Include="WildMagic4\Wm4GMatrix.h" />
+    <ClInclude Include="WildMagic4\Wm4GVector.h" />
+    <ClInclude Include="WildMagic4\Wm4ImplicitSurface.h" />
+    <ClInclude Include="WildMagic4\Wm4Intersector.h" />
+    <ClInclude Include="WildMagic4\Wm4Intersector1.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrLine3Box3.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrLine3Plane3.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrSegment3Box3.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrSegment3Plane3.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrTriangle2Triangle2.h" />
+    <ClInclude Include="WildMagic4\Wm4IntrTriangle3Triangle3.h" />
+    <ClInclude Include="WildMagic4\Wm4LinComp.h" />
+    <ClInclude Include="WildMagic4\Wm4Line3.h" />
+    <ClInclude Include="WildMagic4\Wm4LinearSystem.h" />
+    <ClInclude Include="WildMagic4\Wm4Mapper2.h" />
+    <ClInclude Include="WildMagic4\Wm4Mapper3.h" />
+    <ClInclude Include="WildMagic4\Wm4Math.h" />
+    <ClInclude Include="WildMagic4\Wm4MathMCR.h" />
+    <ClInclude Include="WildMagic4\Wm4Matrix2.h" />
+    <ClInclude Include="WildMagic4\Wm4Matrix3.h" />
+    <ClInclude Include="WildMagic4\Wm4Matrix4.h" />
+    <ClInclude Include="WildMagic4\Wm4Memory.h" />
+    <ClInclude Include="WildMagic4\Wm4MeshCurvature.h" />
+    <ClInclude Include="WildMagic4\Wm4MeshSmoother.h" />
+    <ClInclude Include="WildMagic4\Wm4ParametricSurface.h" />
+    <ClInclude Include="WildMagic4\Wm4Plane3.h" />
+    <ClInclude Include="WildMagic4\Wm4Platforms.h" />
+    <ClInclude Include="WildMagic4\Wm4Polynomial1.h" />
+    <ClInclude Include="WildMagic4\Wm4PolynomialRoots.h" />
+    <ClInclude Include="WildMagic4\Wm4QuadricSurface.h" />
+    <ClInclude Include="WildMagic4\Wm4Query.h" />
+    <ClInclude Include="WildMagic4\Wm4Query2.h" />
+    <ClInclude Include="WildMagic4\Wm4Query2Filtered.h" />
+    <ClInclude Include="WildMagic4\Wm4Query2Int64.h" />
+    <ClInclude Include="WildMagic4\Wm4Query2TInteger.h" />
+    <ClInclude Include="WildMagic4\Wm4Query2TRational.h" />
+    <ClInclude Include="WildMagic4\Wm4Query3.h" />
+    <ClInclude Include="WildMagic4\Wm4Query3Filtered.h" />
+    <ClInclude Include="WildMagic4\Wm4Query3Int64.h" />
+    <ClInclude Include="WildMagic4\Wm4Query3TInteger.h" />
+    <ClInclude Include="WildMagic4\Wm4Query3TRational.h" />
+    <ClInclude Include="WildMagic4\Wm4RVector2.h" />
+    <ClInclude Include="WildMagic4\Wm4RVector3.h" />
+    <ClInclude Include="WildMagic4\Wm4Segment3.h" />
+    <ClInclude Include="WildMagic4\Wm4Sphere3.h" />
+    <ClInclude Include="WildMagic4\Wm4Surface.h" />
+    <ClInclude Include="WildMagic4\Wm4System.h" />
+    <ClInclude Include="WildMagic4\Wm4THashSet.h" />
+    <ClInclude Include="WildMagic4\Wm4THashTable.h" />
+    <ClInclude Include="WildMagic4\Wm4TInteger.h" />
+    <ClInclude Include="WildMagic4\Wm4TMinHeap.h" />
+    <ClInclude Include="WildMagic4\Wm4TRational.h" />
+    <ClInclude Include="WildMagic4\Wm4Triangle2.h" />
+    <ClInclude Include="WildMagic4\Wm4Triangle3.h" />
+    <ClInclude Include="WildMagic4\Wm4TriangleKey.h" />
+    <ClInclude Include="WildMagic4\Wm4TriangulateEC.h" />
+    <ClInclude Include="WildMagic4\Wm4TRVector.h" />
+    <ClInclude Include="WildMagic4\Wm4TSmallUnorderedSet.h" />
+    <ClInclude Include="WildMagic4\Wm4TStringHashTable.h" />
+    <ClInclude Include="WildMagic4\Wm4TTuple.h" />
+    <ClInclude Include="WildMagic4\Wm4UniqueVerticesTriangles.h" />
+    <ClInclude Include="WildMagic4\Wm4Vector2.h" />
+    <ClInclude Include="WildMagic4\Wm4Vector3.h" />
+    <ClInclude Include="WildMagic4\Wm4Vector4.h" />
+    <ClInclude Include="WildMagic4\Wm4VEManifoldMesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WildMagic4\Wm4BandedMatrix.inl" />
+    <None Include="WildMagic4\Wm4Box3.inl" />
+    <None Include="WildMagic4\Wm4EdgeKey.inl" />
+    <None Include="WildMagic4\Wm4ETManifoldMesh.inl" />
+    <None Include="WildMagic4\Wm4GMatrix.inl" />
+    <None Include="WildMagic4\Wm4GVector.inl" />
+    <None Include="WildMagic4\Wm4LinComp.inl" />
+    <None Include="WildMagic4\Wm4Line3.inl" />
+    <None Include="WildMagic4\Wm4Mapper2.inl" />
+    <None Include="WildMagic4\Wm4Mapper3.inl" />
+    <None Include="WildMagic4\Wm4Math.inl" />
+    <None Include="WildMagic4\Wm4Matrix2.inl" />
+    <None Include="WildMagic4\Wm4Matrix3.inl" />
+    <None Include="WildMagic4\Wm4Matrix4.inl" />
+    <None Include="WildMagic4\Wm4Memory.inl" />
+    <None Include="WildMagic4\Wm4Plane3.inl" />
+    <None Include="WildMagic4\Wm4Polynomial1.inl" />
+    <None Include="WildMagic4\Wm4Query.inl" />
+    <None Include="WildMagic4\Wm4Query2.inl" />
+    <None Include="WildMagic4\Wm4Query2Filtered.inl" />
+    <None Include="WildMagic4\Wm4Query2Int64.inl" />
+    <None Include="WildMagic4\Wm4Query2TInteger.inl" />
+    <None Include="WildMagic4\Wm4Query2TRational.inl" />
+    <None Include="WildMagic4\Wm4Query3.inl" />
+    <None Include="WildMagic4\Wm4Query3Filtered.inl" />
+    <None Include="WildMagic4\Wm4Query3Int64.inl" />
+    <None Include="WildMagic4\Wm4Query3TInteger.inl" />
+    <None Include="WildMagic4\Wm4Query3TRational.inl" />
+    <None Include="WildMagic4\Wm4RVector2.inl" />
+    <None Include="WildMagic4\Wm4RVector3.inl" />
+    <None Include="WildMagic4\Wm4Segment3.inl" />
+    <None Include="WildMagic4\Wm4Sphere3.inl" />
+    <None Include="WildMagic4\Wm4System.inl" />
+    <None Include="WildMagic4\Wm4THashSet.inl" />
+    <None Include="WildMagic4\Wm4THashTable.inl" />
+    <None Include="WildMagic4\Wm4TInteger.inl" />
+    <None Include="WildMagic4\Wm4TMinHeap.inl" />
+    <None Include="WildMagic4\Wm4TRational.inl" />
+    <None Include="WildMagic4\Wm4Triangle2.inl" />
+    <None Include="WildMagic4\Wm4Triangle3.inl" />
+    <None Include="WildMagic4\Wm4TriangleKey.inl" />
+    <None Include="WildMagic4\Wm4TRVector.inl" />
+    <None Include="WildMagic4\Wm4TSmallUnorderedSet.inl" />
+    <None Include="WildMagic4\Wm4TStringHashTable.inl" />
+    <None Include="WildMagic4\Wm4TTuple.inl" />
+    <None Include="WildMagic4\Wm4UniqueVerticesTriangles.inl" />
+    <None Include="WildMagic4\Wm4Vector2.inl" />
+    <None Include="WildMagic4\Wm4Vector3.inl" />
+    <None Include="WildMagic4\Wm4Vector4.inl" />
+    <None Include="WildMagic4\Wm4VEManifoldMesh.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\App\App.vcxproj">
+      <Project>{ae70344c-4bc3-4b36-b6e4-e12e3a91e912}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Base\Base.vcxproj">
+      <Project>{8a529153-c4ee-45e2-bf97-38496cd445a4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
