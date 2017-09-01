@@ -20,8 +20,11 @@ src/App/Debug/
 src/App/Release/
 
 # App - CustomBuild files
+## Using src/Tools/generate.py from xml
 src/App/*Py.cpp
 src/App/*Py.h
+
+## Using src\Tools\PythonToCPP.py
 src/App/InitScript.h
 src/App/TestScript.h
 
@@ -30,8 +33,11 @@ src/Base/Debug/
 src/Base/Release/
 
 # Base - CustomBuild files
+## Using src/Tools/generate.py from xml
 src/Base/*Py.cpp
 src/Base/*Py.h
+
+## Using bin/moc.exe
 src/Base/moc_*.cpp
 
 # Gui
@@ -39,6 +45,7 @@ src/Gui/Debug/
 src/Gui/Release/
 
 # Gui - CustomBuild files
+## Using bin/moc.exe
 src/Gui/moc_*.cpp
 src/Gui/iisTaskPanel/src/moc_*.cxx
 src/Gui/Language/moc_*.cpp
@@ -47,10 +54,18 @@ src/Gui/QSint/actionpanel/moc_*.cxx
 src/Gui/Quarter/moc_*.cxx
 src/Gui/Quarter/eventhandlers/moc_*.cxx
 src/Gui/TaskView/moc_*.cpp
+
+## Using src/Tools/generate.py from xml
 src/Gui/*Py.cpp
 src/Gui/*Py.h
+
+## Using bin/rcc.exe from *.qrc
 src/Gui/qrc_*.cxx
+
+## Using bin/uic.exe from *.ui
 src/Gui/ui_*.h
+
+## Using src\Tools\PythonToCPP.py
 src/Gui/GuiInitScript.h
 
 
