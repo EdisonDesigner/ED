@@ -19,13 +19,40 @@ Mod/
 src/App/Debug/
 src/App/Release/
 
+# App - CustomBuild files
+src/App/*Py.cpp
+src/App/*Py.h
+src/App/InitScript.h
+src/App/TestScript.h
+
 # Base
 src/Base/Debug/
 src/Base/Release/
 
+# Base - CustomBuild files
+src/Base/*Py.cpp
+src/Base/*Py.h
+src/Base/moc_*.cpp
+
 # Gui
 src/Gui/Debug/
 src/Gui/Release/
+
+# Gui - CustomBuild files
+src/Gui/moc_*.cpp
+src/Gui/iisTaskPanel/src/moc_*.cxx
+src/Gui/Language/moc_*.cpp
+src/Gui/propertyeditor/moc_*.cpp
+src/Gui/QSint/actionpanel/moc_*.cxx
+src/Gui/Quarter/moc_*.cxx
+src/Gui/Quarter/eventhandlers/moc_*.cxx
+src/Gui/TaskView/moc_*.cpp
+src/Gui/*Py.cpp
+src/Gui/*Py.h
+src/Gui/qrc_*.cxx
+src/Gui/ui_*.h
+src/Gui/GuiInitScript.h
+
 
 # Main
 src/Main/GuiPy/Debug/
@@ -79,3 +106,7 @@ src/Mod/Web/App/Debug/
 src/Mod/Web/App/Release/
 src/Mod/Web/Gui/Debug/
 src/Mod/Web/Gui/Release/
+
+# Example_data
+src/Example_data/Debug/
+src/Example_data/Release/
