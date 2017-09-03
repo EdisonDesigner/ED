@@ -41,7 +41,7 @@
 	<message>
       <location filename="StartPage.py" line="57"/>
       <source>The FreeCAD interface is divided in workbenches, which are sets of tools suited for a specific task. You can start with one of the workbenches in this list, or with the complete workbench, which presents you with some of the most used tools gathered from other workbenches. Click to read more about workbenches on the FreeCAD website.</source>
-      <translation>FreeCAD 인터페이스는 특정 작업에 적합한 도구 모음이 있는 작업대로 나뉘어져 있습니다. 이 목록에있는 작업대중 하나 또는 통합 작업대에서 시작할 수 있습니다. 통합 작업대에서는 가장 많이 사용되는 도구가 다른 작업대에서 모아 볼 수 있습니다. FreeCAD의 웹 사이트에서 작업대에 대한 자세한 내용 읽고 싶다면 클릭하십시오.</translation>
+      <translation>EdisonDesigner는 독립적인 기능을 가지고 있는 워크벤치(Workbench)를 통해 작업을 수행할 수 있습니다. 사용자는 상단 워크벤치 선택도구를 이용하여 Sketcher, PartDesign, Part, Mesh 워크벤치를 선택 및 사용할 수 있습니다. 각 워크벤치에 대한 자세한 설명을 원하신다면 EdisonDesigner 블로그를 이용해 주시기 바랍니다.</translation>
     </message>
 	
 	<message>
@@ -77,7 +77,7 @@
 	<message>
       <location filename="StartPage.py" line="65"/>
       <source>FreeCAD offers you several tools to convert between Mesh and Part objects.</source>
-      <translation>FreeCAD는 망사형과 부품 객체를 상호 변환하는 도구를 일부 제공하고 있습니다.</translation>
+      <translation>EdisonDesigner는 망사형과 부품 객체를 상호 변환하는 도구를 일부 제공하고 있습니다.</translation>
     </message>
 	<message>
       <location filename="StartPage.py" line="66"/>
