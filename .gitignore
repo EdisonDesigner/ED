@@ -91,6 +91,8 @@ src/Mod/Assembly/Gui/qrc_*.cxx
 # Mesh
 src/Mod/Mesh/App/Debug/
 src/Mod/Mesh/App/Release/
+src/Mod/Mesh/App/*py.cpp
+src/Mod/Mesh/App/*py.h
 src/Mod/Mesh/Gui/Debug/
 src/Mod/Mesh/Gui/Release/
 src/Mod/Mesh/Gui/qrc_*.cxx
@@ -100,6 +102,8 @@ src/Mod/Mesh/Gui/ui_*.h
 # Part
 src/Mod/Part/App/Debug/
 src/Mod/Part/App/Release/
+src/Mod/Part/App/*py.cpp
+src/Mod/Part/App/*py.h
 src/Mod/Part/Gui/Debug/
 src/Mod/Part/Gui/Release/
 src/Mod/Part/Gui/qrc_*.cxx
@@ -137,9 +141,11 @@ src/Mod/Start/Gui/qrc_*.cxx
 # Web
 src/Mod/Web/App/Debug/
 src/Mod/Web/App/Release/
+src/Mod/Web/App/moc_*.cpp
 src/Mod/Web/Gui/Debug/
 src/Mod/Web/Gui/Release/
 src/Mod/Web/Gui/qrc_*.cxx
+
 
 # Example_data
 src/Example_data/Debug/
