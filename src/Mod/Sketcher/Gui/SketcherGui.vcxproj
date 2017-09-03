@@ -1015,6 +1015,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="ViewProviderSketch.cpp" />
     <ClCompile Include="Workbench.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\translations\Sketcher_ko.ts" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

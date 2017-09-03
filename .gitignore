@@ -125,3 +125,4 @@ src/Mod/Web/Gui/Release/
 # Example_data
 src/Example_data/Debug/
 src/Example_data/Release/
+src/Mod/Sketcher/Gui/qrc_Sketcher.cxx

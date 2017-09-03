@@ -251,4 +251,7 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\translations\Sketcher_ko.ts" />
+  </ItemGroup>
 </Project>
