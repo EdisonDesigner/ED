@@ -85,44 +85,62 @@ src/Mod/Assembly/App/Debug/
 src/Mod/Assembly/App/Release/
 src/Mod/Assembly/Gui/Debug/
 src/Mod/Assembly/Gui/Release/
+src/Mod/Assembly/Gui/qrc_*.cxx
+
 
 # Mesh
 src/Mod/Mesh/App/Debug/
 src/Mod/Mesh/App/Release/
 src/Mod/Mesh/Gui/Debug/
 src/Mod/Mesh/Gui/Release/
+src/Mod/Mesh/Gui/qrc_*.cxx
+src/Mod/Mesh/Gui/moc_*.cpp
+src/Mod/Mesh/Gui/ui_*.h
 
 # Part
 src/Mod/Part/App/Debug/
 src/Mod/Part/App/Release/
 src/Mod/Part/Gui/Debug/
 src/Mod/Part/Gui/Release/
+src/Mod/Part/Gui/qrc_*.cxx
+src/Mod/Part/Gui/moc_*.cpp
+src/Mod/Part/Gui/ui_*.h
 
 # PartDesign
 src/Mod/PartDesign/App/Debug/
 src/Mod/PartDesign/App/Release/
 src/Mod/PartDesign/Gui/Debug/
 src/Mod/PartDesign/Gui/Release/
+src/Mod/PartDesign/Gui/qrc_*.cxx
+src/Mod/PartDesign/Gui/moc_*.cpp
+src/Mod/PartDesign/Gui/ui_*.h
 
 # Sketcher
 src/Mod/Sketcher/App/Debug/
 src/Mod/Sketcher/App/Release/
+src/Mod/Sketcher/App/*Py.cpp
+src/Mod/Sketcher/App/*Py.h
 src/Mod/Sketcher/Gui/Debug/
 src/Mod/Sketcher/Gui/Release/
+src/Mod/Sketcher/Gui/qrc_Sketcher.cxx
+src/Mod/Sketcher/Gui/moc_*.cpp
+src/Mod/Sketcher/Gui/ui_*.h
 
 # Start
 src/Mod/Start/App/Debug/
 src/Mod/Start/App/Release/
 src/Mod/Start/Gui/Debug/
 src/Mod/Start/Gui/Release/
+src/Mod/Start/Gui/qrc_*.cxx
+
 
 # Web
 src/Mod/Web/App/Debug/
 src/Mod/Web/App/Release/
 src/Mod/Web/Gui/Debug/
 src/Mod/Web/Gui/Release/
+src/Mod/Web/Gui/qrc_*.cxx
 
 # Example_data
 src/Example_data/Debug/
 src/Example_data/Release/
-src/Mod/Sketcher/Gui/qrc_Sketcher.cxx
