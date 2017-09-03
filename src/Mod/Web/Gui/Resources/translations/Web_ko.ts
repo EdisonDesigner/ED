@@ -120,7 +120,7 @@
     <message>
         <location filename="../../Command.cpp" line="52"/>
         <source>Opens a website in FreeCAD</source>
-        <translation>FreeCAD에서 웹사이트를 엽니다.</translation>
+        <translation>EdisonDesigner에서 웹사이트를 엽니다.</translation>
     </message>
 </context>
 <context>
