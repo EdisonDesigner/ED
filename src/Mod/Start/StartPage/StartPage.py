@@ -162,7 +162,7 @@ page = """
             if (cmajor >= amajor && cminor >= aminor && cbuild >= abuild) {
                 vdiv.innerHTML=" """ + text45 + """: """ + vmajor + """.""" + vminor + """.""" + vbuild + """";
             } else {
-                vdiv.innerHTML="<a href=exthttp://github.com/FreeCAD/FreeCAD/releases/latest> """ + text46 + """:"+amajor+"."+aminor+"."+abuild+"</a>";
+                vdiv.innerHTML="<a href=exthttp://github.com/EdisonDesigner/ED/releases/latest> """ + text46 + """:"+amajor+"."+aminor+"."+abuild+"</a>";
             }
         }
 
@@ -170,7 +170,7 @@ page = """
             // load latest news
             ddiv = document.getElementById("news");
             ddiv.innerHTML = "Connecting...";
-            var tobj=new JSONscriptRequest('https://api.github.com/repos/FreeCAD/FreeCAD/commits?callback=showTweets');
+            var tobj=new JSONscriptRequest('https://api.github.com/repos/EdisonDesigner/ED/commits?callback=showTweets');
             tobj.buildScriptTag(); // Build the script tag
             tobj.addScriptTag(); // Execute (add) the script tag
             ddiv.innerHTML = "Downloading latest news...";
@@ -259,7 +259,7 @@ page = """
         }
 
         p {
-			font-size: 1.2em;
+			font-size: 1.5em;
 			line-height: 1.5em;
             text-align: justify;
         }
@@ -296,7 +296,7 @@ page = """
 		}
 
         #column {
-            margin: 0 350px 0 10px;
+            margin: 0 600px 0 10px;
         }
 
         #column img {
@@ -338,14 +338,16 @@ page = """
             padding: 8px;
             color: #windowtextcolor;
 			float: right;
-            width: 316px;
+            width: 566px;
             right: 10px;
-            height: 100%;
+			top: 30px;
+			float: top;
+            height: 80%;
             position: relative;
         }
 
         #description img {
-            max-width: 300px;
+            max-width: 550px;
             clear: both;
         }
 
