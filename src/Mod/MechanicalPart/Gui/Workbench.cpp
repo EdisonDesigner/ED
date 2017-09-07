@@ -59,7 +59,13 @@ Gui::MenuItem* Workbench::setupMenuBar() const
 	part->setCommand("&Mechanical Part");
 
 	// 추가될 항목 - Command.cpp에서 정의한 것과 동일해야 함.
-	*part << "MechanicalPart_Test";
+	*part << "MechanicalPart_Test"
+		  << "MechanicalPart_Clamping"
+		  << "MechanicalPart_Control"
+		  << "MechanicalPart_Shaft"
+		  << "MechanicalPart_Transmission"
+		  << "Separator"
+		  << "MechanicalPart_SciBox";
 
 	return root;
 }
@@ -70,8 +76,15 @@ Gui::ToolBarItem* Workbench::setupToolBars() const
     Gui::ToolBarItem* root = StdWorkbench::setupToolBars();
     Gui::ToolBarItem* part = new Gui::ToolBarItem(root);
     part->setCommand(QT_TR_NOOP("MechanicalPart"));
-    *part << "MechanicalPart_Test";
-     return root;
+	*part << "MechanicalPart_Test"
+		  << "MechanicalPart_Clamping"
+		  << "MechanicalPart_Control"
+		  << "MechanicalPart_Shaft"
+		  << "MechanicalPart_Transmission"
+		  << "Separator"
+		  << "MechanicalPart_SciBox";
+
+	return root;
 }
 
 Gui::ToolBarItem* Workbench::setupCommandBars() const

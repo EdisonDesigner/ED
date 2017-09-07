@@ -47,7 +47,6 @@ CmdMechanicalPartTest::CmdMechanicalPartTest()
     sPixmap         = "TestIcon";
 }
 
-
 void CmdMechanicalPartTest::activated(int iMsg)
 {
     // load the file with the module
@@ -56,10 +55,123 @@ void CmdMechanicalPartTest::activated(int iMsg)
 }
 
 
+DEF_STD_CMD(CmdMechanicalPartClamping);
+
+CmdMechanicalPartClamping::CmdMechanicalPartClamping()
+	: Command("MechanicalPart_Clamping")
+{
+	sAppModule		= "MechanicalPart";
+	sGroup			= QT_TR_NOOP("MechanicalPart");
+	sMenuText		= QT_TR_NOOP("Clamping");
+	sToolTipText	= QT_TR_NOOP("Create a clamping component");
+	sWhatsThis		= "MechanicalPart_Clamping";
+	sStatusTip		= sToolTipText;
+	sPixmap			= "TestIcon2";
+}
+
+void CmdMechanicalPartClamping::activated(int iMsg)
+{
+	// load the file with the module
+	//Command::doCommand(Command::Gui, "import Assembly, AssemblyGui");
+
+}
+
+
+DEF_STD_CMD(CmdMechanicalPartControl);
+
+CmdMechanicalPartControl::CmdMechanicalPartControl()
+:Command("MechanicalPart_Control")
+{
+	sAppModule = "MechanicalPart";
+	sGroup = QT_TR_NOOP("MechanicalPart");
+	sMenuText = QT_TR_NOOP("Control");
+	sToolTipText = QT_TR_NOOP("Create a control component");
+	sWhatsThis = "MechanicalPart_Control";
+	sStatusTip = sToolTipText;
+	sPixmap = "TestIcon";
+}
+
+void CmdMechanicalPartControl::activated(int iMsg)
+{
+	// load the file with the module
+	//Command::doCommand(Command::Gui, "import Assembly, AssemblyGui");
+
+}
+
+
+DEF_STD_CMD(CmdMechanicalPartShaft);
+
+CmdMechanicalPartShaft::CmdMechanicalPartShaft()
+:Command("MechanicalPart_Shaft")
+{
+	sAppModule = "MechanicalPart";
+	sGroup = QT_TR_NOOP("MechanicalPart");
+	sMenuText = QT_TR_NOOP("Shaft");
+	sToolTipText = QT_TR_NOOP("Create a shaft component");
+	sWhatsThis = "MechanicalPart_Shaft";
+	sStatusTip = sToolTipText;
+	sPixmap = "TestIcon";
+}
+
+void CmdMechanicalPartShaft::activated(int iMsg)
+{
+	// load the file with the module
+	//Command::doCommand(Command::Gui, "import Assembly, AssemblyGui");
+
+}
+
+
+DEF_STD_CMD(CmdMechanicalPartTransmission);
+
+CmdMechanicalPartTransmission::CmdMechanicalPartTransmission()
+:Command("MechanicalPart_Transmission")
+{
+	sAppModule = "MechanicalPart";
+	sGroup = QT_TR_NOOP("MechanicalPart");
+	sMenuText = QT_TR_NOOP("Transmission");
+	sToolTipText = QT_TR_NOOP("Create a transmission component");
+	sWhatsThis = "MechanicalPart_Transmission";
+	sStatusTip = sToolTipText;
+	sPixmap = "TestIcon";
+}
+
+void CmdMechanicalPartTransmission::activated(int iMsg)
+{
+	// load the file with the module
+	//Command::doCommand(Command::Gui, "import Assembly, AssemblyGui");
+
+}
+
+
+DEF_STD_CMD(CmdMechanicalPartSciBox);
+
+CmdMechanicalPartSciBox::CmdMechanicalPartSciBox()
+:Command("MechanicalPart_SciBox")
+{
+	sAppModule = "MechanicalPart";
+	sGroup = QT_TR_NOOP("MechanicalPart");
+	sMenuText = QT_TR_NOOP("SCI box");
+	sToolTipText = QT_TR_NOOP("Create a sci box component");
+	sWhatsThis = "MechanicalPart_SciBox";
+	sStatusTip = sToolTipText;
+	sPixmap = "TestIcon";
+}
+
+void CmdMechanicalPartSciBox::activated(int iMsg)
+{
+	// load the file with the module
+	//Command::doCommand(Command::Gui, "import Assembly, AssemblyGui");
+
+}
 
 void CreateMechanicalPartCommands(void)
 {
     Gui::CommandManager &rcCmdMgr = Gui::Application::Instance->commandManager();
 
 	rcCmdMgr.addCommand(new CmdMechanicalPartTest());
+	rcCmdMgr.addCommand(new CmdMechanicalPartClamping());
+	rcCmdMgr.addCommand(new CmdMechanicalPartControl());
+	rcCmdMgr.addCommand(new CmdMechanicalPartShaft());
+	rcCmdMgr.addCommand(new CmdMechanicalPartTransmission());
+	rcCmdMgr.addCommand(new CmdMechanicalPartSciBox());
  }
