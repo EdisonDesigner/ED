@@ -12,6 +12,9 @@ LibPacks/
 Data/
 Mod/*/
 
+# Addons - currently ignore
+Addons/
+
 ##############################
 
 # Src folder #
@@ -146,7 +149,20 @@ src/Mod/Web/Gui/Debug/
 src/Mod/Web/Gui/Release/
 src/Mod/Web/Gui/qrc_*.cxx
 
+# MechanicalPart
+src/Mod/MechanicalPart/App/Debug/
+src/Mod/MechanicalPart/App/Release/
+src/Mod/MechanicalPart/App/moc_*.cpp
+src/Mod/MechanicalPart/Gui/Debug/
+src/Mod/MechanicalPart/Gui/Release/
+src/Mod/MechanicalPart/Gui/qrc_*.cxx
+
 
 # Example_data
 src/Example_data/Debug/
 src/Example_data/Release/
+
+# Temp
+src/Mod/Part/Gui/Resources/translations/Part_ko.qm
+src/Mod/Part/Gui/Resources/translations/Part_ko_old.qm
+src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ko.ts

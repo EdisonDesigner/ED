@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>icons/MechanicalPartWorkbench.svg</file>
+    <file>icons/TestIcon.svg</file>
+  </qresource>
+</RCC>

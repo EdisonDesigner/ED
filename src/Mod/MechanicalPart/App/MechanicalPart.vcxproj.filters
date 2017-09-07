@@ -10,44 +10,28 @@
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="CustomBuild">
-      <UniqueIdentifier>{58bbda6c-4cb5-4c67-a430-cf483dbb5097}</UniqueIdentifier>
+      <UniqueIdentifier>{1026ce38-f806-4fd6-ac19-9e6eef8e3140}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="InitGui.py.rule">
+    <None Include="Init.py.rule">
       <Filter>CustomBuild</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Resources\Assembly.qrc" />
-    <CustomBuild Include="AssemblyWorkbench.svg.rule">
-      <Filter>CustomBuild</Filter>
-    </CustomBuild>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PreCompiled.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Workbench.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AppAssemblyGui.cpp">
+    <ClCompile Include="AppMechanicalPart.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="AppAssemblyGuiPy.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Command.cpp">
+    <ClCompile Include="AppMechanicalPartPy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="PreCompiled.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Workbench.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="qrc_Assembly.cxx">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -72,6 +72,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assembly", "src\Mod\Assembl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssemblyGui", "src\Mod\Assembly\Gui\AssemblyGui.vcxproj", "{0D9D1C12-471A-4728-BA2B-76D86778E28B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MechanicalPart", "src\Mod\MechanicalPart\App\MechanicalPart.vcxproj", "{8D488E1A-D878-4C72-A0FA-B501B6DA02A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MechanicalPartGui", "src\Mod\MechanicalPart\Gui\MechanicalPartGui.vcxproj", "{0FA510CD-5C0A-48C3-8CD6-6843AE49D8FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -166,6 +170,14 @@ Global
 		{0D9D1C12-471A-4728-BA2B-76D86778E28B}.Debug|Win32.Build.0 = Debug|Win32
 		{0D9D1C12-471A-4728-BA2B-76D86778E28B}.Release|Win32.ActiveCfg = Release|Win32
 		{0D9D1C12-471A-4728-BA2B-76D86778E28B}.Release|Win32.Build.0 = Release|Win32
+		{8D488E1A-D878-4C72-A0FA-B501B6DA02A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D488E1A-D878-4C72-A0FA-B501B6DA02A4}.Debug|Win32.Build.0 = Debug|Win32
+		{8D488E1A-D878-4C72-A0FA-B501B6DA02A4}.Release|Win32.ActiveCfg = Release|Win32
+		{8D488E1A-D878-4C72-A0FA-B501B6DA02A4}.Release|Win32.Build.0 = Release|Win32
+		{0FA510CD-5C0A-48C3-8CD6-6843AE49D8FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FA510CD-5C0A-48C3-8CD6-6843AE49D8FA}.Debug|Win32.Build.0 = Debug|Win32
+		{0FA510CD-5C0A-48C3-8CD6-6843AE49D8FA}.Release|Win32.ActiveCfg = Release|Win32
+		{0FA510CD-5C0A-48C3-8CD6-6843AE49D8FA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
