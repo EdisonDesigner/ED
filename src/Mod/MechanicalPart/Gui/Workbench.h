@@ -29,7 +29,7 @@
 namespace MechanicalPartGui {
 
 /**
- * @author Werner Mayer
+ * @author Youngki Kim
  */
 	class MechanicalPartGuiExport Workbench : public Gui::StdWorkbench
 {
@@ -40,8 +40,9 @@ public:
   virtual ~Workbench();
 
 protected:
-  Gui::ToolBarItem* setupToolBars() const;
-  Gui::ToolBarItem* setupCommandBars() const;
+	Gui::MenuItem* setupMenuBar() const;
+	Gui::ToolBarItem* setupToolBars() const;
+	Gui::ToolBarItem* setupCommandBars() const;
 };
 
 } // namespace AssemblyGui

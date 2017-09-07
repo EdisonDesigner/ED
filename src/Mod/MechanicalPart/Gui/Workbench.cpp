@@ -28,6 +28,9 @@
 #endif
 
 #include "Workbench.h"
+#include <Gui/Application.h>
+#include <Gui/Command.h>
+#include <Gui/MenuManager.h>
 #include <Gui/ToolBarManager.h>
 
 using namespace MechanicalPartGui;
@@ -43,6 +46,25 @@ Workbench::~Workbench()
 {
 }
 
+// EdisonDesigner 상단 메뉴에 항목 추가
+Gui::MenuItem* Workbench::setupMenuBar() const
+{
+	Gui::MenuItem* root = StdWorkbench::setupMenuBar();
+	Gui::MenuItem* item = root->findItem("&Windows");
+
+	Gui::MenuItem* part = new Gui::MenuItem;
+	root->insertItem(item, part);
+
+	// 추가될 메뉴의 이름
+	part->setCommand("&Mechanical Part");
+
+	// 추가될 항목 - Command.cpp에서 정의한 것과 동일해야 함.
+	*part << "MechanicalPart_Test";
+
+	return root;
+}
+
+// EdisonDesigner 툴바에 항목 추가
 Gui::ToolBarItem* Workbench::setupToolBars() const
 {
     Gui::ToolBarItem* root = StdWorkbench::setupToolBars();
