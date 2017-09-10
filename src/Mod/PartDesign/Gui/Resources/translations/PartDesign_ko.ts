@@ -6,7 +6,7 @@
     <message>
         <location filename="../../Command.cpp" line="+1265"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -24,7 +24,7 @@
     <message>
         <location line="-102"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -42,17 +42,17 @@
     <message>
         <location filename="../../CommandBody.cpp" line="+130"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create body</source>
-        <translation type="unfinished">Create body</translation>
+        <translation>생성: 바디(Body)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a new body and make it active</source>
-        <translation type="unfinished">Create a new body and make it active</translation>
+        <translation>새로운 바디(Body)를 생성하고 작업 바디로 전환합니다.</translation>
     </message>
 </context>
 <context>
@@ -60,17 +60,17 @@
     <message>
         <location filename="../../Command.cpp" line="+906"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Boolean operation</source>
-        <translation>부울 작업</translation>
+        <translation>불리언(Boolean)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Boolean operation with two or more bodies</source>
-        <translation type="unfinished">Boolean operation with two or more bodies</translation>
+        <translation>두 개 이상 바디(Body)의 불리언(Boolean) 작업을 수행합니다.</translation>
     </message>
 </context>
 <context>
@@ -86,17 +86,17 @@
     <message>
         <location line="-579"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Chamfer</source>
-        <translation>모따기</translation>
+        <translation>생성: 모따기(Chamfer)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Chamfer the selected edges of a shape</source>
-        <translation>도형의 선택 된 모서리를 모따기</translation>
+        <translation>선택 된 모서리를 떼어냅니다.</translation>
     </message>
 </context>
 <context>
@@ -104,17 +104,17 @@
     <message>
         <location line="+27"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Draft</source>
-        <translation>흘수</translation>
+        <translation>생성: 구배(Draft)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Make a draft on a face</source>
-        <translation>면에 구배를 작성</translation>
+        <translation>선택된 면을 지정한 각도로 모델 면에 구배를 줍니다.</translation>
     </message>
 </context>
 <context>
@@ -122,17 +122,17 @@
     <message>
         <location filename="../../CommandBody.cpp" line="+420"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Duplicate selected object</source>
-        <translation type="unfinished">Duplicate selected object</translation>
+        <translation>선택한 객체 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Duplicates the selected object and adds it to the active body</source>
-        <translation type="unfinished">Duplicates the selected object and adds it to the active body</translation>
+        <translation>선택한 객체 복사하고 작업 바디에 추가합니다.</translation>
     </message>
 </context>
 <context>
@@ -140,17 +140,17 @@
     <message>
         <location filename="../../Command.cpp" line="-59"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Fillet</source>
-        <translation>필렛</translation>
+        <translation>생성: 필렛(Fillet)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Make a fillet on an edge, face or body</source>
-        <translation>면이나 입체의 가장자리에 필렛을 작성</translation>
+        <translation>모서리를 따라 바깥쪽 면에 둥근 필렛을 작성합니다.</translation>
     </message>
 </context>
 <context>
@@ -158,17 +158,17 @@
     <message>
         <location line="-365"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Groove</source>
-        <translation>홈</translation>
+        <translation>생성: 회전 컷(Groove)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Groove a selected sketch</source>
-        <translation>선택된 스케치에 홈을 만들어</translation>
+        <translation>스케치된 프로파일을 축을 중심으로 회전하여 솔리드 모델을 잘라냅니다.</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location line="-927"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -194,17 +194,17 @@
     <message>
         <location line="+1606"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>LinearPattern</source>
-        <translation>선형배열</translation>
+        <translation>생성: 선형 패턴(Linear pattern)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a linear pattern feature</source>
-        <translation type="unfinished">Create a linear pattern feature</translation>
+        <translation>선택 피쳐를 이용하여 선형 패턴을 생성합니다.</translation>
     </message>
     <message>
         <source>create a linear pattern feature</source>
@@ -216,7 +216,7 @@
     <message>
         <location filename="../../CommandBody.cpp" line="-296"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -234,17 +234,17 @@
     <message>
         <location filename="../../Command.cpp" line="-66"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Mirrored</source>
-        <translation>대칭</translation>
+        <translation>대칭 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>create a mirrored feature</source>
-        <translation>대칭 복사 된 피쳐를 생성</translation>
+        <translation>면이나 기준면을 중심으로 피쳐를 대칭 복사합니다.</translation>
     </message>
 </context>
 <context>
@@ -252,17 +252,17 @@
     <message>
         <location filename="../../CommandBody.cpp" line="+348"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Move object to other body</source>
-        <translation type="unfinished">Move object to other body</translation>
+        <translation>객체를 다른 바디로 이동</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Moves the selected object to another body</source>
-        <translation type="unfinished">Moves the selected object to another body</translation>
+        <translation>선택된 객체를 다른 바디로 이동합니다.</translation>
     </message>
 </context>
 <context>
@@ -270,17 +270,17 @@
     <message>
         <location line="+138"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Move object after other object</source>
-        <translation type="unfinished">Move object after other object</translation>
+        <translation>객체를 다른 객체 뒤로 이동</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Moves the selected object and insert it after another object</source>
-        <translation type="unfinished">Moves the selected object and insert it after another object</translation>
+        <translation>선택된 객체를 다른 객체 뒤로 삽입합니다.</translation>
     </message>
 </context>
 <context>
@@ -288,7 +288,7 @@
     <message>
         <location line="-278"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -306,12 +306,12 @@
     <message>
         <location filename="../../Command.cpp" line="+235"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create MultiTransform</source>
-        <translation type="unfinished">Create MultiTransform</translation>
+        <translation>생성: 다중 패턴(Multi transform)</translation>
     </message>
     <message>
         <source>MultiTransform</source>
@@ -320,7 +320,7 @@
     <message>
         <location line="+1"/>
         <source>Create a multitransform feature</source>
-        <translation type="unfinished">Create a multitransform feature</translation>
+        <translation>선택 피쳐를 이용하여 다중 패턴을 생성합니다.</translation>
     </message>
     <message>
         <source>create a multitransform feature</source>
@@ -332,7 +332,7 @@
     <message>
         <location line="-1655"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -342,7 +342,7 @@
     <message>
         <location line="+1"/>
         <source>Create a new sketch</source>
-        <translation type="unfinished">Create a new sketch</translation>
+        <translation>새로운 스케치를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -350,17 +350,17 @@
     <message>
         <location line="+629"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Pad</source>
-        <translation>돌출</translation>
+        <translation>생성: 돌출(Pad)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Pad a selected sketch</source>
-        <translation>스케치선택돌출</translation>
+        <translation>스케치를 한 방향 또는 두 방향으로 돌출하여 솔리드 피처를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -368,17 +368,17 @@
     <message>
         <location filename="../../CommandBody.cpp" line="-387"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create part</source>
-        <translation type="unfinished">Create part</translation>
+        <translation>생성: 파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a new part and make it active</source>
-        <translation type="unfinished">Create a new part and make it active</translation>
+        <translation>새로운 파트를 생성하고 작업 파트로 전환합니다.</translation>
     </message>
 </context>
 <context>
@@ -386,17 +386,17 @@
     <message>
         <location filename="../../Command.cpp" line="-789"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a datum plane</source>
-        <translation type="unfinished">Create a datum plane</translation>
+        <translation>생성: 데이텀 평면(Datum plane)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a new datum plane</source>
-        <translation type="unfinished">Create a new datum plane</translation>
+        <translation>새로운 데이텀 평면을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -404,17 +404,17 @@
     <message>
         <location line="+844"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Pocket</source>
-        <translation>구멍</translation>
+        <translation>생성: 돌출 컷(Pocket)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a pocket with the selected sketch</source>
-        <translation type="unfinished">Create a pocket with the selected sketch</translation>
+        <translation>스케치된 프로파일을 돌출하여 잘라진 형체를 생성합니다.</translation>
     </message>
     <message>
         <source>create a pocket with the selected sketch</source>
@@ -426,17 +426,17 @@
     <message>
         <location line="-792"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a datum point</source>
-        <translation type="unfinished">Create a datum point</translation>
+        <translation>생성: 데이텀 점(Datum point)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a new datum point</source>
-        <translation type="unfinished">Create a new datum point</translation>
+        <translation>새로운 데이텀 점을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -444,17 +444,17 @@
     <message>
         <location line="+1644"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>PolarPattern</source>
-        <translation>원형배열</translation>
+        <translation>생성: 원형 패턴(Polar pattern)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a polar pattern feature</source>
-        <translation type="unfinished">Create a polar pattern feature</translation>
+        <translation>선택 피쳐를 축을 중심으로 원형 패턴을 생성합니다.</translation>
     </message>
     <message>
         <source>create a polar pattern feature</source>
@@ -466,17 +466,17 @@
     <message>
         <location line="-811"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Revolution</source>
-        <translation>회전</translation>
+        <translation>생성: 회전(Revolution)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Revolve a selected sketch</source>
-        <translation>스케치선택회전</translation>
+        <translation>축을 중심으로 프로파일을 회전하여 솔리드 피처를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -484,7 +484,7 @@
     <message>
         <location line="+874"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -494,7 +494,7 @@
     <message>
         <location line="+1"/>
         <source>Create a scaled feature</source>
-        <translation type="unfinished">Create a scaled feature</translation>
+        <translation>Create a scaled feature</translation>
     </message>
     <message>
         <source>create a scaled feature</source>
@@ -506,7 +506,7 @@
     <message>
         <location line="-1683"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -524,7 +524,7 @@
     <message>
         <location line="+1073"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -542,7 +542,7 @@
     <message>
         <location line="-102"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -560,17 +560,17 @@
     <message>
         <location line="+365"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Thickness</source>
-        <translation>두께</translation>
+        <translation>생성: 두께(Thickness)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Make a thick solid</source>
-        <translation type="unfinished">Make a thick solid</translation>
+        <translation>솔리드에 두께를 제외한 부분을 잘라낸 모델을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -578,7 +578,7 @@
     <message>
         <location filename="../../CommandPrimitive.cpp" line="+68"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -632,7 +632,7 @@
     <message>
         <location line="+16"/>
         <source>PartDesign</source>
-        <translation>부분품설계</translation>
+        <translation>단품설계</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -691,22 +691,22 @@
     <message>
         <location line="+6"/>
         <source>You selected geometries which are not part of the active body. Please define how to handle those selections. If you do not want those references cancel the command.</source>
-        <translation type="unfinished">You selected geometries which are not part of the active body. Please define how to handle those selections. If you do not want those references cancel the command.</translation>
+        <translation>선택한 지오메트리(Geometry)가 작업 바디에 속해있지 않습니다. 선택된 지오메트리를 처리하는 방법을 정의하세요. 이러한 참조가 필요하지 않으면 취소버튼을 누르세요.</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Make independent copy (recommended)</source>
-        <translation type="unfinished">Make independent copy (recommended)</translation>
+        <translation>독립적인 사본 만들기(권장)</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Make dependent copy</source>
-        <translation type="unfinished">Make dependent copy</translation>
+        <translation>원본에 종속적인 사본 만들기</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Create cross-reference</source>
-        <translation type="unfinished">Create cross-reference</translation>
+        <translation>양방향 참조 생성하기</translation>
     </message>
 </context>
 <context>
@@ -714,37 +714,37 @@
     <message>
         <location filename="../../FeaturePickDialog.cpp" line="+45"/>
         <source>Valid</source>
-        <translation type="unfinished">Valid</translation>
+        <translation>이용 가능</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid shape</source>
-        <translation type="unfinished">Invalid shape</translation>
+        <translation>사용할 수 없는 형상</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>No wire in sketch</source>
-        <translation type="unfinished">No wire in sketch</translation>
+        <translation>스케치에 와이어(Wire)가 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sketch already used by other feature</source>
-        <translation type="unfinished">Sketch already used by other feature</translation>
+        <translation>선택한 스케치가 이미 다른 피처에서 사용되고 있습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sketch belongs to another Body feature</source>
-        <translation type="unfinished">Sketch belongs to another Body feature</translation>
+        <translation>선택한 스케치가 다른 바디 피처에 포함되어 있습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Base plane</source>
-        <translation type="unfinished">Base plane</translation>
+        <translation>기본 평면</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Feature is located after the Tip feature</source>
-        <translation type="unfinished">Feature is located after the Tip feature</translation>
+        <translation>피처가 tip 피처 뒤에 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -752,17 +752,17 @@
     <message>
         <location filename="../../Workbench.cpp" line="+52"/>
         <source>Face tools</source>
-        <translation>표면도구</translation>
+        <translation>면(Face) 도구</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sketch tools</source>
-        <translation>스케치도구</translation>
+        <translation>스케치(Sketch) 도구</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create Geometry</source>
-        <translation>형상을 생성합니다</translation>
+        <translation>생성: 지오메트리(Geometry)</translation>
     </message>
 </context>
 <context>
@@ -770,17 +770,17 @@
     <message>
         <location filename="../../../InvoluteGearFeature.ui" line="+14"/>
         <source>Involute parameter</source>
-        <translation>인벌류트상수</translation>
+        <translation>복잡한 파라메터</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Number of teeth:</source>
-        <translation>잇수</translation>
+        <translation>기어 잇수:</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Modules:</source>
-        <translation>모듈</translation>
+        <translation>모듈:</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -802,7 +802,7 @@
     <message>
         <location line="-19"/>
         <source>External gear:</source>
-        <translation>외부 장비:</translation>
+        <translation>외부 기어:</translation>
     </message>
     <message>
         <location line="-68"/>
@@ -858,7 +858,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPrimitiveParameters.ui" line="+14"/>
         <source>Geometric Primitives</source>
-        <translation>기하학적 프리미티브</translation>
+        <translation>기본 형상(Primitives)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -895,21 +895,21 @@ Please check one or more edge entities first.</translation>
         <location line="+122"/>
         <location line="+65"/>
         <source>Radius:</source>
-        <translation>반경:</translation>
+        <translation>반지름:</translation>
     </message>
     <message>
         <location line="-940"/>
         <location line="+200"/>
         <location line="+254"/>
         <source>Radius 1:</source>
-        <translation>반경 1:</translation>
+        <translation>반지름 1:</translation>
     </message>
     <message>
         <location line="-447"/>
         <location line="+200"/>
         <location line="+240"/>
         <source>Radius 2:</source>
-        <translation>반경 2:</translation>
+        <translation>반지름 2:</translation>
     </message>
     <message>
         <location line="-377"/>
@@ -925,7 +925,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+137"/>
         <source>Radius 3:</source>
-        <translation>반경 3:</translation>
+        <translation>반지름 3:</translation>
     </message>
     <message>
         <location line="+70"/>
@@ -948,7 +948,7 @@ Please check one or more edge entities first.</translation>
         <location line="-862"/>
         <location line="+882"/>
         <source>Circumradius:</source>
-        <translation>Circumradius:</translation>
+        <translation>외접원의 반지름:</translation>
     </message>
     <message>
         <location line="-831"/>
@@ -958,22 +958,22 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+7"/>
         <source>Y min/max:</source>
-        <translation>Y 최소/최대:</translation>
+        <translation>최소/최대 Y:</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Z min/max:</source>
-        <translation>Z 최소/최대:</translation>
+        <translation>최소/최대 Z:</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>X2 min/max:</source>
-        <translation>X2 최소/최대:</translation>
+        <translation>최소/최대 X2:</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Z2 min/max:</source>
-        <translation>Z2 최소/최대:</translation>
+        <translation>최소/최대 Z2:</translation>
     </message>
     <message>
         <location line="+160"/>
@@ -998,7 +998,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+88"/>
         <source>Growth:</source>
-        <translation>성장:</translation>
+        <translation type="unfinished">성장:</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1025,12 +1025,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+28"/>
         <source>Major radius:</source>
-        <translation>주요 반경:</translation>
+        <translation>주(Major) 반지름:</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Minor radius:</source>
-        <translation>부수 반경:</translation>
+        <translation>부(Minor) 반지름:</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1056,7 +1056,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="-37"/>
         <source>End point</source>
-        <translation>끝점</translation>
+        <translation>끝 점</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1068,7 +1068,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::FeaturePickDialog</name>
     <message>
         <source>Choose feature</source>
-        <translation type="obsolete">기능 선택</translation>
+        <translation type="obsolete">피처 선택</translation>
     </message>
 </context>
 <context>
@@ -1089,27 +1089,27 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+8"/>
         <source>Add body</source>
-        <translation type="unfinished">Add body</translation>
+        <translation>바디(Body) 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove body</source>
-        <translation type="unfinished">Remove body</translation>
+        <translation>바디(Body) 제거</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Fuse</source>
-        <translation type="unfinished">Fuse</translation>
+        <translation>결합(합집합)</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Cut</source>
-        <translation>자르기</translation>
+        <translation>분리(차집합)</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Common</source>
-        <translation type="unfinished">Common</translation>
+        <translation>공통(교집합)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1119,12 +1119,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskBooleanParameters.cpp" line="+54"/>
         <source>Boolean parameters</source>
-        <translation type="unfinished">Boolean parameters</translation>
+        <translation>불리언(Boolean) 매개 변수</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
@@ -1132,28 +1132,28 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPrimitiveParameters.cpp" line="+54"/>
         <source>Primitive parameters</source>
-        <translation type="unfinished">Primitive parameters</translation>
+        <translation>기본 형상 매개 변수</translation>
     </message>
     <message>
         <location line="+573"/>
         <location line="+7"/>
         <source>Create primitive</source>
-        <translation type="unfinished">Create primitive</translation>
+        <translation>생성: 기본 형상</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskChamfer</name>
     <message>
         <source>Chamfer Edges</source>
-        <translation type="obsolete">Chamfer Edges</translation>
+        <translation type="obsolete">모따기(Chamfer) 모서리</translation>
     </message>
     <message>
         <source>Shape</source>
-        <translation type="obsolete">셰이프</translation>
+        <translation type="obsolete">형상</translation>
     </message>
     <message>
         <source>Selected shape:</source>
-        <translation type="obsolete">선택된 모양:</translation>
+        <translation type="obsolete">선택된 형상:</translation>
     </message>
     <message>
         <source>No selection</source>
@@ -1161,7 +1161,7 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Chamfer Parameter</source>
-        <translation type="obsolete">Chamfer Parameter</translation>
+        <translation type="obsolete">모따기(Chamfer) 매개 변수</translation>
     </message>
     <message>
         <source>All</source>
@@ -1169,23 +1169,23 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="obsolete">None</translation>
+        <translation type="obsolete">선택 사항 없음</translation>
     </message>
     <message>
         <source>Chamfer type:</source>
-        <translation type="obsolete">Chamfer type:</translation>
+        <translation type="obsolete">모따기(Chamfer) 방식:</translation>
     </message>
     <message>
         <source>Constant Distance</source>
-        <translation type="obsolete">Constant Distance</translation>
+        <translation type="obsolete">일정한 거리</translation>
     </message>
     <message>
         <source>Variable Distance</source>
-        <translation type="obsolete">Variable Distance</translation>
+        <translation type="obsolete">가변 거리</translation>
     </message>
     <message>
         <source>Distance:</source>
-        <translation type="obsolete">거리</translation>
+        <translation type="obsolete">거리:</translation>
     </message>
 </context>
 <context>
@@ -1193,17 +1193,17 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskChamferParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Add ref</source>
-        <translation type="unfinished">Add ref</translation>
+        <translation>참조 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove ref</source>
-        <translation type="unfinished">Remove ref</translation>
+        <translation>참조 제거</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -1212,12 +1212,12 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Chamfer parameters</source>
-        <translation type="obsolete">모따기 매개 변수</translation>
+        <translation type="obsolete">모따기(Chamfer) 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskChamferParameters.cpp" line="+86"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
@@ -1225,7 +1225,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskDatumParameters.cpp" line="+72"/>
         <source> parameters</source>
-        <translation type="unfinished"> parameters</translation>
+        <translation> 매개 변수</translation>
     </message>
 </context>
 <context>
@@ -1233,14 +1233,14 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskBooleanParameters.cpp" line="+253"/>
         <source>Boolean: Accept: Input error</source>
-        <translation type="unfinished">Boolean: Accept: Input error</translation>
+        <translation>불리언: 수락: 입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgChamferParameters</name>
     <message>
         <source>Edit chamfer</source>
-        <translation type="obsolete">모따기 편집</translation>
+        <translation type="obsolete">모따기(Chamfer) 수정</translation>
     </message>
 </context>
 <context>
@@ -1248,12 +1248,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskDatumParameters.cpp" line="+49"/>
         <source>Incompatible reference set</source>
-        <translation type="unfinished">Incompatible reference set</translation>
+        <translation>호환되지 않는 참조 구성</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>There is no attachment mode that fits the current set of references. If you choose to continue, the feature will remain where it is now, and will not be moved as the references change. Continue?</source>
-        <translation type="unfinished">There is no attachment mode that fits the current set of references. If you choose to continue, the feature will remain where it is now, and will not be moved as the references change. Continue?</translation>
+        <translation>현재 참조 구성에 적합한 첨부 모드가 없습니다. 계속하기를 선택하시면, 피처의 현재 위치가 유지되고 참조가 변경되어도 이동하지 않습니다. 계속하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -1275,7 +1275,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgFilletParameters</name>
     <message>
         <source>Edit fillet</source>
-        <translation type="obsolete">Edit fillet</translation>
+        <translation type="obsolete">필렛(Fillet) 수정</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgPocketParameters</name>
     <message>
         <source>Edit pocket</source>
-        <translation type="obsolete">Edit pocket</translation>
+        <translation type="obsolete">돌출 컷(Pocket) 수정</translation>
     </message>
     <message>
         <source>Input error</source>
@@ -1359,7 +1359,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskDraftParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -1374,7 +1374,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+17"/>
         <source>Draft angle</source>
-        <translation type="unfinished">Draft angle</translation>
+        <translation>구배 각</translation>
     </message>
     <message>
         <location line="+30"/>
@@ -1384,21 +1384,21 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+17"/>
         <source>Pull direction</source>
-        <translation>잡아당기는 방향</translation>
+        <translation>구배 방향</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Reverse pull direction</source>
-        <translation>잡아당기는 방향 뒤바꾸기</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <source>Draft parameters</source>
-        <translation type="obsolete">Draft parameters</translation>
+        <translation type="obsolete">구배 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskDraftParameters.cpp" line="+96"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
@@ -1406,7 +1406,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskFeaturePick.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1503,70 +1503,70 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskFilletParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Add ref</source>
-        <translation type="unfinished">Add ref</translation>
+        <translation>참조 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove ref</source>
-        <translation type="unfinished">Remove ref</translation>
+        <translation>참조 제거</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Radius:</source>
-        <translation>반경:</translation>
+        <translation>반지름:</translation>
     </message>
     <message>
         <source>Fillet parameters</source>
-        <translation type="obsolete">필렛 매개 변수</translation>
+        <translation type="obsolete">필렛(Fillet) 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskFilletParameters.cpp" line="+86"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskGrooveParameters</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">Form</translation>
+        <translation type="obsolete">양식</translation>
     </message>
     <message>
         <source>Axis:</source>
-        <translation type="obsolete">축:</translation>
+        <translation type="obsolete">회전 축:</translation>
     </message>
     <message>
         <source>Vertical sketch axis</source>
-        <translation type="obsolete">Vertical sketch axis</translation>
+        <translation type="obsolete">스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <source>Horizontal sketch axis</source>
-        <translation type="obsolete">Horizontal sketch axis</translation>
+        <translation type="obsolete">스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <source>Angle:</source>
-        <translation type="obsolete">각도:</translation>
+        <translation type="obsolete">회전 각:</translation>
     </message>
     <message>
         <source>Symmetric to plane</source>
-        <translation type="obsolete">평면에 대칭</translation>
+        <translation type="obsolete">스케치 평면에 대칭</translation>
     </message>
     <message>
         <source>Reversed</source>
-        <translation type="obsolete">Reversed</translation>
+        <translation type="obsolete">반대 방향</translation>
     </message>
     <message>
         <source>Update view</source>
-        <translation type="obsolete">보기 재생성</translation>
+        <translation type="obsolete">변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Groove parameters</source>
-        <translation type="obsolete">홈 매개 변수</translation>
+        <translation type="obsolete">회전 컷(Groove) 매개 변수</translation>
     </message>
 </context>
 <context>
@@ -1574,22 +1574,22 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskHoleParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Type:</source>
-        <translation>유형:</translation>
+        <translation type="unfinished">유형:</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Dimension</source>
-        <translation type="unfinished">Dimension</translation>
+        <translation type="unfinished">치수</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Up to last</source>
-        <translation>마지막까지</translation>
+        <translation type="unfinished">마지막까지</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1599,7 +1599,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+12"/>
         <source>Size:</source>
-        <translation>크기:</translation>
+        <translation type="unfinished">크기:</translation>
     </message>
     <message>
         <location filename="../../TaskHoleParameters.cpp" line="+48"/>
@@ -1612,53 +1612,53 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskLinearPatternParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Original feature</source>
-        <translation type="obsolete">Original feature</translation>
+        <translation type="obsolete">원본 피처</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Direction</source>
-        <translation>방향</translation>
+        <translation>패턴 적용 방향</translation>
     </message>
     <message>
         <source>Horizontal sketch axis</source>
-        <translation type="obsolete">Horizontal sketch axis</translation>
+        <translation type="obsolete">스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <source>Vertical sketch axis</source>
-        <translation type="obsolete">Vertical sketch axis</translation>
+        <translation type="obsolete">스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <source>Select reference...</source>
-        <translation type="obsolete">레퍼런스 선택</translation>
+        <translation type="obsolete">임의의 방향 선택...</translation>
     </message>
     <message>
         <location line="-27"/>
         <source>Add feature</source>
-        <translation type="unfinished">Add feature</translation>
+        <translation>피처 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove feature</source>
-        <translation type="unfinished">Remove feature</translation>
+        <translation>피처 제거</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Reverse direction</source>
-        <translation type="unfinished">Reverse direction</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Length</source>
-        <translation>길이:</translation>
+        <translation>간격:</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Occurrences</source>
-        <translation type="unfinished">Occurrences</translation>
+        <translation>생성 수</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -1668,20 +1668,20 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+9"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Select an edge or a face</source>
-        <translation type="obsolete">가장자리나 면을 선택</translation>
+        <translation type="obsolete">모서리나 면을 선택하세요.</translation>
     </message>
     <message>
         <source>Undefined</source>
-        <translation type="obsolete">Undefined</translation>
+        <translation type="obsolete">정의되지 않음</translation>
     </message>
     <message>
         <location filename="../../TaskLinearPatternParameters.cpp" line="+113"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location line="+203"/>
@@ -1732,11 +1732,11 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskMirroredParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <source>Original feature</source>
-        <translation type="obsolete">Original feature</translation>
+        <translation type="obsolete">원본 피처</translation>
     </message>
     <message>
         <source>XY</source>
@@ -1753,29 +1753,29 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+35"/>
         <source>Plane</source>
-        <translation>평면</translation>
+        <translation>미러 평면</translation>
     </message>
     <message>
         <source>Horizontal sketch axis</source>
-        <translation type="obsolete">Horizontal sketch axis</translation>
+        <translation type="obsolete">스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <source>Vertical sketch axis</source>
-        <translation type="obsolete">Vertical sketch axis</translation>
+        <translation type="obsolete">스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <source>Select reference...</source>
-        <translation type="obsolete">레퍼런스 선택</translation>
+        <translation type="obsolete">임의의 방향 선택...</translation>
     </message>
     <message>
         <location line="-27"/>
         <source>Add feature</source>
-        <translation type="unfinished">Add feature</translation>
+        <translation>피처 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove feature</source>
-        <translation type="unfinished">Remove feature</translation>
+        <translation>피처 제거</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1785,11 +1785,11 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+9"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Select a plane</source>
-        <translation type="obsolete">Select a plane</translation>
+        <translation type="obsolete">평면 선택</translation>
     </message>
     <message>
         <source>Select a face</source>
@@ -1797,12 +1797,12 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Undefined</source>
-        <translation type="obsolete">Undefined</translation>
+        <translation type="obsolete">정의되지 않음</translation>
     </message>
     <message>
         <location filename="../../TaskMirroredParameters.cpp" line="+110"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location line="+134"/>
@@ -1815,66 +1815,66 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskMultiTransformParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Original feature</source>
-        <translation type="obsolete">Original feature</translation>
+        <translation type="obsolete">원본 피처</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Add feature</source>
-        <translation type="unfinished">Add feature</translation>
+        <translation>피처 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove feature</source>
-        <translation type="unfinished">Remove feature</translation>
+        <translation>피처 제거</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Transformations</source>
-        <translation>변형</translation>
+        <translation>적용 패턴</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <location filename="../../TaskMultiTransformParameters.cpp" line="+73"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>수정</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Delete</source>
-        <translation>삭제</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Add mirrored transformation</source>
-        <translation>반전된 변형 추가</translation>
+        <translation>미러(Mirrored) 패턴 추가</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Add linear pattern</source>
-        <translation>선형 패턴 추가</translation>
+        <translation>선형(Linear) 패턴 추가</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Add polar pattern</source>
-        <translation>극 패턴 추가</translation>
+        <translation>원형(Polar) 패턴 추가</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Add scaled transformation</source>
-        <translation>확대/축소된 변환 추가</translation>
+        <translation>확대/축소(Scaled) 변환 추가</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1889,7 +1889,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+27"/>
         <source>Right-click to add</source>
-        <translation>오른쪽 단추 클릭으로 추가</translation>
+        <translation>마우스 오른쪽 버튼 클릭으로 항목 추가</translation>
     </message>
 </context>
 <context>
@@ -1897,7 +1897,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPadParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -1907,70 +1907,70 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+20"/>
         <source>Length</source>
-        <translation>길이:</translation>
+        <translation>돌출(Pad) 길이</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Offset</source>
-        <translation type="unfinished">Offset</translation>
+        <translation>오프셋(Offset)</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Symmetric to plane</source>
-        <translation>평면에 대칭</translation>
+        <translation>스케치 평면에 대칭</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>2nd length</source>
-        <translation type="unfinished">2nd length</translation>
+        <translation>두 번째 방향 돌출 길이</translation>
     </message>
     <message>
         <location line="+18"/>
         <location filename="../../TaskPadParameters.cpp" line="+103"/>
         <location line="+277"/>
         <source>Face</source>
-        <translation>면</translation>
+        <translation>면 선택</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation type="obsolete">유형:</translation>
+        <translation type="obsolete">타입:</translation>
     </message>
     <message>
         <location line="-98"/>
         <location filename="../../TaskPadParameters.cpp" line="-271"/>
         <location line="+253"/>
         <source>Dimension</source>
-        <translation type="unfinished">Dimension</translation>
+        <translation>치수</translation>
     </message>
     <message>
         <source>Length:</source>
-        <translation type="obsolete">길이:</translation>
+        <translation type="obsolete">돌출 길이:</translation>
     </message>
     <message>
         <source>Mirrored extent</source>
-        <translation type="obsolete">Mirrored extent</translation>
+        <translation type="obsolete">대칭(Mirrored)하여 돌출</translation>
     </message>
     <message>
         <location line="+52"/>
         <source>Reversed</source>
-        <translation type="unfinished">Reversed</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <source>Display mode:</source>
-        <translation type="obsolete">Display mode:</translation>
+        <translation type="obsolete">표시 유형:</translation>
     </message>
     <message>
         <source>Plot mode:</source>
-        <translation type="obsolete">플롯 모드:</translation>
+        <translation type="obsolete">플롯(Plot) 모드:</translation>
     </message>
     <message>
         <source>Point size:</source>
-        <translation type="obsolete">포인트 크기:</translation>
+        <translation type="obsolete">점 크기:</translation>
     </message>
     <message>
         <source>Line width:</source>
@@ -1987,7 +1987,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPadParameters.cpp" line="-306"/>
         <source>Pad parameters</source>
-        <translation>패드 매개 변수</translation>
+        <translation>돌출(Pad) 매개 변수</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1996,7 +1996,7 @@ Please check one or more edge entities first.</translation>
         <location line="+6"/>
         <location line="+148"/>
         <source>No face selected</source>
-        <translation>면 선택되지 않음</translation>
+        <translation>선택된 면 없음</translation>
     </message>
     <message>
         <location line="-267"/>
@@ -2008,26 +2008,26 @@ Please check one or more edge entities first.</translation>
         <location line="-252"/>
         <location line="+253"/>
         <source>To first</source>
-        <translation>첫 번째 까지</translation>
+        <translation type="unfinished">To first</translation>
     </message>
     <message>
         <location line="-252"/>
         <location line="+253"/>
         <source>Up to face</source>
-        <translation>곡면까지</translation>
+        <translation>선택 면까지</translation>
     </message>
     <message>
         <location line="-252"/>
         <location line="+253"/>
         <source>Two dimensions</source>
-        <translation>2차원</translation>
+        <translation>2개의 치수 이용</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskPatternRectangularParameters</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">Form</translation>
+        <translation type="obsolete">양식</translation>
     </message>
     <message>
         <source>Spacing1:</source>
@@ -2238,11 +2238,11 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPocketParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation type="obsolete">유형:</translation>
+        <translation type="obsolete">타입:</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2254,44 +2254,44 @@ Please check one or more edge entities first.</translation>
         <location filename="../../TaskPocketParameters.cpp" line="+101"/>
         <location line="+254"/>
         <source>Dimension</source>
-        <translation type="unfinished">Dimension</translation>
+        <translation>치수</translation>
     </message>
     <message>
         <location line="+30"/>
         <source>Offset</source>
-        <translation type="unfinished">Offset</translation>
+        <translation>오프셋(Offset)</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Symmetric to plane</source>
-        <translation>평면에 대칭</translation>
+        <translation>스케치 평면에 대칭</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Reversed</source>
-        <translation type="unfinished">Reversed</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <location line="+9"/>
         <location filename="../../TaskPocketParameters.cpp" line="-260"/>
         <location line="+277"/>
         <source>Face</source>
-        <translation>면</translation>
+        <translation>면 선택</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <location line="-68"/>
         <source>Length</source>
-        <translation>길이:</translation>
+        <translation>돌출 컷(Pocket) 길이</translation>
     </message>
     <message>
         <location filename="../../TaskPocketParameters.cpp" line="-316"/>
         <source>Pocket parameters</source>
-        <translation>포켓 매개 변수</translation>
+        <translation>돌출 컷(Pocket) 매개 변수</translation>
     </message>
     <message>
         <source>To last</source>
@@ -2301,7 +2301,7 @@ Please check one or more edge entities first.</translation>
         <location line="+47"/>
         <location line="+254"/>
         <source>To first</source>
-        <translation>첫 번째 까지</translation>
+        <translation>첫 번째 만나는 면까지</translation>
     </message>
     <message>
         <location line="-255"/>
@@ -2313,7 +2313,7 @@ Please check one or more edge entities first.</translation>
         <location line="-252"/>
         <location line="+254"/>
         <source>Up to face</source>
-        <translation>곡면까지</translation>
+        <translation>선택 면까지</translation>
     </message>
     <message>
         <location line="-260"/>
@@ -2322,7 +2322,7 @@ Please check one or more edge entities first.</translation>
         <location line="+6"/>
         <location line="+149"/>
         <source>No face selected</source>
-        <translation>면 선택되지 않음</translation>
+        <translation>선택된 면 없음</translation>
     </message>
 </context>
 <context>
@@ -2330,11 +2330,11 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskPolarPatternParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Original feature</source>
-        <translation type="obsolete">Original feature</translation>
+        <translation type="obsolete">원본 피처</translation>
     </message>
     <message>
         <source>X</source>
@@ -2355,40 +2355,40 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+35"/>
         <source>Axis</source>
-        <translation>축</translation>
+        <translation>회전 축</translation>
     </message>
     <message>
         <source>Normal sketch axis</source>
-        <translation type="obsolete">Normal sketch axis</translation>
+        <translation type="obsolete">스케치 원점에 수직</translation>
     </message>
     <message>
         <source>Select reference...</source>
-        <translation type="obsolete">레퍼런스 선택</translation>
+        <translation type="obsolete">임의의 회전 기준 축 선택...</translation>
     </message>
     <message>
         <location line="-27"/>
         <source>Add feature</source>
-        <translation type="unfinished">Add feature</translation>
+        <translation>피처 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove feature</source>
-        <translation type="unfinished">Remove feature</translation>
+        <translation>피처 제거</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Reverse direction</source>
-        <translation type="unfinished">Reverse direction</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Angle</source>
-        <translation type="unfinished">Angle</translation>
+        <translation>각도</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Occurrences</source>
-        <translation type="unfinished">Occurrences</translation>
+        <translation>생성 수</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2398,16 +2398,16 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+9"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Select an edge</source>
-        <translation type="obsolete">변을 선택</translation>
+        <translation type="obsolete">모서리 선택</translation>
     </message>
     <message>
         <location filename="../../TaskPolarPatternParameters.cpp" line="+111"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location line="+206"/>
@@ -2420,83 +2420,83 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskRevolutionParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Axis:</source>
-        <translation>축:</translation>
+        <translation>회전 축:</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Vertical sketch axis</source>
-        <translation type="unfinished">Vertical sketch axis</translation>
+        <translation>스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <location line="-5"/>
         <source>Horizontal sketch axis</source>
-        <translation type="unfinished">Horizontal sketch axis</translation>
+        <translation>스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <location line="-15"/>
         <location filename="../../TaskRevolutionParameters.cpp" line="+184"/>
         <source>Base X axis</source>
-        <translation type="unfinished">Base X axis</translation>
+        <translation>절대좌표계 X 축</translation>
     </message>
     <message>
         <location line="+5"/>
         <location filename="../../TaskRevolutionParameters.cpp" line="+1"/>
         <source>Base Y axis</source>
-        <translation type="unfinished">Base Y axis</translation>
+        <translation>절대좌표계 Y 축</translation>
     </message>
     <message>
         <location line="+5"/>
         <location filename="../../TaskRevolutionParameters.cpp" line="+1"/>
         <source>Base Z axis</source>
-        <translation type="unfinished">Base Z axis</translation>
+        <translation>절대좌표계 Z 축</translation>
     </message>
     <message>
         <location line="+15"/>
         <location filename="../../TaskRevolutionParameters.cpp" line="+7"/>
         <source>Select reference...</source>
-        <translation>레퍼런스 선택</translation>
+        <translation>회전 축 선택...</translation>
     </message>
     <message>
         <location line="+43"/>
         <source>Symmetric to plane</source>
-        <translation>평면에 대칭</translation>
+        <translation>스케치 평면에 대칭</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Reversed</source>
-        <translation type="unfinished">Reversed</translation>
+        <translation>반대 방향</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <source>Vertical</source>
-        <translation type="obsolete">Vertical</translation>
+        <translation type="obsolete">수직</translation>
     </message>
     <message>
         <source>Horizontal</source>
-        <translation type="obsolete">Horizontal</translation>
+        <translation type="obsolete">수평</translation>
     </message>
     <message>
         <location line="-52"/>
         <source>Angle:</source>
-        <translation>각도:</translation>
+        <translation>회전 각:</translation>
     </message>
     <message>
         <location filename="../../TaskRevolutionParameters.cpp" line="-132"/>
         <source>Revolution parameters</source>
-        <translation type="unfinished">Revolution parameters</translation>
+        <translation>회전(Revolution) 매개 변수</translation>
     </message>
     <message>
         <source>Undefined</source>
-        <translation type="obsolete">Undefined</translation>
+        <translation type="obsolete">정의되지 않음</translation>
     </message>
 </context>
 <context>
@@ -2504,31 +2504,31 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskScaledParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Original feature</source>
-        <translation type="obsolete">Original feature</translation>
+        <translation type="obsolete">원본 피처</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Add feature</source>
-        <translation type="unfinished">Add feature</translation>
+        <translation>피처 추가</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Remove feature</source>
-        <translation type="unfinished">Remove feature</translation>
+        <translation>피처 제거</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Factor</source>
-        <translation type="unfinished">Factor</translation>
+        <translation>비율</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Occurrences</source>
-        <translation type="unfinished">Occurrences</translation>
+        <translation>생성 수(사용되지 않음)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2538,12 +2538,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+9"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
     <message>
         <location filename="../../TaskScaledParameters.cpp" line="+97"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
@@ -2551,27 +2551,27 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskShapeBinder.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Object</source>
-        <translation type="unfinished">Object</translation>
+        <translation>객체</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Add Geometry</source>
-        <translation type="unfinished">Add Geometry</translation>
+        <translation>지오메트리(Geometry) 추가</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Remove Geometry</source>
-        <translation type="unfinished">Remove Geometry</translation>
+        <translation>지오메트리(Geometry) 제거</translation>
     </message>
     <message>
         <location filename="../../TaskShapeBinder.cpp" line="-252"/>
         <source>Datum shape parameters</source>
-        <translation type="unfinished">Datum shape parameters</translation>
+        <translation>데이텀 형상 매개 변수</translation>
     </message>
 </context>
 <context>
@@ -2584,7 +2584,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+23"/>
         <source>No face selected</source>
-        <translation>면 선택되지 않음</translation>
+        <translation>선택된 면 없음</translation>
     </message>
 </context>
 <context>
@@ -2592,7 +2592,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskThicknessParameters.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2606,7 +2606,7 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Thikness</source>
-        <translation type="obsolete">Thikness</translation>
+        <translation type="obsolete">두께</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2616,12 +2616,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+26"/>
         <source>Mode</source>
-        <translation type="unfinished">Mode</translation>
+        <translation>모드(Mode)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Join Type</source>
-        <translation type="unfinished">Join Type</translation>
+        <translation>결합 타입</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2641,22 +2641,22 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+9"/>
         <source>Arc</source>
-        <translation type="unfinished">Arc</translation>
+        <translation>필렛 부여</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Intersection</source>
-        <translation>교집합</translation>
+        <translation>필렛 없이 생성</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Make thickness inwards</source>
-        <translation type="unfinished">Make thickness inwards</translation>
+        <translation>안쪽으로 두께 생성</translation>
     </message>
     <message>
         <location filename="../../TaskThicknessParameters.cpp" line="+94"/>
         <source>Remove</source>
-        <translation type="unfinished">Remove</translation>
+        <translation>제거</translation>
     </message>
 </context>
 <context>
@@ -2664,7 +2664,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskTransformedMessages.cpp" line="+43"/>
         <source>Transformed feature messages</source>
-        <translation type="unfinished">Transformed feature messages</translation>
+        <translation>변경된 피처에 대한 메세지</translation>
     </message>
 </context>
 <context>
@@ -2672,17 +2672,17 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../TaskTransformedParameters.cpp" line="+195"/>
         <source>Normal sketch axis</source>
-        <translation type="unfinished">Normal sketch axis</translation>
+        <translation>스케치 원점에 수직</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Vertical sketch axis</source>
-        <translation type="unfinished">Vertical sketch axis</translation>
+        <translation>스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Horizontal sketch axis</source>
-        <translation type="unfinished">Horizontal sketch axis</translation>
+        <translation>스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2693,38 +2693,38 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="-22"/>
         <source>Base X axis</source>
-        <translation type="unfinished">Base X axis</translation>
+        <translation>절대좌표계 X 축</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Base Y axis</source>
-        <translation type="unfinished">Base Y axis</translation>
+        <translation>절대좌표계 Y 축</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Base Z axis</source>
-        <translation type="unfinished">Base Z axis</translation>
+        <translation>절대좌표계 Z 축</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+36"/>
         <source>Select reference...</source>
-        <translation>레퍼런스 선택</translation>
+        <translation>임의의 축 선택...</translation>
     </message>
     <message>
         <location line="-9"/>
         <source>Base XY plane</source>
-        <translation type="unfinished">Base XY plane</translation>
+        <translation>절대좌표계 XY 평면</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Base YZ plane</source>
-        <translation type="unfinished">Base YZ plane</translation>
+        <translation>절대좌표계 YZ 평면</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Base XZ plane</source>
-        <translation type="unfinished">Base XZ plane</translation>
+        <translation>절대좌표계 XZ 평면</translation>
     </message>
 </context>
 <context>
@@ -2732,7 +2732,7 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../ViewProviderBody.cpp" line="+135"/>
         <source>Toggle active body</source>
-        <translation type="unfinished">Toggle active body</translation>
+        <translation>작업 바디(Body)로 전환</translation>
     </message>
 </context>
 <context>
@@ -2740,42 +2740,42 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../CommandPrimitive.cpp" line="-168"/>
         <source>Create an additive box by its with, height and length</source>
-        <translation type="unfinished">Create an additive box by its with, height and length</translation>
+        <translation>너비, 높이 및 길이를 이용하여 육면체(Cube)를 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive cylinder by its radius, height and angle</source>
-        <translation type="unfinished">Create an additive cylinder by its radius, height and angle</translation>
+        <translation>반지름, 높이 및 각도를 이용하여 원기둥(Cylinder)을 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive sphere by its radius and varius angles</source>
-        <translation type="unfinished">Create an additive sphere by its radius and varius angles</translation>
+        <translation>반지름과 3개의 각도을 이용하여 구(Sphere)를 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive cone</source>
-        <translation type="unfinished">Create an additive cone</translation>
+        <translation>2개의 반지름, 높이 및 각도를 이용하여 원뿔(Cone)을 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive ellipsoid</source>
-        <translation type="unfinished">Create an additive ellipsoid</translation>
+        <translation>3개의 반지름과 3개의 각도를 이용하여 3차원 타원체(Ellipsolid)를 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive torus</source>
-        <translation type="unfinished">Create an additive torus</translation>
+        <translation>2개의 반지름과 3개의 각도를 이용하여 원환체(Torus)를 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive prism</source>
-        <translation type="unfinished">Create an additive prism</translation>
+        <translation>다각형의 면의 수, 중심에서 면까지의 거리 및 높이를 이용하여 각기둥(Prism)을 생성합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an additive wedge</source>
-        <translation type="unfinished">Create an additive wedge</translation>
+        <translation>밑변, 윗변, 높이를 이용하여 3차원 쐐기(Wedge)를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -2783,42 +2783,42 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+113"/>
         <source>Create an subtractive box by its with, height and length</source>
-        <translation type="unfinished">Create an subtractive box by its with, height and length</translation>
+        <translation>너비, 높이 및 길이를 이용하여 생성된 육면체(Cube)를 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive cylinder by its radius, height and angle</source>
-        <translation type="unfinished">Create an subtractive cylinder by its radius, height and angle</translation>
+        <translation>반지름, 높이 및 각도를 이용하여 생성된 원기둥(Cylinder)을 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive sphere by its radius and varius angles</source>
-        <translation type="unfinished">Create an subtractive sphere by its radius and varius angles</translation>
+        <translation>반지름과 3개의 각도을 이용하여 생성된 구(Sphere)를 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive cone</source>
-        <translation type="unfinished">Create an subtractive cone</translation>
+        <translation>2개의 반지름, 높이 및 각도를 이용하여 생성된 원뿔(Cone)을 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive ellipsoid</source>
-        <translation type="unfinished">Create an subtractive ellipsoid</translation>
+        <translation>3개의 반지름과 3개의 각도를 이용하여 생성된 3차원 타원체(Ellipsolid)를 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive torus</source>
-        <translation type="unfinished">Create an subtractive torus</translation>
+        <translation>2개의 반지름과 3개의 각도를 이용하여 생성된 원환체(Torus)를 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive prism</source>
-        <translation type="unfinished">Create an subtractive prism</translation>
+        <translation>다각형의 면의 수, 중심에서 면까지의 거리 및 높이를 이용하여 생성된 각기둥(Prism)을 기존 피처에서 제거합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Create an subtractive wedge</source>
-        <translation type="unfinished">Create an subtractive wedge</translation>
+        <translation>밑변, 윗변, 높이를 이용하여 생성된 3차원 쐐기(Wedge)를 기존 피처에서 제거합니다.</translation>
     </message>
 </context>
 <context>
@@ -2826,12 +2826,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location filename="../../CommandBody.cpp" line="+576"/>
         <source>Select body</source>
-        <translation type="unfinished">Select body</translation>
+        <translation>바디(Body) 선택</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select a body from the list</source>
-        <translation type="unfinished">Select a body from the list</translation>
+        <translation>리스트에서 바디(Body) 선택</translation>
     </message>
 </context>
 <context>
@@ -2839,12 +2839,12 @@ Please check one or more edge entities first.</translation>
     <message>
         <location line="+137"/>
         <source>Select feature</source>
-        <translation type="unfinished">Select feature</translation>
+        <translation>피처(Feature) 선택</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select a feature from the list</source>
-        <translation type="unfinished">Select a feature from the list</translation>
+        <translation>리스트에서 피처(Feature) 선택</translation>
     </message>
 </context>
 <context>
@@ -2855,144 +2855,144 @@ Please check one or more edge entities first.</translation>
         <location line="+26"/>
         <location line="+12"/>
         <source>Wrong selection</source>
-        <translation>잘못 된 선택</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <source>Select a sketch or 2D object.</source>
-        <translation type="obsolete">Select a sketch or 2D object.</translation>
+        <translation type="obsolete">스케치나 2D 객체를 선택하세요.</translation>
     </message>
     <message>
         <source>The shape of the selected object is empty.</source>
-        <translation type="obsolete">The shape of the selected object is empty.</translation>
+        <translation type="obsolete">선택된 객체가 비어있습니다.</translation>
     </message>
     <message>
         <source>The shape of the selected object is not a wire.</source>
-        <translation type="obsolete">The shape of the selected object is not a wire.</translation>
+        <translation type="obsolete">선택된 객체의 형상이 와이어(Wire)가 아닙니다.</translation>
     </message>
     <message>
         <source>No valid sketches in this document</source>
-        <translation type="obsolete">유효한 스케치가 없음</translation>
+        <translation type="obsolete">이 문서에는 유효한 스케치가 없습니다.</translation>
     </message>
     <message>
         <source>Please create a sketch or 2D object first</source>
-        <translation type="obsolete">먼저 스케치 또는 2D 개체를 만들어 주세요</translation>
+        <translation type="obsolete">먼저 스케치 또는 2D 객체를 만들어 주십시오.</translation>
     </message>
     <message>
         <source>Please create a sketch or 2D object first. It must have a support face on a solid</source>
-        <translation type="obsolete">먼저 스케치 또는 2D 개체를 만드십시오. 그것은 솔리드에 지지면을 가지고 있어야합니다</translation>
+        <translation type="obsolete">먼저 스케치 또는 2D 객체를 만들어 주십시오. 솔리드의 면을 선택해야 합니다.</translation>
     </message>
     <message>
-        <source>Select an edge, face or body. Only one body is allowed.</source>
-        <translation type="obsolete">Select an edge, face or body. Only one body is allowed.</translation>
+        <source>Select an edge, face or body. Only one body is allowed.Select an edge, face or body. Only one body is allowed.</source>
+        <translation type="obsolete">모서리, 면 또는 바디(Body)를 선택하세요. 하나의 바디(Body)만 선택 가능합니다.</translation>
     </message>
     <message>
         <location line="-22"/>
         <source>Wrong object type</source>
-        <translation>잘못된 개체 유형</translation>
+        <translation>잘못된 객체 타입</translation>
     </message>
     <message>
         <source>Fillet works only on parts</source>
-        <translation type="obsolete">Fillet works only on parts</translation>
+        <translation type="obsolete">필렛(Fillet)은 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
         <source>Shape of selected Part is empty</source>
-        <translation type="obsolete">Shape of selected Part is empty</translation>
+        <translation type="obsolete">선택된 파트가 비어있습니다.</translation>
     </message>
     <message>
         <source>No fillet possible on selected faces/edges</source>
-        <translation type="obsolete">No fillet possible on selected faces/edges</translation>
+        <translation type="obsolete">선택된 면/모서리에 필렛(Fillet)을 적용 할 수 없습니다.</translation>
     </message>
     <message>
         <source>Chamfer works only on parts</source>
-        <translation type="obsolete">모따기는 부품에 대해서만 가능합니다</translation>
+        <translation type="obsolete">모따기(Chamfer)는 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
         <source>Shape of selected part is empty</source>
-        <translation type="obsolete">Shape of selected part is empty</translation>
+        <translation type="obsolete">선택된 파트가 비어있습니다.</translation>
     </message>
     <message>
         <source>No valid sketches selected</source>
-        <translation type="obsolete">No valid sketches selected</translation>
+        <translation type="obsolete">선택된 스케치가 유효하지 않습니다.</translation>
     </message>
     <message>
         <source>None of selected sketches/2D objects is valid for padding. Please select a valid sketch or 2D object that is not used by any other feature.</source>
-        <translation type="obsolete">None of selected sketches/2D objects is valid for padding. Please select a valid sketch or 2D object that is not used by any other feature.</translation>
+        <translation type="obsolete">선택된 스케치/2D 객체는 돌출(Pad)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
     </message>
     <message>
         <source>None of selected sketches/2D objects is valid for revolving. Please select a valid sketch or 2D object that is not used by any other feature.</source>
-        <translation type="obsolete">None of selected sketches/2D objects is valid for revolving. Please select a valid sketch or 2D object that is not used by any other feature.</translation>
+        <translation type="obsolete">선택된 스케치/2D 객체는 회전(Revolution)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
     </message>
     <message>
         <location line="+295"/>
         <source>Please create a subtractive or additive feature first.</source>
-        <translation type="unfinished">Please create a subtractive or additive feature first.</translation>
+        <translation>추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
     </message>
     <message>
         <source>No chamfer possible on selected faces/edges</source>
-        <translation type="obsolete">선택된면 / 모서리에 모따기를 적용 할 수 없습니다</translation>
+        <translation type="obsolete">선택된 면/모서리에 모따기(Chamfer)를 적용 할 수 없습니다</translation>
     </message>
     <message>
         <source>Select one or more faces.</source>
-        <translation type="obsolete">Select one or more faces.</translation>
+        <translation type="obsolete">하나 이상의 면을 선택하세요.</translation>
     </message>
     <message>
         <source>Draft works only on parts</source>
-        <translation type="obsolete">Draft works only on parts</translation>
+        <translation type="obsolete">구배(Draft)는 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
         <source>No draft possible on selected faces</source>
-        <translation type="obsolete">No draft possible on selected faces</translation>
+        <translation type="obsolete">선택된 면에 구배(Draft)를 적용 할 수 없습니다.</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>No valid features in this document</source>
-        <translation type="unfinished">No valid features in this document</translation>
+        <translation>이 문서에는 유효한 피처가 없습니다.</translation>
     </message>
     <message>
         <source>Please create a subtractive or additive feature first</source>
-        <translation type="obsolete">먼저 빼기나 첨가 기능을 만드세요</translation>
+        <translation type="obsolete">추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
     </message>
     <message>
         <source>Please create a subtractive or additive feature first, please</source>
-        <translation type="obsolete">빼기 또는 추가 기능을 만들어 주세요 먼저 하시기 바랍니다</translation>
+        <translation type="obsolete">추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
     </message>
     <message>
         <source>No Support</source>
-        <translation type="obsolete">No Support</translation>
+        <translation type="obsolete">지원하지 않음.</translation>
     </message>
     <message>
         <source>The sketch has to have a support for the pocket feature.
 Create the sketch on a face.</source>
-        <translation type="obsolete">The sketch has to have a support for the pocket feature.
-Create the sketch on a face.</translation>
+        <translation type="obsolete">스케치는 돌출 컷(Pocket)를 지원해야 합니다.
+면에 스케치를 생성하세요.</translation>
     </message>
     <message>
         <location filename="../../ViewProviderPad.cpp" line="+54"/>
         <source>Edit pad</source>
-        <translation type="unfinished">Edit pad</translation>
+        <translation>돌출(Pad) 수정</translation>
     </message>
     <message>
         <location filename="../../ViewProviderPocket.cpp" line="+53"/>
         <source>Edit pocket</source>
-        <translation type="unfinished">Edit pocket</translation>
+        <translation>돌출 컷(Pocket) 수정</translation>
     </message>
     <message>
         <source>Edit chamfer</source>
-        <translation type="obsolete">모따기 편집</translation>
+        <translation type="obsolete">모따기(Chamfer) 수정</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="-1562"/>
         <source>Invalid selection</source>
-        <translation type="unfinished">Invalid selection</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <source>There are no attachment modes that fit seleted objects. Select something else.</source>
-        <translation type="obsolete">There are no attachment modes that fit seleted objects. Select something else.</translation>
+        <translation type="obsolete">선택된 객체에 적합한 첨부 모드가 없습니다. 다른 것을 선택하세요.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There are no attachment modes that fit selected objects. Select something else.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택된 객체에 적합한 첨부 모드가 없습니다. 다른 것을 선택하세요.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -3008,37 +3008,37 @@ Create the sketch on a face.</translation>
     <message>
         <location line="+1"/>
         <source>You have to select a single face as support for a sketch!</source>
-        <translation type="unfinished">You have to select a single face as support for a sketch!</translation>
+        <translation>단일 면을 선택해야 합니다!.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>No support face selected</source>
-        <translation type="unfinished">No support face selected</translation>
+        <translation>선택된 면은 지원하지 않습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>You have to select a face as support for a sketch!</source>
-        <translation type="unfinished">You have to select a face as support for a sketch!</translation>
+        <translation>단일 면을 선택해야 합니다!.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>No planar support</source>
-        <translation type="unfinished">No planar support</translation>
+        <translation>평면을 지원하지 않습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>You need a planar face as support for a sketch!</source>
-        <translation type="unfinished">You need a planar face as support for a sketch!</translation>
+        <translation>평면에 스케치를 생성하세요!.</translation>
     </message>
     <message>
         <location line="+185"/>
         <source>No valid planes in this document</source>
-        <translation type="unfinished">No valid planes in this document</translation>
+        <translation>이 문서에는 유효한 평면이 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Please create a plane first or select a face to sketch on</source>
-        <translation type="unfinished">Please create a plane first or select a face to sketch on</translation>
+        <translation>평면을 먼저 생성하거나 스케치를 생성할 면을 먼저 선택하세요.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -3050,7 +3050,7 @@ Create the sketch on a face.</translation>
         <location filename="../../ViewProviderPrimitive.cpp" line="+83"/>
         <location filename="../../ViewProviderShapeBinder.cpp" line="+92"/>
         <source>A dialog is already open in the task panel</source>
-        <translation>테스크 패널에 이미 다이얼로그가 열려있습니다.</translation>
+        <translation>테스크 패널(Task pannel)에 이미 창이 열려있습니다.</translation>
     </message>
     <message>
         <location line="-1070"/>
@@ -3062,137 +3062,137 @@ Create the sketch on a face.</translation>
         <location filename="../../ViewProviderPrimitive.cpp" line="+1"/>
         <location filename="../../ViewProviderShapeBinder.cpp" line="+1"/>
         <source>Do you want to close this dialog?</source>
-        <translation>다이얼로그를 닫으시겠습니까?</translation>
+        <translation>창을 닫으시겠습니까?</translation>
     </message>
     <message>
         <location line="-849"/>
         <source>No sketch to work on</source>
-        <translation type="unfinished">No sketch to work on</translation>
+        <translation>작업을 수행할 스케치가 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>No sketch is available in the document</source>
-        <translation type="unfinished">No sketch is available in the document</translation>
+        <translation>이 문서에는 사용할 수 있는 스케치가 없습니다.</translation>
     </message>
     <message>
         <location line="+551"/>
         <source>Select an edge, face or body.</source>
-        <translation type="unfinished">Select an edge, face or body.</translation>
+        <translation>모서리, 면 또는 바디(Body)를 선택하세요.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Select an edge, face or body from a single body.</source>
-        <translation type="unfinished">Select an edge, face or body from a single body.</translation>
+        <translation>바디(Body)에서 모서리, 면 또는 바디(Body)를 선택하세요.</translation>
     </message>
     <message>
         <location line="+4"/>
         <location line="+318"/>
         <source>Selection is not in Active Body</source>
-        <translation type="unfinished"></translation>
+        <translation>작업 바디(Body)에 선택된 것이 없습니다.</translation>
     </message>
     <message>
         <location line="-317"/>
         <source>Select an edge, face or body from an active body.</source>
-        <translation type="unfinished"></translation>
+        <translation>작업 바디(Body)에서 모서리, 면 또는 바디(Body)를 선택하세요.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>%1 works only on parts.</source>
-        <translation type="unfinished">%1 works only on parts.</translation>
+        <translation>%1 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Shape of the selected Part is empty</source>
-        <translation type="unfinished">Shape of the selected Part is empty</translation>
+        <translation>선택된 파트가 비어있습니다.</translation>
     </message>
     <message>
         <location line="+12"/>
         <source> not possible on selected faces/edges.</source>
-        <translation type="unfinished"> not possible on selected faces/edges.</translation>
+        <translation> 선택된 면/모서리에는 불가능합니다.</translation>
     </message>
     <message>
         <location line="+277"/>
         <source>Multiple Features Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>다수의 피처가 선택되었습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Please select only one subtractive or additive feature first.</source>
-        <translation type="unfinished"></translation>
+        <translation>오직 하나의 추가(Additive) 또는 제거(Subtractive) 피처를 먼저 선택하세요.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Please select only one subtractive or additive feature in an active body.</source>
-        <translation type="unfinished"></translation>
+        <translation>작업 바디(Body)에서 오직 하나의 추가(Additive) 또는 제거(Subtractive) 피처를 먼저 선택하세요.</translation>
     </message>
     <message>
         <location filename="../../ViewProviderRevolution.cpp" line="+51"/>
         <source>Edit revolution</source>
-        <translation type="unfinished">Edit revolution</translation>
+        <translation>회전(Revolution) 수정</translation>
     </message>
     <message>
         <source>Edit Groove</source>
-        <translation type="obsolete">홈 편집</translation>
+        <translation type="obsolete">회전 컷(Groove) 수정</translation>
     </message>
     <message>
         <source>Lost link to base sketch</source>
-        <translation type="obsolete">Lost link to base sketch</translation>
+        <translation type="obsolete">기본 스케치에 대한 연결 손실</translation>
     </message>
     <message>
         <source>The object can&apos;t be edited because the link to the the base sketch is lost.</source>
-        <translation type="obsolete">The object can&apos;t be edited because the link to the the base sketch is lost.</translation>
+        <translation type="obsolete">기본 스케치에 대한 연결이 끊어져 해당 객체는 수정할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../../TaskDraftParameters.cpp" line="+203"/>
         <source>Missing neutral plane</source>
-        <translation type="unfinished">Missing neutral plane</translation>
+        <translation>중립 평면 누락</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Please select a plane or an edge plus a pull direction</source>
-        <translation type="unfinished">Please select a plane or an edge plus a pull direction</translation>
+        <translation>평면 또는 모서리를 선택하세요.</translation>
     </message>
     <message>
         <source>Edit draft</source>
-        <translation type="obsolete">Edit draft</translation>
+        <translation type="obsolete">구배(Draft) 수정</translation>
     </message>
     <message>
         <source>Edit fillet</source>
-        <translation type="obsolete">Edit fillet</translation>
+        <translation type="obsolete">필렛(Fillet) 수정</translation>
     </message>
     <message>
         <location filename="../../ViewProviderTransformed.cpp" line="+151"/>
         <source>One transformed shape does not intersect support</source>
-        <translation type="unfinished">One transformed shape does not intersect support</translation>
+        <translation>하나의 이동된 형상이 원본 피처와 교차되는 부분이 없습니다.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 transformed shapes do not intersect support</source>
-        <translation type="unfinished">%1 transformed shapes do not intersect support</translation>
+        <translation>%1 개의 이동된 형상이 원본 피처와 교차되는 부분이 없습니다.</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Transformation succeeded</source>
-        <translation type="unfinished">Transformation succeeded</translation>
+        <translation>변환 성공</translation>
     </message>
     <message>
         <location filename="../../ViewProviderGroove.cpp" line="+51"/>
         <source>Edit groove</source>
-        <translation>홈 편집</translation>
+        <translation>회전 컷(Groove) 수정</translation>
     </message>
     <message>
         <source>Edit revolve</source>
-        <translation type="obsolete">Edit revolve</translation>
+        <translation type="obsolete">회전(Revolution) 수정</translation>
     </message>
     <message>
         <location filename="../../CommandBody.cpp" line="-736"/>
         <source>Part creation failed</source>
-        <translation type="unfinished">Part creation failed</translation>
+        <translation>파트 생성 실패</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to create a part object.</source>
-        <translation type="unfinished">Failed to create a part object.</translation>
+        <translation>파트 객체를 생성하는데 실패하였습니다.</translation>
     </message>
     <message>
         <location line="+89"/>
@@ -3261,21 +3261,21 @@ Create the sketch on a face.</translation>
         <location line="+266"/>
         <location line="+7"/>
         <source>Selection error</source>
-        <translation type="unfinished">Selection error</translation>
+        <translation>선택 오류</translation>
     </message>
     <message>
         <location line="-281"/>
         <source>Select exactly one PartDesign feature or a body.</source>
-        <translation type="unfinished">Select exactly one PartDesign feature or a body.</translation>
+        <translation>정확히 하나의 단품설계(PartDesign) 피처나 바디(Body)를 선택하세요.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Couldn&apos;t determine a body for the selected feature &apos;%s&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택된 피처(&apos;%s&apos;)에 대한 바디(Body)를 결정할 수 없습니다.</translation>
     </message>
     <message>
         <source>Couldn&apos;t determin a body for the selected feature &apos;%s&apos;.</source>
-        <translation type="obsolete">Couldn&apos;t determin a body for the selected feature &apos;%s&apos;.</translation>
+        <translation type="obsolete">선택된 피처(&apos;%s&apos;)에 대한 바디(Body)를 결정할 수 없습니다.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3286,54 +3286,54 @@ Create the sketch on a face.</translation>
         <location line="+116"/>
         <location line="+27"/>
         <source>Features cannot be moved</source>
-        <translation type="unfinished">Features cannot be moved</translation>
+        <translation>피처를 이동할 수 없습니다.</translation>
     </message>
     <message>
         <location line="-26"/>
         <source>Some of the selected features have dependencies in the source body</source>
-        <translation type="unfinished">Some of the selected features have dependencies in the source body</translation>
+        <translation>선택된 피처 중 일부가 소스 바디(Body)에 종속되어 있습니다.</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>There are no other bodies to move to</source>
-        <translation type="unfinished">There are no other bodies to move to</translation>
+        <translation>이동할 수 있는 다른 바디(Body)가 없습니다.</translation>
     </message>
     <message>
         <location line="+122"/>
         <source>Impossible to move the base feature of a body.</source>
-        <translation type="unfinished">Impossible to move the base feature of a body.</translation>
+        <translation>바디(Body)의 기본 피처는 이동이 불가능합니다.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Select one or more features from the same body.</source>
-        <translation type="unfinished">Select one or more features from the same body.</translation>
+        <translation>같은 바디(Body)에서 하나 이상의 피처를 선택하세요.</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Beginning of the body</source>
-        <translation type="unfinished">Beginning of the body</translation>
+        <translation>바디(Body)의 시작</translation>
     </message>
     <message>
         <location filename="../../CommandPrimitive.cpp" line="-100"/>
         <source>No previous feature found</source>
-        <translation type="unfinished">No previous feature found</translation>
+        <translation>이전 피처를 찾을 수 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>It is not possible to create a subtractive feature without a base feature available</source>
-        <translation type="unfinished">It is not possible to create a subtractive feature without a base feature available</translation>
+        <translation>기본 피처없이 빼기(Subtractive) 피처를 생성할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../../TaskRevolutionParameters.cpp" line="+106"/>
         <location filename="../../TaskTransformedParameters.cpp" line="-19"/>
         <source>Vertical sketch axis</source>
-        <translation type="unfinished">Vertical sketch axis</translation>
+        <translation>스케치 수직 축(V 축)</translation>
     </message>
     <message>
         <location line="+1"/>
         <location filename="../../TaskTransformedParameters.cpp" line="+1"/>
         <source>Horizontal sketch axis</source>
-        <translation type="unfinished">Horizontal sketch axis</translation>
+        <translation>스케치 수평 축(U 축)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3348,47 +3348,47 @@ Create the sketch on a face.</translation>
     <message>
         <location filename="../../Utils.cpp" line="+72"/>
         <source>No active Body</source>
-        <translation type="unfinished">No active Body</translation>
+        <translation>작업 바디(Body) 없음</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one. If you have a legacy document with PartDesign objects without Body, use the transfer function in PartDesign to put them into a Body.</source>
-        <translation type="unfinished">In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one. If you have a legacy document with PartDesign objects without Body, use the transfer function in PartDesign to put them into a Body.</translation>
+        <translation>부품설계(PartDesign)를 사용하기 위해서, 문서에 작업 바디(Body) 객체가 있어야 합니다. 하나의 바디(Body)를 더블 클릭하여 활성화하거나 생성하십시오. 바디(Body)에 속해있지 않은 부품설계(PartDesign) 객체가 현재 문서가 있다면, 부품설계(PartDesign)의 이동 기능을 이용하여 부품설계(PartDesign) 객체를 바디(Body)로 옮기세요.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Active Body Required</source>
-        <translation type="unfinished"></translation>
+        <translation>작업 바디(Body)가 필요합니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>To create a new PartDesign object, there must be an active Body object in the document. Please make one active (double click) or create a new Body.</source>
-        <translation type="unfinished"></translation>
+        <translation>새로운 부품설계(PartDesign) 객체를 생성하기 위해서, 문서에 활성화된 바디(Body)가 있어야 합니다. 하나의 바디(Body)를 더블 클릭하여 활성화하거나 새로운 바디(Body)를 생성하세요.</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Feature is not in a body</source>
-        <translation type="unfinished">Feature is not in a body</translation>
+        <translation>바디(Body)에 피처가 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>In order to use this feature it needs to belong to a body object in the document.</source>
-        <translation type="unfinished">In order to use this feature it needs to belong to a body object in the document.</translation>
+        <translation>이 피처를 사용하기 위해서는, 피처가 현재 문서에 있는 바디(Body) 객체에 속해야 합니다.</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Feature is not in a part</source>
-        <translation type="unfinished">Feature is not in a part</translation>
+        <translation>피처가 파트에 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>In order to use this feature it needs to belong to a part object in the document.</source>
-        <translation type="unfinished">In order to use this feature it needs to belong to a part object in the document.</translation>
+        <translation>이 피처를 사용하기 위해서는, 피처가 현재 문서에 있는 파트 객체에 속해야 합니다.</translation>
     </message>
     <message>
         <location filename="../../ViewProviderBoolean.cpp" line="-17"/>
         <source>Edit boolean</source>
-        <translation type="unfinished">Edit boolean</translation>
+        <translation>불리언(Boolean) 수정</translation>
     </message>
     <message>
         <location filename="../../ViewProviderDatum.cpp" line="-131"/>
@@ -3406,30 +3406,30 @@ Create the sketch on a face.</translation>
         <location line="-78"/>
         <location line="+86"/>
         <source>Point</source>
-        <translation type="unfinished">Point</translation>
+        <translation>점</translation>
     </message>
     <message>
         <location line="-82"/>
         <source>Coordinate System</source>
-        <translation type="unfinished"></translation>
+        <translation>좌표계</translation>
     </message>
     <message>
         <location line="+99"/>
         <source>Edit datum</source>
-        <translation type="unfinished"></translation>
+        <translation>데이터(Datum) 수정</translation>
     </message>
     <message>
         <source>CoordinateSystem</source>
-        <translation type="obsolete">CoordinateSystem</translation>
+        <translation type="obsolete">좌표계</translation>
     </message>
     <message>
         <source>Edit datum </source>
-        <translation type="obsolete">Edit datum </translation>
+        <translation type="obsolete">데이터(Datum) 수정 </translation>
     </message>
     <message>
         <location filename="../../ViewProviderDressUp.cpp" line="+70"/>
         <source>Feature error</source>
-        <translation type="unfinished">Feature error</translation>
+        <translation>피처 오류</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3441,63 +3441,63 @@ This feature is broken and can&apos;t be edited.</translation>
     <message>
         <location filename="../../ViewProviderLoft.cpp" line="+69"/>
         <source>Edit loft</source>
-        <translation type="unfinished">Edit loft</translation>
+        <translation>로프트(Loft) 수정</translation>
     </message>
     <message>
         <location filename="../../ViewProviderPipe.cpp" line="+69"/>
         <source>Edit pipe</source>
-        <translation type="unfinished">Edit pipe</translation>
+        <translation>파이프(Pipe) 수정</translation>
     </message>
     <message>
         <location filename="../../ViewProviderShapeBinder.cpp" line="+91"/>
         <source>Edit shape binder</source>
-        <translation type="unfinished">Edit shape binder</translation>
+        <translation>형상 바인더(Shape binder) 수정</translation>
     </message>
     <message>
         <source>The document &quot;%1&quot; you are editing was design with old version of PartDesign workbench.</source>
-        <translation type="obsolete">The document &quot;%1&quot; you are editing was design with old version of PartDesign workbench.</translation>
+        <translation type="obsolete">편집 중인 문서 &quot;%1&quot;는 이전 버전의 부품설계(PartDesign) 워크벤치에서 생성되었습니다.</translation>
     </message>
     <message>
         <location filename="../../WorkflowManager.cpp" line="+144"/>
         <source>The document &quot;%1&quot; you are editing was designed with an old version of PartDesign workbench.</source>
-        <translation type="unfinished">The document &quot;%1&quot; you are editing was designed with an old version of PartDesign workbench.</translation>
+        <translation>편집 중인 문서 &quot;%1&quot;는 이전 버전의 부품설계(PartDesign) 워크벤치에서 생성되었습니다.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Do you want to migrate in order to use modern PartDesign features?</source>
-        <translation type="unfinished">Do you want to migrate in order to use modern PartDesign features?</translation>
+        <translation>이전 버전에서 생성된 피처를 최신 부품설계(PartDesign)의 피처로 사용하기 위해 변환하시겠습니까?</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>The document &quot;%1&quot; seems to be either in the middle of the migration process from legacy PartDesign or have a slightly broken structure.</source>
-        <translation type="unfinished">The document &quot;%1&quot; seems to be either in the middle of the migration process from legacy PartDesign or have a slightly broken structure.</translation>
+        <translation>문서 &quot;%1&quot; 는 이전 버전의 부품설계(PartDesign)로부터 변환 중이거나 약간 손상된 것 같습니다.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Do you want to make the migration automatically?</source>
-        <translation type="unfinished">Do you want to make the migration automatically?</translation>
+        <translation>자동 변환을 수행하시겠습니까?</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Note: If you choose to migrate you won&apos;t be able to edit the file with an old FreeCAD versions.
 If you refuse to migrate you won&apos;t be able to use new PartDesign features like Bodies and Parts. As a result you also won&apos;t be able to use your parts in the assembly workbench.
 Although you will be able to migrate any moment later with &apos;Part Design-&gt;Migrate...&apos;.</source>
-        <translation type="unfinished">Note: If you choose to migrate you won&apos;t be able to edit the file with an old FreeCAD versions.
-If you refuse to migrate you won&apos;t be able to use new PartDesign features like Bodies and Parts. As a result you also won&apos;t be able to use your parts in the assembly workbench.
-Although you will be able to migrate any moment later with &apos;Part Design-&gt;Migrate...&apos;.</translation>
+        <translation>참고: 변환을 진행하면, 이전 버전에서 수정할 수 없습니다.
+변환을 하지 않으면, 바디(Body)나 파트와 같은 새로운 부품설계(PartDesign)의 피처를 사용할 수 없습니다. 또한, 어셈블리 워크벤치에서 파트를 사용할 수 없습니다.
+나중에 언제든지 &apos;Part Design-&gt;Migrate...&apos;기능을 이용하여 변환할 수 있습니다.</translation>
     </message>
     <message>
         <source>Note If you choose to migrate you won&apos;t be able to edit the file wtih old FreeCAD versions.
 If you refuse to migrate you won&apos;t be able to use new PartDesign features like Bodies and Parts. As a result you also won&apos;t be able to use your parts in the assembly workbench.
 Although you will be able to migrate any moment later with &apos;Part Design-&gt;Migrate...&apos;.</source>
-        <translation type="obsolete">Note If you choose to migrate you won&apos;t be able to edit the file wtih old FreeCAD versions.
-If you refuse to migrate you won&apos;t be able to use new PartDesign features like Bodies and Parts. As a result you also won&apos;t be able to use your parts in the assembly workbench.
-Although you will be able to migrate any moment later with &apos;Part Design-&gt;Migrate...&apos;.</translation>
+        <translation type="obsolete">참고: 변환을 진행하면, 이전 버전에서 수정할 수 없습니다.
+변환을 하지 않으면, 바디(Body)나 파트와 같은 새로운 부품설계(PartDesign)의 피처를 사용할 수 없습니다. 또한, 어셈블리 워크벤치에서 파트를 사용할 수 없습니다.
+나중에 언제든지 &apos;Part Design-&gt;Migrate...&apos;기능을 이용하여 변환할 수 있습니다.</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Migrate manually</source>
-        <translation type="unfinished">Migrate manually</translation>
+        <translation>수동 변환</translation>
     </message>
 </context>
 <context>
@@ -3505,12 +3505,12 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
     <message>
         <location filename="../../../FeatureHole/TaskHole.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Position</source>
-        <translation type="unfinished">Position</translation>
+        <translation>위치</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -3527,7 +3527,7 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
         <location line="-24"/>
         <location line="+38"/>
         <source>Distance</source>
-        <translation type="unfinished">Distance</translation>
+        <translation>거리</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -3537,38 +3537,38 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
     <message>
         <location line="+8"/>
         <source>Through</source>
-        <translation type="unfinished">Through</translation>
+        <translation>관통</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+340"/>
         <source>Depth</source>
-        <translation type="unfinished">Depth</translation>
+        <translation>깊이</translation>
     </message>
     <message>
         <location line="-331"/>
         <source>Threaded</source>
-        <translation type="unfinished">Threaded</translation>
+        <translation>나사산</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Countersink</source>
-        <translation type="unfinished">Countersink</translation>
+        <translation>카운터싱크(Countersink)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Counterbore</source>
-        <translation type="unfinished">Counterbore</translation>
+        <translation>카운터보어(Counterbore)</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Hole norm</source>
-        <translation type="unfinished">Hole norm</translation>
+        <translation>구멍(Hole) 표준</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Custom dimensions</source>
-        <translation type="unfinished">Custom dimensions</translation>
+        <translation>사용자 지정 치수</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -3580,28 +3580,28 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
         <location line="+119"/>
         <location line="+106"/>
         <source>Diameter</source>
-        <translation type="unfinished">Diameter</translation>
+        <translation>지름</translation>
     </message>
     <message>
         <location line="-194"/>
         <source>Bolt/Washer</source>
-        <translation type="unfinished">Bolt/Washer</translation>
+        <translation>볼트/와셔</translation>
     </message>
     <message>
         <location line="+49"/>
         <location line="+8"/>
         <source>Thread norm</source>
-        <translation type="unfinished">Thread norm</translation>
+        <translation>나사산 표준</translation>
     </message>
     <message>
         <location line="+62"/>
         <source> Custom thread length</source>
-        <translation type="unfinished"> Custom thread length</translation>
+        <translation> 사용자 지정 나사산 길이</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Finish depth</source>
-        <translation type="unfinished">Finish depth</translation>
+        <translation>최종 깊이</translation>
     </message>
     <message>
         <location line="+43"/>
@@ -3611,22 +3611,22 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
     <message>
         <location line="+44"/>
         <source>Counterbore/sink dia</source>
-        <translation type="unfinished">Counterbore/sink dia</translation>
+        <translation>카운터보어/싱크 지름</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Counterbore depth</source>
-        <translation type="unfinished">Counterbore depth</translation>
+        <translation>카운터보어(Counterbore) 깊이</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Countersink angle</source>
-        <translation type="unfinished">Countersink angle</translation>
+        <translation>카운터싱크(Countersink) 각도</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Thread length</source>
-        <translation type="unfinished">Thread length</translation>
+        <translation>나사산 길이</translation>
     </message>
 </context>
 <context>
@@ -3634,12 +3634,12 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
     <message>
         <location filename="../../TaskTransformedMessages.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>No message</source>
-        <translation type="unfinished">No message</translation>
+        <translation>메세지 없음</translation>
     </message>
 </context>
 <context>
@@ -3647,7 +3647,7 @@ Although you will be able to migrate any moment later with &apos;Part Design-&gt
     <message>
         <location filename="../../Workbench.cpp" line="-3"/>
         <source>Part Design</source>
-        <translation type="unfinished">Part Design</translation>
+        <translation>부품설계</translation>
     </message>
 </context>
 </TS>
