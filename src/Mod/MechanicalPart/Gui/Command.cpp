@@ -66,7 +66,7 @@ CmdMechanicalPartClamping::CmdMechanicalPartClamping()
 	sToolTipText	= QT_TR_NOOP("Create a clamping component");
 	sWhatsThis		= "MechanicalPart_Clamping";
 	sStatusTip		= sToolTipText;
-	sPixmap			= "TestIcon2";
+	sPixmap			= "TestIcon";
 }
 
 void CmdMechanicalPartClamping::activated(int iMsg)
