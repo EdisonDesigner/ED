@@ -31,7 +31,7 @@ if ED.GuiUp:
 
 __title__="PartDesign InvoluteGearObject managment"
 __author__ = "Juergen Riegel"
-__url__ = "http://www.EDweb.org"
+__url__ = "http://www.freecadweb.org"
 
           
 
