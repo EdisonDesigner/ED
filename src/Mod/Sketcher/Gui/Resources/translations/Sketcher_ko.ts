@@ -106,7 +106,7 @@
     <message>
         <location line="+1"/>
         <source>Creates a clone of the geometry taking as reference the last selected point</source>
-        <translation>마지막 선택 점을 기준으로 동일한 geometry 복제</translation>
+        <translation>선택한 점을 기준으로 동일한 geometry 복제</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location line="+1"/>
         <source>Produce closed shape by Link end point of element with next elements&apos; starting point</source>
-        <translation>Element의 끝점과 다음 element의 시작점을 이용하여 닫힌 형상 생성</translation>
+        <translation>요소의 끝점과 다음 요소의 시작점을 연결하여 닫힌 형상 생성</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location line="+1"/>
         <source>Creates a clone of the geometry taking as reference the last selected point</source>
-        <translation>마지막 선택 점을 기준으로 동일한 geometry 생성</translation>
+        <translation>선택한 점을 기준으로 동일한 geometry 생성</translation>
     </message>
 </context>
 <context>
@@ -204,7 +204,7 @@
     <message>
         <location line="+4"/>
         <source>End points and rim point</source>
-        <translation>끝점과 rim point</translation>
+        <translation>끝점과 호의 한 점</translation>
     </message>
 </context>
 <context>
@@ -245,7 +245,7 @@
     <message>
         <location line="+77"/>
         <source>Center and rim point</source>
-        <translation>중점과 rim point</translation>
+        <translation>중점과 원호의 한 점</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -382,12 +382,12 @@
     <message>
         <location line="+1"/>
         <source>Connect Edges</source>
-        <translation>선 연결</translation>
+        <translation>모서리 연결</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Link end point of element with next elements&apos; starting point</source>
-        <translation>Element의 끝점과 다음 element의 시작점을 연결</translation>
+        <translation>요소의 끝점과 다음 요소의 시작점을 연결</translation>
     </message>
 </context>
 <context>
@@ -405,7 +405,7 @@
     <message>
         <location line="+1"/>
         <source>Fix the angle of a line or the angle between two lines</source>
-        <translation>단일 선의 각도(수평축 기준) 또는 두선 사이의 각도 제약조건 생성</translation>
+        <translation>단일 선의 각도(수평축 기준) 또는 두선 사이의 각도 고정</translation>
     </message>
 </context>
 <context>
@@ -423,7 +423,7 @@
     <message>
         <location line="+1"/>
         <source>Create a coincident constraint on the selected item</source>
-        <translation>선택한 요소(최소 두개의 점)에 일치 제약조건 생성</translation>
+        <translation>선택한 요소(최소 두개의 점)를 일치</translation>
     </message>
 </context>
 <context>
@@ -441,7 +441,7 @@
     <message>
         <location line="+1"/>
         <source>Fix a length of a line or the distance between a line and a vertex</source>
-        <translation>선의 길이 또는 선과 점 사이의 거리 제약조건 생성</translation>
+        <translation>선의 길이 또는 선과 점 사이의 수직거리 고정</translation>
     </message>
 </context>
 <context>
@@ -457,13 +457,9 @@
         <translation>제약조건: 수평거리</translation>
     </message>
     <message>
-        <source>Constrain vertical distance</source>
-        <translation>제약조건: 수직거리</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Fix the horizontal distance between two points or line ends</source>
-        <translation>두 점 또는 선의 수평거리 제약조건 생성</translation>
+        <translation>두 점 또는 선의 수평거리 고정</translation>
     </message>
 </context>
 <context>
@@ -479,13 +475,9 @@
         <translation>제약조건: 수직거리</translation>
     </message>
     <message>
-        <source>Constrain horizontal distance</source>
-        <translation>제약조건: 수평거리</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Fix the vertical distance between two points or line ends</source>
-        <translation>두 점 또는 선의 수직거리 제약조건 생성</translation>
+        <translation>두 점 또는 선의 수직거리 고정</translation>
     </message>
 </context>
 <context>
@@ -503,7 +495,7 @@
     <message>
         <location line="+1"/>
         <source>Create an equality constraint between two lines or between circles and arcs</source>
-        <translation>두선 또는 원과 호사이에 동일 제약조건 생성</translation>
+        <translation>두 선 또는 원과 원/호와 호/원과 호에 동일한 치수 부가</translation>
     </message>
 </context>
 <context>
@@ -521,7 +513,7 @@
     <message>
         <location line="+1"/>
         <source>Create a horizontal constraint on the selected item</source>
-        <translation>선택한 요소에 수평 제약조건 생성</translation>
+        <translation>선택한 요소를 수평하게 고정</translation>
     </message>
 </context>
 <context>
@@ -557,7 +549,7 @@
     <message>
         <location line="+1"/>
         <source>Create a lock constraint on the selected item</source>
-        <translation>선택 요소(점)에 대하여 고정 제약조건 생성</translation>
+        <translation>선택한 요소(점)를 원점을 기준으로 거리 고정</translation>
     </message>
 </context>
 <context>
@@ -575,7 +567,7 @@
     <message>
         <location line="+1"/>
         <source>Create a parallel constraint between two lines</source>
-        <translation>선택한 요소(두 선)에 평행 제약조건 생성</translation>
+        <translation>선택한 요소(두 선)를 평행하게 고정</translation>
     </message>
 </context>
 <context>
@@ -593,11 +585,7 @@
     <message>
         <location line="+1"/>
         <source>Create a perpendicular constraint between two lines</source>
-        <translation>선택한 요소(두 선)에 수직 제약조건 생성</translation>
-    </message>
-    <message>
-        <source>Create a Perpendicular constraint between two lines</source>
-        <translation type="obsolete">두 선사이에 수직 제약조건 생성</translation>
+        <translation>선택한 요소(두 선)를 수직하게 고정</translation>
     </message>
 </context>
 <context>
@@ -615,7 +603,7 @@
     <message>
         <location line="+1"/>
         <source>Fix a point onto an object</source>
-        <translation>점을 선에 일치시키는 제약조건 생성</translation>
+        <translation>점을 선에 일치</translation>
     </message>
 </context>
 <context>
@@ -633,7 +621,7 @@
     <message>
         <location line="+1"/>
         <source>Fix the radius of a circle or an arc</source>
-        <translation>원 또는 호에 반지름 제약조건 생성</translation>
+        <translation>원 또는 호의 반지름을 고정</translation>
     </message>
 </context>
 <context>
@@ -646,7 +634,7 @@
     <message>
         <location line="+1"/>
         <source>Constrain refraction (Snell&apos;s law&apos;)</source>
-        <translation type="unfinished">Constrain refraction (Snell&apos;s law&apos;)</translation>
+        <translation>제약조건: 굴절(스넬의 법칙)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -669,11 +657,7 @@
     <message>
         <location line="+1"/>
         <source>Create a symmetry constraint between two points with respect to a line or a third point</source>
-        <translation>마지막으로 선택한 선 또는 점을 기준으로 두 점사이의 대칭 제약조건 생성</translation>
-    </message>
-    <message>
-        <source>Create an symmetry constraint between two points with respect to a line</source>
-        <translation type="obsolete">마지막으로 선택한 선을 기준으로 두 점사이의 대칭 제약조건 생성</translation>
+        <translation>마지막으로 선택한 선 또는 점을 기준으로 두 점이 대칭되도록 고정</translation>
     </message>
 </context>
 <context>
@@ -686,12 +670,12 @@
     <message>
         <location line="+1"/>
         <source>Constrain tangent</source>
-        <translation>제약조건: 접점</translation>
+        <translation>제약조건: 탄젠트</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a tangent constraint between two entities</source>
-        <translation>두 객체간의 접점 제약조건 생성</translation>
+        <translation>두 엔티티가 서로 접하도록 고정</translation>
     </message>
 </context>
 <context>
@@ -709,7 +693,7 @@
     <message>
         <location line="+1"/>
         <source>Create a vertical constraint on the selected item</source>
-        <translation>선택한 요소에 수직 제약조건 생성</translation>
+        <translation>선택한 요소를 수직하게 고정</translation>
     </message>
 </context>
 <context>
@@ -763,7 +747,7 @@
     <message>
         <location line="+1"/>
         <source>Create an arc by its end points and a point along the arc</source>
-        <translation type="unfinished">Create an arc by its end points and a point along the arc</translation>
+        <translation>양 끝점과 호의 한점을 이용하여 호 생성</translation>
     </message>
 </context>
 <context>
@@ -781,7 +765,7 @@
     <message>
         <location line="+1"/>
         <source>Create a circle by 3 perimeter points</source>
-        <translation>3점 원 생성</translation>
+        <translation>세 점을 이용하여 원 생성</translation>
     </message>
 </context>
 <context>
@@ -794,20 +778,12 @@
     <message>
         <location line="+1"/>
         <source>Create arc by center</source>
-        <translation>생성: 중심점을 이용한 호</translation>
+        <translation>생성: 중점을 이용한 호</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create an arc by its center and by its end points</source>
-        <translation>중심점과 양 끝점을 이용하여 호 생성</translation>
-    </message>
-    <message>
-        <source>Create arc</source>
-        <translation type="obsolete">생성: 호</translation>
-    </message>
-    <message>
-        <source>Create an arc in the sketch</source>
-        <translation type="obsolete">스케치에 호 생성</translation>
+        <translation>중점과 양 끝점을 이용하여 호 생성</translation>
     </message>
 </context>
 <context>
@@ -825,7 +801,7 @@
     <message>
         <location line="+1"/>
         <source>Create an arc of ellipse in the sketch</source>
-        <translation>스케치에 타원형태의 호 생성</translation>
+        <translation>타원의 둘레를 따르는 호 생성</translation>
     </message>
 </context>
 <context>
@@ -843,7 +819,7 @@
     <message>
         <location line="+1"/>
         <source>Create an arc of hyperbola in the sketch</source>
-        <translation>스케치에 쌍공선형태의 호 생성</translation>
+        <translation>쌍공선형태의 호 생성</translation>
     </message>
 </context>
 <context>
@@ -897,7 +873,7 @@
     <message>
         <location line="+1"/>
         <source>Create a circle in the sketch</source>
-        <translation>스케치에 원을 생성</translation>
+        <translation>중점과 반지름을 이용하여 원 생성</translation>
     </message>
 </context>
 <context>
@@ -933,7 +909,7 @@
     <message>
         <location line="+1"/>
         <source>Create an ellipse by 3 points in the sketch</source>
-        <translation>스케치에 3점을 이용하여 타원 생성</translation>
+        <translation>3점(장축의 끝점, 단축)을 이용하여 타원 생성</translation>
     </message>
 </context>
 <context>
@@ -951,7 +927,7 @@
     <message>
         <location line="+1"/>
         <source>Create an ellipse by center in the sketch</source>
-        <translation>스케치에 중점, 장축, 단축을 이용하여 타원 생성</translation>
+        <translation>중점, 장축, 단축을 이용하여 타원 생성</translation>
     </message>
 </context>
 <context>
@@ -964,16 +940,12 @@
     <message>
         <location line="+1"/>
         <source>Create fillet</source>
-        <translation>생성: 모깍기(Fillet)</translation>
-    </message>
-    <message>
-        <source>Create a fillet between two lines or at a coincidental point</source>
-        <translation>두 선사이에 모깍기(Fillet) 생성</translation>
+        <translation>수정: 필렛(Fillet)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a fillet between two lines or at a coincident point</source>
-        <translation>두 선사이에 모깍기(Fillet) 생성</translation>
+        <translation>두 선사이에 필렛(Fillet) 생성</translation>
     </message>
 </context>
 <context>
@@ -991,7 +963,7 @@
     <message>
         <location line="+1"/>
         <source>Create a heptagon in the sketch</source>
-        <translation>스케치에 7각형 생성</translation>
+        <translation>7각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1009,7 +981,7 @@
     <message>
         <location line="+1"/>
         <source>Create a hexagon in the sketch</source>
-        <translation>스케치에 6각형 생성</translation>
+        <translation>6각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1027,7 +999,7 @@
     <message>
         <location line="+1"/>
         <source>Create a line in the sketch</source>
-        <translation>선 생성</translation>
+        <translation>두 점을 이용하여 선 생성</translation>
     </message>
 </context>
 <context>
@@ -1045,7 +1017,7 @@
     <message>
         <location line="+1"/>
         <source>Create an octagon in the sketch</source>
-        <translation>스케치에 8각형 생성</translation>
+        <translation>8각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1063,7 +1035,7 @@
     <message>
         <location line="+1"/>
         <source>Create a pentagon in the sketch</source>
-        <translation>스케치에 5각형 생성</translation>
+        <translation>5각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1112,16 +1084,12 @@
     <message>
         <location line="+1"/>
         <source>Create polyline</source>
-        <translation>생성: 자유 다각형(Polyline)</translation>
+        <translation>생성: 자유곡선(Polyline)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a polyline in the sketch. &apos;M&apos; Key cycles behaviour</source>
-        <translation>스케처에 자유 다각형(Polyline) 생성 &apos;M&apos;키를 눌러 형태 변경</translation>
-    </message>
-    <message>
-        <source>Create a polyline in the sketch</source>
-        <translation type="obsolete">스케치에 자유 다각형(Polyline) 생성</translation>
+        <translation>자유곡선(Polyline)을 생성. &apos;M&apos;키를 눌러 형태 변경</translation>
     </message>
 </context>
 <context>
@@ -1134,12 +1102,12 @@
     <message>
         <location line="+1"/>
         <source>Create rectangle</source>
-        <translation>생성: 직사각형</translation>
+        <translation>생성: 사각형</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a rectangle in the sketch</source>
-        <translation>스케치에 직사각형 생성</translation>
+        <translation>사각형의 끝점을 이용하여 사각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1152,12 +1120,12 @@
     <message>
         <location line="+1"/>
         <source>Create slot</source>
-        <translation>생성: 슬롯</translation>
+        <translation>생성: 직선 홈(Slot)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a slot in the sketch</source>
-        <translation>스케치에 슬롯 생성</translation>
+        <translation>직선 홈(Slot) 생성</translation>
     </message>
 </context>
 <context>
@@ -1175,7 +1143,7 @@
     <message>
         <location line="+1"/>
         <source>Create a square in the sketch</source>
-        <translation>스케치에 정사각형 생성</translation>
+        <translation>중점과 끝점을 이용하여 정사각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1188,12 +1156,12 @@
     <message>
         <location line="+1"/>
         <source>Create text</source>
-        <translation>생성: 텍스트</translation>
+        <translation>생성: 문자</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create text in the sketch</source>
-        <translation>스케치에 텍스트 생성</translation>
+        <translation>스케치에 문자 생성</translation>
     </message>
 </context>
 <context>
@@ -1211,7 +1179,7 @@
     <message>
         <location line="+1"/>
         <source>Create an equilateral triangle in the sketch</source>
-        <translation>스케치에 정삼각형 생성</translation>
+        <translation>중점과 끝점을 이용하여 정삼각형 생성</translation>
     </message>
 </context>
 <context>
@@ -1319,7 +1287,7 @@
     <message>
         <location line="+1"/>
         <source>Close the editing of the sketch</source>
-        <translation>현재 작업하는 스케치 닫기</translation>
+        <translation>작업 중인 스케치 닫기</translation>
     </message>
 </context>
 <context>
@@ -1337,12 +1305,28 @@
     <message>
         <location line="+1"/>
         <source>Map a sketch to a face</source>
-        <translation>선택한 면에 스케치 투영</translation>
+        <translation>선택한 면에 스케치를 투영</translation>
+    </message>
+	<message>
+        <source>No sketch found</source>
+        <translation>스케치를 찾을 수 없습니다</translation>
+    </message>
+	<message>
+        <source>The document doesn&apos;t have a sketch</source>
+        <translation>문서에 스케치가 없습니다</translation>
+    </message>
+	<message>
+        <source>Select sketch</source>
+        <translation>스케치 선택</translation>
+    </message>
+    <message>
+        <source>Select a sketch from the list</source>
+        <translation>목록에서 스케치를 선택하세요.</translation>
     </message>
     <message>
         <location line="+50"/>
         <source>Some of the selected objects depend on the sketch to be mapped. Circular dependencies are not allowed!</source>
-        <translation>스케치에 포함된 개체들이 투영됩니다. Circular dependencies are not allowed!</translation>
+        <translation type="unfinished">스케치에 포함된 개체들이 투영됩니다. Circular dependencies are not allowed!</translation>
     </message>
 </context>
 <context>
@@ -1361,12 +1345,12 @@
     <message>
         <location line="+13"/>
         <source>Wrong selection</source>
-        <translation>잘못 된 선택</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select at least two sketches, please.</source>
-        <translation>최소한 두개의 스케치를 선택하세요.</translation>
+        <translation>최소한 두 개의 스케치를 선택하세요.</translation>
     </message>
 </context>
 <context>
@@ -1385,7 +1369,7 @@
     <message>
         <location line="+13"/>
         <source>Wrong selection</source>
-        <translation>잘못 된 선택</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1406,28 +1390,9 @@
         <translation>스케치 생성</translation>
     </message>
     <message>
-        <source>Create a new or edit the selected sketch</source>
-        <translation type="obsolete">선택 스케치를 생성/수정합니다.</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Create a new sketch</source>
         <translation>새로운 스케치를 생성합니다.</translation>
-    </message>
-</context>
-<context>
-    <name>CmdSketcherNewSketchSF</name>
-    <message>
-        <source>Sketcher</source>
-        <translation type="obsolete">스케쳐</translation>
-    </message>
-    <message>
-        <source>Sketchflat sketch</source>
-        <translation type="obsolete">Sketchflat sketch</translation>
-    </message>
-    <message>
-        <source>Create a new sketchflat sketch by starting externel editor</source>
-        <translation type="obsolete">Create a new sketchflat sketch by starting externel editor</translation>
     </message>
 </context>
 <context>
@@ -1440,12 +1405,12 @@
     <message>
         <location line="+1"/>
         <source>Rectangular Array</source>
-        <translation>직사각형 배열</translation>
+        <translation>사각형태 배열</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Creates an rectangular array pattern of the geometry taking as reference the last selected point</source>
-        <translation>선택한 점을 기준으로 직사각형 배열 생성</translation>
+        <translation>선택한 점을 기준으로 사각형태의 배열 생성</translation>
     </message>
 </context>
 <context>
@@ -1495,7 +1460,7 @@
         <location line="+1"/>
         <location line="+1"/>
         <source>Select Conflicting Constraints</source>
-        <translation>충돌 제약조건 선택</translation>
+        <translation>충돌이 발생하는 제약조건 선택</translation>
     </message>
 </context>
 <context>
@@ -1545,7 +1510,7 @@
     <message>
         <location line="+1"/>
         <source>Select the horizontal axis</source>
-        <translation>수평축을 선택합니다.</translation>
+        <translation>스케치의 수평축(U 축)을 선택합니다.</translation>
     </message>
 </context>
 <context>
@@ -1563,7 +1528,7 @@
     <message>
         <location line="+1"/>
         <source>Select the origin point</source>
-        <translation>원점을 선택합니다.</translation>
+        <translation>스케치의 원점을 선택합니다.</translation>
     </message>
 </context>
 <context>
@@ -1595,7 +1560,7 @@
     <message>
         <location line="+1"/>
         <source>Select the vertical axis</source>
-        <translation>수직축을 선택합니다.</translation>
+        <translation>스케치의 수직축(V 축)을 선택합니다.</translation>
     </message>
 </context>
 <context>
@@ -1637,10 +1602,6 @@
         <source>Toggle construction line</source>
         <translation type="obsolete">Toggle construction line</translation>
     </message>
-    <message>
-        <source>Toggles the currently selected lines to/from construction mode</source>
-        <translation type="obsolete">Toggles the currently selected lines to/from construction mode</translation>
-    </message>
 </context>
 <context>
     <name>CmdSketcherToggleDrivingConstraint</name>
@@ -1670,16 +1631,12 @@
     <message>
         <location line="+1"/>
         <source>Trim edge</source>
-        <translation>선 자르기</translation>
+        <translation>잘라내기(Trim)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Trim an edge with respect to the picked position</source>
         <translation>선택한 위치의 선을 자릅니다.</translation>
-    </message>
-    <message>
-        <source>Trims an edge with respect to the picked position</source>
-        <translation type="obsolete">Trims an edge with respect to the picked position</translation>
     </message>
 </context>
 <context>
@@ -1702,7 +1659,7 @@
     <message>
         <location line="+12"/>
         <source>Wrong selection</source>
-        <translation>잘못 된 선택</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1720,7 +1677,7 @@
     <message>
         <location line="+1"/>
         <source>View sketch</source>
-        <translation>스케치 보기</translation>
+        <translation>스케치 면에 수직 보기</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1733,7 +1690,7 @@
     <message>
         <location filename="../../TaskSketcherCreateCommands.cpp" line="+41"/>
         <source>Appearance</source>
-        <translation>설정</translation>
+        <translation>표시 속성</translation>
     </message>
 </context>
 <context>
@@ -1858,19 +1815,19 @@
         <location line="+397"/>
         <location line="+64"/>
         <source>Wrong selection</source>
-        <translation>잘못 된 선택</translation>
+        <translation>잘못된 선택</translation>
     </message>
     <message>
         <location line="-7"/>
         <location line="+8"/>
         <source>Select edge(s) from the sketch.</source>
-        <translation>스케치에서 여러 선을 선택합니다.</translation>
+        <translation>스케치에서 여러 선을 선택하세요.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="-5650"/>
         <location line="+238"/>
         <source>Select an edge from the sketch.</source>
-        <translation>스케치에서 하나의 모서리를 선택합니다.</translation>
+        <translation>스케치에서 하나의 모서리를 선택하세요.</translation>
     </message>
     <message>
         <location line="-204"/>
@@ -1913,12 +1870,12 @@
         <location line="+11"/>
         <location line="+12"/>
         <source>Only sketch and its support is allowed to select</source>
-        <translation>스케치만 선택 가능합니다.</translation>
+        <translation>스케치만 선택할 수 있습니다.</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>One of the selected has to be on the sketch</source>
-        <translation>스케치에 있는 것만 선택 가능합니다.</translation>
+        <translation>스케치에 있는 것만 선택할 수 있습니다.</translation>
     </message>
     <message>
         <location line="+439"/>
@@ -1953,15 +1910,11 @@
     </message>
     <message>
         <source>Select entities from the sketch.</source>
-        <translation type="obsolete">스케치에서 엔티티를 선택합니다.</translation>
+        <translation>스케치에서 엔티티를 선택하세요.</translation>
     </message>
     <message>
         <source>Select exactly one entity from the sketch.</source>
-        <translation type="obsolete">스케치에서 하나의 엔티티를 선택합니다.</translation>
-    </message>
-    <message>
-        <source>Select one vertex from the sketch.</source>
-        <translation type="obsolete">스케치에서 교점을 선택합니다.</translation>
+        <translation>스케치에서 하나의 엔티티를 선택하세요.</translation>
     </message>
     <message>
         <location line="+674"/>
@@ -1969,17 +1922,9 @@
         <translation>스케치에서 여러 점을 선택하세요.</translation>
     </message>
     <message>
-        <source>Cannot add a fixed x-coordinate constraint on an external geometry!</source>
-        <translation type="obsolete">Cannot add a fixed x-coordinate constraint on an external geometry!</translation>
-    </message>
-    <message>
         <location line="+646"/>
         <source>Cannot add a fixed x-coordinate constraint on the root point!</source>
         <translation type="unfinished">Cannot add a fixed x-coordinate constraint on the root point!</translation>
-    </message>
-    <message>
-        <source>Cannot add a fixed y-coordinate constraint on an external geometry!</source>
-        <translation type="obsolete">Cannot add a fixed y-coordinate constraint on an external geometry!</translation>
     </message>
     <message>
         <location line="-1118"/>
@@ -2153,10 +2098,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>호환되지 않는 geometry가 선택되었습니다!</translation>
     </message>
     <message>
-        <source>SnellsLaw on BSpline edge currently unsupported.</source>
-        <translation type="obsolete">SnellsLaw on BSpline edge currently unsupported.</translation>
-    </message>
-    <message>
         <location line="+9"/>
         <source>SnellsLaw on B-spline edge currently unsupported.</source>
         <translation type="unfinished"></translation>
@@ -2170,7 +2111,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location line="+20"/>
         <source>Sketch axes cannot be used in internal alignment constraint</source>
-        <translation type="unfinished">스케치 축은 internal alignment 제약조건에 사용할 수 없습니다.</translation>
+        <translation>스케치 축은 internal alignment 제약조건에 사용할 수 없습니다.</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -2264,17 +2205,9 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>한 직선 또는 한 점, 한 직선 또는 두 점을 선택하세요.</translation>
     </message>
     <message>
-        <source>Cannot add a length constraint on an external geometry!</source>
-        <translation type="obsolete">외부 도형에 대해 길이 구속을 설정할 수 없습니다!</translation>
-    </message>
-    <message>
         <location line="-30"/>
         <source>Cannot add a length constraint on an axis!</source>
         <translation>축에는 길이 제약조건을 적용할 수 없습니다!</translation>
-    </message>
-    <message>
-        <source>Select exactly one point and one object from the sketch.</source>
-        <translation type="obsolete">스케치에서 한 점과 한 개체를 선택합니다.</translation>
     </message>
     <message>
         <location line="+468"/>
@@ -2285,38 +2218,14 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>한 직선 또는 최대 2개의 점을 선택하세요.</translation>
     </message>
     <message>
-        <source>Cannot add a horizontal length constraint on an external geometry!</source>
-        <translation type="obsolete">외부 도형에 대해 수평 구속조건을 추가할 수 없습니다!</translation>
-    </message>
-    <message>
         <location line="-316"/>
         <source>Cannot add a horizontal length constraint on an axis!</source>
         <translation>축에는 수평 길이 제약조건을 적용할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Cannot add a fixed x-cootdinate constraint on an external geometry!</source>
-        <translation type="obsolete">외부 도형에 대해 x 좌표를 추가할 수 없습니다!</translation>
-    </message>
-    <message>
-        <source>Cannot add a fixed x-cootdinate constraint on the root point!</source>
-        <translation type="obsolete">Cannot add a fixed x-cootdinate constraint on the root point!</translation>
-    </message>
-    <message>
-        <source>Cannot add a vertical length constraint on an external geometry!</source>
-        <translation type="obsolete">Cannot add a vertical length constraint on an external geometry!</translation>
-    </message>
-    <message>
         <location line="+242"/>
         <source>Cannot add a vertical length constraint on an axis!</source>
         <translation>축에는 수직 길이 제약조건을 적용할 수 없습니다!</translation>
-    </message>
-    <message>
-        <source>Cannot add a fixed y-cootdinate constraint on an external geometry!</source>
-        <translation type="obsolete">Cannot add a fixed y-cootdinate constraint on an external geometry!</translation>
-    </message>
-    <message>
-        <source>Cannot add a fixed y-cootdinate constraint on the root point!</source>
-        <translation type="obsolete">Cannot add a fixed y-cootdinate constraint on the root point!</translation>
     </message>
     <message>
         <location line="+245"/>
@@ -2346,7 +2255,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
 
 Accepted combinations: two curves; an endpoint and a curve; two endpoints; two curves and a point.</source>
         <comment>perpendicular constraint</comment>
-        <translation type="unfinished">이 제약조건을 사용할 수 있는 조합은 다음과 같습니다.
+        <translation>이 제약조건을 사용할 수 있는 조합은 다음과 같습니다.
 
 사용가능한 조합: 두개의 곡선, 끝점과 곡선, 두개의 끝점, 두개의 곡선과 한 점.</translation>
     </message>
@@ -2386,18 +2295,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>연결되지 않은 점에 대하여 수직 제약조건을 적용할 수 없습니다!</translation>
     </message>
     <message>
-        <source>The selected points should be end points of arcs and lines.</source>
-        <translation type="obsolete">선/호의 끝점을 선택해 주십시오.</translation>
-    </message>
-    <message>
-        <source>The selected point should be an end point of an arc or line.</source>
-        <translation type="obsolete">선/호 의 끝점을 선택해 주십시오.</translation>
-    </message>
-    <message>
-        <source>The selected edge should be an arc, line or circle.</source>
-        <translation type="obsolete">선/원/호 를 선택해 주십시오.</translation>
-    </message>
-    <message>
         <location line="+39"/>
         <location line="+186"/>
         <source>One of the selected edges should be a line.</source>
@@ -2408,9 +2305,9 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
 
 Accepted combinations: two curves; an endpoint and a curve; two endpoints; two curves and a point.</source>
         <comment>tangent constraint</comment>
-        <translation type="obsolete">There is a number of ways this constraint can be applied.
+        <translation>이 제약조건을 사용할 수 있는 조합은 다음과 같습니다.
 
-Accepted combinations: two curves; an endpoint and a curve; two endpoints; two curves and a point.</translation>
+사용가능한 조합: 두개의 곡선, 끝점과 곡선, 두개의 끝점, 두개의 곡선과 한 점.</translation>
     </message>
     <message>
         <location line="+292"/>
@@ -2432,34 +2329,14 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>연결되지 않은 점에 대하여 탄젠트 제약조건을 적용할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Select exactly one arc or circle from the sketch.</source>
-        <translation type="obsolete">스케치에서 원/호 하나를 선택합니다.</translation>
-    </message>
-    <message>
-        <source>Select one or two lines from the sketch.</source>
-        <translation type="obsolete">스케치에서 하나 또는 2개의 선을 선택합니다.</translation>
-    </message>
-    <message>
-        <source>Cannot add an angle constraint on an external geometry!</source>
-        <translation type="obsolete">외부 도형에 대하여 길이 구속을 추가할 수 없습니다!</translation>
-    </message>
-    <message>
         <location line="+841"/>
         <source>Cannot add an angle constraint on an axis!</source>
         <translation>축에는 각도 제약조건을 적용할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Select exactly one or two lines from the sketch.</source>
-        <translation type="obsolete">스케치에서 하나/2개의 선을 선택합니다.</translation>
-    </message>
-    <message>
         <location line="+308"/>
         <source>Select two edges from the sketch.</source>
         <translation>두개의 선을 선택하세요.</translation>
-    </message>
-    <message>
-        <source>Select atleast two lines from the sketch.</source>
-        <translation type="obsolete">스케치에서 2개 이상의 선을 선택합니다.</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -2506,60 +2383,24 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>선과 선에 포함된 점에는 대칭 제약조건을 적용할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Select exactly two same geometries</source>
-        <translation type="obsolete">Select exactly two same geometries</translation>
-    </message>
-    <message>
-        <source>Select valid geometries</source>
-        <translation type="obsolete">Select valid geometries</translation>
-    </message>
-    <message>
-        <source>Select geometry of similar type</source>
-        <translation type="obsolete">Select geometry of similar type</translation>
-    </message>
-    <message>
-        <source>Select two points and one line from the sketch.</source>
-        <translation type="obsolete">Select two points and one line from the sketch.</translation>
-    </message>
-    <message>
-        <source>Select exactly one line from the sketch.</source>
-        <translation type="obsolete">Select exactly one line from the sketch.</translation>
-    </message>
-    <message>
-        <source>Select two lines from the sketch.</source>
-        <translation type="obsolete">Select two lines from the sketch.</translation>
-    </message>
-    <message>
-        <source>Select exactly two lines from the sketch.</source>
-        <translation type="obsolete">Select exactly two lines from the sketch.</translation>
-    </message>
-    <message>
-        <source>Select two entities from the sketch.</source>
-        <translation type="obsolete">스케치에서 2개의 엔티티를 선택합니다.</translation>
-    </message>
-    <message>
-        <source>Select exactly two entities from the sketch.</source>
-        <translation type="obsolete">스케치에서 정확히 2개의 엔티티를 선택합니다.</translation>
-    </message>
-    <message>
         <source>Edit sketch</source>
-        <translation type="obsolete">스케치 수정</translation>
+        <translation>스케치 수정</translation>
     </message>
     <message>
         <source>A dialog is already open in the task panel</source>
-        <translation type="obsolete">테스크 패널에 이미 다이얼로그가 열려있습니다.</translation>
+        <translation>테스크 패널에 이미 다이얼로그가 열려있습니다.</translation>
     </message>
     <message>
         <source>Do you want to close this dialog?</source>
-        <translation type="obsolete">다이얼로그를 닫으시겠습니까?</translation>
+        <translation>다이얼로그를 닫으시겠습니까?</translation>
     </message>
     <message>
         <source>Several sub-elements selected</source>
-        <translation type="obsolete">하부 요소들이 선택되었습니다.</translation>
+        <translation>하부 요소들이 선택되었습니다.</translation>
     </message>
     <message>
         <source>You have to select a single face as support for a sketch!</source>
-        <translation type="obsolete">You have to select a single face as support for a sketch!</translation>
+        <translation>You have to select a single face as support for a sketch!</translation>
     </message>
     <message>
         <source>No support face selected</source>
@@ -2596,10 +2437,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>치수 제약조건</translation>
     </message>
     <message>
-        <source>Display</source>
-        <translation type="obsolete">Display</translation>
-    </message>
-    <message>
         <location filename="../../CommandSketcherTools.cpp" line="-142"/>
         <location line="+8"/>
         <location line="+103"/>
@@ -2616,7 +2453,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location line="-93"/>
         <source>Closing a shape formed by exactly two lines makes no sense.</source>
-        <translation type="unfinished">Closing a shape formed by exactly two lines makes no sense.</translation>
+        <translation>두 개의 선을 이용하여 닫힌 형상을 생성할 수 없습니다.</translation>
     </message>
     <message>
         <location line="+148"/>
@@ -2639,7 +2476,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>Currently internal geometry is only supported for ellipse and arc of ellipse. The last selected element must be an ellipse or an arc of ellipse.</source>
-        <translation type="obsolete">Currently internal geometry is only supported for ellipse and arc of ellipse. The last selected element must be an ellipse or an arc of ellipse.</translation>
+        <translation type="obsolete">현재 내부 geometry는 타원과 타원형의 호에서만 지원합니다. 마지막에 선택된 요소는 반드시 타원 또는 타원의 호이어야 합니다.</translation>
     </message>
     <message>
         <location line="+252"/>
@@ -2694,10 +2531,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>선택된 객체에 스케치를 매핑할 수 없습니다. %1</translation>
     </message>
     <message>
-        <source>Can&apos;t map the skecth to selected object. %1.</source>
-        <translation type="obsolete">Can&apos;t map the skecth to selected object. %1.</translation>
-    </message>
-    <message>
         <location line="+7"/>
         <location line="+351"/>
         <source>Don&apos;t attach</source>
@@ -2747,37 +2580,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location line="+153"/>
         <source>None of the selected elements is a knot of a B-spline</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SketchOrientationDialog</name>
-    <message>
-        <source>Choose orientation</source>
-        <translation type="obsolete">스케치 평면 선택</translation>
-    </message>
-    <message>
-        <source>Sketch orientation</source>
-        <translation type="obsolete">스케치 평면</translation>
-    </message>
-    <message>
-        <source>XY-Plane</source>
-        <translation type="obsolete">XY 평면</translation>
-    </message>
-    <message>
-        <source>XZ-Plane</source>
-        <translation type="obsolete">XZ 평면</translation>
-    </message>
-    <message>
-        <source>YZ-Plane</source>
-        <translation type="obsolete">YZ 평면</translation>
-    </message>
-    <message>
-        <source>Reverse direction</source>
-        <translation type="obsolete">방향 바꾸기</translation>
-    </message>
-    <message>
-        <source>Offset:</source>
-        <translation type="obsolete">오프셋:</translation>
     </message>
 </context>
 <context>
@@ -2867,7 +2669,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../CommandConstraints.cpp" line="-4997"/>
         <location filename="../../EditDatumDialog.cpp" line="-81"/>
         <source>Insert angle</source>
-        <translation>각도 삽입</translation>
+        <translation>각도 제약조건</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2899,7 +2701,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location line="+4779"/>
         <location line="+162"/>
         <source>Change radius</source>
-        <translation>반지름 변경</translation>
+        <translation>반지름 제약조건</translation>
     </message>
     <message>
         <location line="-4946"/>
@@ -2923,13 +2725,13 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location line="-6123"/>
         <location filename="../../EditDatumDialog.cpp" line="+9"/>
         <source>Insert length</source>
-        <translation>길이 삽입</translation>
+        <translation>거리 제약조건</translation>
     </message>
     <message>
         <location line="+2"/>
         <location filename="../../EditDatumDialog.cpp" line="+2"/>
         <source>Length:</source>
-        <translation>길이:</translation>
+        <translation>거리:</translation>
     </message>
 </context>
 <context>
@@ -2956,10 +2758,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location line="+3"/>
         <source>This object belongs to another body, can&apos;t link. Hold Ctrl to allow cross-references.</source>
         <translation>이 객체는 다른 body에 속해있으므로 연결할 수 없습니다. 상호 참조를 허용하려면 Ctrl키를 누르세요.</translation>
-    </message>
-    <message>
-        <source>This object belongs to another body, can&apos;t link. Hold Ctrl to allow crossreferences.</source>
-        <translation type="obsolete">This object belongs to another body, can&apos;t link. Hold Ctrl to allow crossreferences.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3146,51 +2944,51 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>Sketcher colors</source>
-        <translation type="obsolete">스케쳐 색상</translation>
+        <translation>스케쳐 색상</translation>
     </message>
     <message>
         <source>Default edge color</source>
-        <translation type="obsolete">기본 선 색상</translation>
+        <translation>기본 선 색상</translation>
     </message>
     <message>
         <source>The color of edges being edited</source>
-        <translation type="obsolete">선의 색상이 수정되었습니다.</translation>
+        <translation>선의 색상이 수정되었습니다.</translation>
     </message>
     <message>
         <source>Default vertex color</source>
-        <translation type="obsolete">기본 점 색상</translation>
+        <translation>기본 점 색상</translation>
     </message>
     <message>
         <source>The color of vertices being edited</source>
-        <translation type="obsolete">점의 색상이 수정되었습니다.</translation>
+        <translation>점의 색상이 수정되었습니다.</translation>
     </message>
     <message>
         <source>Edit edge color</source>
-        <translation type="obsolete">선 색상 수정</translation>
+        <translation>선 색상 수정</translation>
     </message>
     <message>
         <source>Edit vertex color</source>
-        <translation type="obsolete">점 색상 수정</translation>
+        <translation>점 색상 수정</translation>
     </message>
     <message>
         <source>Construction geometry</source>
-        <translation type="obsolete">생성 geometry</translation>
+        <translation>생성 geometry</translation>
     </message>
     <message>
         <source>The color of construction geometry in edit mode</source>
-        <translation type="obsolete">편집 모드에서의 생성 geometry 색상</translation>
+        <translation>편집 모드에서의 생성 geometry 색상</translation>
     </message>
     <message>
         <source>External geometry</source>
-        <translation type="obsolete">외부 geometry</translation>
+        <translation>외부 geometry</translation>
     </message>
     <message>
         <source>The color of external geometry in edit mode</source>
-        <translation type="obsolete">편집 모드에서의 외부 geometry 색상</translation>
+        <translation>편집 모드에서의 외부 geometry 색상</translation>
     </message>
     <message>
         <source>Fully constrained geometry</source>
-        <translation type="obsolete">완전히 구속된 geometry</translation>
+        <translation>완전히 구속된 geometry</translation>
     </message>
     <message>
         <location filename="../../SketcherSettings.ui" line="+14"/>
@@ -3289,23 +3087,23 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>The color of fully constrained geometry in edit mode</source>
-        <translation type="obsolete">완전 구속 도형의 색상을 수정합니다.</translation>
+        <translation>완전 구속 도형의 색상을 수정합니다.</translation>
     </message>
     <message>
         <source>Constraint color</source>
-        <translation type="obsolete">제약조건 색상</translation>
+        <translation>제약조건 색상</translation>
     </message>
     <message>
         <source>Datum color</source>
-        <translation type="obsolete">데이텀 색상</translation>
+        <translation>데이텀 색상</translation>
     </message>
     <message>
         <source>Datum text size</source>
-        <translation type="obsolete">데이텀 텍스트 크기</translation>
+        <translation>데이텀 텍스트 크기</translation>
     </message>
     <message>
         <source>The default line thickness for new shapes</source>
-        <translation type="obsolete">새 셰이프의 기본 선 두께</translation>
+        <translation>새 셰이프의 기본 선 두께</translation>
     </message>
     <message>
         <location line="-292"/>
@@ -3314,27 +3112,27 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>Default vertex size</source>
-        <translation type="obsolete">기본 점 크기</translation>
+        <translation>기본 점 크기</translation>
     </message>
     <message>
         <source>Default line width</source>
-        <translation type="obsolete">기본 선 두께</translation>
+        <translation>기본 선 두께</translation>
     </message>
     <message>
         <source>Cursor text color</source>
-        <translation type="obsolete">커서 텍스트 색상</translation>
+        <translation>커서 텍스트 색상</translation>
     </message>
     <message>
         <source>Non-driving Datum color</source>
-        <translation type="obsolete">비 사용중인 데이텀 색상</translation>
+        <translation>비 사용중인 데이텀 색상</translation>
     </message>
     <message>
         <source>The color of driving constraints in edit mode</source>
-        <translation type="obsolete">편집 모드에서의 사용중인 제약조건의 색상</translation>
+        <translation>편집 모드에서의 사용중인 제약조건의 색상</translation>
     </message>
     <message>
         <source>The color of non-driving constrains or dimensions in edit mode</source>
-        <translation type="obsolete">편집 모드에서의 비 사용중인 제약조건 또는 치수의 색상</translation>
+        <translation>편집 모드에서의 비 사용중인 제약조건 또는 치수의 색상</translation>
     </message>
     <message>
         <location line="-19"/>
@@ -3502,7 +3300,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>Non-driving Datum color</source>
-        <translation type="obsolete">비 사용중인 데이텀 색상</translation>
+        <translation>비 사용중인 데이텀 색상</translation>
     </message>
     <message>
         <location line="-20"/>
@@ -3511,7 +3309,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     </message>
     <message>
         <source>The color of non-driving constrains or dimensions in edit mode</source>
-        <translation type="obsolete">비 사용중인 제약조건과 치수의 색상</translation>
+        <translation>비 사용중인 제약조건과 치수의 색상</translation>
     </message>
 </context>
 <context>
@@ -3864,10 +3662,6 @@ However, no constraints linking to the endpoints were found.</translation>
         <translation type="obsolete">Unsolved</translation>
     </message>
     <message>
-        <source>Grid Snap</source>
-        <translation type="obsolete">Grid Snap</translation>
-    </message>
-    <message>
         <source>0.1 mm</source>
         <translation type="obsolete">0.1 mm</translation>
     </message>
@@ -3941,10 +3735,6 @@ However, no constraints linking to the endpoints were found.</translation>
         <translation>자동 제약조건</translation>
     </message>
     <message>
-        <source>auto constraints</source>
-        <translation type="obsolete">자동 제약조건</translation>
-    </message>
-    <message>
         <location filename="../../TaskSketcherGeneral.cpp" line="+52"/>
         <source>Edit controls</source>
         <translation>스케치 컨트롤 편집</translation>
@@ -3976,7 +3766,7 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location line="+26"/>
         <source>Delete constraints to external geom.</source>
-        <translation type="unfinished">Delete constraints to external geom.</translation>
+        <translation>외부 geometry에 적용되어 있는 제약조건을 제거하세요.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3986,12 +3776,12 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location line="+6"/>
         <source>Tolerance:</source>
-        <translation type="unfinished">Tolerance:</translation>
+        <translation>공차:</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Highlight open vertexes</source>
-        <translation type="unfinished">Highlight open vertexes</translation>
+        <translation>열린 정점 강조</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -4068,7 +3858,7 @@ Use the sketch validation tool.</translation>
     <message>
         <location line="+15"/>
         <source>Do you want to open the sketch validation tool?</source>
-        <translation type="unfinished">스케치 확인 도구를 여시겠습니까?</translation>
+        <translation>스케치 확인 도구를 여시겠습니까?</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4124,15 +3914,15 @@ Use the sketch validation tool.</translation>
     </message>
     <message>
         <source>Over-constrained sketch</source>
-        <translation type="obsolete">스케치가 과다 구속 되었습니다.</translation>
+        <translation>스케치가 과다 구속 되었습니다.</translation>
     </message>
     <message>
         <source>Sketch contains conflicting constraints</source>
-        <translation type="obsolete">스케치가 모순된 구속조건을 포함합니다.</translation>
+        <translation>스케치에 상충하는 구속조건이 포함되어 있습니다.</translation>
     </message>
     <message>
         <source>Sketch contains redundant constraints</source>
-        <translation type="obsolete">Sketch contains redundant constraints</translation>
+        <translation>스케치에 중복된 제약조건이 있습니다.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -4220,7 +4010,7 @@ Use the sketch validation tool.</translation>
         <location filename="../../CommandSketcherTools.cpp" line="-274"/>
         <location line="+1"/>
         <source>Creates a clone of the geometry taking as reference the last selected point</source>
-        <translation>마지막에 선택한 점을 기준으로 geometry 복제</translation>
+        <translation>마지막에 선택한 점을 기준으로 geometry 복제합니다.</translation>
     </message>
 </context>
 <context>
@@ -4242,7 +4032,7 @@ Use the sketch validation tool.</translation>
         <location line="+1"/>
         <location line="+1"/>
         <source>Creates a simple copy of the geometry taking as reference the last selected point</source>
-        <translation>마지막에 선택한 점을 기준으로 geometry 복사</translation>
+        <translation>마지막에 선택한 점을 기준으로 geometry 복사합니다.</translation>
     </message>
 </context>
 <context>
@@ -4251,7 +4041,7 @@ Use the sketch validation tool.</translation>
         <location filename="../../CommandCreateGeo.cpp" line="-4035"/>
         <location line="+1"/>
         <source>Create an arc by its end points and a point along the arc</source>
-        <translation>양 끝점과 호의 한 점을 이용하여 호 생성</translation>
+        <translation>양 끝점과 호의 한 점을 이용하여 호를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4260,7 +4050,7 @@ Use the sketch validation tool.</translation>
         <location line="+3319"/>
         <location line="+1"/>
         <source>Create a circle by 3 rim points</source>
-        <translation>3 점을 이용하여 원 생성</translation>
+        <translation>3 점을 이용하여 원을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4269,7 +4059,7 @@ Use the sketch validation tool.</translation>
         <location line="-3325"/>
         <location line="+1"/>
         <source>Create an arc by its center and by its end points</source>
-        <translation>중점과 양 끝점을 이용하여 호 생성</translation>
+        <translation>중점과 양 끝점을 이용하여 호 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4278,7 +4068,7 @@ Use the sketch validation tool.</translation>
         <location line="+2367"/>
         <location line="+1"/>
         <source>Create an arc of ellipse by its center, major radius, endpoints</source>
-        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 타원형태의 호 생성</translation>
+        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 타원형태의 호를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4287,7 +4077,7 @@ Use the sketch validation tool.</translation>
         <location line="+3"/>
         <location line="+1"/>
         <source>Create an arc of hyperbola by its center, major radius, endpoints</source>
-        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 쌍곡선형태의 호 생성</translation>
+        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 쌍곡선형태의 호를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4296,7 +4086,7 @@ Use the sketch validation tool.</translation>
         <location line="+3"/>
         <location line="+1"/>
         <source>Create an arc of parabola by its focus, vertex, endpoints</source>
-        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 포물선형태의 호 생성</translation>
+        <translation>중점, 장축(major), 단축(minor)의 두 점을 이용하여 포물선형태의 호를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4319,7 +4109,7 @@ Use the sketch validation tool.</translation>
         <location line="+352"/>
         <location line="+1"/>
         <source>Create a circle by its center and by a rim point</source>
-        <translation>중점과 원의 한 점을 이용하여 원 생성</translation>
+        <translation>중점과 원의 한 점을 이용하여 원을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4328,7 +4118,7 @@ Use the sketch validation tool.</translation>
         <location line="-957"/>
         <location line="+1"/>
         <source>Create a ellipse by periapsis, apoapsis, and minor radius</source>
-        <translation>장축(major)의 양 끝점과 단축을 이용하여 타원 생성</translation>
+        <translation>장축(major)의 양 끝점과 단축을 이용하여 타원을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4337,7 +4127,7 @@ Use the sketch validation tool.</translation>
         <location line="-5"/>
         <location line="+1"/>
         <source>Create an ellipse by center, major radius and point</source>
-        <translation>중점, 장축(major), 단축을 이용하여 타원 생성</translation>
+        <translation>중점, 장축(major), 단축을 이용하여 타원을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4346,7 +4136,7 @@ Use the sketch validation tool.</translation>
         <location line="+2891"/>
         <location line="+1"/>
         <source>Create a heptagon by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 7각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 7각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4355,7 +4145,7 @@ Use the sketch validation tool.</translation>
         <location line="-5"/>
         <location line="+1"/>
         <source>Create a hexagon by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 6각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 6각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4364,7 +4154,7 @@ Use the sketch validation tool.</translation>
         <location line="+7"/>
         <location line="+1"/>
         <source>Create an octagon by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 8각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 8각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4373,7 +4163,7 @@ Use the sketch validation tool.</translation>
         <location line="-13"/>
         <location line="+1"/>
         <source>Create a pentagon by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 5각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 5각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4382,7 +4172,7 @@ Use the sketch validation tool.</translation>
         <location line="-5"/>
         <location line="+1"/>
         <source>Create a square by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 정사각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 정사각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4391,7 +4181,7 @@ Use the sketch validation tool.</translation>
         <location line="-5"/>
         <location line="+1"/>
         <source>Create an equilateral triangle by its center and by one corner</source>
-        <translation>중점과 모서리 한 점을 이용하여 정삼각형 생성</translation>
+        <translation>중점과 모서리 한 점을 이용하여 정삼각형을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -4418,7 +4208,7 @@ Use the sketch validation tool.</translation>
     <message>
         <location line="+1"/>
         <source>The document doesn&apos;t have a sketch</source>
-        <translation>해당 문서에 스케치가 없습니다</translation>
+        <translation>문서에 스케치가 없습니다</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -4505,14 +4295,14 @@ Do you want to detach it from the support?</source>
     <name>TaskSketcherConstrains</name>
     <message>
         <source>Constraints</source>
-        <translation type="obsolete">제약조건</translation>
+        <translation>제약조건</translation>
     </message>
 </context>
 <context>
     <name>TaskSketcherCreateCommands</name>
     <message>
         <source>Appearance</source>
-        <translation type="obsolete">설정</translation>
+        <translation>표시 속성</translation>
     </message>
 </context>
 <context>
