@@ -40,6 +40,8 @@ using namespace PartDesignGui;
 #if 0 // needed for Qt's lupdate utility
     qApp->translate("Workbench", "Part Design");
     qApp->translate("Gui::TaskView::TaskWatcherCommands", "Face tools");
+	qApp->translate("Gui::TaskView::TaskWatcherCommands", "Edge tools");
+	qApp->translate("Gui::TaskView::TaskWatcherCommands", "Transformation tools");
     qApp->translate("Gui::TaskView::TaskWatcherCommands", "Sketch tools");
     qApp->translate("Gui::TaskView::TaskWatcherCommands", "Create Geometry");
 #endif
@@ -127,7 +129,7 @@ void Workbench::activated()
         "PartDesign_Mirrored",
         "PartDesign_LinearPattern",
         "PartDesign_PolarPattern",
-//        "PartDesign_Scaled",
+        "PartDesign_Scaled",
         "PartDesign_MultiTransform",
         0};
     Watcher.push_back(new Gui::TaskView::TaskWatcherCommands(
@@ -192,10 +194,10 @@ Gui::MenuItem* Workbench::setupMenuBar() const
           << "PartDesign_Fillet"
           << "PartDesign_Chamfer"
           << "PartDesign_Draft"
-          << "PartDesign_Mirrored"
           << "PartDesign_LinearPattern"
           << "PartDesign_PolarPattern"
-//          << "PartDesign_Scaled"
+		  << "PartDesign_Mirrored"
+          << "PartDesign_Scaled"
           << "PartDesign_MultiTransform";
     // For 0.13 a couple of python packages like numpy, matplotlib and others
     // are not deployed with the installer on Windows. Thus, the WizardShaft is
@@ -227,7 +229,7 @@ Gui::ToolBarItem* Workbench::setupToolBars() const
           << "PartDesign_Mirrored"
           << "PartDesign_LinearPattern"
           << "PartDesign_PolarPattern"
-//          << "PartDesign_Scaled"
+          << "PartDesign_Scaled"
           << "PartDesign_MultiTransform";
 
     Gui::ToolBarItem* geom = new Gui::ToolBarItem(root);
