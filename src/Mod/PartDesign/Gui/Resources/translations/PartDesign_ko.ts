@@ -76,14 +76,6 @@
 <context>
     <name>CmdPartDesignChamfer</name>
     <message>
-        <source>Part</source>
-        <translation type="obsolete">부품</translation>
-    </message>
-    <message>
-        <source>Chamfer...</source>
-        <translation type="obsolete">Chamfer...</translation>
-    </message>
-    <message>
         <location line="-579"/>
         <source>PartDesign</source>
         <translation>단품설계</translation>
@@ -206,10 +198,6 @@
         <source>Create a linear pattern feature</source>
         <translation>선택 피쳐를 이용하여 선형 패턴을 생성합니다.</translation>
     </message>
-    <message>
-        <source>create a linear pattern feature</source>
-        <translation type="obsolete">선형 패턴 피쳐를 생성</translation>
-    </message>
 </context>
 <context>
     <name>CmdPartDesignMigrate</name>
@@ -239,11 +227,11 @@
     <message>
         <location line="+1"/>
         <source>Mirrored</source>
-        <translation>대칭 복사</translation>
+        <translation>생성: 대칭(Mirrored)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>create a mirrored feature</source>
+        <source>Create a mirrored feature</source>
         <translation>면이나 기준면을 중심으로 피쳐를 대칭 복사합니다.</translation>
     </message>
 </context>
@@ -309,22 +297,18 @@
         <translation>단품설계</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Create MultiTransform</source>
-        <translation>생성: 다중 패턴(Multi transform)</translation>
+        <translation type="obsolete">생성: 다중 패턴(Multi transform)</translation>
     </message>
     <message>
+		<location line="+1"/>
         <source>MultiTransform</source>
-        <translation type="obsolete">다중변형</translation>
+        <translation>생성: 다중 패턴(MultiTransform)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a multitransform feature</source>
         <translation>선택 피쳐를 이용하여 다중 패턴을 생성합니다.</translation>
-    </message>
-    <message>
-        <source>create a multitransform feature</source>
-        <translation type="obsolete">multitransform 기능 만들기</translation>
     </message>
 </context>
 <context>
@@ -416,10 +400,6 @@
         <source>Create a pocket with the selected sketch</source>
         <translation>스케치된 프로파일을 돌출하여 잘라진 형체를 생성합니다.</translation>
     </message>
-    <message>
-        <source>create a pocket with the selected sketch</source>
-        <translation type="obsolete">선택한 스케치 포켓 만들기</translation>
-    </message>
 </context>
 <context>
     <name>CmdPartDesignPoint</name>
@@ -454,11 +434,7 @@
     <message>
         <location line="+1"/>
         <source>Create a polar pattern feature</source>
-        <translation>선택 피쳐를 축을 중심으로 원형 패턴을 생성합니다.</translation>
-    </message>
-    <message>
-        <source>create a polar pattern feature</source>
-        <translation type="obsolete">폴라 패턴 피쳐를 생성</translation>
+        <translation>선택 피쳐를 지정한 축을 중심으로 원형 패턴을 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -489,16 +465,12 @@
     <message>
         <location line="+1"/>
         <source>Scaled</source>
-        <translation>배율</translation>
+        <translation>생성: 배율(Scaled)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a scaled feature</source>
-        <translation>Create a scaled feature</translation>
-    </message>
-    <message>
-        <source>create a scaled feature</source>
-        <translation type="obsolete">확장된 기능 만들기</translation>
+        <translation>지정된 배율 값으로 확대/축소된 피처를 생성합니다.</translation>
     </message>
 </context>
 <context>
@@ -752,7 +724,17 @@
     <message>
         <location filename="../../Workbench.cpp" line="+52"/>
         <source>Face tools</source>
-        <translation>면(Face) 도구</translation>
+        <translation>면을 사용하는 도구</translation>
+    </message>
+	<message>
+        <location line="+1"/>
+        <source>Edge tools</source>
+        <translation>모서리를 사용하는 도구</translation>
+    </message>
+	<message>
+        <location line="+1"/>
+        <source>Transformation tools</source>
+        <translation>피처를 사용하는 도구</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -770,7 +752,7 @@
     <message>
         <location filename="../../../InvoluteGearFeature.ui" line="+14"/>
         <source>Involute parameter</source>
-        <translation>복잡한 파라메터</translation>
+        <translation>Involute 기어 매개 변수</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -808,49 +790,6 @@
         <location line="-68"/>
         <source>Pressure angle:</source>
         <translation>압력 각:</translation>
-    </message>
-</context>
-<context>
-    <name>PartDesignGui::ChamferWidget</name>
-    <message>
-        <source>Edges to chamfer</source>
-        <translation type="obsolete">Edges to chamfer</translation>
-    </message>
-    <message>
-        <source>Start distance</source>
-        <translation type="obsolete">Start distance</translation>
-    </message>
-    <message>
-        <source>End distance</source>
-        <translation type="obsolete">End distance</translation>
-    </message>
-    <message>
-        <source>Edge%1</source>
-        <translation type="obsolete">에지 %1</translation>
-    </message>
-    <message>
-        <source>Distance</source>
-        <translation type="obsolete">Distance</translation>
-    </message>
-    <message>
-        <source>No shape selected</source>
-        <translation type="obsolete">셰이프가 선택되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No valid shape is selected.
-Please select a valid shape in the drop-down box first.</source>
-        <translation type="obsolete">유효한 셰이프가 선택되지 않았습니다.
-드롭다운 상자에서 유효한 셰이프를 선택하세요.</translation>
-    </message>
-    <message>
-        <source>No edge selected</source>
-        <translation type="obsolete">에지 선택되지 않았음.</translation>
-    </message>
-    <message>
-        <source>No edge entity is checked to chamfer.
-Please check one or more edge entities first.</source>
-        <translation type="obsolete">No edge entity is checked to chamfer.
-Please check one or more edge entities first.</translation>
     </message>
 </context>
 <context>
@@ -1142,53 +1081,6 @@ Please check one or more edge entities first.</translation>
     </message>
 </context>
 <context>
-    <name>PartDesignGui::TaskChamfer</name>
-    <message>
-        <source>Chamfer Edges</source>
-        <translation type="obsolete">모따기(Chamfer) 모서리</translation>
-    </message>
-    <message>
-        <source>Shape</source>
-        <translation type="obsolete">형상</translation>
-    </message>
-    <message>
-        <source>Selected shape:</source>
-        <translation type="obsolete">선택된 형상:</translation>
-    </message>
-    <message>
-        <source>No selection</source>
-        <translation type="obsolete">선택 안 함</translation>
-    </message>
-    <message>
-        <source>Chamfer Parameter</source>
-        <translation type="obsolete">모따기(Chamfer) 매개 변수</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation type="obsolete">전체</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete">선택 사항 없음</translation>
-    </message>
-    <message>
-        <source>Chamfer type:</source>
-        <translation type="obsolete">모따기(Chamfer) 방식:</translation>
-    </message>
-    <message>
-        <source>Constant Distance</source>
-        <translation type="obsolete">일정한 거리</translation>
-    </message>
-    <message>
-        <source>Variable Distance</source>
-        <translation type="obsolete">가변 거리</translation>
-    </message>
-    <message>
-        <source>Distance:</source>
-        <translation type="obsolete">거리:</translation>
-    </message>
-</context>
-<context>
     <name>PartDesignGui::TaskChamferParameters</name>
     <message>
         <location filename="../../TaskChamferParameters.ui" line="+14"/>
@@ -1212,7 +1104,7 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Chamfer parameters</source>
-        <translation type="obsolete">모따기(Chamfer) 매개 변수</translation>
+        <translation>모따기(Chamfer) 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskChamferParameters.cpp" line="+86"/>
@@ -1240,7 +1132,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgChamferParameters</name>
     <message>
         <source>Edit chamfer</source>
-        <translation type="obsolete">모따기(Chamfer) 수정</translation>
+        <translation>모따기(Chamfer) 수정</translation>
     </message>
 </context>
 <context>
@@ -1260,7 +1152,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgDraftParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
@@ -1275,35 +1167,35 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgFilletParameters</name>
     <message>
         <source>Edit fillet</source>
-        <translation type="obsolete">필렛(Fillet) 수정</translation>
+        <translation>필렛(Fillet) 수정</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgLinearPatternParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgMirroredParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgMultiTransformParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgPadParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
@@ -1318,25 +1210,25 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgPocketParameters</name>
     <message>
         <source>Edit pocket</source>
-        <translation type="obsolete">돌출 컷(Pocket) 수정</translation>
+        <translation>돌출 컷(Pocket) 수정</translation>
     </message>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgPolarPatternParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
     <name>PartDesignGui::TaskDlgScaledParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
@@ -1351,7 +1243,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskDlgTransformedParameters</name>
     <message>
         <source>Input error</source>
-        <translation type="obsolete">입력 오류</translation>
+        <translation>입력 오류</translation>
     </message>
 </context>
 <context>
@@ -1393,7 +1285,7 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Draft parameters</source>
-        <translation type="obsolete">구배 매개 변수</translation>
+        <translation>구배 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskDraftParameters.cpp" line="+96"/>
@@ -1522,7 +1414,7 @@ Please check one or more edge entities first.</translation>
     </message>
     <message>
         <source>Fillet parameters</source>
-        <translation type="obsolete">필렛(Fillet) 매개 변수</translation>
+        <translation>필렛(Fillet) 매개 변수</translation>
     </message>
     <message>
         <location filename="../../TaskFilletParameters.cpp" line="+86"/>
@@ -1534,7 +1426,7 @@ Please check one or more edge entities first.</translation>
     <name>PartDesignGui::TaskGrooveParameters</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">양식</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Axis:</source>
@@ -2858,32 +2750,20 @@ Please check one or more edge entities first.</translation>
         <translation>잘못된 선택</translation>
     </message>
     <message>
-        <source>Select a sketch or 2D object.</source>
-        <translation type="obsolete">스케치나 2D 객체를 선택하세요.</translation>
-    </message>
-    <message>
-        <source>The shape of the selected object is empty.</source>
-        <translation type="obsolete">선택된 객체가 비어있습니다.</translation>
-    </message>
-    <message>
-        <source>The shape of the selected object is not a wire.</source>
-        <translation type="obsolete">선택된 객체의 형상이 와이어(Wire)가 아닙니다.</translation>
-    </message>
-    <message>
         <source>No valid sketches in this document</source>
-        <translation type="obsolete">이 문서에는 유효한 스케치가 없습니다.</translation>
+        <translation>사용 가능한 스케치가 없습니다.</translation>
     </message>
     <message>
-        <source>Please create a sketch or 2D object first</source>
-        <translation type="obsolete">먼저 스케치 또는 2D 객체를 만들어 주십시오.</translation>
+        <source>Please create a sketch or 2D object first.</source>
+        <translation>먼저 스케치 또는 2D 객체를 만들어 주십시오.</translation>
     </message>
     <message>
-        <source>Please create a sketch or 2D object first. It must have a support face on a solid</source>
-        <translation type="obsolete">먼저 스케치 또는 2D 객체를 만들어 주십시오. 솔리드의 면을 선택해야 합니다.</translation>
+        <source>Please create a sketch or 2D object first. It must have a support face on a solid.</source>
+        <translation>먼저 스케치 또는 2D 객체를 만들어 주십시오. 솔리드의 면을 선택하여 스케치를 생성하십시오.</translation>
     </message>
     <message>
-        <source>Select an edge, face or body. Only one body is allowed.Select an edge, face or body. Only one body is allowed.</source>
-        <translation type="obsolete">모서리, 면 또는 바디(Body)를 선택하세요. 하나의 바디(Body)만 선택 가능합니다.</translation>
+        <source>Select an edge, face or body. Only one body is allowed.</source>
+        <translation>모서리, 면 또는 바디(Body)를 선택하세요. 하나의 바디(Body)에서만 선택이 가능합니다.</translation>
     </message>
     <message>
         <location line="-22"/>
@@ -2891,36 +2771,36 @@ Please check one or more edge entities first.</translation>
         <translation>잘못된 객체 타입</translation>
     </message>
     <message>
-        <source>Fillet works only on parts</source>
-        <translation type="obsolete">필렛(Fillet)은 파트에서만 사용 가능합니다.</translation>
+        <source>Fillet works only on parts.</source>
+        <translation>필렛(Fillet)은 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
-        <source>Shape of selected Part is empty</source>
-        <translation type="obsolete">선택된 파트가 비어있습니다.</translation>
+        <source>Shape of selected Part is empty.</source>
+        <translation>선택된 파트가 비어있습니다.</translation>
     </message>
     <message>
-        <source>No fillet possible on selected faces/edges</source>
-        <translation type="obsolete">선택된 면/모서리에 필렛(Fillet)을 적용 할 수 없습니다.</translation>
+        <source>No fillet possible on selected faces/edges.</source>
+        <translation>선택된 면/모서리에 필렛(Fillet)을 적용 할 수 없습니다.</translation>
     </message>
     <message>
-        <source>Chamfer works only on parts</source>
-        <translation type="obsolete">모따기(Chamfer)는 파트에서만 사용 가능합니다.</translation>
+        <source>Chamfer works only on parts.</source>
+        <translation>모따기(Chamfer)는 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
-        <source>Shape of selected part is empty</source>
-        <translation type="obsolete">선택된 파트가 비어있습니다.</translation>
+        <source>Shape of selected part is empty.</source>
+        <translation>선택된 파트가 비어있습니다.</translation>
     </message>
     <message>
         <source>No valid sketches selected</source>
-        <translation type="obsolete">선택된 스케치가 유효하지 않습니다.</translation>
+        <translation>선택된 스케치가 유효하지 않습니다.</translation>
     </message>
     <message>
         <source>None of selected sketches/2D objects is valid for padding. Please select a valid sketch or 2D object that is not used by any other feature.</source>
-        <translation type="obsolete">선택된 스케치/2D 객체는 돌출(Pad)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
+        <translation>선택된 스케치/2D 객체는 돌출(Pad)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
     </message>
     <message>
         <source>None of selected sketches/2D objects is valid for revolving. Please select a valid sketch or 2D object that is not used by any other feature.</source>
-        <translation type="obsolete">선택된 스케치/2D 객체는 회전(Revolution)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
+        <translation>선택된 스케치/2D 객체는 회전(Revolution)에 적합하지 않습니다. 다른 피처에서 사용되지 않은 스케치나 2D 객체를 선택하세요.</translation>
     </message>
     <message>
         <location line="+295"/>
@@ -2928,43 +2808,25 @@ Please check one or more edge entities first.</translation>
         <translation>추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
     </message>
     <message>
-        <source>No chamfer possible on selected faces/edges</source>
-        <translation type="obsolete">선택된 면/모서리에 모따기(Chamfer)를 적용 할 수 없습니다</translation>
+        <source>No chamfer possible on selected faces/edges.</source>
+        <translation>선택된 면/모서리에 모따기(Chamfer)를 적용 할 수 없습니다</translation>
     </message>
     <message>
         <source>Select one or more faces.</source>
-        <translation type="obsolete">하나 이상의 면을 선택하세요.</translation>
+        <translation>하나 이상의 면을 선택하세요.</translation>
     </message>
     <message>
-        <source>Draft works only on parts</source>
-        <translation type="obsolete">구배(Draft)는 파트에서만 사용 가능합니다.</translation>
+        <source>Draft works only on parts.</source>
+        <translation>구배(Draft)는 파트에서만 사용 가능합니다.</translation>
     </message>
     <message>
-        <source>No draft possible on selected faces</source>
-        <translation type="obsolete">선택된 면에 구배(Draft)를 적용 할 수 없습니다.</translation>
+        <source>No draft possible on selected faces.</source>
+        <translation>선택된 면에 구배(Draft)를 적용 할 수 없습니다.</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>No valid features in this document</source>
-        <translation>이 문서에는 유효한 피처가 없습니다.</translation>
-    </message>
-    <message>
-        <source>Please create a subtractive or additive feature first</source>
-        <translation type="obsolete">추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
-    </message>
-    <message>
-        <source>Please create a subtractive or additive feature first, please</source>
-        <translation type="obsolete">추가(Additive) 및 제거(Subtractive)를 위한 피처를 먼저 생성하세요.</translation>
-    </message>
-    <message>
-        <source>No Support</source>
-        <translation type="obsolete">지원하지 않음.</translation>
-    </message>
-    <message>
-        <source>The sketch has to have a support for the pocket feature.
-Create the sketch on a face.</source>
-        <translation type="obsolete">스케치는 돌출 컷(Pocket)를 지원해야 합니다.
-면에 스케치를 생성하세요.</translation>
+        <translation>사용 가능한 피처가 없습니다.</translation>
     </message>
     <message>
         <location filename="../../ViewProviderPad.cpp" line="+54"/>
