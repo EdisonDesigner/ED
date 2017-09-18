@@ -44,6 +44,12 @@
     <OutDir>$(ProjectDir)Debug\</OutDir>
     <TargetName />
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)\Release\</OutDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
+    <TargetName />
+    <TargetExt />
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

@@ -46,7 +46,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)Mod\Part\</OutDir>
-    <IntDir>$(ProjectDir)Release\</IntDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
     <TargetName>Part</TargetName>
     <TargetExt>.pyd</TargetExt>
     <LinkIncremental>false</LinkIncremental>
@@ -130,7 +130,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\Init.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 copy $(ProjectDir)..\Init.py $(SolutionDir)\Mod\Part\Init.py
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -159,7 +159,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\JoinFeatures.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\JoinFeatures.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 copy $(ProjectDir)..\JoinFeatures.py $(SolutionDir)\Mod\Part\JoinFeatures.py
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -188,7 +188,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\MakeBottle.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\MakeBottle.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 copy $(ProjectDir)..\MakeBottle.py $(SolutionDir)\Mod\Part\MakeBottle.py
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -217,7 +217,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Part\TestPartApp.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\TestPartApp.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 copy $(ProjectDir)..\TestPartApp.py $(SolutionDir)\Mod\Part\TestPartApp.py
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd

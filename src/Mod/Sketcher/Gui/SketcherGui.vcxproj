@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Mod\Sketcher\</OutDir>
-    <IntDir>$(ProjectDir)Release\</IntDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
     <TargetName>SketcherGui</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>

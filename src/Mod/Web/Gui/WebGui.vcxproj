@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Mod\Web\</OutDir>
-    <IntDir>$(ProjectDir)Release\</IntDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
     <TargetName>WebGui</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>
@@ -135,7 +135,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Web\InitGui.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\InitGui.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 cd $(ProjectDir)..\
 copy InitGui.py $(SolutionDir)Mod\Web
 if %errorlevel% neq 0 goto :cmEnd
@@ -166,7 +166,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Data\Mod\Web\Resources\icons\WebWorkbench.svg</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Resources\icons\WebWorkbench.svg</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 cd $(ProjectDir)Resources\icons\
 copy WebWorkbench.svg $(SolutionDir)Data\Mod\Web\Resources\icons\
 if %errorlevel% neq 0 goto :cmEnd
@@ -198,7 +198,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)qrc_Web.cxx</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">(ProjectDir)Resources/Web.qrc</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 $(SolutionDir)bin\rcc.exe -name Web -o $(ProjectDir)qrc_Web.cxx $(ProjectDir)Resources/Web.qrc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -236,7 +236,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)moc_BrowserViewcpp</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)BrowserView.h</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 $(SolutionDir)bin\moc.exe -DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED $(ProjectDir)BrowserView.h -o $(ProjectDir)moc_BrowserView.cpp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd

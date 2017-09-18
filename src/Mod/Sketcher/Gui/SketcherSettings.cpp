@@ -129,6 +129,7 @@ void SketcherSettings::saveSettings()
     QVariant data = ui->comboBox->itemData(ui->comboBox->currentIndex());
     int pattern = data.toInt();
     hGrp->SetInt("GridLinePattern", pattern);
+	
 }
 
 void SketcherSettings::loadSettings()

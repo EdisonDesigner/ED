@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Mod\Web\</OutDir>
-    <IntDir>$(ProjectDir)Release\</IntDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
     <TargetName>Web</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>
@@ -137,7 +137,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)moc_Server.cpp</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)moc_Server.h</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 $(SolutionDir)bin\moc.exe -DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED $(ProjectDir)Server.h -o $(ProjectDir)moc_Server.cpp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -169,7 +169,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Mod\Web\Init.py</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\Init.py</AdditionalInputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-	  <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 cd $(ProjectDir)..\
 copy Init.py $(SolutionDir)Mod\Web
 if %errorlevel% neq 0 goto :cmEnd

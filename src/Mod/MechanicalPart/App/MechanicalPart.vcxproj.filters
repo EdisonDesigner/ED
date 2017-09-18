@@ -14,11 +14,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Init.py.rule">
-      <Filter>CustomBuild</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="AppMechanicalPart.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -33,5 +28,8 @@
     <ClInclude Include="PreCompiled.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Init.py.rule" />
   </ItemGroup>
 </Project>

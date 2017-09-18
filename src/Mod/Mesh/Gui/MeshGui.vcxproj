@@ -51,7 +51,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Mod\Mesh\</OutDir>
-    <IntDir>$(ProjectDir)Release\</IntDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
     <TargetName>MeshGui</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>
