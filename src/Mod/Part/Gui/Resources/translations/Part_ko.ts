@@ -136,7 +136,7 @@
         <location line="+1"/>
         <source>Attachment is disabled. Point can be moved by editing Placement property.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>붙이기를 사용할 수 없습니다. 위치정보를 수정하여 점을 이동할 수 있습니다.</translation>
+        <translation>붙이기를 사용할 수 없습니다.  '위치'정보를 수정하여 점을 이동시킬 수 있습니다..</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -178,12 +178,12 @@
         <location line="+2"/>
         <source>On edge</source>
         <comment>AttachmentPoint mode caption</comment>
-        <translation>모서리에 위치</translation>
+        <translation>모서리 위로</translation>
     </message>
     <message>
         <source>Point is put on edge, MapPathParametr controls where. Additionally, vertex can be linked in for making a projection.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>모서리에 점을 위치하기. 또한, 투영(Projection)하여 정점을 모서리에 위치할 수 있습니다.</translation>
+        <translation>선위에 점을 넣는다. 또한, 점은 Projection을 통하여 연결할 수 있다..</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -194,19 +194,19 @@
     <message>
         <source>Center of osculating circle of an edge. Optinal vertex link defines where.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>모서리에 접하는 원의 중심</translation>
+        <translation>모서리에 접하는 원의 중심.</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>Point is put on edge, MapPathParameter controls where. Additionally, vertex can be linked in for making a projection.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>모서리에 점을 위치하기. 또한, 투영(Projection)하여 정점을 모서리에 위치할 수 있습니다.</translation>
+        <translation>점을 선위로 옮깁니다. 또한, 점은 Projection을 통하여 연결할 수 있다.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Center of osculating circle of an edge. Optional vertex link defines where.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>모서리에 접하는 원의 중심</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -218,7 +218,7 @@
         <location line="+1"/>
         <source>Center of mass of all references (equal densities are assumed).</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>모든 참조형상의 질량중심(밀도는 동일하다고 가정)</translation>
+        <translation>모든 참조형상의 질량중심(밀도는 동일하다고 가정).</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -242,13 +242,13 @@
         <location line="+1"/>
         <source>Put Datum point coincident with another vertex.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>정점과 일치하게 기준점을 잡는다.</translation>
+        <translation>점과 일치하게 기준점을 잡는다.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Proximity point 1</source>
         <comment>AttachmentPoint mode caption</comment>
-        <translation>근접한 점 1</translation>
+        <translation>근접 점 1</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -260,13 +260,13 @@
         <location line="+2"/>
         <source>Proximity point 2</source>
         <comment>AttachmentPoint mode caption</comment>
-        <translation>근접한 점 2</translation>
+        <translation>근접 점 2</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Point on second reference that is closest to first reference.</source>
         <comment>AttachmentPoint mode tooltip</comment>
-        <translation>첫 번째 참조형상과 가까운 두 번쨰 참조형상 위의 점</translation>
+        <translation>첫 번쨰 참조형상과 가까운 두 번쨰 참조형상 위의 점.</translation>
     </message>
 </context>
 <context>
@@ -281,7 +281,7 @@
         <location line="+1"/>
         <source>Attachment is disabled. Line can be moved by editing Placement property.</source>
         <comment>AttachmentLine mode tooltip</comment>
-        <translation>붙이기를 사용할 수 없습니다.  위치정보를 수정하여 선을 이동시킬 수 있습니다.</translation>
+        <translation>붙이기를 사용할 수 없습니다.  '위치'정보를 수정하여 선을 이동시킬 수 있습니다.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -294,7 +294,7 @@
         <location line="+6"/>
         <source>Line is aligned along local X axis of object. Works on objects with placements, and ellipse/parabola/hyperbola edges.</source>
         <comment>AttachmentLine mode tooltip</comment>
-        <translation>선은 물체의 지역(자체) X좌표를 따라 정렬된다.</translation>
+        <translation>선은 물체의 지역(Local) X좌표를 따라 정렬된다.</translation>
     </message>
     <message>
         <location line="-4"/>
@@ -911,7 +911,7 @@
     <message>
         <location line="+6"/>
         <source>First limit</source>
-        <translation>첫 번째 조건</translation>
+        <translation>첫 번째 한계점</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -935,19 +935,19 @@
         <location line="-192"/>
         <location line="+164"/>
         <source>Dimension</source>
-        <translation>치수</translation>
+        <translation>차원</translation>
     </message>
     <message>
         <location line="-159"/>
         <location line="+164"/>
         <source>Up to next</source>
-        <translation>다음 면까지</translation>
+        <translation>다음평면까지</translation>
     </message>
     <message>
         <location line="-159"/>
         <location line="+164"/>
         <source>Up to last</source>
-        <translation>마지막 면까지</translation>
+        <translation>마지막평면까지</translation>
     </message>
     <message>
         <location line="-159"/>
@@ -959,13 +959,13 @@
         <location line="-159"/>
         <location line="+164"/>
         <source>Up to face</source>
-        <translation>면까지</translation>
+        <translation>곡면까지</translation>
     </message>
     <message>
         <location line="-156"/>
         <location line="+171"/>
         <source>Limit:</source>
-        <translation>제한:</translation>
+        <translation>한계점:</translation>
     </message>
     <message>
         <location line="-161"/>
@@ -973,12 +973,12 @@
         <location line="+72"/>
         <location line="+95"/>
         <source>No selection</source>
-        <translation>선택사항 없음</translation>
+        <translation>선택 안 함</translation>
     </message>
     <message>
         <location line="-194"/>
         <source>Profile</source>
-        <translation>프로파일</translation>
+        <translation>프로필</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -998,7 +998,7 @@
     <message>
         <location line="+12"/>
         <source>Second limit</source>
-        <translation>두 번째 조건</translation>
+        <translation>두 번째 한계점</translation>
     </message>
     <message>
         <location line="+95"/>
@@ -1033,17 +1033,17 @@
     <message>
         <location filename="../../Command.cpp" line="+1982"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Check Geometry</source>
-        <translation>형상 검사</translation>
+        <translation>형상(Geometry) 검사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Analyzes Geometry For Errors</source>
-        <translation>형상의 오류 분석</translation>
+        <translation>형상(Geometry)의 오류 분석</translation>
     </message>
 </context>
 <context>
@@ -1051,12 +1051,12 @@
     <message>
         <location line="+32"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Color per face</source>
-        <translation>면 당 색상</translation>
+        <translation>각 면의 색상</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1069,7 +1069,7 @@
     <message>
         <location line="+64"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1083,7 +1083,7 @@
     <message>
         <location line="+27"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1097,7 +1097,7 @@
     <message>
         <location line="-60"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1111,7 +1111,7 @@
     <message>
         <location line="+120"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1125,7 +1125,7 @@
     <message>
         <location line="-37"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1139,7 +1139,7 @@
     <message>
         <location line="+62"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1153,17 +1153,17 @@
     <message>
         <location line="-1054"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Boolean...</source>
-        <translation>부울...</translation>
+        <translation>논리연산(Boolean)...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Run a boolean operation with two shapes selected</source>
-        <translation>부울 작업을 실행 하는 두 형상 선택</translation>
+        <translation>논리연산(Boolean) 작업을 실행 할 두 형상 선택</translation>
     </message>
 </context>
 <context>
@@ -1171,27 +1171,27 @@
     <message>
         <location filename="../../CommandParametric.cpp" line="+87"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+5"/>
         <source>Cube</source>
-        <translation>큐브</translation>
+        <translation>육면체(Cube)</translation>
     </message>
     <message>
         <location line="-15"/>
         <source>Create a cube solid</source>
-        <translation>큐브 솔리드 만들기</translation>
+        <translation>육면체(Cube) 솔리드 만들기</translation>
     </message>
     <message>
         <source>Box</source>
-        <translation type="obsolete">박스</translation>
+        <translation type="obsolete">박스(Box)</translation>
     </message>
     <message>
         <source>Create a box solid</source>
-        <translation type="obsolete">박스 솔리드 만들기</translation>
+        <translation type="obsolete">박스(Box) 솔리드 만들기</translation>
     </message>
 </context>
 <context>
@@ -1199,17 +1199,17 @@
     <message>
         <location filename="../../Command.cpp" line="-1021"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Box fix 1</source>
-        <translation>박스 고정 1</translation>
+        <translation>박스(Box) 고정 1</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a box solid without dialog</source>
-        <translation>주석없이 박스 솔리드 생성</translation>
+        <translation>주석없이 박스(Box) 솔리드 생성</translation>
     </message>
 </context>
 <context>
@@ -1217,12 +1217,12 @@
     <message>
         <location line="+39"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Box fix 2</source>
-        <translation>박스 고정 2</translation>
+        <translation>박스(Box) 고정 2</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1235,7 +1235,7 @@
     <message>
         <location line="+1237"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1253,7 +1253,7 @@
     <message>
         <location line="-98"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1271,7 +1271,7 @@
     <message>
         <location line="-972"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1281,7 +1281,7 @@
     <message>
         <location line="+1"/>
         <source>Make an intersection of two shapes</source>
-        <translation>두 도형 교차 시키기</translation>
+        <translation>두 형상 교차 시키기</translation>
     </message>
 </context>
 <context>
@@ -1289,7 +1289,7 @@
     <message>
         <location line="+203"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1307,7 +1307,7 @@
     <message>
         <location line="+1044"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1317,7 +1317,7 @@
     <message>
         <location line="+1"/>
         <source>Tools to offset shapes (construct parallel shapes)</source>
-        <translation>도형을 오프셋 하기 위한 도구 (원본과 평행하게 오프셋 된 도형 생성)</translation>
+        <translation>형상을 오프셋 하기 위한 도구 (원본과 평행하게 오프셋 된 도형 생성)</translation>
     </message>
 </context>
 <context>
@@ -1325,7 +1325,7 @@
     <message>
         <location line="-941"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1343,7 +1343,7 @@
     <message>
         <location line="+107"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1361,7 +1361,7 @@
     <message>
         <location filename="../../CommandParametric.cpp" line="+80"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1381,7 +1381,7 @@
     <message>
         <location filename="../../Command.cpp" line="+603"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1399,7 +1399,7 @@
     <message>
         <location line="-1106"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1417,19 +1417,19 @@
     <message>
         <location filename="../../CommandParametric.cpp" line="-125"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Create a Cylinder</source>
-        <translation>실린더 생성</translation>
+        <translation>원기둥 생성</translation>
     </message>
     <message>
         <location line="-1"/>
         <location line="+11"/>
         <location line="+5"/>
         <source>Cylinder</source>
-        <translation>실린더</translation>
+        <translation>원기둥</translation>
     </message>
 </context>
 <context>
@@ -1437,12 +1437,12 @@
     <message>
         <location filename="../../Command.cpp" line="+654"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export CAD...</source>
-        <translation>중립포맷으로 모델 내보내기...</translation>
+        <translation>CAD 데이터 내보내기...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1455,7 +1455,7 @@
     <message>
         <location line="+256"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1473,7 +1473,7 @@
     <message>
         <location line="+104"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1483,7 +1483,7 @@
     <message>
         <location line="+1"/>
         <source>Fillet the selected edges of a shape</source>
-        <translation>선택된 모서리에 필렛 주시</translation>
+        <translation>선택된 모서리에 필렛 주기</translation>
     </message>
 </context>
 <context>
@@ -1491,7 +1491,7 @@
     <message>
         <location line="-842"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1509,7 +1509,7 @@
     <message>
         <location line="+414"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1519,7 +1519,7 @@
     <message>
         <location line="-1"/>
         <source>Import CAD...</source>
-        <translation>중립포맷 모델 불러오기...</translation>
+        <translation>CAD 가져오기...</translation>
     </message>
 </context>
 <context>
@@ -1527,7 +1527,7 @@
     <message>
         <location line="+106"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1545,7 +1545,7 @@
     <message>
         <location line="+469"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1567,7 +1567,7 @@
     <message>
         <location line="-233"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1577,7 +1577,7 @@
     <message>
         <location line="+1"/>
         <source>Part_MakeFace: Make face from set of wires (e.g., from a sketch).</source>
-        <translation>부품 면 생성 : 와이어를 이용하여 면을 생성 (스케치로부터 생성).</translation>
+        <translation>파트(Part) 면 생성 : 와이어를 이용하여 면을 생성 (스케치로부터 생성).</translation>
     </message>
     <message>
         <source>Make face from sketch</source>
@@ -1593,7 +1593,7 @@
     <message>
         <location line="-193"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1611,7 +1611,7 @@
     <message>
         <location line="+323"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1629,7 +1629,7 @@
     <message>
         <location line="+153"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1639,7 +1639,7 @@
     <message>
         <location line="+1"/>
         <source>Part_Offset: Utility to offset in 3D</source>
-        <translation>부품 오프셋 : 3D 형상 오프셋을 위한 도구</translation>
+        <translation>파트(Part) 오프셋 : 3D 형상 오프셋을 위한 도구</translation>
     </message>
     <message>
         <source>Offset...</source>
@@ -1655,7 +1655,7 @@
     <message>
         <location line="+48"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1665,7 +1665,7 @@
     <message>
         <location line="+1"/>
         <source>Part_Offset2D: Utility to offset planar shapes</source>
-        <translation>부품 오프셋2d : 2d 모양을 오프셋 하기 위한 도구</translation>
+        <translation>파트(Part) 오프셋2d : 2d 형상을 오프셋 하기 위한 도구</translation>
     </message>
 </context>
 <context>
@@ -1673,7 +1673,7 @@
     <message>
         <location line="-1465"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1691,17 +1691,17 @@
     <message>
         <location line="+126"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create primitives...</source>
-        <translation>기본도형 생성...</translation>
+        <translation>기본형상 생성...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Creation of parametrized geometric primitives</source>
-        <translation>치수가 정해진 기본 도형을 생성</translation>
+        <translation>치수가 정해진 기본 형상을 생성</translation>
     </message>
 </context>
 <context>
@@ -1709,7 +1709,7 @@
     <message>
         <location filename="../../CommandSimple.cpp" line="+217"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1727,7 +1727,7 @@
     <message>
         <location filename="../../Command.cpp" line="+881"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1745,7 +1745,7 @@
     <message>
         <location line="+161"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1763,7 +1763,7 @@
     <message>
         <location line="+603"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1790,7 +1790,7 @@
     <message>
         <location line="-2"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1803,7 +1803,7 @@
     <message>
         <location filename="../../CommandSimple.cpp" line="-111"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1821,7 +1821,7 @@
     <message>
         <location line="+62"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1831,7 +1831,7 @@
     <message>
         <location line="+1"/>
         <source>Create a simple non-parametric copy</source>
-        <translation>간단한 비모수 복사본 생성</translation>
+        <translation>간단한 구속이 없는(non-parametric) 복사본 생성</translation>
     </message>
 </context>
 <context>
@@ -1839,17 +1839,17 @@
     <message>
         <location line="-117"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create Cylinder...</source>
-        <translation>실린더 생성...</translation>
+        <translation>원기둥 생성...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Create a Cylinder</source>
-        <translation>실린더 생성</translation>
+        <translation>원기둥 생성</translation>
     </message>
 </context>
 <context>
@@ -1862,14 +1862,14 @@
     <message>
         <location line="-2"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+5"/>
         <source>Sphere</source>
-        <translation>공모양</translation>
+        <translation>구</translation>
     </message>
 </context>
 <context>
@@ -1877,7 +1877,7 @@
     <message>
         <location filename="../../Command.cpp" line="+652"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1895,7 +1895,7 @@
     <message>
         <location line="+218"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1916,7 +1916,7 @@
     <message>
         <location line="-19"/>
         <source>Selected one or more faces of a shape</source>
-        <translation>선택된 하나 이상의 면</translation>
+        <translation>하나 이상의 면이 선택됨</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1929,48 +1929,48 @@
     <message>
         <location filename="../../CommandParametric.cpp" line="+67"/>
         <source>Create a torus solid</source>
-        <translation>토러스 솔리드 생성</translation>
+        <translation>원환체 솔리드 생성</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>Part</source>
-        <translation>부품</translation>
+        <translation>파트(Part)</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+5"/>
         <source>Torus</source>
-        <translation>토 러 스</translation>
+        <translation>원환체</translation>
     </message>
 </context>
 <context>
     <name>DlgExtrusion</name>
     <message>
         <source>Select a shape for extrusion, first.</source>
-        <translation type="obsolete">돌출시킬 형상을 먼저 선택.</translation>
+        <translation>돌출시킬 형상을 먼저 선택.</translation>
     </message>
     <message>
         <source>The document &apos;%1&apos; doesn&apos;t exist.</source>
-        <translation type="obsolete">The document &apos;%1&apos; doesn&apos;t exist.</translation>
+        <translation>문서(document &apos;%1&apos;) 는 존재하지 않습니다.</translation>
     </message>
 </context>
 <context>
     <name>DlgRevolution</name>
     <message>
         <source>Select a shape for revolution, first.</source>
-        <translation type="obsolete">회전시킬 형상을 먼저 선택.</translation>
+        <translation>회전시킬 형상을 먼저 선택.</translation>
     </message>
 </context>
 <context>
     <name>DlgSettings3DViewPart</name>
     <message>
         <source>Deviation</source>
-        <translation type="obsolete">Deviation</translation>
+        <translation>편차</translation>
     </message>
     <message>
         <source>Setting a too small deviation causes the tessellation to take longerand thus freezes or slows down the GUI.</source>
-        <translation type="obsolete">너무 작은 편차를 설정하면 정교한 입체표현이 오래 걸리고 따라서 GUI가 정지되거나 속도가 느려집니다.</translation>
+        <translation>너무 작은 편차를 설정하면 정교한 입체표현이 오래 걸리고 따라서 GUI가 정지되거나 속도가 느려집니다.</translation>
     </message>
 </context>
 <context>
@@ -2114,7 +2114,7 @@
     <message>
         <location filename="../../DlgBooleanOperation.ui" line="+14"/>
         <source>Boolean Operation</source>
-        <translation>부울 작업</translation>
+        <translation>논리연산(Boolean) 작업</translation>
     </message>
     <message>
         <location line="+100"/>
@@ -2129,7 +2129,7 @@
     <message>
         <location line="-56"/>
         <source>Boolean operation</source>
-        <translation>부울 작업</translation>
+        <translation>논리연산(Boolean) 작업</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -2154,7 +2154,7 @@
     <message>
         <location filename="../../DlgBooleanOperation.cpp" line="+388"/>
         <source>Cannot perform a boolean operation with the same shape</source>
-        <translation>같은 모양으로 부울 작업을 수행할 수 없습니다.</translation>
+        <translation>같은 모양으로 논리연산(Boolean) 작업을 수행할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../../DlgBooleanOperation.ui" line="+25"/>
@@ -2208,17 +2208,17 @@
     <message>
         <location line="+7"/>
         <source>Performing union on non-solids is not possible</source>
-        <translation>솔리드가 아닌 객체에 연합을 수행 하는 것은 불가능</translation>
+        <translation>솔리드가 아닌 객체에 합치기(Union)를 수행 하는 것은 불가능</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Performing intersection on non-solids is not possible</source>
-        <translation>솔리드가 이닌 객체에 교차를 수행하는 것은 불가능</translation>
+        <translation>솔리드가 이닌 객체에 교차(Intersection)를 수행하는 것은 불가능</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Performing difference on non-solids is not possible</source>
-        <translation>솔리드가 아닌 객체에 차이(difference)를 수행하는 것은 불가능</translation>
+        <translation>솔리드가 아닌 객체에 뺄샘(difference)를 수행하는 것은 불가능</translation>
     </message>
 </context>
 <context>
@@ -2254,7 +2254,7 @@
     <message>
         <location line="+7"/>
         <source>Specify direction manually using X,Y,Z values.</source>
-        <translation>X, Y, Z값을 사용하여 방향을 수정으로 지정하십시오</translation>
+        <translation>X, Y, Z값을 사용하여 방향을 수동으로 지정하십시오</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2269,7 +2269,7 @@
     <message>
         <location line="+3"/>
         <source>Along normal</source>
-        <translation>normal 을 따라</translation>
+        <translation>법선(normal) 을 따라</translation>
     </message>
     <message>
         <source>Length:</source>
@@ -2342,7 +2342,7 @@
     <message>
         <location line="+19"/>
         <source>Distribute extrusion length equally to both sides.</source>
-        <translation>양쪽 방향으로 똑같이 돌출시켜서 길이만큼 돌출</translation>
+        <translation>양쪽 방향으로 똑같이 설정한 길이의 절반만큼 돌출</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2353,7 +2353,7 @@
         <location line="+25"/>
         <location line="+25"/>
         <source>Apply slope (draft) to extrusion side faces.</source>
-        <translation>돌출면에 경사를 적용한다.</translation>
+        <translation>돌출면에 경사(draft)를 적용한다.</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2396,7 +2396,7 @@
     <message>
         <location line="+241"/>
         <source>The document &apos;%1&apos; doesn&apos;t exist.</source>
-        <translation>문서가 존제하지 않습니다</translation>
+        <translation>문서(document &apos;%1&apos;)가 존제하지 않습니다</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -2411,7 +2411,7 @@
     <message>
         <location line="+67"/>
         <source>Object not found: %1</source>
-        <translation>객체를 찾을 수 없습니다.</translation>
+        <translation>%1 객체를 찾을 수 없습니다.</translation>
     </message>
     <message>
         <location line="+62"/>
@@ -2470,7 +2470,7 @@
     <message>
         <location line="+37"/>
         <source>Fillet Parameter</source>
-        <translation>필렛 파라메터</translation>
+        <translation>필렛 매개변수</translation>
     </message>
     <message>
         <location line="+91"/>
@@ -2480,22 +2480,22 @@
     <message>
         <location line="-69"/>
         <source>Select faces</source>
-        <translation>면 선택</translation>
+        <translation>면을 선택</translation>
     </message>
     <message>
         <location line="-16"/>
         <source>Selection</source>
-        <translation>선택</translation>
+        <translation>선택 옵션</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Select edges</source>
-        <translation>모서리 선택</translation>
+        <translation>모서리를 선택</translation>
     </message>
     <message>
         <location line="+47"/>
         <source>Fillet type:</source>
-        <translation>모 깎기 유형:</translation>
+        <translation>필렛 유형:</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2540,7 +2540,7 @@
     <message>
         <location line="+2"/>
         <source>Edges to chamfer</source>
-        <translation>모따기 모서리</translation>
+        <translation>모따기할 모서리</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2582,7 +2582,7 @@
     <message>
         <location line="+106"/>
         <source>No edge selected</source>
-        <translation>에지 선택되지 않았음.</translation>
+        <translation>모서리가 선택되지 않았음.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2634,7 +2634,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+6"/>
         <source>Units for export of IGES</source>
-        <translation>IGES을 내보내기 위한 단위</translation>
+        <translation>IGES로 내보낼 때 사용할 단위</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2654,17 +2654,17 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+8"/>
         <source>Write solids and shells as</source>
-        <translation>솔리드와 쉘을 다음과 같이 작성하십시오.</translation>
+        <translation>솔리드와 쉘을 다음과 같이 정의.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Groups of Trimmed Surfaces (type 144)</source>
-        <translation type="unfinished">Groups of Trimmed Surfaces (type 144)</translation>
+        <translation>분할된 면들의 집합(Groups of Trimmed Surfaces) (type 144)</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Solids (type 186) and Shells (type 514) / B-REP mode</source>
-        <translation>솔리드 (type 186) 와 쉘 (type 514) / B-REP mode</translation>
+        <translation>솔리드 (type 186) 와 쉘 (type 514) / B-REP 모드</translation>
     </message>
     <message>
         <source>Enable B-REP mode</source>
@@ -2716,7 +2716,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+38"/>
         <source>Units for export of STEP</source>
-        <translation>STEP으로 내보내기 위한 단위</translation>
+        <translation>STEP으로 내보내기 위한 단위 설정</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2769,7 +2769,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgPartBox.ui" line="+14"/>
         <source>Box definition</source>
-        <translation>박스 정의</translation>
+        <translation>박스(Box) 정의</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -2830,7 +2830,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgPartCylinder.ui" line="+14"/>
         <source>Cylinder definition</source>
-        <translation>실린더 정의</translation>
+        <translation>원기둥 정의</translation>
     </message>
     <message>
         <location line="+95"/>
@@ -2980,75 +2980,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgPrimitives.ui" line="+14"/>
         <source>Geometric Primitives</source>
-        <translation>기본 형상(도형)</translation>
-    </message>
-    <message>
-        <source>Primitive</source>
-        <translation type="obsolete">기본</translation>
-    </message>
-    <message>
-        <source>X min</source>
-        <translation type="obsolete">최소 X</translation>
-    </message>
-    <message>
-        <source>x max</source>
-        <translation type="obsolete">최대 X</translation>
-    </message>
-    <message>
-        <source>Y min</source>
-        <translation type="obsolete">최소 Y</translation>
-    </message>
-    <message>
-        <source>Y max</source>
-        <translation type="obsolete">최대 Y</translation>
-    </message>
-    <message>
-        <source>Z min</source>
-        <translation type="obsolete">최소 Z</translation>
-    </message>
-    <message>
-        <source>Z max</source>
-        <translation type="obsolete">최대 Z</translation>
-    </message>
-    <message>
-        <source>X2 min</source>
-        <translation type="obsolete">최소 X2</translation>
-    </message>
-    <message>
-        <source>X2 max</source>
-        <translation type="obsolete">최대 X2</translation>
-    </message>
-    <message>
-        <source>Z2 min</source>
-        <translation type="obsolete">최소 Z2</translation>
-    </message>
-    <message>
-        <source>Z2 max</source>
-        <translation type="obsolete">최대 Z2</translation>
-    </message>
-    <message>
-        <source>Angle - 0 for cyl</source>
-        <translation type="obsolete">Angle - 0 for cyl</translation>
-    </message>
-    <message>
-        <source>Angle0</source>
-        <translation type="obsolete">각0</translation>
-    </message>
-    <message>
-        <source>Angle1</source>
-        <translation type="obsolete">각1</translation>
-    </message>
-    <message>
-        <source>X Axis Value:</source>
-        <translation type="obsolete">X축 값:</translation>
-    </message>
-    <message>
-        <source>Y Axis Value:</source>
-        <translation type="obsolete">Y축 값:</translation>
-    </message>
-    <message>
-        <source>Z Axis Value:</source>
-        <translation type="obsolete">Z축 값:</translation>
+        <translation>기본 형상(Geometric Primitives)</translation>
     </message>
     <message>
         <location line="+91"/>
@@ -3065,7 +2997,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgPrimitives.cpp" line="+34"/>
         <source>Vertex</source>
-        <translation>점</translation>
+        <translation>정점</translation>
     </message>
     <message>
         <source>Position</source>
@@ -3084,10 +3016,6 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+54"/>
         <source>X:</source>
         <translation>X:</translation>
-    </message>
-    <message>
-        <source>Direction:</source>
-        <translation type="obsolete">방향:</translation>
     </message>
     <message>
         <location line="-125"/>
@@ -3112,7 +3040,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+16"/>
         <source>Cylinder</source>
-        <translation>실린더</translation>
+        <translation>원기둥</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -3124,25 +3052,25 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+18"/>
         <source>Sphere</source>
-        <translation>공모양</translation>
+        <translation>구</translation>
     </message>
     <message>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+22"/>
         <source>Ellipsoid</source>
-        <translation>타원 면</translation>
+        <translation>타원체</translation>
     </message>
     <message>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+20"/>
         <source>Torus</source>
-        <translation>토 러 스</translation>
+        <translation>원환체</translation>
     </message>
     <message>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+16"/>
         <source>Prism</source>
-        <translation>프리즘</translation>
+        <translation>다각기둥</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -3171,7 +3099,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+9"/>
         <location filename="../../DlgPrimitives.cpp" line="+14"/>
         <source>Regular polygon</source>
-        <translation>일반 다각형</translation>
+        <translation>정규 다각형</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3257,14 +3185,6 @@ Please select a valid shape in the drop-down box first.</source>
         <translation>U 매개 변수:</translation>
     </message>
     <message>
-        <source>U parametric:</source>
-        <translation type="obsolete">U 파라메트릭:</translation>
-    </message>
-    <message>
-        <source>V parametric:</source>
-        <translation type="obsolete">V 파라메트릭:</translation>
-    </message>
-    <message>
         <location line="+150"/>
         <location line="+882"/>
         <source>Polygon:</source>
@@ -3309,17 +3229,17 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+8"/>
         <source>Right-handed</source>
-        <translation>오른 손잡이</translation>
+        <translation>오른손 방향</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Left-handed</source>
-        <translation>왼손잡이</translation>
+        <translation>왼손 방향</translation>
     </message>
     <message>
         <location line="+88"/>
         <source>Growth:</source>
-        <translation>성장:</translation>
+        <translation>증분:</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3330,28 +3250,28 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+58"/>
         <location line="+103"/>
         <source>Angle 1:</source>
-        <translation>각 1:</translation>
+        <translation>각도 1:</translation>
     </message>
     <message>
         <location line="-96"/>
         <location line="+103"/>
         <source>Angle 2:</source>
-        <translation>각 2:</translation>
+        <translation>각도 2:</translation>
     </message>
     <message>
         <location line="-49"/>
         <source>From three points</source>
-        <translation>세 개의 점에서</translation>
+        <translation>세 개의 점으로 정의</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Major radius:</source>
-        <translation>주요 반경:</translation>
+        <translation>최대 반경:</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Minor radius:</source>
-        <translation>보조 반경:</translation>
+        <translation>최소 반경:</translation>
     </message>
     <message>
         <location line="+200"/>
@@ -3366,46 +3286,34 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgPrimitives.cpp" line="+192"/>
         <source>&amp;Create</source>
-        <translation>&amp; 만들기</translation>
-    </message>
-    <message>
-        <source>Alt+C</source>
-        <translation type="obsolete">Alt + C</translation>
+        <translation>&amp; 생성</translation>
     </message>
     <message>
         <source>Cl&amp;ose</source>
-        <translation type="obsolete">닫기(&amp;o)</translation>
-    </message>
-    <message>
-        <source>Alt+O</source>
-        <translation type="obsolete">Alt+O</translation>
+        <translation type="obsolete">닫기</translation>
     </message>
     <message>
         <location line="-487"/>
         <location line="+299"/>
         <location line="+8"/>
         <source>Create %1</source>
-        <translation>%1 만들기</translation>
+        <translation>%1 생성</translation>
     </message>
     <message>
         <location line="-306"/>
         <source>No active document</source>
-        <translation>활성 문서가 없습니다</translation>
+        <translation>활성화된 문서가 없습니다</translation>
     </message>
     <message>
         <location filename="../../DlgPrimitives.ui" line="-493"/>
         <source>Pitch:</source>
-        <translation>피치:</translation>
+        <translation>피치(Pitch):</translation>
     </message>
     <message>
         <location line="-1200"/>
         <location filename="../../DlgPrimitives.cpp" line="+192"/>
         <source>Helix</source>
         <translation>나선</translation>
-    </message>
-    <message>
-        <source>3D View</source>
-        <translation type="obsolete">3D 보기</translation>
     </message>
 </context>
 <context>
@@ -3414,10 +3322,6 @@ Please select a valid shape in the drop-down box first.</source>
         <location filename="../../DlgRevolution.ui" line="+20"/>
         <source>Revolve</source>
         <translation>회전</translation>
-    </message>
-    <message>
-        <source>If checked, revolving wires will produce solids. If not, revolving a wire yeilds a shell.</source>
-        <translation type="obsolete">선택하면 회전 결과물을 솔리드로 생성, 선택하지 않은면 쉘로 생성.</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3448,7 +3352,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+42"/>
         <location line="+41"/>
         <source>Click to set this as axis</source>
-        <translation>축으로 설정</translation>
+        <translation>회전 축으로 설정하려면 클릭</translation>
     </message>
     <message>
         <location line="-38"/>
@@ -3474,7 +3378,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+20"/>
         <source>If checked, revolution will extend forwards and backwards by half the angle.</source>
-        <translation>이 옵션을 선택하면 회전이 각도의 절반만큼씩 앞뒤로 확장.</translation>
+        <translation>이 옵션을 선택하면 설정한 각도의 절반만큼씩 시계/반시계 방향으로 확장.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3505,16 +3409,16 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="-19"/>
         <source>Shape</source>
-        <translation>모형</translation>
+        <translation>모양</translation>
     </message>
     <message>
         <source>Select line in 3D view</source>
-        <translation type="obsolete">3D 뷰에서 라인 선택</translation>
+        <translation type="obsolete">3D View에서 회전 축 선택</translation>
     </message>
     <message>
         <location line="-17"/>
         <source>Create Solid</source>
-        <translation>솔리드 만들기</translation>
+        <translation>솔리드로 만들기</translation>
     </message>
     <message>
         <location filename="../../DlgRevolution.cpp" line="-268"/>
@@ -3524,7 +3428,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+81"/>
         <source>Select a shape for revolution, first.</source>
-        <translation>회전 할 모양을 선택.</translation>
+        <translation>회전 시킬 모양을 선택.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -3565,39 +3469,19 @@ Please select a valid shape in the drop-down box first.</source>
 <context>
     <name>PartGui::DlgSettings3DViewPart</name>
     <message>
-        <source>View accuracy / Performance</source>
-        <translation type="obsolete">View accuracy / Performance</translation>
-    </message>
-    <message>
-        <source>View smoothing</source>
-        <translation type="obsolete">View smoothing</translation>
-    </message>
-    <message>
-        <source>Using high-quality normals</source>
-        <translation type="obsolete">Using high-quality normals</translation>
-    </message>
-    <message>
-        <source>This will slow down render speed but will lead to nicer results</source>
-        <translation type="obsolete">이것은 렌더링 속도를 느리게 하지만 더 좋은 결과를 얻을 수 있다.</translation>
-    </message>
-    <message>
-        <source>Defines the appearance of surfaces</source>
-        <translation type="obsolete">표면의 외형 정의</translation>
-    </message>
-    <message>
         <location filename="../../DlgSettings3DViewPart.ui" line="+14"/>
         <source>Shape view</source>
-        <translation>모양 뷰</translation>
+        <translation>모양 뷰(Shape view)</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Tessellation</source>
-        <translation>공간 분할</translation>
+        <translation>테셀레이션(Tesselation)</translation>
     </message>
     <message>
         <location line="+61"/>
         <source>Maximum angular deflection</source>
-        <translation>최대 휨 각도</translation>
+        <translation>최대 편향각(Maximum angular deflection)</translation>
     </message>
     <message utf8="true">
         <location line="+7"/>
@@ -3605,17 +3489,9 @@ Please select a valid shape in the drop-down box first.</source>
         <translation type="unfinished"> °</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Flat shading/Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;With flat shading the surface normals are not defined per vertex that leads to a unreal appearance for curved surfaces while using Phong shading leads to a smoother appearance. &lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If this option is unset Phong shading is used, if it is set flat shading is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Flat shading/Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;With flat shading the surface normals are not defined per vertex that leads to a unreal appearance for curved surfaces while using Phong shading leads to a smoother appearance. &lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If this option is unset Phong shading is used, if it is set flat shading is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Do not define normal per vertex</source>
-        <translation type="obsolete">Do not define normal per vertex</translation>
-    </message>
-    <message>
         <location line="-20"/>
         <source>Defines the deviation of tessellation to the actual surface</source>
-        <translation>실제 표면과 공간 분할의 편차를 정의</translation>
+        <translation>실제 표면의 테셀레이션 편차를 정의</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3623,17 +3499,9 @@ Please select a valid shape in the drop-down box first.</source>
         <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed and the nicer the appearance are.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;High-quality normals&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This will slow down render speed but will lead to nicer results.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;High-quality normals&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This will slow down render speed but will lead to nicer results.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <location line="+3"/>
         <source>Maximum deviation depending on the model bounding box</source>
-        <translation>모델을 포함하는 박스에 따르는 최대 편차</translation>
+        <translation>모델을 둘러싸는 형상에 따르는 최대 편차</translation>
     </message>
     <message>
         <location line="-34"/>
@@ -3656,27 +3524,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgSettingsGeneral.ui" line="+14"/>
         <source>General</source>
-        <translation>일반</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation type="obsolete">내보내기</translation>
-    </message>
-    <message>
-        <source>Millimeter</source>
-        <translation type="obsolete">Millimeter</translation>
-    </message>
-    <message>
-        <source>Meter</source>
-        <translation type="obsolete">Meter</translation>
-    </message>
-    <message>
-        <source>Inch</source>
-        <translation type="obsolete">Inch</translation>
-    </message>
-    <message>
-        <source>Units for export of STEP/IGES</source>
-        <translation type="obsolete">STEP/IGES로 내보내기 위한 단위</translation>
+        <translation>일반 설정</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -3686,7 +3534,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+19"/>
         <source>Automatically refine model after boolean operation</source>
-        <translation>부울 작업 후 자동으로 모델을 수정</translation>
+        <translation>논리연산(Boolean) 작업 후 자동으로 모델을 수정</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -3696,7 +3544,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+16"/>
         <source>Object naming</source>
-        <translation>개체 이름 지정</translation>
+        <translation>객체 이름 설정</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -3706,7 +3554,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="-48"/>
         <source>Automatically check model after boolean operation</source>
-        <translation>부울 작업 후 모델을 자동으로 확인</translation>
+        <translation>논리연산(Boolean) 작업 후 모델을 자동으로 검사</translation>
     </message>
 </context>
 <context>
@@ -3714,17 +3562,17 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../DlgSettingsObjectColor.ui" line="+14"/>
         <source>Part colors</source>
-        <translation>파트 색상</translation>
+        <translation>파트(Part) 색상</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Default Part colors</source>
-        <translation>파트 기본 색상</translation>
+        <translation>기본 부품 색상</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Default shape color</source>
-        <translation>도형 기본 색상</translation>
+        <translation>기본 도형 색상</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3740,7 +3588,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="+7"/>
         <location line="+68"/>
         <source>The default line color for new shapes</source>
-        <translation>새 도형의 기본 선 색</translation>
+        <translation>새 도형의 기본 선 색상</translation>
     </message>
     <message>
         <location line="-42"/>
@@ -3787,7 +3635,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+14"/>
         <source>Default text color</source>
-        <translation>기본 텍스트 색</translation>
+        <translation>기본 텍스트 색상</translation>
     </message>
 </context>
 <context>
@@ -3800,7 +3648,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+0"/>
         <source>Do you really want to cancel?</source>
-        <translation>취소 하 시겠습니까?</translation>
+        <translation>취소 하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -3818,15 +3666,11 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+24"/>
         <source>3D View</source>
-        <translation>3D 보기</translation>
+        <translation>3D 화면</translation>
     </message>
 </context>
 <context>
     <name>PartGui::LoftWidget</name>
-    <message>
-        <source>Vertex/Wire</source>
-        <translation type="obsolete">점/와이어</translation>
-    </message>
     <message>
         <location filename="../../TaskLoft.cpp" line="+75"/>
         <location line="+145"/>
@@ -3837,7 +3681,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="-144"/>
         <location line="+145"/>
         <source>Loft</source>
-        <translation>로프트</translation>
+        <translation>로프트(Loft)</translation>
     </message>
     <message>
         <location line="-63"/>
@@ -3854,21 +3698,13 @@ Please select a valid shape in the drop-down box first.</source>
         <source>Input error</source>
         <translation>입력 오류</translation>
     </message>
-    <message>
-        <source>At least two vertices, edges or wires are required.</source>
-        <translation type="obsolete">최소한 두 개의 꼭지점, 모서리 또는 와이어가 필요합니다.</translation>
-    </message>
-    <message>
-        <source>At least two vertices or wires are required.</source>
-        <translation type="obsolete">최소한 두 개의 꼭지점 또는 전선이 필요합니다..</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::Mirroring</name>
     <message>
         <location filename="../../Mirroring.ui" line="+14"/>
         <source>Mirroring</source>
-        <translation>미러링</translation>
+        <translation>미러링(Mirroring)</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -3927,7 +3763,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+7"/>
         <source>No such document &apos;%1&apos;.</source>
-        <translation>&apos;%1&apos; 문서가 없습니다.</translation>
+        <translation>문서(&apos;%1&apos;)가 없습니다.</translation>
     </message>
 </context>
 <context>
@@ -3972,11 +3808,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location line="-214"/>
         <location line="+19"/>
         <source>Select two vertices</source>
-        <translation>두 정점 선택</translation>
-    </message>
-    <message>
-        <source>Select three or more edges</source>
-        <translation type="obsolete">세개 혹은 그 이상의 모서리를 선택하십시오.</translation>
+        <translation>두 정점을 선택</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -3986,7 +3818,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+52"/>
         <source>Select one or more edges</source>
-        <translation>하나 이상의 가장자리를 선택</translation>
+        <translation>하나 이상의 모서리를 선택</translation>
     </message>
     <message>
         <location line="+52"/>
@@ -3996,7 +3828,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+63"/>
         <source>Select only one part object</source>
-        <translation>하나의 파트만 선택 하십시오</translation>
+        <translation>하나의 파트만 선택</translation>
     </message>
     <message>
         <location line="+52"/>
@@ -4021,7 +3853,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+7"/>
         <source>All shape types can be selected</source>
-        <translation>모든 모양의 형식을 선택할 수 있습니다.</translation>
+        <translation>어떤 모양의 형식이든 선택할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -4050,13 +3882,9 @@ Please select a valid shape in the drop-down box first.</source>
         <translation>스윕 경로</translation>
     </message>
     <message>
-        <source>Select an edge or wire you want to sweep along.</source>
-        <translation type="obsolete">스윕 할 모서리 또는 와이어를 선택하십시오.</translation>
-    </message>
-    <message>
         <location line="-139"/>
         <source>Select one or more connected edges you want to sweep along.</source>
-        <translation>스윕 할 하나 이상의 연속된선를 선택하십시오..</translation>
+        <translation>스윕 경로로 설정할 하나 이상의 연속된 모서리를 선택하십시오..</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -4076,7 +3904,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+0"/>
         <source>&apos;%1&apos; cannot be used as profile and path.</source>
-        <translation>&apos;%1&apos; 프로필과 경로로 사용할 수 없습니다..</translation>
+        <translation>&apos;%1&apos; 윤곽(profile)과 경로(path)로 사용할 수 없습니다..</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -4091,7 +3919,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+2"/>
         <source>Select one or more connected edges in the 3d view and press &apos;Done&apos;</source>
-        <translation>3D보기에서 하나 이상의 연속되는 모서리를 선택하고 누릅니다. &apos;Done&apos;</translation>
+        <translation>3D보기에서 하나 이상의 연속되는 모서리를 선택하고 '완료'를 누릅니다. &apos;Done&apos;</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -4266,7 +4094,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../TaskCheckGeometry.cpp" line="+567"/>
         <source>Shape Content</source>
-        <translation>도형 내역</translation>
+        <translation>모형 목차</translation>
     </message>
 </context>
 <context>
@@ -4274,170 +4102,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="-530"/>
         <source>Check Geometry</source>
-        <translation>지오메트리 검사</translation>
-    </message>
-</context>
-<context>
-    <name>PartGui::TaskDialogEditDynamic</name>
-    <message>
-        <source>Hint</source>
-        <translation type="obsolete">힌트</translation>
-    </message>
-    <message>
-        <source>Select Control.</source>
-        <translation type="obsolete">컨트롤 선택.</translation>
-    </message>
-    <message>
-        <source>Control</source>
-        <translation type="obsolete">컨트롤</translation>
-    </message>
-    <message>
-        <source>Dynamic</source>
-        <translation type="obsolete">역동성</translation>
-    </message>
-    <message>
-        <source>Align</source>
-        <translation type="obsolete">정렬</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="obsolete">값</translation>
-    </message>
-    <message>
-        <source>Special</source>
-        <translation type="obsolete">특별함</translation>
-    </message>
-    <message>
-        <source>Command</source>
-        <translation type="obsolete">명령</translation>
-    </message>
-    <message>
-        <source>Stretch</source>
-        <translation type="obsolete">늘리다</translation>
-    </message>
-    <message>
-        <source>Move</source>
-        <translation type="obsolete">이동</translation>
-    </message>
-    <message>
-        <source>Rotate</source>
-        <translation type="obsolete">회전</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation type="obsolete">오프셋</translation>
-    </message>
-    <message>
-        <source>Orient</source>
-        <translation type="obsolete">오리엔트</translation>
-    </message>
-    <message>
-        <source>Match</source>
-        <translation type="obsolete">연결</translation>
-    </message>
-    <message>
-        <source>Surround</source>
-        <translation type="obsolete">둘러싸다</translation>
-    </message>
-    <message>
-        <source>dummy</source>
-        <translation type="obsolete">모조 모형</translation>
-    </message>
-    <message>
-        <source>X Axis</source>
-        <translation type="obsolete">X 축</translation>
-    </message>
-    <message>
-        <source>Y Axis</source>
-        <translation type="obsolete">Y 축</translation>
-    </message>
-    <message>
-        <source>Z Axis</source>
-        <translation type="obsolete">Z 축</translation>
-    </message>
-    <message>
-        <source>Increment</source>
-        <translation type="obsolete">증분</translation>
-    </message>
-    <message>
-        <source>.125</source>
-        <translation type="obsolete">.125</translation>
-    </message>
-    <message>
-        <source>.500</source>
-        <translation type="obsolete">.500</translation>
-    </message>
-    <message>
-        <source>1.000</source>
-        <translation type="obsolete">1.000</translation>
-    </message>
-    <message>
-        <source>5.000</source>
-        <translation type="obsolete">5.000</translation>
-    </message>
-    <message>
-        <source>10.000</source>
-        <translation type="obsolete">10.000</translation>
-    </message>
-    <message>
-        <source>Drag arrows to stretch box by increment</source>
-        <translation type="obsolete">화살표를 드래그하여 증분 단위로 늘입니다</translation>
-    </message>
-    <message>
-        <source>Drag arrows to move box by increment</source>
-        <translation type="obsolete">화살표를 드래그하여 증분 단위로 움직입니다</translation>
-    </message>
-    <message>
-        <source>Not implemented yet</source>
-        <translation type="obsolete">아직 구현되지 않음</translation>
-    </message>
-    <message>
-        <source>Drag arrows to offset checked axes by increment</source>
-        <translation type="obsolete">화살표를 드래그하여 선택 된 축을 증가분만큼 오프셋합니다.</translation>
-    </message>
-    <message>
-        <source>Select dragger for stretch by align</source>
-        <translation type="obsolete">정렬을 통해 늘리기를 할 드래거를 선택</translation>
-    </message>
-    <message>
-        <source>Select dragger for move by align</source>
-        <translation type="obsolete">정렬을 통해 이동을 수행할 드래거를 선택</translation>
-    </message>
-    <message>
-        <source>Select dragger for stretch by value</source>
-        <translation type="obsolete">값을 통해서 늘리기를 할 드래거를 선택</translation>
-    </message>
-    <message>
-        <source>Select dragger for move by value</source>
-        <translation type="obsolete">값을 통해서 이동을 수행할 드래거를 선택</translation>
-    </message>
-    <message>
-        <source>1.0</source>
-        <translation type="obsolete">1.0</translation>
-    </message>
-    <message>
-        <source>Enter Value</source>
-        <translation type="obsolete">값 입력</translation>
-    </message>
-    <message>
-        <source>Select box to match</source>
-        <translation type="obsolete">일치 시키기 위한 박스 선택</translation>
-    </message>
-    <message>
-        <source>Select a point</source>
-        <translation type="obsolete">점 선택</translation>
-    </message>
-    <message>
-        <source>0.0</source>
-        <translation type="obsolete">0.0</translation>
-    </message>
-    <message>
-        <source>Select dragger to align</source>
-        <translation type="obsolete">정렬하기 위한 드래거 선택</translation>
-    </message>
-    <message>
-        <source>Select dragger to modify</source>
-        <translation type="obsolete">수정을 하기위한 드래거 선택</translation>
+        <translation>지오메트리(Geometry) 검사</translation>
     </message>
 </context>
 <context>
@@ -4484,50 +4149,14 @@ Please select a valid shape in the drop-down box first.</source>
         <translation>로프트</translation>
     </message>
     <message>
-        <source>Vertex/Wire</source>
-        <translation type="obsolete">Vertex/Wire</translation>
-    </message>
-    <message>
-        <source>Move right</source>
-        <translation type="obsolete">오른쪽 이동</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Move the selected item one level down.&lt;/b&gt;&lt;p&gt;This will also change the level of the parent item.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;b&gt;선택한 항목 한 수준 아래로 이동 합니다.&lt;/b&gt;&lt;p&gt;이 부모 항목의 수준을 변경 합니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Move left</source>
-        <translation type="obsolete">왼쪽으로 이동</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Move the selected item one level up.&lt;/b&gt;&lt;p&gt;This will also change the level of the parent item.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;b&gt;선택한 항목 한 수준 아래로 이동 합니다.&lt;/b&gt;&lt;p&gt;이 부모 항목의 수준을 변경 합니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Move up</source>
-        <translation type="obsolete">위로 이동</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Move the selected item up.&lt;/b&gt;&lt;p&gt;The item will be moved within the hierarchy level.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;b&gt;선택한 항목 이동 합니다.&lt;/b&gt;&lt;p&gt;항목 계층 수준 내에서 이동 됩니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Move down</source>
-        <translation type="obsolete">아래로 이동</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Move the selected item down.&lt;/b&gt;&lt;p&gt;The item will be moved within the hierarchy level.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;b&gt;선택한 항목 이동 합니다.&lt;/b&gt;&lt;p&gt;항목 계층 수준 내에서 이동 됩니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
         <location line="+9"/>
         <source>Create solid</source>
-        <translation>솔리드 만들기</translation>
+        <translation>솔리드로 생성</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Ruled surface</source>
-        <translation>규칙적인 표면</translation>
+        <translation>선직면을 따름</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -4541,7 +4170,7 @@ Please select a valid shape in the drop-down box first.</source>
         <location filename="../../TaskOffset.ui" line="+14"/>
         <location line="+6"/>
         <source>Offset</source>
-        <translation >오프셋</translation>
+        <translation >오프셋(Offset)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -4592,7 +4221,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+7"/>
         <source>Fill offset</source>
-        <translation>오프셋 넣기</translation>
+        <translation>오프셋 채우기</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -4602,7 +4231,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+27"/>
         <source>Update view</source>
-        <translation>보기 재생성</translation>
+        <translation>변경사항 바로 적용하여 보기</translation>
     </message>
 </context>
 <context>
@@ -4616,12 +4245,12 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+6"/>
         <source>Edge from vertices</source>
-        <translation>꼭지점으로부터 모서리 생성</translation>
+        <translation>정점으로부터 모서리 생성</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Face from vertices</source>
-        <translation>꼭지점으로부터 면 생성</translation>
+        <translation>정점으로부터 면 생성</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -4651,7 +4280,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+32"/>
         <source>Create</source>
-        <translation>만들기</translation>
+        <translation>생성</translation>
     </message>
     <message>
         <location line="-22"/>
@@ -4664,7 +4293,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location filename="../../TaskSweep.ui" line="+14"/>
         <source>Sweep</source>
-        <translation>스윕</translation>
+        <translation>스윕(Sweep)</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -4679,7 +4308,7 @@ Please select a valid shape in the drop-down box first.</source>
     <message>
         <location line="+7"/>
         <source>Frenet</source>
-        <translation>프레네</translation>
+        <translation>Frenet</translation>
     </message>
     <message>
         <location filename="../../TaskSweep.cpp" line="+42"/>
@@ -4695,7 +4324,7 @@ in the 3D view for the sweep path.</source>
         <location line="+165"/>
         <location line="+10"/>
         <source>Thickness</source>
-        <translation>두께</translation>
+        <translation>두께(Thickness)</translation>
     </message>
     <message>
         <location line="-119"/>
@@ -4772,14 +4401,14 @@ in the 3D view for the sweep path.</source>
         <location line="-1669"/>
         <location line="+549"/>
         <source>Select two shapes please.</source>
-        <translation>두 개의 셰이프를 선택 해 주세요</translation>
+        <translation>두 개의 모양을 선택 해 주세요</translation>
     </message>
     <message>
         <location line="-539"/>
         <location line="+102"/>
         <location line="+102"/>
         <source>Non-solids selected</source>
-        <translation>비-솔리드 선택</translation>
+        <translation>비-솔리드(Non-solids) 선택</translation>
     </message>
     <message>
         <location line="-203"/>
@@ -4787,17 +4416,17 @@ in the 3D view for the sweep path.</source>
         <location line="+102"/>
         <source>The use of non-solids for boolean operations may lead to unexpected results.
 Do you want to continue?</source>
-        <translation>부울 작업 비-솔리드를 사용 하 여 예기치 않은 결과가 발생할 수 있습니다. 계속 하 시겠습니까?</translation>
+        <translation>비-솔리드를 사용한 논리연산(Boolean)은 예기치 않은 결과가 발생할 수 있습니다. 계속 하시겠습니까?</translation>
     </message>
     <message>
         <location line="-118"/>
         <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
-        <translation>두 가지 모양 이상을 선택하십시오. 또는 둘 또는 그 이상의 모양을 포함하는 하나의 복합체를 선택하여 함께 계산할 수도 있습니다.</translation>
+        <translation>두 개 이상의 모양을 선택하십시오. 또는 둘 또는 그 이상의 모양을 포함하는 하나의 복합체를 선택하여 같이 계산할 수도 있습니다.</translation>
     </message>
     <message>
         <location line="+102"/>
         <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
-        <translation>두 가지 모양 이상을 선택하십시오. 또는 결합시킬 두 가지 이상의 모양을 포함하는 하나의 화합물을 선택하십시오.</translation>
+        <translation>두 개 이상의 모양을 선택하십시오. 또는 결합시킬 두 가지 이상의 모양을 포함하는 하나의 복합체를 선택하십시오.</translation>
     </message>
     <message>
         <location line="+299"/>
@@ -4847,7 +4476,7 @@ Do you want to continue?</source>
     <message>
         <location line="+141"/>
         <source>Edit offset</source>
-        <translation>오프셋을 편집</translation>
+        <translation>오프셋 편집</translation>
     </message>
     <message>
         <location line="+86"/>
@@ -4868,7 +4497,7 @@ Do you want to continue?</source>
         <location line="+1"/>
         <location line="+1"/>
         <source>Import-Export</source>
-        <translation>가져오기 내보내기</translation>
+        <translation>가져오기-내보내기</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4917,7 +4546,7 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>Solid</source>
-        <translation>복합체</translation>
+        <translation>솔리드</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5031,7 +4660,7 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>Invalid MultiConnexity</source>
-        <translation>잘못된 멀티연결</translation>
+        <translation>잘못된 연결상태(Connexity)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5046,7 +4675,7 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>Redundant Edge</source>
-        <translation>중복 모서리</translation>
+        <translation>불필요한 모서리</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5066,17 +4695,17 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>Redundant Wire</source>
-        <translation>중복 와이어</translation>
+        <translation>불필요한 와이어</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Intersecting Wires</source>
-        <translation>교차 와이어</translation>
+        <translation>교차된 와이어</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid Imbrication Of Wires</source>
-        <translation>와이어의 잘못 된 Imbrication</translation>
+        <translation>잘못 겹쳐진 와이어</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5106,7 +4735,7 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>Sub Shape Not In Shape</source>
-        <translation>서브 셰이프가 셰이프안에 있지 않습니다</translation>
+        <translation>상위모양 안에 하위모양이 없습니다.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5219,7 +4848,7 @@ Do you want to continue?</source>
     <message>
         <location line="-265"/>
         <source>Reset Dialog</source>
-        <translation>대화창 재설정</translation>
+        <translation>설정 초기화</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -5257,12 +4886,12 @@ Do you want to continue?</source>
     <message>
         <location line="+1"/>
         <source>&amp;Parametric</source>
-        <translation>&amp; 파라메트릭</translation>
+        <translation>&amp; 매개변수</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Part tools</source>
-        <translation>파트 도구</translation>
+        <translation>파트(Part) 도구</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -5272,7 +4901,7 @@ Do you want to continue?</source>
     <message>
         <location line="+2"/>
         <source>Boolean</source>
-        <translation>부울</translation>
+        <translation>논리연산(Boolean)</translation>
     </message>
 </context>
 </TS>
