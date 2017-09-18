@@ -1,0 +1,4 @@
+!define VERSIONMAJOR 3
+!define VERSIONMINOR 0
+!define VERSIONBUILD 0
+!define APP_VI_PRODUCT_VER	"1.1.0.0"
