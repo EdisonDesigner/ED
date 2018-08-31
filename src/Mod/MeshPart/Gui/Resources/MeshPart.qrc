@@ -1,0 +1,7 @@
+<RCC>
+    <qresource>
+        <file>icons/actions/MeshFace.svg</file>
+        <file>translations/MeshPart_el.qm</file>
+        <file>translations/MeshPart_ko.qm</file>
+    </qresource>
+</RCC>
