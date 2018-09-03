@@ -1,0 +1,13 @@
+
+
+16/05/08 : v 0.3.2
+* Create solid model 기능 구현
+  - R1과 t2, R2와 t1이 같은 평면
+
+16/03/23 : v 0.3.1
+* GUI 수정
+* Surface 모델 생성 기능 추가
+
+16/03/21 : v 0.3
+* L-shape bracket modeler release 버전 개발
+  - Visual studio에서 GUI 동작
