@@ -1,6 +1,15 @@
 
-SET(Examples_Files 
+SET(Examples_Files
     Connecting_rod.FCStd
+    KAIST_A1.FCStd
+    KAIST_A1_Body.FCStd
+    KAIST_A1_Rotation.FCStd
+    KAIST_A2.FCStd
+    KAIST_A2_Bar.FCStd
+    KAIST_A2_Bolt.FCStd
+    KAIST_A2_DM.FCStd
+    KAIST_A2_Nut.FCStd
+    KAIST_A2_Plate.FCStd
 )
 
 ADD_CUSTOM_TARGET(Example_data ALL
@@ -125,4 +134,3 @@ INSTALL(
     DESTINATION
         ${CMAKE_INSTALL_DATADIR}/examples
 )
-
