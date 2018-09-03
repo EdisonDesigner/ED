@@ -52,7 +52,8 @@ ul {
 }
 
 .block {
-    background: #windowcolor !important;
+    /*background: #windowcolor !important;*/
+    background: #BCBCBE !important;
     border-radius: 5px;
     padding: 8px;
     margin-bottom: 10px;
@@ -62,10 +63,15 @@ ul {
 }
 
 .half-block {
-    background: #windowcolor !important;
+    /*background: #windowcolor !important;*/
+    /* Backgound color */
+    background: #BCBCBE !important;
     border-radius: 5px;
     padding: 8px;
     margin-bottom: 10px;
+
+    /* Font color */
+    /*color: #ff6666;*/
     color: #windowtextcolor;
 }
 

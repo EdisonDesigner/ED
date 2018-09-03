@@ -7,21 +7,23 @@ if(BUILD_GUI)
         __init__.py
     )
 
-    SET(StartPage_Resources  
-        LoadConnectingRod.py      
-        DefaultWorkbench.py        
+    SET(StartPage_Resources
+        LoadConnectingRod.py
+        LoadA1.py
+        LoadA2.py
+        DefaultWorkbench.py
         LoadMRU0.py
         LoadMRU1.py
         LoadMRU2.py
-        LoadMRU3.py        
+        LoadMRU3.py
         PartDesign.py
         StartPage.css
         StartPage.js
         StartPage.html
         EnableDownload.py
-        images/Background.jpg
+        images/wallpaper.jpg
         images/EdisonDesigner.png
-        images/PartDesign.png        
+        images/PartDesign.png
         images/Mesh.png
         images/PartDesignExample.png
         images/web.png

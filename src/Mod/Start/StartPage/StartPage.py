@@ -28,7 +28,7 @@ from PySide import QtGui
 from xml.etree.ElementTree import parse
 
 from .TranslationTexts import (text01, text02, text03, text04, text05, text06,
-                              text07, text08, text09, text10, text11, text12,                              
+                              text07, text08, text09, text10, text11, text12,
                               text19, text20, text21, text22, text26, text27,
                               text28, text29,
                               text33, text34, text35, text36,
@@ -211,7 +211,7 @@ def setColors(html):
         pass
     else:
         #defaults["#basecolor"] = palette.base().color().name()
-        defaults["#basecolor"] = "#171A2B url(images/Background.jpg)"
+        defaults["#basecolor"] = "#171A2B url(images/wallpaper.jpg)"
         #defaults["#linkcolor"] = palette.link().color().name() # UGLY!!
         defaults["#textcolor"] = palette.text().color().name()
         defaults["#windowcolor"] = palette.window().color().name()
@@ -235,6 +235,8 @@ def replace_html_text(html):
     html = html.replace("text08", text08)
     html = html.replace("text09", text09)
     html = html.replace("text10", text10)
+    html = html.replace("text11", text11)
+    html = html.replace("text12", text12)
 
     html = html.replace("text19", text19)
     html = html.replace("text20", text20)

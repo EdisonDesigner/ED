@@ -1256,9 +1256,11 @@ QPixmap MainWindow::splashImage() const
         if (color.isValid()) {
             painter.setPen(color);
             painter.setFont(fontExe);
-            painter.drawText(w-(l+v+10),h-20, title);
+            //painter.drawText(w-(l+v+10),h-20, title);
+			painter.drawText(w - (l + v + 110), h / 2 + 25, title);
             painter.setFont(fontVer);
-            painter.drawText(w-(v+5),h-20, version);
+            //painter.drawText(w-(v+5),h-20, version);
+			painter.drawText(w - (v + 105), h / 2 + 25, version);
             painter.end();
         }
     }

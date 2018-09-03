@@ -24,6 +24,6 @@
 import FreeCAD as ED
 import FreeCADGui as EDGui
 
-ED.open(ED.getResourceDir()+"examples/Connecting_rod.FCStd")
+ED.open(ED.getResourceDir()+"examples/KAIST_A1.FCStd")
 EDGui.activeDocument().sendMsgToViews("ViewFit")
 EDGui.activeDocument().sendMsgToViews("ViewAxo")
