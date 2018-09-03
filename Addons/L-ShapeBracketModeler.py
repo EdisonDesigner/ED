@@ -30,12 +30,12 @@ class L_type_model(QtGui.QWidget):
 		self.setMinimumHeight(720)	# limit window size
 		#self.setFixedWidth(830)
 		#self.setFixedHeight(510)
-		self.setWindowIcon(QtGui.QIcon(os.path.join(addonPath, "L-shape bracket modeler\EdisonDesigner_icon.png")))	# icon setting
+		self.setWindowIcon(QtGui.QIcon(os.path.join(addonPath, "L-ShapeBracketModeler\EdisonDesigner_icon.png")))	# icon setting
 		self.setWindowTitle('EdisonDesigner L-shape bracket modeler v 0.3.2')
 
 		# Set a background image
 		Background = QtGui.QPalette()
-		Background.setBrush(QtGui.QPalette.Background, QtGui.QBrush(QtGui.QPixmap(os.path.join(addonPath, "L-shape bracket modeler\Background image.png"))))
+		Background.setBrush(QtGui.QPalette.Background, QtGui.QBrush(QtGui.QPixmap(os.path.join(addonPath, "L-ShapeBracketModeler\Background.png"))))
 
 
 
@@ -226,13 +226,13 @@ class L_type_model(QtGui.QWidget):
 		refer_Img_GroupBox.setTitle('Reference images')
 
 		# Set reference image in reference image section
-		side_View_Img = QtGui.QPixmap(os.path.join(addonPath, "L-shape bracket modeler\L-shape bracket_3D_model_view.png"))
+		side_View_Img = QtGui.QPixmap(os.path.join(addonPath, "L-ShapeBracketModeler\Model_view.png"))
 		side_View_label = QtGui.QLabel(refer_Img_GroupBox)
 		side_View_label.setPixmap(side_View_Img)
 		side_View_label.resize(side_View_Img.width(), side_View_Img.height())
 		side_View_label.move(10, 20)
 
-		model_3D_View_Img = QtGui.QPixmap(os.path.join(addonPath, "L-shape bracket modeler\L-shape bracket_side_view.png"))
+		model_3D_View_Img = QtGui.QPixmap(os.path.join(addonPath, "L-ShapeBracketModeler\side_view.png"))
 		model_3D_View_label = QtGui.QLabel(refer_Img_GroupBox)
 		model_3D_View_label.setPixmap(model_3D_View_Img)
 		model_3D_View_label.resize(model_3D_View_Img.width(), model_3D_View_Img.height())

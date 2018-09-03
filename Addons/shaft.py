@@ -1700,7 +1700,7 @@ class Sci(QtGui.QWidget):
 	def onTable(self):
 		ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/Iron key table.jpg"))  #C 드라이브에 넣었음
+		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/Iron Key_table.jpg"))  #C 드라이브에 넣었음
 
 		Imageview1 = QtGui.QLabel(ks)
 		Imageview1.setPixmap(buf)
@@ -1716,7 +1716,7 @@ class Sci(QtGui.QWidget):
 	def onTable5_1(self):
 		ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/key table.jpg"))  #C 드라이브에 넣었음
+		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/Key_table.jpg"))  #C 드라이브에 넣었음
 
 		Imageview1 = QtGui.QLabel(ks)
 		Imageview1.setPixmap(buf)
@@ -1732,7 +1732,7 @@ class Sci(QtGui.QWidget):
 	def onTable5_2(self):
 		ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/Iron Properties.jpg"))  #C 드라이브에 넣었음
+		buf = QtGui.QPixmap(os.path.join(addonPath, "shaft_module/Iron_Properties.jpg"))  #C 드라이브에 넣었음
 
 		Imageview1 = QtGui.QLabel(ks)
 		Imageview1.setPixmap(buf)

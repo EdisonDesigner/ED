@@ -2157,7 +2157,7 @@ class Sci(QtGui.QWidget):
 		if self.popup1.currentText() == u"플라스틱판 11X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/85.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/85.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2173,7 +2173,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플라스틱판 11X3":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/80.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/80.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2189,7 +2189,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플라스틱판 7X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/81.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/81.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2205,7 +2205,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플라스틱판 5X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/82.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/82.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2221,7 +2221,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플라스틱판 5X3":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/83.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/83.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2237,7 +2237,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"삼각플라스틱판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/102.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/102.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2253,7 +2253,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"반원플라스틱판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic plate/103.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plastic_plate/103.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2528,7 +2528,7 @@ class Sci(QtGui.QWidget):
 		if self.popup1.currentText() == u"플랜지판(소)":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange plate/50.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange_plate plate/50.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2545,7 +2545,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플랜지판(대)":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange plate/51.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange_plate plate/51.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2560,7 +2560,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"사다리꼴플랜지판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange plate/109.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange_plate plate/109.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2575,7 +2575,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플랜지판 2X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange plate/168.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange_plate plate/168.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2590,7 +2590,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"플랜지판 2X7":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange plate/169.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/plange_plate plate/169.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2606,7 +2606,7 @@ class Sci(QtGui.QWidget):
 		if self.popup1.currentText() == u"평판(대)":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/55.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/55.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2623,7 +2623,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"평판(소)":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/56.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/56.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2639,7 +2639,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"평판 - 9":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/60.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/60.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2655,7 +2655,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"평판 - 7":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/61.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/61.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2671,7 +2671,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"평판 - 5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/62.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/62.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2687,7 +2687,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"평판 - 3":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/63.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/63.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2703,7 +2703,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"오각평판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/71.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/71.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2719,7 +2719,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"사각평판 3X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/129.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/129.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2735,7 +2735,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"삼각평판 3X5":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/130.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/130.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2751,7 +2751,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"바퀴평판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat plate/131.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/flat_plate/131.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2945,7 +2945,7 @@ class Sci(QtGui.QWidget):
 		if self.popup1.currentText() == u"이음판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc plate/12.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc_plate/12.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2962,7 +2962,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"휠판 - 8":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc plate/30.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc_plate/30.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)
@@ -2979,7 +2979,7 @@ class Sci(QtGui.QWidget):
 		elif self.popup1.currentText() == u"반원판":
 			ks = QtGui.QDialog()  # QtGui.QMessageBox(), QtGui.QLabel(), QtGui.QWidget() 에러
 
-			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc plate/87.jpg"))
+			buf = QtGui.QPixmap(os.path.join(addonPath, "sci_box/etc_plate/87.jpg"))
 
 			Imageview1 = QtGui.QLabel(ks)
 			Imageview1.setPixmap(buf)

@@ -151,6 +151,7 @@ SET(CMAKE_INSTALL_INCLUDEDIR include CACHE PATH "Output directory for header fil
 SET(CMAKE_INSTALL_DOCDIR doc CACHE PATH "Output directory for documentation and license files")
 # Don't set it without manual adaption of LibDir variable in src/App/FreeCADInit.py
 SET(CMAKE_INSTALL_LIBDIR lib CACHE PATH "Output directory for libraries")
+SET(CMAKE_INSTALL_ADDONDIR addons CACHE PATH "Output directory for addons")
 
 if(NOT WIN32)
     if(NOT IS_ABSOLUTE ${CMAKE_INSTALL_LIBDIR})
@@ -174,6 +175,7 @@ MESSAGE(STATUS "datadir: ${CMAKE_INSTALL_DATADIR}")
 MESSAGE(STATUS "docdir: ${CMAKE_INSTALL_DOCDIR}")
 MESSAGE(STATUS "includedir: ${CMAKE_INSTALL_INCLUDEDIR}")
 MESSAGE(STATUS "libdir: ${CMAKE_INSTALL_LIBDIR}")
+MESSAGE(STATUS "addondir: ${CMAKE_INSTALL_ADDONDIR}")
 
 # ==============================================================================
 # == Win32 is default behaviour use the LibPack copied in Source tree ==========
@@ -181,7 +183,7 @@ if(MSVC)
     OPTION(FREECAD_RELEASE_PDB "Create PDB file for Release version." OFF)
     OPTION(FREECAD_LIBPACK_USE "Use the LibPack to Build FreeCAD (only Win32 so far)." ON)
     OPTION(FREECAD_LIBPACK_USEPYSIDE "Use PySide in LibPack rather to PyQt and Swig." ON)
-    set(FREECAD_LIBPACK_DIR ${CMAKE_SOURCE_DIR} CACHE PATH  "Directory of the FreeCAD LibPack")    
+    set(FREECAD_LIBPACK_DIR ${CMAKE_SOURCE_DIR} CACHE PATH  "Directory of the FreeCAD LibPack")
 else(MSVC)
     OPTION(FREECAD_LIBPACK_USE "Use the LibPack to Build FreeCAD (only Win32 so far)." OFF)
     set(FREECAD_LIBPACK_DIR ""  CACHE PATH  "Directory of the FreeCAD LibPack")
@@ -981,14 +983,14 @@ endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
 	if(APPLE)
 	    INSTALL(
-	        DIRECTORY	
+	        DIRECTORY
                     ${CMAKE_BINARY_DIR}/Ext/PySide
 		DESTINATION
                     MacOS
             )
 	else()
             INSTALL(
-	        DIRECTORY	
+	        DIRECTORY
                     ${CMAKE_BINARY_DIR}/Ext/PySide
                 DESTINATION
                     Ext
@@ -1135,6 +1137,7 @@ ENDIF(MINGW)
 #elseif()
 add_subdirectory(src)
 add_subdirectory(data)
+add_subdirectory(addons)
 #endif()
 
 # ================================================================================
