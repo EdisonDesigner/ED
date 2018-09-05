@@ -1,4 +1,6 @@
 
+add_subdirectory(Assembly2)
+
 if(BUILD_POINTS)
   add_subdirectory(Points)
 endif(BUILD_POINTS)
@@ -10,8 +12,6 @@ endif(BUILD_COMPLETE)
 if(BUILD_TEST)
   add_subdirectory(Test)
 endif(BUILD_TEST)
-
-#add_subdirectory(TemplatePyMod)
 
 if(BUILD_IMAGE)
   add_subdirectory(Image)
@@ -45,7 +45,7 @@ IF(EIGEN3_FOUND)
     if(BUILD_SKETCHER)
       add_subdirectory(Sketcher)
     endif(BUILD_SKETCHER)
-    
+
     if(BUILD_ROBOT)
       add_subdirectory(Robot)
     endif(BUILD_ROBOT)
