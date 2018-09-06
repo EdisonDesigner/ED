@@ -495,9 +495,10 @@ Gui::MenuItem* Workbench::setupMenuBar() const
     if (Gui::Application::Instance->commandManager().getCommandByName("PartDesign_InvoluteGear")) {
         *part << "PartDesign_InvoluteGear";
     }
+	/*
     if (Gui::Application::Instance->commandManager().getCommandByName("PartDesign_WizardShaft")) {
         *part << "Separator" << "PartDesign_WizardShaft";
-    }
+    }*/
 
     // Replace the "Duplicate selection" menu item with a replacement that is compatible with Body
     item = root->findItem("&Edit");
