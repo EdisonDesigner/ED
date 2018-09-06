@@ -45,7 +45,8 @@ fc_target_copy_resource(ImportGui
     ${CMAKE_BINARY_DIR}/Mod/Import
     Init.py InitGui.py gzip_utf8.py stepZ.py)
 
-SET_BIN_DIR(ImportGui ImportGui /Mod/Import)
+# SET_BIN_DIR(ImportGui ImportGui /Mod/Import)
+SET_BIN_DIR(ImportGui ImportGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(ImportGui)
 
 INSTALL(TARGETS ImportGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

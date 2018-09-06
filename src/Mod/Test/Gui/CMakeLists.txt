@@ -66,7 +66,8 @@ add_dependencies(QtUnitGui Test)
 
 fc_copy_sources(QtUnitGui "${CMAKE_BINARY_DIR}/Mod/Test" qtunittest.py)
 
-SET_BIN_DIR(QtUnitGui QtUnitGui /Mod/Test)
+# SET_BIN_DIR(QtUnitGui QtUnitGui /Mod/Test)
+SET_BIN_DIR(QtUnitGui QtUnitGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(QtUnitGui)
 
 INSTALL(TARGETS QtUnitGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

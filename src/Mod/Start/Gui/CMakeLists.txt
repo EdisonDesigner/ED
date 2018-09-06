@@ -31,22 +31,23 @@ SET(StartGui_SRCS
 add_library(StartGui SHARED ${StartGui_SRCS})
 target_link_libraries(StartGui ${StartGui_LIBS})
 
-fc_target_copy_resource(StartGui 
+fc_target_copy_resource(StartGui
     ${CMAKE_SOURCE_DIR}/src/Mod/Start
     ${CMAKE_BINARY_DIR}/Mod/Start
     InitGui.py)
 
-fc_target_copy_resource(StartGui 
+fc_target_copy_resource(StartGui
     ${CMAKE_SOURCE_DIR}/src/Mod/Start/StartPage
     ${CMAKE_BINARY_DIR}/Mod/Start/StartPage
     ${StartPage_Scripts})
 
-fc_target_copy_resource(StartGui 
+fc_target_copy_resource(StartGui
     ${CMAKE_SOURCE_DIR}/src/Mod/Start/StartPage
     ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/Start/StartPage
     ${StartPage_Resources})
 
-SET_BIN_DIR(StartGui StartGui /Mod/Start)
+# SET_BIN_DIR(StartGui StartGui /Mod/Start)
+SET_BIN_DIR(StartGui StartGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(StartGui)
 
 INSTALL(TARGETS StartGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

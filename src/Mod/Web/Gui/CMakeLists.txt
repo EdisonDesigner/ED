@@ -48,13 +48,14 @@ add_library(WebGui SHARED ${WebGui_SRCS})
 target_link_libraries(WebGui ${WebGui_LIBS})
 
 
-fc_target_copy_resource(WebGui 
+fc_target_copy_resource(WebGui
     ${CMAKE_SOURCE_DIR}/src/Mod/Web
     ${CMAKE_BINARY_DIR}/Mod/Web
     ${Web_Scripts}
     Init.py InitGui.py)
 
-SET_BIN_DIR(WebGui WebGui /Mod/Web)
+# SET_BIN_DIR(WebGui WebGui /Mod/Web)
+SET_BIN_DIR(WebGui WebGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(WebGui)
 
 INSTALL(TARGETS WebGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

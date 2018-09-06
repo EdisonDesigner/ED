@@ -151,7 +151,8 @@ fc_target_copy_resource(MeshGui
     ${CMAKE_BINARY_DIR}/Mod/Mesh
     InitGui.py)
 
-SET_BIN_DIR(MeshGui MeshGui /Mod/Mesh)
+# SET_BIN_DIR(MeshGui MeshGui /Mod/Mesh)
+SET_BIN_DIR(MeshGui MeshGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(MeshGui)
 
 INSTALL(TARGETS MeshGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

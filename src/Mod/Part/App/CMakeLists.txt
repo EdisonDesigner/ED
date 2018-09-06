@@ -24,14 +24,14 @@ include_directories(
 
 link_directories(${OCC_LIBRARY_DIR})
 
-set(Part_LIBS 
+set(Part_LIBS
     ${OCC_LIBRARIES}
     ${OCC_DEBUG_LIBRARIES}
     EdisonDesignerApp
 )
 
 if(FREETYPE_FOUND)
-    set(Part_LIBS 
+    set(Part_LIBS
         ${Part_LIBS}
         ${FREETYPE_LIBRARIES}
     )
@@ -391,12 +391,13 @@ add_library(Part SHARED ${Part_SRCS})
 target_link_libraries(Part ${Part_LIBS})
 
 
-fc_target_copy_resource(Part 
+fc_target_copy_resource(Part
     ${CMAKE_SOURCE_DIR}/src/Mod/Part
     ${CMAKE_BINARY_DIR}/Mod/Part
     ${Part_Scripts})
 
-SET_BIN_DIR(Part Part /Mod/Part)
+# SET_BIN_DIR(Part Part /Mod/Part)
+SET_BIN_DIR(Part Part /lib)
 SET_PYTHON_PREFIX_SUFFIX(Part)
 
 INSTALL(TARGETS Part DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -73,12 +73,13 @@ ADD_CUSTOM_TARGET(ImportPy ALL
     SOURCES ${SCL_Resources}
 )
 
-fc_target_copy_resource(ImportPy 
+fc_target_copy_resource(ImportPy
     ${CMAKE_SOURCE_DIR}/src/Mod/Import/App
     ${CMAKE_BINARY_DIR}/Mod/Import
     ${SCL_Resources})
 
-SET_BIN_DIR(Import Import /Mod/Import)
+# SET_BIN_DIR(Import Import /Mod/Import)
+SET_BIN_DIR(Import Import /lib)
 SET_PYTHON_PREFIX_SUFFIX(Import)
 
 INSTALL(TARGETS Import DESTINATION ${CMAKE_INSTALL_LIBDIR})

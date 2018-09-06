@@ -34,3 +34,7 @@ OpenSCAD_rc.py
 /\.idea/
 .tags
 tags
+
+_bin_release/
+__Examples/
+LibPack_11.1_x86_VC12/

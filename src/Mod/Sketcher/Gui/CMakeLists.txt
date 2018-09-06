@@ -152,7 +152,8 @@ fc_target_copy_resource(SketcherGui
     ${CMAKE_BINARY_DIR}/Mod/Sketcher
     ${SketcherGui_Scripts})
 
-SET_BIN_DIR(SketcherGui SketcherGui /Mod/Sketcher)
+# SET_BIN_DIR(SketcherGui SketcherGui /Mod/Sketcher)
+SET_BIN_DIR(SketcherGui SketcherGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(SketcherGui)
 
 INSTALL(TARGETS SketcherGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

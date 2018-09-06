@@ -81,7 +81,8 @@ fc_target_copy_resource(SurfaceGui
     ${CMAKE_BINARY_DIR}/Mod/Surface
     InitGui.py)
 
-SET_BIN_DIR(SurfaceGui SurfaceGui /Mod/Surface)
+# SET_BIN_DIR(SurfaceGui SurfaceGui /Mod/Surface)
+SET_BIN_DIR(SurfaceGui SurfaceGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(SurfaceGui)
 
 install(TARGETS SurfaceGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

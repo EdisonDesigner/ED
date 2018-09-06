@@ -128,7 +128,8 @@ fc_target_copy_resource(Sketcher
     ${CMAKE_BINARY_DIR}/Mod/Sketcher
     ${Sketcher_Scripts})
 
-SET_BIN_DIR(Sketcher Sketcher /Mod/Sketcher)
+# SET_BIN_DIR(Sketcher Sketcher /Mod/Sketcher)
+SET_BIN_DIR(Sketcher Sketcher /lib)
 SET_PYTHON_PREFIX_SUFFIX(Sketcher)
 
 INSTALL(TARGETS Sketcher DESTINATION ${CMAKE_INSTALL_LIBDIR})

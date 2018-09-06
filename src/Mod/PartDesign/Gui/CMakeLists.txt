@@ -288,7 +288,8 @@ fc_target_copy_resource(PartDesignGui
     ${CMAKE_BINARY_DIR}/Mod/PartDesign
     ${PartDesignGui_Scripts})
 
-SET_BIN_DIR(PartDesignGui PartDesignGui /Mod/PartDesign)
+# SET_BIN_DIR(PartDesignGui PartDesignGui /Mod/PartDesign)
+SET_BIN_DIR(PartDesignGui PartDesignGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(PartDesignGui)
 
 INSTALL(TARGETS PartDesignGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

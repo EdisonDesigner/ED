@@ -247,8 +247,8 @@ SET(PartGui_SRCS
     TaskDimension.h
     TaskCheckGeometry.cpp
     TaskCheckGeometry.h
-    TaskAttacher.h 
-    TaskAttacher.cpp 
+    TaskAttacher.h
+    TaskAttacher.cpp
 )
 
 SET(PartGui_Scripts
@@ -261,12 +261,13 @@ add_library(PartGui SHARED ${PartGui_SRCS})
 target_link_libraries(PartGui ${PartGui_LIBS})
 
 
-fc_target_copy_resource(PartGui 
+fc_target_copy_resource(PartGui
     ${CMAKE_SOURCE_DIR}/src/Mod/Part
     ${CMAKE_BINARY_DIR}/Mod/Part
     ${PartGui_Scripts})
 
-SET_BIN_DIR(PartGui PartGui /Mod/Part)
+# SET_BIN_DIR(PartGui PartGui /Mod/Part)
+SET_BIN_DIR(PartGui PartGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(PartGui)
 
 INSTALL(TARGETS PartGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

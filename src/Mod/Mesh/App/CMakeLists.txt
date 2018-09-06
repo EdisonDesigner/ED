@@ -381,7 +381,8 @@ fc_target_copy_resource(Mesh
     ${CMAKE_BINARY_DIR}/Mod/Mesh
     MeshTestsApp.py)
 
-SET_BIN_DIR(Mesh Mesh /Mod/Mesh)
+# SET_BIN_DIR(Mesh Mesh /Mod/Mesh)
+SET_BIN_DIR(Mesh Mesh /lib)
 SET_PYTHON_PREFIX_SUFFIX(Mesh)
 
 INSTALL(TARGETS Mesh DESTINATION ${CMAKE_INSTALL_LIBDIR})

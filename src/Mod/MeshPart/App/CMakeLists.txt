@@ -69,12 +69,13 @@ add_library(MeshPart SHARED ${MeshPart_SRCS})
 target_link_libraries(MeshPart ${MeshPart_LIBS})
 
 
-fc_target_copy_resource(MeshPart 
+fc_target_copy_resource(MeshPart
     ${CMAKE_SOURCE_DIR}/src/Mod/MeshPart
     ${CMAKE_BINARY_DIR}/Mod/MeshPart
     Init.py)
 
-SET_BIN_DIR(MeshPart MeshPart /Mod/MeshPart)
+# SET_BIN_DIR(MeshPart MeshPart /Mod/MeshPart)
+SET_BIN_DIR(MeshPart MeshPart /lib)
 SET_PYTHON_PREFIX_SUFFIX(MeshPart)
 
 INSTALL(TARGETS MeshPart DESTINATION ${CMAKE_INSTALL_LIBDIR})

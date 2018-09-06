@@ -82,7 +82,8 @@ fc_target_copy_resource(MeshPartGui
     ${CMAKE_BINARY_DIR}/Mod/MeshPart
     InitGui.py)
 
-SET_BIN_DIR(MeshPartGui MeshPartGui /Mod/MeshPart)
+# SET_BIN_DIR(MeshPartGui MeshPartGui /Mod/MeshPart)
+SET_BIN_DIR(MeshPartGui MeshPartGui /lib)
 SET_PYTHON_PREFIX_SUFFIX(MeshPartGui)
 
 INSTALL(TARGETS MeshPartGui DESTINATION ${CMAKE_INSTALL_LIBDIR})

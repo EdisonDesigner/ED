@@ -43,7 +43,8 @@ fc_target_copy_resource(Surface
     ${CMAKE_BINARY_DIR}/Mod/Surface
     Init.py)
 
-SET_BIN_DIR(Surface Surface /Mod/Surface)
+# SET_BIN_DIR(Surface Surface /Mod/Surface)
+SET_BIN_DIR(Surface Surface /lib)
 SET_PYTHON_PREFIX_SUFFIX(Surface)
 
 install(TARGETS Surface DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -190,7 +190,8 @@ fc_target_copy_resource(PartDesign
     ${CMAKE_BINARY_DIR}/Mod/PartDesign
     ${PartDesign_Scripts})
 
-SET_BIN_DIR(PartDesign _PartDesign /Mod/PartDesign)
+# SET_BIN_DIR(PartDesign _PartDesign /Mod/PartDesign)
+SET_BIN_DIR(PartDesign PartDesign /lib)
 SET_PYTHON_PREFIX_SUFFIX(PartDesign)
 
 INSTALL(TARGETS PartDesign DESTINATION ${CMAKE_INSTALL_LIBDIR})
