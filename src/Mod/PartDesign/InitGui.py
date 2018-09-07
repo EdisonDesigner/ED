@@ -38,14 +38,14 @@ class PartDesignWorkbench ( Workbench ):
 
     def Initialize(self):
         # load the module
-        try:
-            from WizardShaft import WizardShaft
-        except ImportError:
-            print("Wizard shaft module cannot be loaded")
-            try:
-                from FeatureHole import HoleGui
-            except:
-                pass
+        # try:
+        #     from WizardShaft import WizardShaft
+        # except ImportError:
+        #     print("Wizard shaft module cannot be loaded")
+        #     try:
+        #         from FeatureHole import HoleGui
+        #     except:
+        #         pass
 
         import PartDesignGui
         import PartDesign
