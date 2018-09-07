@@ -2,99 +2,97 @@
 !include "MUI2.nsh"
 !include "LogicLib.nsh"
 
-# 프로그램 버전 정보를 포함
+# EdisonDesigner version info
 !include Version.nsi
 
-# 프로그램 명칭 설정
+# Program name and description
 !define APPNAME				"EdisonDesigner"
-!define EXEName				"ED"
 !define PUPNAME				"KAIST iCAD laboratory"
 !define DESCRIPTION			"A freeware CAD system for education"
-!define HELPURL				"http://edisondesigner.tistory.com"
-!define ABOUTURL			"http://edisondesigner.tistory.com"
-!define UPDATEURL			"http://edisondesigner.tistory.com"
+!define HELPURL				"http://kiay.kr/ED/manual"
+!define ABOUTURL			"http://kiay.kr/ED/manual"
+!define UPDATEURL			"http://kiay.kr/ED/manual"
 
-
-!define FULLNAME "${APPNAME} ${VERSIONMAJOR}.${VERSIONMINOR}"
-
-# 프로그램 실행 권한 설정
+# Set "Run as administrator"
 RequestExecutionLevel admin
 
-# 프로그램 설치 경로 설정
-InstallDir "$PROGRAMFILES\${FULLNAME}"
+# Install directory
+InstallDir "$PROGRAMFILES\${APPNAME}"
 
-# 인스톨러와 언인스톨러의 이름 설정
-Name "${FULLNAME}"
+# Installer and Uninstaller name
+Name "${APPNAME}"
 
-# 최종 인스톨러 파일 이름
-OutFile "${FULLNAME}_x86_setup.exe"
+# Installer name
+OutFile "${APPNAME}_${VERSIONMAJOR}.${VERSIONMINOR}_x86.exe"
 
 !define MUI_ABORTWARNING
-!define MUI_ICON	"Install_icon.ico"
-!define MUI_UNICON	"Install_icon.ico"
+!define MUI_ICON	"Install.ico"
+!define MUI_UNICON	"Uninstaller.ico"
 
 # -------------------------------------------------------
-# 인스톨러 실행 권한이 admin인지 확인
+# Check admin
 Function checkAdmin
 	UserInfo::GetAccountType
 	pop $0
 
 	${If} $0 != "admin"
 		MessageBox MB_ICONSTOP \
-			"관리자권한이 필요합니다. 프로그램을 우클릭하여 관리자권한으로 실행해주시기 바랍니다."
+			"Needs an administrator authority. Please right click the installer and run as administrator"
 		QUIT
 	${EndIf}
 FunctionEnd
 
 # -------------------------------------------------------
 
-Function .onInit
-	# 인스톨러 시작 시, 화면에 나타나는 splash 이미지 설정
-	File /oname=splash.bmp "splash.bmp"
-    splash::show 1000 splash
-
-	Call checkAdmin
-FunctionEnd
+; Function .onInit
+; 	# Set splash image
+; 	; File /oname=splash.bmp "splash.bmp"
+;     ; splash::show 1000 splash
+; 	AdvSplash::show 200 1000 500 -1 "Splash_2018.png"
+;
+; 	Call checkAdmin
+; FunctionEnd
 
 # -------------------------------------------------------
 # Pages
-# 인스톨러 시작화면 문구
+# Welcome page
 ;!define			MUI_WELCOMEFINISHPAGE_BITMAP "${NSISDIR}\Contrib\Graphics\Wizard\orange.bmp"
-!define 		WELCOME_TITLE "${FULLNAME} 설치를 시작합니다."
+!define 		WELCOME_TITLE "Welcome to install ${APPNAME}"
 !define 		MUI_WELCOMEPAGE_TITLE '${WELCOME_TITLE}'
 !insertmacro 	MUI_PAGE_WELCOME
 
-!insertmacro 	MUI_PAGE_LICENSE "License.rtf"					 # 저작권 페이지
-!insertmacro 	MUI_PAGE_COMPONENTS								 # 컴포넌트 페이지
-!insertmacro 	MUI_PAGE_DIRECTORY								 # 설치 경로 페이지
-!insertmacro 	MUI_PAGE_INSTFILES								 # 설치 상황 페이지
+# Setting pages
+!insertmacro 	MUI_PAGE_LICENSE "License.rtf"					 # License page
+!insertmacro 	MUI_PAGE_COMPONENTS								 # Component page
+!insertmacro 	MUI_PAGE_DIRECTORY								 # Install directory page
+!insertmacro 	MUI_PAGE_INSTFILES								 # Install status page
 
-!define			MUI_FINISHPAGE_RUN "$INSTDIR\bin\${APPNAME}.exe" # 설치 종료 후, 프로그램 실행
-!insertmacro    MUI_PAGE_FINISH                             	 # 설치 종료 후, 마지막 안내 페이지
+; !define			MUI_FINISHPAGE_RUN "$INSTDIR\bin\${APPNAME}.exe" # 占쏙옙치 占쏙옙占쏙옙 占쏙옙, 占쏙옙占싸그뤄옙 占쏙옙占쏙옙
+!insertmacro    MUI_PAGE_FINISH                             	 # Finish page
 
-!insertmacro    MUI_UNPAGE_WELCOME                  			 # 언인스톨 시작 문구
-!insertmacro 	MUI_UNPAGE_CONFIRM								 # 언인스톨??
-!insertmacro 	MUI_UNPAGE_INSTFILES							 # 언인스톨 진행 상황
+!insertmacro    MUI_UNPAGE_WELCOME                  			 # Uninstaller welcome page
+!insertmacro 	MUI_UNPAGE_CONFIRM								 # Ask uninstall
+!insertmacro 	MUI_UNPAGE_INSTFILES							 # Uninstall status page
 
 
 # -------------------------------------------------------
 # Languages
 
-!insertmacro 	MUI_LANGUAGE "Korean"				# 언어 설정
+!insertmacro 	MUI_LANGUAGE "Korean"							# Language
 
 # -------------------------------------------------------
-# 설치파일 버전 정보
+# 占쏙옙치占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙
 
 VIProductVersion "${APP_VI_PRODUCT_VER}"
-VIAddVersionKey /LANG=${LANG_KOREAN} "FileDescription" "${APPNAME} 설치파일"
+VIAddVersionKey /LANG=${LANG_KOREAN} "FileDescription" "${APPNAME} installer"
 VIAddVersionKey /LANG=${LANG_KOREAN} "ProductName"     "${APPNAME}"
 VIAddVersionKey /LANG=${LANG_KOREAN} "ProductVersion"  "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}"
 VIAddVersionKey /LANG=${LANG_KOREAN} "CompanyName"     "${PUPNAME}"
-VIAddVersionKey /LANG=${LANG_KOREAN} "LegalCopyright"  "Copyright 2014-2016. iCAD Lab. all rights reserved"
+VIAddVersionKey /LANG=${LANG_KOREAN} "LegalCopyright"  "Copyright 2014-2018. iCAD Lab. all rights reserved"
 VIAddVersionKey /LANG=${LANG_KOREAN} "FileVersion"     "${APP_VI_PRODUCT_VER}"
 
 # -------------------------------------------------------
-# 설치 및 삭제 내용 자세히 보기 여부(hide|show|nevershow)
+# Show details install and uninstall process (hide | show | nevershow)
 ShowInstDetails     show
 ShowUninstDetails   show
 
@@ -102,12 +100,25 @@ ShowUninstDetails   show
 
 Section "EdisonDesigner(Required)" EdisonDesigner
 
-	# VS 2013 재배포패키지 설치 유/무 확인
+	# Check VS 2013 redistribution package installation
 	Call checkVCRedist
 
-	# bin, data, Mod, Addons 폴더 설치
-	# 1. bin folder
-	SetOutPath $INSTDIR
+	# Addons, bin, data, doc, Ext, lib, Mod
+	# 1. Addons folder
+	SetOutPath $INSTDIR\Addons
+	SetCompress auto
+    DetailPrint "Extracting Addons package..."
+	SetDetailsPrint listOnly
+
+	File Addons.7z
+	SetDetailsPrint both
+	Nsis7z::ExtractWithDetails "Addons.7z" "Installing Addons package %s..."
+
+	Delete "$OUTDIR\Addons.7z"
+
+	# --------------------------------------------------------------------
+	# 2. bin folder
+	SetOutPath $INSTDIR\bin
 	SetCompress auto
     DetailPrint "Extracting bin package..."
 	SetDetailsPrint listOnly
@@ -119,24 +130,63 @@ Section "EdisonDesigner(Required)" EdisonDesigner
 	Delete "$OUTDIR\bin.7z"
 
 	# --------------------------------------------------------------------
-	# 2. Data folder
-  	SetOutPath $INSTDIR
+	# 3. data folder
+	SetOutPath $INSTDIR\data
 	SetCompress auto
-	DetailPrint "Extracting Data package..."
-	SetDetailsPrint listonly
+    DetailPrint "Extracting data package..."
+	SetDetailsPrint listOnly
 
-	File Data.7z
+	File data.7z
 	SetDetailsPrint both
-	Nsis7z::ExtractWithDetails "Data.7z" "Installing Data package %s..."
+	Nsis7z::ExtractWithDetails "data.7z" "Installing data package %s..."
 
-	Delete "$OUTDIR\Data.7z"
+	Delete "$OUTDIR\data.7z"
 
 	# --------------------------------------------------------------------
-	# 3. Mod folder
-	SetOutPath $INSTDIR
+	# 4. doc folder
+	SetOutPath $INSTDIR\doc
 	SetCompress auto
-	DetailPrint "Extracting Mod package..."
-	SetDetailsPrint listonly
+    DetailPrint "Extracting doc package..."
+	SetDetailsPrint listOnly
+
+	File doc.7z
+	SetDetailsPrint both
+	Nsis7z::ExtractWithDetails "doc.7z" "Installing doc package %s..."
+
+	Delete "$OUTDIR\doc.7z"
+
+	# --------------------------------------------------------------------
+	# 5. Ext folder
+	SetOutPath $INSTDIR\Ext
+	SetCompress auto
+    DetailPrint "Extracting Ext package..."
+	SetDetailsPrint listOnly
+
+	File Ext.7z
+	SetDetailsPrint both
+	Nsis7z::ExtractWithDetails "Ext.7z" "Installing Ext package %s..."
+
+	Delete "$OUTDIR\Ext.7z"
+
+	# --------------------------------------------------------------------
+	# 6. lib folder
+	SetOutPath $INSTDIR\lib
+	SetCompress auto
+    DetailPrint "Extracting lib package..."
+	SetDetailsPrint listOnly
+
+	File lib.7z
+	SetDetailsPrint both
+	Nsis7z::ExtractWithDetails "lib.7z" "Installing lib package %s..."
+
+	Delete "$OUTDIR\lib.7z"
+
+	# --------------------------------------------------------------------
+	# 7. Mod folder
+	SetOutPath $INSTDIR\Mod
+	SetCompress auto
+    DetailPrint "Extracting Mod package..."
+	SetDetailsPrint listOnly
 
 	File Mod.7z
 	SetDetailsPrint both
@@ -145,25 +195,12 @@ Section "EdisonDesigner(Required)" EdisonDesigner
 	Delete "$OUTDIR\Mod.7z"
 
 	# --------------------------------------------------------------------
-	# 4. Addons folder
-	SetOutPath $INSTDIR
-	SetCompress auto
-	DetailPrint "Extracting Addons package..."
-	SetDetailsPrint listonly
 
-	File Addons.7z
-	SetDetailsPrint both
-	Nsis7z::ExtractWithDetails "Addons.7z" "Installing Addons package %s..."
 
-	Delete "$OUTDIR\Addons.7z"
+	# Create shortcut in install directory
+	CreateShortcut "$INSTDIR\${APPNAME}.lnk" "$INSTDIR\bin\EdisonDesigner.exe" "" ""
 
-	# --------------------------------------------------------------------
-
-	
-	# 설치 폴더에 EdisonDesigner 바로가기 생성
-	CreateShortcut "$INSTDIR\${APPNAME}.lnk" "$INSTDIR\bin\ED.exe" "" ""
-
-	# 프로그램 추가/제거를 위한 레지스트리 등록
+	# Set regstry for Add or Remove programs
 	Call setReg
 
 	# Create uninstaller
@@ -172,36 +209,36 @@ Section "EdisonDesigner(Required)" EdisonDesigner
 SectionEnd
 
 # -------------------------------------------------------
-# 시작메뉴 및 바로가기 생성 section
+# Section: start menu and shortcut in start menu
 
 Section "Add to start menu" AddStartMenu
 
-	createDirectory	"$SMPROGRAMS\${FULLNAME}"
-	createShortCut	"$SMPROGRAMS\${FULLNAME}\${APPNAME}.lnk" "$INSTDIR\bin\ED.exe" "" ""
+	createDirectory	"$SMPROGRAMS\${APPNAME}"
+	createShortCut	"$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\bin\EdisonDesigner.exe" "" ""
 
 SectionEnd
 
 # -------------------------------------------------------
-# 바탕화면 바로가기 생성 section
+# Section: shortcut in desktop
 
 Section "Add to desktop icon" AddDesktop
 
-	CreateShortCut  "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\bin\ED.exe" "" ""
+	CreateShortCut  "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\bin\EdisonDesigner.exe" "" ""
 
 SectionEnd
 
 # -------------------------------------------------------
-# 각 section에 대한 설명
+# Section description
 
 	#Language strings
 	LangString EdisonDesigner ${LANG_KOREAN} \
-		"EdisonDesigner에 가장 필수요소입니다."
+		"Install EdisonDesigner."
 
 	LangString AddStartMenu ${LANG_KOREAN} \
-		"시작메뉴에 프로그램 그룹을 생성합니다."
+		"Create program group to start menu..."
 
 	LangString AddDesktop ${LANG_KOREAN} \
-		"바탕화면에 바로가기를 생성합니다."
+		"Create shortcut to desktop..."
 
 	#Assign language strings to sections
 	!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
@@ -213,37 +250,41 @@ SectionEnd
 # -------------------------------------------------------
 # Uninstaller section
 
-# Uninstaller를 시작할 때 뜨는 경고문
+# Warning message when running uninstaller
 Function un.onInit
-  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "${FULLNAME}을(를) 제거하시겠습니까?" IDYES +2
+  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "Do you want to remove ${APPNAME}?" IDYES +2
   Abort
 FunctionEnd
 
-# Uninstaller가 끝나고 나서 뜨는 안내문
+# Message after finishing uninstallation
 Function un.onUninstSuccess
   HideWindow
-  MessageBox MB_ICONINFORMATION|MB_OK "${FULLNAME}는(은) 완전히 제거되었습니다."
+  MessageBox MB_ICONINFORMATION|MB_OK "${APPNAME} was completely uninstalled."
 FunctionEnd
 
 Section "Uninstall"
 
-	# 시작메뉴의 lnk 파일 삭제
-	Delete "$SMPROGRAMS\${FULLNAME}\${APPNAME}.lnk"
+	# Delete lnk file in start menu
+	Delete "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk"
 
-	# 시작메뉴의 폴더 삭제
-	RMDir "$SMPROGRAMS\${FULLNAME}"
+	# Delete folder in start menu
+	RMDir "$SMPROGRAMS\${APPNAME}"
 
-	# 바탕화면의 실행파일 삭제
+	# Delete shortcut in desktop
 	Delete "$DESKTOP\${APPNAME}.lnk"
 
-	# 설치폴더의 바로가기 삭제
+	# Delete shortcut in install directory
 	Delete "$INSTDIR\${APPNAME}.lnk"
 
-	# EdisonDesigner에 있는 폴더 삭제
-	RMDir /r "$INSTDIR\bin"
-	RMDir /r "$INSTDIR\Data"
-	RMDir /r "$INSTDIR\Mod"
+	# Delete folders in install directory
 	RMDir /r "$INSTDIR\Addons"
+	RMDir /r "$INSTDIR\bin"
+	RMDir /r "$INSTDIR\data"
+	RMDir /r "$INSTDIR\doc"
+	RMDir /r "$INSTDIR\Ext"
+	RMDir /r "$INSTDIR\lib"
+	RMDir /r "$INSTDIR\Mod"
+
 
     Delete "$INSTDIR\vcredist_x86_vs2013.exe"
     Delete "$INSTDIR\vcredist_x64_vs2013.exe"
@@ -252,8 +293,8 @@ Section "Uninstall"
 
 	RMDir "$INSTDIR"
 
-	# 레지스트리 삭제
-    DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}"
+	# Remove registry
+    DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
 
 SectionEnd
 
@@ -263,39 +304,36 @@ Var GetInstalledSize.total
 
 Function checkVCRedist
 
-	# 사용자 컴퓨터의 Windows OS bit를 확인하여
-	# bit에 맞는 VS2013 재배포 패키지를 설치
+	# Check OS and install the VS2013 Redistribution package for user computer os
 	System::Call "kernel32::GetCurrentProcess() i .s"
 	System::Call "kernel32::IsWow64Process(i s, *i .r0)"
 
-	# Windows 32bit인 경우,
+	# In case of 32 bit OS,
 	${if} $0 == '0'
 		ReadRegDword $R1 HKLM "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\12.0\VC\Runtimes\x86" "Installed"
 
-		# Visual studio 2013 재배포패치키 설치됨
 		${if} $R1 == '1'
-			DetailPrint "이미 Visual studio 2013 32bit 용 재배포패키지가 설치되어 있습니다."
+			DetailPrint "Redistribution package for VS2013 x86 is already installed."
 
 		${Else}
-			DetailPrint "Visual studio 2013 32bit 용 재배포패키지가 설치되어 있지 않습니다. 설치를 진행합니다."
-			MessageBox MB_OK "Visual studio 2013 32bit 용 재배포패키지가 설치되어 있지 않아 재배포패키지를 먼저 설치합니다."
+			DetailPrint "Redistribution package for VS2013 x86 is not installed. Proceed with installation"
+			MessageBox MB_OK "Redistribution package for VS2013 x86 is not installed, so install the Redistribution Package first."
 			SetOutPath $INSTDIR
 			File "vcredist_x86_vs2013.exe"
 			ExecWait '"$INSTDIR\vcredist_x86_vs2013.exe"'
 			Delete "$OUTDIR\vcredist_x86_vs2013.exe"
 		${EndIf}
 
-	# Windows 64bit인 경우,
+	# In case of 64 bit OS,
 	${ElseIf} $0 == '1'
 		ReadRegDword $R2 HKLM "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\12.0\VC\Runtimes\x64" "Installed"
 
-		# Visual studio 2013 재배포패치키 설치됨
 		${if} $R2 == '1'
-			DetailPrint "이미 Visual studio 2013 64bit 용 재배포패키지가 설치되어 있습니다."
+			DetailPrint "Redistribution package for VS2013 x64 is already installed."
 
 		${Else}
-			DetailPrint "Visual studio 2013 64bit 용 재배포패키지가 설치되어 있지 않습니다. 설치를 진행합니다."
-			MessageBox MB_OK "Visual studio 2013 64bit 용 재배포패키지가 설치되어 있지 않아 재배포패키지를 먼저 설치합니다."
+			DetailPrint "Redistribution package for VS2013 x64 is not installed. Proceed with installation"
+			MessageBox MB_OK "Redistribution package for VS2013 x64 is not installed, so install the Redistribution Package first."
 			SetOutPath $INSTDIR
 			File "vcredist_x64_vs2013.exe"
 			ExecWait '"$INSTDIR\vcredist_x64_vs2013.exe"'
@@ -310,20 +348,20 @@ Function setReg
 
 	Call estimatedSize
 
-	# 레지스트리 등록: 프로그램 추가/제거를 위해서 수행
-    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "DisplayName"			"${FULLNAME} - ${DESCRIPTION}"
-    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "UninstallString"		'"$INSTDIR\Uninstall.exe"'
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "QuietUninstallString"	'"$INSTDIR\Uninstall.exe" /S'
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "InstallLocation"		"$INSTDIR"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "DisplayIcon"			"$INSTDIR\bin\EdisonDesigner.exe"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "HelpLink"				"${HELPURL}"
-   	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "URLInfoAbout"			"${ABOUTURL}"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "URLUpdateInfo"			"${UPDATEURL}"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "Publisher"				"${PUPNAME}"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "DisplayVersion"			"${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}"
-	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "VersionMajor"			${VERSIONMAJOR}
-	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "VersionMinor"			${VERSIONMINOR}
-    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${FULLNAME}" "EstimatedSize"		$GetInstalledSize.total
+	# Set registry
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName"				"${APPNAME} - ${DESCRIPTION}"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "UninstallString"			'"$INSTDIR\Uninstall.exe"'
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "QuietUninstallString"	'"$INSTDIR\Uninstall.exe" /S'
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "InstallLocation"			"$INSTDIR"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayIcon"				"$INSTDIR\bin\EdisonDesigner.exe"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "HelpLink"				"${HELPURL}"
+   	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLInfoAbout"			"${ABOUTURL}"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLUpdateInfo"			"${UPDATEURL}"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "Publisher"				"${PUPNAME}"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayVersion"			"${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}"
+	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMajor"			${VERSIONMAJOR}
+	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "VersionMinor"			${VERSIONMINOR}
+    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "EstimatedSize"			$GetInstalledSize.total
 
 FunctionEnd
 
